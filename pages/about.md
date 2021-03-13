@@ -14,8 +14,6 @@ My name is Gadzhi Kharkharov. I was born in [Dagestan](https://wikipedia.org/wik
 
 Designing software is what I do for work and joy.
 
-## Work
-
 ### Currently
 
 I currently work at [Webflow](https://webflow.com) -- a tool that makes producing for web more approachable. Mostly trying to figure out how to create the right visual tools for designers.
@@ -26,13 +24,13 @@ I currently work at [Webflow](https://webflow.com) -- a tool that makes producin
 Worked as a designer (and partly as a front-end engineer) at [Stampsy](https://stampsy.com) -- a web platform for sharing and discovering visual stories. I designed the product and built a modular CSS architecture behind it.
 [Learn more about Stampsy](/stampsy/).
 
-## Game design
+### Game design
 
-Recently I became interested in video [game design and development](/tags/gamedev). It's a fun area that is hard to master and I try to spend my free time tinkering with various personal projects. I have a [[dlog]] where I sometime post (very rough) updates on this journey.
+Recently I became interested in video [game design and development](/tags/gamedev). It's a fun area that is hard to master and I try to spend my free time tinkering with various personal projects. I have a [dlog](/tags/dlog) where I sometime post (very rough) updates on this journey.
 
 I also enjoy reading about game design theory and practice. Here's a collection of my favorite [game design books and resources](gamedesign-resources.md).
 
-## Links
+### Elsewhere
 
 - Twitter: [@kkga\_](https://twitter.com/kkga_)
 - GitHub: [kkga](https://github.com/kkga)

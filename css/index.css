@@ -1,9 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;1,400;1,600&display=swap");
-@import "./modern-normalize.css";
 :root {
-  --font-body: "Rubik", sans-serif;
-  --font-head: "Rubik", sans-serif;
+  --font: "Rubik", sans-serif;
   --font-mono: monospace;
+
   --font-size: 16px;
   --font-size-sm: 13px;
   --ratio: 1.333;
@@ -14,9 +12,9 @@
 
   --scale-body: 88ch;
   --scale-space: 3ch;
+
   --color-bg-alt: #fff;
   --color-bg: #eee;
-  --color-hl: #afdfff;
   --color-text: #000;
   --color-dim: #666;
   --color-dark: #333;
@@ -28,12 +26,8 @@
  * */
 
 a {
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-color: var(--color-link);
-}
-a:hover {
   color: var(--color-link);
+  text-decoration: none;
 }
 
 figure {
@@ -42,6 +36,8 @@ figure {
 }
 figcaption {
   text-align: center;
+  color: var(--color-dim);
+  font-size: var(--font-size-sm);
 }
 
 small {
@@ -76,13 +72,10 @@ pre {
 }
 
 hr {
-  display: block;
-  margin-top: 2ch;
-  margin-bottom: 2ch;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
+  border: none;
+  height: 1px;
+  margin: var(--scale-space) 0;
+  background-color: currentColor;
 }
 
 table {
@@ -101,8 +94,10 @@ thead {
  * text ------------------------------------------------------------------------
  * */
 
+html {
+  font-family: var(--font);
+}
 body {
-  font-family: var(-font-body);
   font-size: var(--font-size);
   line-height: 1.5;
   text-rendering: optimizeLegibility;
@@ -174,24 +169,6 @@ body {
 
 body header {
   grid-column: 1/-1;
-}
-
-.nav {
-  padding: var(--scale-space) 0;
-  margin-bottom: var(--scale-space);
-}
-.nav-list {
-  padding: 0;
-  list-style: none;
-  color: var(--color-dim);
-  text-transform: lowercase;
-}
-.nav-item-active {
-  font-weight: bold;
-}
-.nav-item a {
-  text-decoration: none;
-  color: var(--color-dark);
 }
 
 main {

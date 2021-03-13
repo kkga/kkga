@@ -58,7 +58,6 @@ $ xbps-install -S snapper snooze
 ```
 
 2. Generate a default config for `snapper` (see `snapper --help`).
-
 3. Activate `snooze` services for daily and hourly tasks.
 
 ```
@@ -84,9 +83,10 @@ Void's handbook has a section on [how runit works][runit].
 One thing to note though, is how trivial it is to create user services for programs you want to
 run as daemons[^syncthing]. Check the dedicated section on [user-services][user-services].
 
+---
+
 ## Miscellaneous notes
 
-{.ui .message .basic}
 These are mostly for myself and are not directly related to Void.
 
 ### Fonts
@@ -132,10 +132,14 @@ Use the backlight utility as usual.
 Ethernet on newest Realtek cards (R8125) doesn't work out of the box (as of Linux 5.9). Download
 the Linux driver from Realtek website and follow the instructions.
 
+---
+
 ## See also
 
 - [XBPS](/notes/xbps)
 - [Void Linux on a laptop](/notes/laptop-void)
+
+---
 
 ## External links
 
