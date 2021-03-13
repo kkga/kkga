@@ -3,7 +3,7 @@
   --font-body: "Rubik", sans-serif;
   --font-head: "Rubik", sans-serif;
   --font-mono: monospace;
-  --font-size: 15px;
+  --font-size: 16px;
   --font-size-sm: 13px;
   --ratio: 1.333;
   --h4: calc(var(--font-size) * var(--ratio));
