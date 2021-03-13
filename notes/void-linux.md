@@ -2,12 +2,11 @@
 title: Void Linux
 description: This note is WIP. I add more content as I use the OS.
 date: 2020-11-15
-tags: 
+tags:
   - software
   - linux
   - void
 ---
-
 
 After going through a variety of Linux distributions (from PopOS/Fedora to Arch and NixOS), I’ve settled on [Void Linux][void]. It’s a great blend of stability and simplicity with rolling-release model.
 
