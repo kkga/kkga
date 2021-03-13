@@ -17,7 +17,7 @@ Assuming you’re on a Unix-like operating system, you likely have a great Vim l
 
 Work through it, more than once. This is what has been the most effective for me.
 
-After getting through the initial valley of despair, start sculpting [your very own `.vimrc`][vimrc].
+After getting through the initial valley of despair, start sculpting [your very own .vimrc][vimrc].
 
 If you're more of a video tutorial person, thoughtbot has a nice consise course [here][thoughtbot].
 
