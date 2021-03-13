@@ -1,5 +1,6 @@
 ---
 title: Vim
+description: Text editor for life.
 tags:
   - software
   - vim
