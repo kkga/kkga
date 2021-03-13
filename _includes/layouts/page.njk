@@ -1,0 +1,34 @@
+---
+layout: layouts/base.njk
+---
+
+<article>
+	<header>
+		<h1>
+		{% if title %}
+		{{ title }}
+		{% else %}
+		{{ page.url }}
+		{% endif %}
+		</h1>
+
+		<div class="page-meta">
+			{% if description %}
+			<p class="page-description">
+			{{ description }}
+			<date class="page-date">{{ page.date | readableDate }}</date>
+			</p>
+			{% endif %}
+
+			<ul class="page-tags">
+			{% for tag in tags %}
+			  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+			  <li><a href="{{ tagUrl | url }}">{{ tag }}</a></li>
+			{% endfor %}
+			</ul>
+		</div>
+
+	</header>
+
+	{{ content | safe }}
+</article>

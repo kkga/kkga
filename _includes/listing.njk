@@ -1,0 +1,22 @@
+<ul class="listing">
+{% for item in list | reverse %}
+    <li class="listing-item">
+		<a class="listing-item-link" href="{{ item.url | url }}">
+			<h3 class="listing-item-title">
+			{% if item.data.title %}{{ item.data.title }}
+			{% elseif item.url %}{{ item.url }}
+			{% else %}{{ item }}
+			{% endif %}
+			</h3>
+		</a>
+		<div class="listing-item-meta">
+			{% if item.data.description %}
+			{{ item.data.description }}
+			{% endif %}
+			{% if item.date %}
+			<time class="listing-item-date" datetime="{{ item.date | htmlDateString }}">{{ item.date | readableDate }}</time>
+			{% endif %}
+		</div>
+    </li>
+{% endfor %}
+</ul>

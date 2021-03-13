@@ -1,0 +1,36 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Home
+  order: 1
+templateClass: home
+---
+
+<div>
+	<h2>Projects</h2>
+	{% set list = collections.projects | head(-6) %}
+	{% include "listing.njk" %}
+</div>
+
+<div>
+	<h2>Work</h2>
+	{% set list = collections.work | head(-6) %}
+	{% include "listing.njk" %}
+</div>
+
+<div>
+	<h2>Notes</h2>
+	{% set list = collections.notes | head(-6) %}
+	{% include "listing.njk" %}
+	<br />
+	<a href="/tags/note">See all notes &rarr;</a>
+</div>
+
+<div>
+	<h2>Dlog</h2>
+	{% set list = collections.dlog | head(-6) %}
+	{% include "listing.njk" %}
+	<br />
+	<a href="/tags/dlog">See all dlog entries &rarr;</a>
+</div>
+
