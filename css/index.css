@@ -11,7 +11,7 @@
   --h2: calc(var(--h3) * var(--ratio));
   --h1: calc(var(--h2) * var(--ratio));
 
-  --scale-body: 72ch;
+  --scale-body: 88ch;
   --scale-space: 3ch;
   --color-bg-alt: #fff;
   --color-bg: #eee;
