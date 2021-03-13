@@ -18,4 +18,5 @@ jobs:
           PUBLISH_DIR: _site
           PUBLISH_BRANCH: gh-pages
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
           cname: kkga.me
