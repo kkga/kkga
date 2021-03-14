@@ -1,13 +1,13 @@
 ---
 title: Stampsy
 description: Platform for sharing visual stories.
-layout: page
+layout: post
 tags: work
 date: 2019-11-18
 permalink: stampsy/
 ---
 
-## Stampsy web application, 2014
+## Stampsy web, 2014
 
 Worked as a designer (and partly as a front-end engineer) at Stampsy — a web platform for sharing and discovering visual stories. I designed the product and built a modular CSS architecture behind it.
 

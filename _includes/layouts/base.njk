@@ -14,25 +14,27 @@
   </head>
 
   <body{% if templateClass %} class="{{ templateClass }}"{% endif %}>
-    <header>
       {% if page.url === "/" %}
-      <div class="quick-intro">
-        <h1>Gadzhi Kharkharov</h1>
-        <p>
-          Software designer. Based in Moscow, Russia.<br />
-          <a href="/about">More about me</a>.
-        </p>
-      </div>
+      <header>
+        <div class="quick-intro">
+          <h1>Gadzhi Kharkharov</h1>
+          <p>
+            Software designer. Based in Moscow, Russia.<br />
+            <a href="/about">More about me</a>.
+          </p>
+        </div>
+      </header>
       {% else %}
-        <a href="/">
+      <nav>
+        <a href="/" style="vertical-align: bottom">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
             <rect fill=currentColor width=16 height=16 rx="2">
 
             </rect>
           </svg>
         </a>
+      </nav>
       {% endif %}
-    </header>
 
     {{content | safe}}
     

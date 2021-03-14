@@ -1,7 +1,7 @@
 ---
 title: Webflow
 description: Some of the projects I've worked on at Webflow.
-layout: page
+layout: post
 date: 2020-11-18
 permalink: webflow/
 tags:

@@ -8,12 +8,11 @@ pagination:
     - nav
     - tagList
   addAllPagesToCollections: true
-layout: layouts/home.njk
+layout: page
 eleventyComputed:
   title: Tagged “{{ tag }}”
 permalink: /tags/{{ tag }}/
 ---
-<h1>#{{ tag }}</h1>
 
 {% set list = collections[ tag ] %}
 {% include "listing.njk" %}

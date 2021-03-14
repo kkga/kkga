@@ -2,7 +2,7 @@
 title: About
 date: 2020-11-18
 permalink: about/
-layout: page
+layout: post
 eleventyNavigation:
   key: About
   order: 4
