@@ -20,7 +20,7 @@ templateClass: home
 	</div>
 
 	<div>
-		<h2><a href="/tags/note">Notes</a></h2>
+		<h2>Notes</h2>
 		{% set list = collections.notes | head(-6) %}
 		{% set length = collections.notes | length %}
 		{% include "listing.njk" %}
@@ -29,7 +29,7 @@ templateClass: home
 	</div>
 
 	<div>
-		<h2><a href="/tags/dlog">Dlog</a></h2>
+		<h2>Dlog</h2>
 		{% set list = collections.dlog | head(-6) %}
 		{% set length = collections.notes | length %}
 		{% include "listing.njk" %}
