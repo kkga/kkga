@@ -234,8 +234,11 @@ body {
 
 /* page header */
 
-h1 {
+header h1 {
   margin: 0;
+  margin-bottom: 0.25em;
+  max-width: 80%;
+  line-height: 1;
 }
 
 article header :is(p) {
@@ -268,6 +271,7 @@ article header :is(p) {
   margin-top: 0;
   margin-bottom: var(--spacer-xs);
   font-size: inherit;
+  line-height: inherit;
 }
 
 /* templates */
