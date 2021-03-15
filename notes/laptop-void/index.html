@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running Void Linux on a laptop</title>
+    <meta name="description" content="Gadzhi Kharkharov, software designer.">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Gadzhi Kharkharov">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Gadzhi Kharkharov">
+    <script async defer data-domain="kkga.me" src="https://plausible.io/js/plausible.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+      
+      <nav>
+        <a href="/" style="vertical-align: bottom">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+            <rect fill=currentColor width=16 height=16 rx="2">
+
+            </rect>
+          </svg>
+        </a>
+      </nav>
+      
+
+    
+<article>
+	<header>
+		<h1>
+		
+		Running Void Linux on a laptop
+		
+		</h1>
+
+		<div class="page-meta">
+			
+
+			Updated on: <date class="page-date">03 Jan 2021</date>
+
+			
+			&nbsp;&middot;&nbsp;
+			<ul class="page-tags">
+			
+			  
+			  <li><a href="/tags/note/">#note</a></li>
+			
+			  
+			  <li><a href="/tags/software/">#software</a></li>
+			
+			  
+			  <li><a href="/tags/linux/">#linux</a></li>
+			
+			  
+			  <li><a href="/tags/void/">#void</a></li>
+			
+			</ul>
+			
+		</div>
+
+	</header>
+
+	<figure><img src="/img/laptop-sway-void.png" alt=""><figcaption>Sway running on Void Linux</figcaption></figure>
+<h2 id="hardware">Hardware</h2>
+<ul>
+<li>ThinkBook 13s G2-ITL</li>
+</ul>
+<h2 id="kernel">Kernel</h2>
+<ul>
+<li>blacklist <code>ideapad_laptop</code> module in <code>modprobe.d</code> (old module that isn’t useful anymore);</li>
+</ul>
+<h2 id="power-management">Power management</h2>
+<ul>
+<li>enable <code>acpid</code>, if not enabled;</li>
+<li>install <code>tlp</code>, enable its service;</li>
+<li>configure <code>elogind</code> to ignore ACPI events: set all <code>Handle*</code> keywords to <code>ignore</code> in logind.conf;</li>
+<li>use <code>powertop</code> to diagnose powerusage;</li>
+</ul>
+<h2 id="network">Network</h2>
+<ul>
+<li>note: iwlwifi spams some errors in dmesg, seem to work fine though (<code>iwlwifi: Unhandled alg: 0x71b</code>);</li>
+<li>disable <code>wpa_supplicate</code> service, if enabled;</li>
+<li><s>install <code>connman</code>, enable service, configure via <code>connmanctl;</code></s> upd: <code>connman</code> seems unstable and noisy;</li>
+<li>ended up using <code>dhcpcd</code> + <code>iwd</code>;
+<ul>
+<li>had to add <code>UseDefaultInterface=true</code> in <code>[General]</code> section of <code>/etc/iwd/main.conf</code>, according to Void’s <a href="https://docs.voidlinux.org/config/network/iwd.html#troubleshooting">handbook</a>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="graphics">Graphics</h2>
+<ul>
+<li>mesa works out of the box;</li>
+<li>for vulkan, install <code>mesa-vulkan-intel</code>;</li>
+</ul>
+<h2 id="sound">Sound</h2>
+<ul>
+<li>note: initially had issues with sound device not working: had to add <code>options snd_hda_intel dmic_detect=0</code> in <code>modprobe.d</code>;</li>
+<li>install <code>pipewire</code>, enable <code>pipewire-pulse</code> in pipewire config;</li>
+<li>start <code>pipewire</code> as a user on desktop login;
+<ul>
+<li>note: maybe create a user runit service for it;</li>
+</ul>
+</li>
+</ul>
+<h2 id="desktop">Desktop</h2>
+<ul>
+<li>currently running a pure Wayland (xwayland disabled) desktop with Sway – no issues so far;</li>
+<li><code>elogind</code> and <code>dbus</code> are required for Sway;</li>
+<li>start sway with <code>dbus-run-session sway</code>;</li>
+</ul>
+
+</article>
+
+    
+
+    <footer></footer>
+
+    <!-- Current page: /notes/laptop-void/ -->
+  </body>
+</html>

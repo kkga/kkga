@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Void Linux</title>
+    <meta name="description" content="This note is WIP. I add more content as I use the OS.">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Gadzhi Kharkharov">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Gadzhi Kharkharov">
+    <script async defer data-domain="kkga.me" src="https://plausible.io/js/plausible.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+      
+      <nav>
+        <a href="/" style="vertical-align: bottom">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+            <rect fill=currentColor width=16 height=16 rx="2">
+
+            </rect>
+          </svg>
+        </a>
+      </nav>
+      
+
+    
+<article>
+	<header>
+		<h1>
+		
+		Void Linux
+		
+		</h1>
+
+		<div class="page-meta">
+			
+			<p class="page-description">
+			This note is WIP. I add more content as I use the OS.
+			</p>
+			
+
+			Updated on: <date class="page-date">15 Nov 2020</date>
+
+			
+			&nbsp;&middot;&nbsp;
+			<ul class="page-tags">
+			
+			  
+			  <li><a href="/tags/note/">#note</a></li>
+			
+			  
+			  <li><a href="/tags/software/">#software</a></li>
+			
+			  
+			  <li><a href="/tags/linux/">#linux</a></li>
+			
+			  
+			  <li><a href="/tags/void/">#void</a></li>
+			
+			</ul>
+			
+		</div>
+
+	</header>
+
+	<p>After going through a variety of Linux distributions (from PopOS/Fedora to Arch and NixOS), I’ve settled on <a href="https://voidlinux.org/">Void Linux</a>. It’s a great blend of stability and simplicity with rolling-release model.</p>
+<h2 id="installation">Installation</h2>
+<p>Void install process is straightforward: follow the steps in the TUI installer. I’ve used the base minimal ISO without any desktop environments.</p>
+<h2 id="initial-setup">Initial setup</h2>
+<p>Void has an excellent <a href="https://docs.voidlinux.org/">handbook</a> that covers everything you need to know in order to setup a working system.</p>
+<h2 id="package-management">Package management</h2>
+<p>The package manager in Void is <a href="/notes/xbps">xbps</a>. It’s a collection of several programs for performing various tasks. It’s very fast and reliable: I’ve never had any problems during upgrades.</p>
+<p>While it’s useful to get comfortable interacting with the package manager directly, Void also provides a collection of handy helper scripts under the <code>xtools</code> package:</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>xi</code></td>
+<td>install a package</td>
+</tr>
+<tr>
+<td><code>xi -Su</code></td>
+<td>update all packages</td>
+</tr>
+<tr>
+<td><code>xrs</code></td>
+<td>search for packages in the repos</td>
+</tr>
+<tr>
+<td><code>xq</code></td>
+<td>query info about an installed package</td>
+</tr>
+<tr>
+<td><code>xq -R</code></td>
+<td>query remote repos</td>
+</tr>
+<tr>
+<td><code>xcheckrestart</code></td>
+<td>list programs using outdated libraries (use after updates)</td>
+</tr>
+<tr>
+<td><code>xlocate</code></td>
+<td>locate a specific file in packages</td>
+</tr>
+<tr>
+<td><code>xlocate -S</code></td>
+<td>sync with remote database</td>
+</tr>
+<tr>
+<td><code>xls</code></td>
+<td>list files of a package</td>
+</tr>
+<tr>
+<td><code>xmandoc</code></td>
+<td>read manpage of any (non-installed) package</td>
+</tr>
+<tr>
+<td><code>xpkg</code></td>
+<td>list all installed packages</td>
+</tr>
+<tr>
+<td><code>xpkg -m</code></td>
+<td>list only manually installed</td>
+</tr>
+<tr>
+<td><code>xpkg -O</code></td>
+<td>list orphans</td>
+</tr>
+<tr>
+<td><code>xpkg -m &gt; pkglist.txt</code></td>
+<td>dump all manually installed packages into a text file</td>
+</tr>
+</tbody>
+</table>
+<p>See <a href="https://man.voidlinux.org/xtools">manpage</a> for <code>xtools</code> for more info.</p>
+<h2 id="backups">Backups</h2>
+<h3 id="system-snapshots">System snapshots</h3>
+<p>If using BTRFS filesystem, <code>snapper</code> can be set up for automatic snapshot creation.</p>
+<ol>
+<li>Install <code>snapper</code> and <code>snooze</code>.</li>
+</ol>
+<pre class="language-shell"><code class="language-shell">$ xbps-install -S snapper snooze</code></pre>
+<ol start="2">
+<li>Generate a default config for <code>snapper</code> (see <code>snapper --help</code>).</li>
+<li>Activate <code>snooze</code> services for daily and hourly tasks.</li>
+</ol>
+<pre class="language-shell"><code class="language-shell">$ <span class="token function">ln</span> -s /etc/sv/snooze-daily /var/service<br>$ <span class="token function">ln</span> -s /etc/sv/snooze-hourly /var/service</code></pre>
+<h3 id="list-of-manually-installed-packages">List of manually installed packages</h3>
+<p>Automatically update list of installed packages daily with <code>snooze</code>:</p>
+<pre class="language-shell"><code class="language-shell">$ xbps-install -S snooze<br>$ <span class="token function">ln</span> -s /etc/sv/snooze-daily /var/service <span class="token comment"># activate snooze service for daily tasks</span><br>$ <span class="token builtin class-name">echo</span> <span class="token string">'#!/bin/sh'</span> <span class="token operator">>></span> /etc/cron.daily/pkglist-update<br>$ <span class="token builtin class-name">echo</span> <span class="token string">'xpkg -m > /home/kkga/void-pkglist.txt'</span> <span class="token operator">>></span> /etc/cron.daily/pkglist-update</code></pre>
+<h2 id="daemons-(runit)">Daemons (runit)</h2>
+<p>Void’s handbook has a section on <a href="https://docs.voidlinux.org/config/services/index.html">how runit works</a>.</p>
+<p>One thing to note though, is how trivial it is to create user services for programs you want to<br>
+run as daemons[^syncthing]. Check the dedicated section on <a href="https://docs.voidlinux.org/config/services/user-services.html">user-services</a>.</p>
+<hr>
+<h2 id="miscellaneous-notes">Miscellaneous notes</h2>
+<p>These are mostly for myself and are not directly related to Void.</p>
+<h3 id="fonts">Fonts</h3>
+<ul>
+<li>if Firefox isn’t displaying some charactes, install the <code>noto-fonts-ttf</code> package;</li>
+</ul>
+<h3 id="external-display-brightness">External display brightness</h3>
+<p>Use either the <code>ddcutil</code> package (requires <code>i2c-dev</code> kernel module loaded) or install the<br>
+<code>ddcci-dkms</code> package and use any regular backlight utility.</p>
+<h4 id="using-ddcutil">Using ddcutil</h4>
+<pre class="language-shell"><code class="language-shell"><span class="token comment"># load the needed kernel module</span><br>$ modprobe i2c-dev<br><br><span class="token comment"># adjust brightness on 1st display</span><br>$ ddcutil -d <span class="token number">1</span> setvcp <span class="token number">10</span> <span class="token number">70</span><br><br><span class="token comment"># adjust brightness on 2st display</span><br>$ ddcutil -d <span class="token number">2</span> setvcp <span class="token number">10</span> <span class="token number">70</span></code></pre>
+<h4 id="using-ddcci-dkms">Using ddcci-dkms</h4>
+<p>Install the DKMS driver and a backlight utility.</p>
+<pre class="language-shell"><code class="language-shell">$ xbps-install -S ddcci-dkms brillo</code></pre>
+<p>Load the module.</p>
+<pre class="language-shell"><code class="language-shell">$ modprobe ddcci</code></pre>
+<p>Use the backlight utility as usual.</p>
+<h3 id="realtek-ethernet">Realtek ethernet</h3>
+<p>Ethernet on newest Realtek cards (R8125) doesn’t work out of the box (as of Linux 5.9). Download<br>
+the Linux driver from Realtek website and follow the instructions.</p>
+<hr>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="/notes/xbps">XBPS</a></li>
+<li><a href="/notes/laptop-void">Void Linux on a laptop</a></li>
+</ul>
+<hr>
+<h2 id="external-links">External links</h2>
+<ul>
+<li><a href="https://kennydodrill.net/posts/stable-void-linux-setup-guide/">Stable Void Linux Setup Guide</a></li>
+<li><a href="https://drive.google.com/file/d/1hPPO4h2tD-_uGppOX79MsrHGPkDKmQpG/view">rinsmiles ́ Guide to the Void</a></li>
+<li><a href="https://github.com/flexibeast/guides/blob/master/dbus-on-void.md">D-Bus on Void</a></li>
+<li><a href="https://github.com/flexibeast/guides/blob/master/suckless.md">Managing suckless software on Void</a></li>
+<li><a href="https://github.com/flexibeast/guides/blob/master/git-packages.md">Managing -git packages on Void</a></li>
+</ul>
+<p>[^syncthing]: For example, I’m starting <a href="https://syncthing.net">syncthing</a> as a user-service, instead of polluting my <code>.xinitrc</code>.</p>
+
+</article>
+
+    
+
+    <footer></footer>
+
+    <!-- Current page: /notes/void-linux/ -->
+  </body>
+</html>

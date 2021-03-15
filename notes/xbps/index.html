@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XBPS</title>
+    <meta name="description" content="A short guide on working with the Void Linux package repository.">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Gadzhi Kharkharov">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Gadzhi Kharkharov">
+    <script async defer data-domain="kkga.me" src="https://plausible.io/js/plausible.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+      
+      <nav>
+        <a href="/" style="vertical-align: bottom">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+            <rect fill=currentColor width=16 height=16 rx="2">
+
+            </rect>
+          </svg>
+        </a>
+      </nav>
+      
+
+    
+<article>
+	<header>
+		<h1>
+		
+		XBPS
+		
+		</h1>
+
+		<div class="page-meta">
+			
+			<p class="page-description">
+			A short guide on working with the Void Linux package repository.
+			</p>
+			
+
+			Updated on: <date class="page-date">15 Mar 2021</date>
+
+			
+			&nbsp;&middot;&nbsp;
+			<ul class="page-tags">
+			
+			  
+			  <li><a href="/tags/note/">#note</a></li>
+			
+			  
+			  <li><a href="/tags/software/">#software</a></li>
+			
+			  
+			  <li><a href="/tags/linux/">#linux</a></li>
+			
+			  
+			  <li><a href="/tags/void/">#void</a></li>
+			
+			</ul>
+			
+		</div>
+
+	</header>
+
+	<p>Void provides a comprehensive <a href="https://github.com/void-linux/void-packages/blob/master/Manual.md">manual</a> on how to work with the source packages.<br>
+This guide is focused on a small subset of tasks I often do myself.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ol>
+<li>Clone the <code>void-packages</code> repository and do the initial bootstrap:</li>
+</ol>
+<pre class="language-shell"><code class="language-shell">$ <span class="token function">git</span> clone git://github.com/void-linux/void-packages.git<br>$ <span class="token builtin class-name">cd</span> void-packages<br>$ ./xbps-src binary-bootstrap</code></pre>
+<ol start="2">
+<li>Install the <code>xtools</code> package:</li>
+</ol>
+<pre class="language-shell"><code class="language-shell">$ xbps-install -S xtools</code></pre>
+<ol start="3">
+<li>Install and setup <a href="https://cli.github.com/">GitHub CLI</a>:</li>
+</ol>
+<pre class="language-shell"><code class="language-shell">$ xbps-install -S github-cli<br>$ gh auth login</code></pre>
+<h2 id="updating-an-outdated-package">Updating an outdated package</h2>
+<ol>
+<li>Update your local repository:</li>
+</ol>
+<pre class="language-shell"><code class="language-shell">$ <span class="token function">git</span> pull</code></pre>
+<ol start="2">
+<li>Make changes to package template in a new git branch (most of the time you<br>
+only need to update the <code>version</code>):</li>
+</ol>
+<pre class="language-shell"><code class="language-shell">$ <span class="token function">git</span> checkout -b package-name<br>$ <span class="token function">vim</span> srcpkgs/package-name/template</code></pre>
+<ol start="3">
+<li>Update the checksum:</li>
+</ol>
+<pre class="language-shell"><code class="language-shell">$ xgensum -f -i package-name</code></pre>
+<ol start="4">
+<li>Lint the template for possible errors:</li>
+</ol>
+<pre class="language-shell"><code class="language-shell">$ xlint package-name</code></pre>
+<ol start="5">
+<li>Build and install the updated package locally:</li>
+</ol>
+<pre class="language-shell"><code class="language-shell">$ ./xbps-src pkg package-name<br>$ xi package-name</code></pre>
+<ol start="6">
+<li>Test the package to make sure it works;</li>
+<li>Generate a commit message for the update:</li>
+</ol>
+<pre class="language-shell"><code class="language-shell">$ xbump package-name</code></pre>
+<ol start="8">
+<li>Create a PR:</li>
+</ol>
+<pre class="language-shell"><code class="language-shell">$ gh <span class="token function">pr</span> create</code></pre>
+
+</article>
+
+    
+
+    <footer></footer>
+
+    <!-- Current page: /notes/xbps/ -->
+  </body>
+</html>

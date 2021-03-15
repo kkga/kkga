@@ -1,0 +1,13 @@
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": "Gadzhi Kharkharov",
+  "home_page_url": "https://kkga.me/",
+  "feed_url": "https://kkga.me/feed/feed.json",
+  "description": "Gadzhi Kharkharov, software designer.",
+  "author": {
+    "name": "Gadzhi Kharkharov",
+    "url": "https://kkga.me/about"
+  },
+  "items": [
+  ]
+}

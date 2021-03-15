@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using bit flags in Godot</title>
+    <meta name="description" content="Gadzhi Kharkharov, software designer.">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Gadzhi Kharkharov">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Gadzhi Kharkharov">
+    <script async defer data-domain="kkga.me" src="https://plausible.io/js/plausible.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+      
+      <nav>
+        <a href="/" style="vertical-align: bottom">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+            <rect fill=currentColor width=16 height=16 rx="2">
+
+            </rect>
+          </svg>
+        </a>
+      </nav>
+      
+
+    
+<article>
+	<header>
+		<h1>
+		
+		Using bit flags in Godot
+		
+		</h1>
+
+		<div class="page-meta">
+			
+
+			Updated on: <date class="page-date">29 Mar 2020</date>
+
+			
+			&nbsp;&middot;&nbsp;
+			<ul class="page-tags">
+			
+			  
+			  <li><a href="/tags/dlog/">#dlog</a></li>
+			
+			</ul>
+			
+		</div>
+
+	</header>
+
+	<p>here’s a little tip i wanted to share.</p>
+<p>I’m currently working on implementation of various trait effects for the player character and after going through a few possible methods to do this, here’s what I came up with.</p>
+<p>since I’m heavily using Godot’s <code>Resource</code> classes for generating and storing all types of data for in-game use, I have a <code>StatsRes</code> class (i always add <code>Res</code> suffix to classnames if they extend the base <code>Resource</code> class) that serves as a container for base character stats like max health, move speed and so on.</p>
+<p>in a similar fashion, i’m also storing traits as resources of a <code>TraitRes</code> class so that I can create new traits through Godot’s visual inspector by simply creating and a new resource file of type <code>TraitRes</code>. In order to do that, the <code>TraitRes</code> class needs to export variables that need to be editable through the inspector by using a certain notation like:</p>
+<pre class="language-gdscript"><code class="language-gdscript"><span class="token comment"># this will show a "Max Health" input field in the inspector</span><br><span class="token comment"># that accepts integer values</span><br><span class="token keyword">export</span> <span class="token punctuation">(</span>int<span class="token punctuation">)</span> <span class="token keyword">var</span> max_health <span class="token operator">:=</span> <span class="token number">100</span></code></pre>
+<p>[TO BE CONTINUED…] (actually, I never got back to it)</p>
+
+</article>
+
+    
+
+    <footer></footer>
+
+    <!-- Current page: /dlog/traits-bitflags/ -->
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrapping up initial version of enemy agent steering</title>
+    <meta name="description" content="Gadzhi Kharkharov, software designer.">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Gadzhi Kharkharov">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Gadzhi Kharkharov">
+    <script async defer data-domain="kkga.me" src="https://plausible.io/js/plausible.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+      
+      <nav>
+        <a href="/" style="vertical-align: bottom">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+            <rect fill=currentColor width=16 height=16 rx="2">
+
+            </rect>
+          </svg>
+        </a>
+      </nav>
+      
+
+    
+<article>
+	<header>
+		<h1>
+		
+		Wrapping up initial version of enemy agent steering
+		
+		</h1>
+
+		<div class="page-meta">
+			
+
+			Updated on: <date class="page-date">14 Mar 2020</date>
+
+			
+			&nbsp;&middot;&nbsp;
+			<ul class="page-tags">
+			
+			  
+			  <li><a href="/tags/dlog/">#dlog</a></li>
+			
+			</ul>
+			
+		</div>
+
+	</header>
+
+	<p>yesterday i spent most of the day tracking a weird bug with the physics of AI agents. that’s the disadvantage of using a 3rd party library — if something isn’t working as expected, you might spend hours hunting for the origin of the problem and trying to make it work. in my case the weirdness was the result of Godot engine defaulting to negative Z axis as “forward” for some of its built-in methods, while the steering framework I use expects it to be positive Z.<br>
+the fix was a 5 min work, but tracking the issue took most of the day :/</p>
+<p>i’m tired of working on AI steering at this point. as i mentioned before — vector math and physics isn’t something i’m very good at.<br>
+for now, the enemies have a pretty straigforward state machine that is easily extendable and can interact with the steering agent implemented in an enemy. so enemies can switch between following their target (player), slowing down when target is close, moving away when target is too close and so on… that’s more than i need for now.</p>
+
+</article>
+
+    
+
+    <footer></footer>
+
+    <!-- Current page: /dlog/agent-steering/ -->
+  </body>
+</html>
