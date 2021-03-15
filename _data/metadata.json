@@ -5,11 +5,11 @@
   "feed": {
     "subtitle": "Gadzhi Kharkharov, software designer.",
     "filename": "feed.xml",
-    "path": "/feed.xml",
+    "path": "/feed/feed.xml",
     "id": "https://kkga.me/"
   },
   "jsonfeed": {
-    "path": "/feed.json",
+    "path": "/feed/feed.json",
     "url": "https://kkga.me/feed/feed.json"
   },
   "author": {
