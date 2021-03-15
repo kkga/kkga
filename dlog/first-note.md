@@ -1,8 +1,7 @@
 ---
+title: First dlog note
 date: 2020-03-07
 ---
-
-# First dlog note
 
 this is an experiment. i saw a similar log on the web and it felt like a great idea, so i'm gonna start one too. just planning to dump out my brain here by the end of day, if i managed to work on something that day.
 

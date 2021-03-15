@@ -53,14 +53,14 @@ If using BTRFS filesystem, `snapper` can be set up for automatic snapshot creati
 
 1. Install `snapper` and `snooze`.
 
-```
+```shell
 $ xbps-install -S snapper snooze
 ```
 
 2. Generate a default config for `snapper` (see `snapper --help`).
 3. Activate `snooze` services for daily and hourly tasks.
 
-```
+```shell
 $ ln -s /etc/sv/snooze-daily /var/service
 $ ln -s /etc/sv/snooze-hourly /var/service
 ```
@@ -69,7 +69,7 @@ $ ln -s /etc/sv/snooze-hourly /var/service
 
 Automatically update list of installed packages daily with `snooze`:
 
-```
+```shell
 $ xbps-install -S snooze
 $ ln -s /etc/sv/snooze-daily /var/service # activate snooze service for daily tasks
 $ echo '#!/bin/sh' >> /etc/cron.daily/pkglist-update
@@ -100,7 +100,7 @@ Use either the `ddcutil` package (requires `i2c-dev` kernel module loaded) or in
 
 #### Using ddcutil
 
-```
+```shell
 # load the needed kernel module
 $ modprobe i2c-dev
 
@@ -115,13 +115,13 @@ $ ddcutil -d 2 setvcp 10 70
 
 Install the DKMS driver and a backlight utility.
 
-```
+```shell
 $ xbps-install -S ddcci-dkms brillo
 ```
 
 Load the module.
 
-```
+```shell
 $ modprobe ddcci
 ```
 

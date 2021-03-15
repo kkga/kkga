@@ -1,8 +1,7 @@
 ---
+title: Character development. Traits.
 date: 2020-03-25
 ---
-
-# Character development: traits
 
 as planned, i tried to spend some time over the weekend planning my designs instead of programming... it didn't go well.
 

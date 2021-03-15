@@ -1,8 +1,7 @@
 ---
+title: Weapon system
 date: 2020-03-15
 ---
-
-# Weapon system
 
 Refactoring day. After wrapping up the initial work on steering AI, I decided to switch to something less challenging for a moment and refactor the weapon system.
 I don’t think this game will have too many weapons, but I want each of them to be distinct and a serve a specific combat situation better than others. This means I’ll need a highly configurable weapon creation system with various parameters affecting the behavior.

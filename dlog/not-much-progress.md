@@ -1,8 +1,7 @@
 ---
+title: Not much progress
 date: 2020-03-08
 ---
-
-# Not much progress
 
 not much progress today as i didn't really get a chance to focus.
 
