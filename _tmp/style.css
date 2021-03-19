@@ -553,7 +553,7 @@ video {
 
 html {
   --tw-bg-opacity: 1;
-  background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
 }
 
 body {
@@ -631,7 +631,14 @@ table {
 }
 
 pre {
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+  font-size: 0.75rem;
+  line-height: 1rem;
   line-height: 1.25;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  padding: 0.5rem;
 }
 
 code {

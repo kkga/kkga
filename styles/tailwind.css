@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    @apply bg-gray-100;
+    @apply bg-gray-200;
   }
   body {
     @apply bg-white font-sans;
@@ -45,7 +45,7 @@
     @apply table-auto w-full;
   }
   pre {
-    @apply leading-tight;
+    @apply text-xs leading-tight bg-gray-50 p-2 -mx-2;
   }
   code {
     @apply text-sm;
