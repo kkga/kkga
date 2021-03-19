@@ -3,9 +3,6 @@ title: About
 date: 2020-11-18
 permalink: about/
 layout: post
-eleventyNavigation:
-  key: About
-  order: 4
 ---
 
 <img style="width: 8rem;" src="/img/face.jpg" />
@@ -36,4 +33,3 @@ I also enjoy reading about game design theory and practice. Here's a collection 
 - GitHub: [kkga](https://github.com/kkga)
 - Flickr: [gadzhi](https://flickr.com/gadzhi)
 - Email: [me@kkga.me](mailto:me@kkga.me)
-- CV: [pdf](static/about/cv.pdf)

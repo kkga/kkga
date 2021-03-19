@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-full min-h-full">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title or metadata.title }}</title>
     <meta name="description" content="{{ description or metadata.description }}">
-    <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+    <link rel="stylesheet" href="/style.css?v={% version %}"/>
     <link rel="stylesheet" href="{{ '/css/prism.css' | url }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
@@ -14,31 +14,23 @@
 <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   </head>
 
-  <body{% if templateClass %} class="{{ templateClass }}"{% endif %}>
-      {% if page.url === "/" %}
-      <header>
-        <div class="quick-intro">
-          <h1>Gadzhi Kharkharov</h1>
-          <p>
-            Software designer. Based in Moscow, Russia.<br />
-            <a href="/about">More about me</a>.
-          </p>
-        </div>
-      </header>
-      {% else %}
+  <body class="p-4 max-w-3xl mx-auto min-h-full sm:p-8">
+    <header class="mb-24">
+    {% block header %}
       <nav>
         <a href="/" style="vertical-align: bottom">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
             <rect fill=currentColor width=16 height=16 rx="2">
-
             </rect>
           </svg>
         </a>
       </nav>
-      {% endif %}
+    {% endblock %}
+    </header>
 
-    {{content | safe}}
-    
+    {% block content %}
+      {{content | safe}}
+    {% endblock %}
 
     <footer></footer>
 
