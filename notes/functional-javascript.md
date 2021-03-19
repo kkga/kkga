@@ -12,6 +12,8 @@ tags:
 -   https://frontendmasters.com/courses/functional-first-steps
 -   https://observablehq.com/collection/@anjana/functional-javascript-first-steps
 
+---
+
 ## Pure functions
 
 ### Avoid side effects
@@ -75,4 +77,41 @@ function renameThesis(oldThesis, newName) {
 const thesis2 = renameThesis(thesis, "Church-Turing");
 thesis; // {name: "Church's", date: 1936}
 thesis2; // {name: "Church-Turing", date: 1936}
+```
+
+---
+
+## Recursion
+
+**Iteration** -- imperative, looping, stateful
+**Recursion** -- functional, self-referential, stateless
+
+#### Iteration:
+
+```javascript
+function sum(numbers) {
+	let total = 0;
+	for (i = 0; i < numbers.length; i++) {
+		total += numbers[i];
+	}
+	return total;
+}
+
+sum([0, 1, 2, 3, 4]); // 10
+```
+
+#### Recursion:
+
+```javascript
+function sum(numbers) {
+	if (numbers.length === 1) {
+		// base case
+		return numbers[0];
+	} else {
+		// recursive case
+		return numbers[0] + sum(numbers.slice(1));
+	}
+}
+
+sum([0, 1, 2, 3, 4]); // 10
 ```
