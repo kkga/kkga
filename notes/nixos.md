@@ -3,6 +3,7 @@ title: NixOS
 tags:
   - software
   - linux
+date: 2021-01-15
 ---
 
 [NixOS](https://nixos.org/) is a linux distribution with a unique approach to package and configuration management. Built on top of the Nix package manager, it is completely declarative.
