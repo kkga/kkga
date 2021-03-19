@@ -7,7 +7,7 @@
     @apply bg-gray-100;
   }
   body {
-    @apply bg-white;
+    @apply bg-white font-sans;
   }
   h1 {
     @apply font-semibold text-4xl tracking-tight mb-1;
