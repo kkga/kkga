@@ -14,11 +14,11 @@ tags:
 
 ## Pure functions
 
-#### Avoid side effects
+### Avoid side effects
 
 Do nothing but return output based on nothing but input.
 
-Imperative:
+#### Imperative:
 
 ```javascript
 let name = "Alonzo";
@@ -32,7 +32,7 @@ console.log(`${greeting}, ${name}!`);
 // Howdy, Alonzo!
 ```
 
-Functional:
+#### Functional:
 
 ```javascript
 function greet(greeting, name) {
@@ -46,7 +46,7 @@ greet("Howdy", "Alan");
 // "Howdy, Alan!
 ```
 
-Side effects:
+#### Side effects:
 
 ```javascript
 let thesis = { name: "Church's", date: 1936 };
@@ -60,7 +60,7 @@ renameThesis("Church-Turing"); // Renamed!
 thesis; //{name: "Church-Turing", date: 1936}
 ```
 
-No side effects:
+#### No side effects:
 
 ```javascript
 const thesis = { name: "Church's", date: 1936 };
