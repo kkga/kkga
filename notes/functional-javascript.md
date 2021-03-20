@@ -9,8 +9,8 @@ tags:
 
 #### Resources
 
--   https://frontendmasters.com/courses/functional-first-steps
--   https://observablehq.com/collection/@anjana/functional-javascript-first-steps
+- [Course on Frontend Masters](https://frontendmasters.com/courses/functional-first-steps)
+- [Observable notebooks](https://observablehq.com/collection/@anjana/functional-javascript-first-steps)
 
 ---
 
