@@ -8,23 +8,31 @@ tags:
   - void
 ---
 
-After going through a variety of Linux distributions (from PopOS/Fedora to Arch and NixOS), I’ve settled on [Void Linux][void]. It’s a great blend of stability and simplicity with rolling-release model.
+After going through a variety of Linux distributions (from PopOS/Fedora to Arch
+and NixOS), I’ve settled on [Void Linux][void]. It’s a great blend of stability
+and simplicity with rolling-release model.
 
 [void]: https://voidlinux.org/
 
 ## Installation
 
-Void install process is straightforward: follow the steps in the TUI installer. I’ve used the base minimal ISO without any desktop environments.
+Void install process is straightforward: follow the steps in the TUI installer.
+I’ve used the base minimal ISO without any desktop environments.
 
 ## Initial setup
 
-Void has an excellent [handbook][void-handbook] that covers everything you need to know in order to setup a working system.
+Void has an excellent [handbook][void-handbook] that covers everything you need
+to know in order to setup a working system.
 
 ## Package management
 
-The package manager in Void is [xbps](/notes/xbps). It’s a collection of several programs for performing various tasks. It’s very fast and reliable: I’ve never had any problems during upgrades.
+The package manager in Void is [xbps](/notes/xbps). It’s a collection of several
+programs for performing various tasks. It’s fast and reliable: I’ve never had
+any problems during upgrades.
 
-While it’s useful to get comfortable interacting with the package manager directly, Void also provides a collection of handy helper scripts under the `xtools` package:
+While it’s useful to get comfortable interacting with the package manager
+directly, Void also provides a collection of handy helper scripts under the
+`xtools` package:
 
 | Command                 | Description                                                |
 | ----------------------- | ---------------------------------------------------------- |
@@ -49,7 +57,8 @@ See [manpage](https://man.voidlinux.org/xtools) for `xtools` for more info.
 
 ### System snapshots
 
-If using BTRFS filesystem, `snapper` can be set up for automatic snapshot creation.
+If using BTRFS filesystem, `snapper` can be set up for automatic snapshot
+creation.
 
 1. Install `snapper` and `snooze`.
 
@@ -80,8 +89,9 @@ $ echo 'xpkg -m > /home/kkga/void-pkglist.txt' >> /etc/cron.daily/pkglist-update
 
 Void's handbook has a section on [how runit works][runit].
 
-One thing to note though, is how trivial it is to create user services for programs you want to
-run as daemons[^syncthing]. Check the dedicated section on [user-services][user-services].
+One thing to note though, is how trivial it is to create user services for
+programs you want to run as daemons[^syncthing]. Check the dedicated section on
+[user-services][user-services].
 
 ---
 
@@ -91,12 +101,13 @@ These are mostly for myself and are not directly related to Void.
 
 ### Fonts
 
-- if Firefox isn't displaying some charactes, install the `noto-fonts-ttf` package;
+- if Firefox isn't displaying some charactes, install the `noto-fonts-ttf`
+  package;
 
 ### External display brightness
 
-Use either the `ddcutil` package (requires `i2c-dev` kernel module loaded) or install the
-`ddcci-dkms` package and use any regular backlight utility.
+Use either the `ddcutil` package (requires `i2c-dev` kernel module loaded) or
+install the `ddcci-dkms` package and use any regular backlight utility.
 
 #### Using ddcutil
 
@@ -129,8 +140,9 @@ Use the backlight utility as usual.
 
 ### Realtek ethernet
 
-Ethernet on newest Realtek cards (R8125) doesn't work out of the box (as of Linux 5.9). Download
-the Linux driver from Realtek website and follow the instructions.
+Ethernet on newest Realtek cards (R8125) doesn't work out of the box (as of
+Linux 5.9). Download the Linux driver from Realtek website and follow the
+instructions.
 
 ---
 
@@ -153,4 +165,6 @@ the Linux driver from Realtek website and follow the instructions.
 [runit]: https://docs.voidlinux.org/config/services/index.html
 [user-services]: https://docs.voidlinux.org/config/services/user-services.html
 
-[^syncthing]: For example, I'm starting [syncthing](https://syncthing.net) as a user-service, instead of polluting my `.xinitrc`.
+[^syncthing]:
+    For example, I'm starting [syncthing](https://syncthing.net) as a
+    user-service, instead of polluting my `.xinitrc`.

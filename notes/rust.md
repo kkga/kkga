@@ -16,9 +16,11 @@ tags:
 - Intro: <https://fasterthanli.me/articles/a-half-hour-to-learn-rust>
 - (\*) <https://livevideo.manning.com/module/42_1_1/rust-in-motion/>
 - sokoban: <https://github.com/iolivia/rust-sokoban>
-- (\*) roguelike 1: <https://bfnightly.bracketproductions.com/rustbook/chapter_0.html>
+- (\*) roguelike 1:
+  <https://bfnightly.bracketproductions.com/rustbook/chapter_0.html>
 - roguelike 2: <http://tomassedovic.github.io/roguelike-tutorial/>
-- roguelike 3: <https://aimlesslygoingforward.com/blog/2019/02/09/writing-a-rust-roguelike-for-the-desktop-and-the-web/>
+- roguelike 3:
+  <https://aimlesslygoingforward.com/blog/2019/02/09/writing-a-rust-roguelike-for-the-desktop-and-the-web/>
 
 ## collections
 

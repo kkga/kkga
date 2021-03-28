@@ -32,7 +32,7 @@ pre[class*="language-"] {
 
 .token.string,
 .token.attr-value {
-  color: #005F00;
+  color: #005f00;
 }
 
 .token.punctuation,
@@ -50,7 +50,7 @@ pre[class*="language-"] {
 .token.property,
 .token.regex,
 .token.inserted {
-  color: #005FD7;
+  color: #005fd7;
 }
 
 .token.atrule,

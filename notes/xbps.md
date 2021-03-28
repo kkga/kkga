@@ -3,13 +3,13 @@ title: XBPS
 description: Short guide on the Void Linux package repository.
 date: 2021-01-15
 tags:
-   - software
-   - linux
-   - void
+  - software
+  - linux
+  - void
 ---
 
-Void provides a comprehensive [manual][manual] on how to work with the source packages.
-This guide is focused on a small subset of tasks I often do myself.
+Void provides a comprehensive [manual][manual] on how to work with the source
+packages. This guide is focused on a small subset of tasks I often do myself.
 
 [manual]: https://github.com/void-linux/void-packages/blob/master/Manual.md
 
