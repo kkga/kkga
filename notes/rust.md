@@ -1,5 +1,6 @@
 ---
 title: Rust resources
+date: 2021-01-15
 tags:
   - software
   - programming

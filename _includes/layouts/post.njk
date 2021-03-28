@@ -3,7 +3,7 @@ layout: layouts/base.njk
 ---
 
 <article>
-	<header>
+	<header class="my-16">
 		<h1>
 		{% if title %}
 		{{ title }}
@@ -12,21 +12,19 @@ layout: layouts/base.njk
 		{% endif %}
 		</h1>
 
-		<div class="page-meta">
+		<div class="text-sm text-gray-500">
 			{% if description %}
-			<p class="page-description">
-			{{ description }}
-			</p>
+			{{ description }}<br/>
 			{% endif %}
 
-			Updated on: <date class="page-date">{{ page.date | readableDate }}</date>
+			Updated <date>{{ page.date | readableDate }}</date>
 
 			{% if tags %}
 			&nbsp;&middot;&nbsp;
-			<ul class="page-tags">
+			<ul class="inline">
 			{% for tag in tags %}
 			  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-			  <li><a href="{{ tagUrl | url }}">#{{ tag }}</a></li>
+			  <li class="inline"><a class="text-current" href="{{ tagUrl | url }}">#{{ tag }}</a></li>
 			{% endfor %}
 			</ul>
 			{% endif %}

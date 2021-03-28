@@ -1,15 +1,15 @@
-<ul class="listing">
+<ul class="list-none">
 {% for item in list | reverse %}
-    <li class="listing-item">
-		<a class="listing-item-link" href="{{ item.url | url }}">
-			<h3 class="listing-item-title">
+    <li class="py-2">
+		<a class="inline-block text-current" href="{{ item.url | url }}">
+			<h3 class="text-base my-0">
 			{% if item.data.title %}{{ item.data.title }}
 			{% elseif item.url %}{{ item.url }}
 			{% else %}{{ item }}
 			{% endif %}
 			</h3>
 		</a>
-		<div class="listing-item-meta">
+		<div class="text-sm text-gray-500">
 			{% if item.data.description %}
 			{{ item.data.description }}
 			{% endif %}
