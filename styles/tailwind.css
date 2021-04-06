@@ -45,7 +45,7 @@
     @apply table-auto w-full;
   }
   pre {
-    @apply whitespace-pre text-xs leading-tight bg-gray-50 p-2 -mx-2;
+    @apply overflow-x-auto whitespace-pre text-xs leading-tight bg-gray-50 p-2 -mx-2;
   }
   code {
     @apply text-sm;
