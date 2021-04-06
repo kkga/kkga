@@ -2,8 +2,8 @@
 title: Kakoune
 date: 2021-04-06
 tags:
-	- kakoune
-	- setup
+  - kakoune
+  - setup
 ---
 
 ## Poor man's snippets in Kakoune
@@ -15,7 +15,7 @@ I have a folder of snippet files at `~/.config/kak/snippets/`. Each file is a
 `.txt` with the contents of what I want inserted. For example, here's a snippet
 for inserting a YAML frontmatter in markdown files.
 
-```txt
+```
 ---
 title: $1
 date: $2
