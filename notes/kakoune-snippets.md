@@ -1,12 +1,10 @@
 ---
-title: Kakoune
+title: Poor man's snippets in Kakoune
 date: 2021-04-06
 tags:
   - kakoune
   - setup
 ---
-
-## Poor man's snippets in Kakoune
 
 I wanted a simple, no-plugins solution for inserting various bits of text into
 the buffer. Here's what I came up with.
@@ -35,7 +33,7 @@ define-command insert-snippet -params 1 -menu -shell-script-candidates %{
 It populates the command completion menu with filenames from the snippets
 folder. Once a snippet is selected:
 
-- it inserts its content into the buffer;
+- it inserts file contents into the buffer;
 - selects all patterns matching `\$\d` (`$1`, `$2`, etc);
 - moves to the first selected pattern.
 
