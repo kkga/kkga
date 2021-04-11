@@ -47,6 +47,8 @@ tags:
 
 - note: initially had issues with sound device not working: had to add
   `options snd_hda_intel dmic_detect=0 ` in `modprobe.d`;
+  - update 2021-04-11: as of Linux 5.11, removed any extra options -- both audio
+    and mic work fine
 - install `pipewire`, enable `pipewire-pulse` in pipewire config;
 - start `pipewire` as a user on desktop login;
   - note: maybe create a user runit service for it;
