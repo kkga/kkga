@@ -17,6 +17,8 @@ tags:
 
 - blacklist `ideapad_laptop` module in `modprobe.d` (old module that isn't
   useful anymore);
+  - update 2021-04-11: as of Linux 5.11, removed the blacklist -- module is not
+    loaded automatically anymore
 
 ## Power management
 
