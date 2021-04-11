@@ -61,3 +61,5 @@ tags:
   issues so far;
 - `elogind` and `dbus` are required for Sway;
 - start sway with `dbus-run-session sway`;
+  - `libseat` might show an error about `seatd` not present, can be removed by
+    exporting `LIBSEAT_BACKEND=logind` before starting Sway
