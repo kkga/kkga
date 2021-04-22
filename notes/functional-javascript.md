@@ -83,8 +83,8 @@ thesis2; // {name: "Church-Turing", date: 1936}
 
 ## Recursion
 
-**Iteration** -- imperative, looping, stateful **Recursion** -- functional,
-self-referential, stateless
+- **Iteration** -- imperative, looping, stateful
+- **Recursion** -- functional, self-referential, stateless
 
 #### Iteration:
 
