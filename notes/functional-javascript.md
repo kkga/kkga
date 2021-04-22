@@ -184,9 +184,7 @@ function filter(predicateFn, array) {
 ```javascript
 wholes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 greaterThanFour = filter(
-  (n) => {
-    return n > 4;
-  },
+  (n) => n > 4,
   wholes,
 );
 // greaterThanFour is [5,6,7,8,9,10]
