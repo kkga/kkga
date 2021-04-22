@@ -251,12 +251,15 @@ function reduce(reducerFn, initialValue, array) {
 
 ```javascript
 wholes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-sum = reduce(
-  (accumulator, value) => {
-    return accumulator + value;
-  },
-  0,
-  wholes,
-);
+sum = reduce((accumulator, value) => accumulator + value, 0, wholes);
 // sum is 55
+```
+
+```javascript
+max = reduce(
+  (accumulator, value) => (value > accumulator ? value : accumulator),
+  0,
+  [7, 1, 3, 5, 6, 2, 8, 10, 0, 4, 9],
+);
+// sum is 10
 ```
