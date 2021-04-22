@@ -213,6 +213,16 @@ doubled = map((n) => n * 2, wholes);
 // doubled is [0,2,4,6,8,10,12,14,16,18,20]
 ```
 
+```javascript
+wholes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+fizzBuzz = map((n) => {
+  const fizz = n % 3 === 0 ? "fizz" : "";
+  const buzz = n % 5 === 0 ? "buzz" : "";
+  return fizz || buzz ? fizz + buzz : n;
+}, wholes);
+// fizzBuzz is [fizzbuzz,1,2,fizz,4,buzz,fizz,7,8,fizz,buzz]
+```
+
 ### Reduce
 
 The `reduce` function is the odd one of the bunch. Unlike `filter` and `map`,
