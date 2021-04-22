@@ -158,7 +158,8 @@ The higher-order functions `filter()`, `map()`, and `reduce()` are three of the
 most useful tools in a functional programmer's toolbox. Let's dig into how they
 work & how to use them.
 
-Link to my fork of exercises: https://observablehq.com/d/3003212404713bcf
+Link to my fork of exercises on Observable:
+https://observablehq.com/d/3003212404713bcf
 
 ### Filter
 
@@ -167,13 +168,28 @@ value and returns a boolean) and an array, applies the predicate function to
 each value in the array, and returns a new array with only those values for
 which the predicate function returns true.
 
+Here's a recursive implementation of the `filter()` function:
+
 ```javascript
 function filter(predicateFn, array) {
+  // base case
   if (length(array) === 0) return [];
+  // recursive case
   const firstItem = head(array);
   const filteredFirst = predicateFn(firstItem) ? [firstItem] : [];
   return concat(filteredFirst, filter(predicateFn, tail(array)));
 }
+```
+
+```javascript
+wholes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+greaterThanFour = filter(
+  (n) => {
+    return n > 4;
+  },
+  wholes,
+);
+// greaterThanFour is [5,6,7,8,9,10]
 ```
 
 ### Map
@@ -184,7 +200,9 @@ values.
 
 ```javascript
 function map(fn, array) {
+  // base case
   if (length(array) === 0) return [];
+  // recursive case
   const first = head(array);
   const mappedFirst = [fn(first)];
   return concat(mappedFirst, map(fn, tail(array)));
@@ -194,7 +212,7 @@ function map(fn, array) {
 ```javascript
 wholes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 doubled = map((n) => n * 2, wholes);
-// [0,2,4,6,8,10,12,14,16,18,20]
+// doubled is [0,2,4,6,8,10,12,14,16,18,20]
 ```
 
 ### Reduce
@@ -215,7 +233,9 @@ value.
 
 ```javascript
 function reduce(reducerFn, initialValue, array) {
+  // base case
   if (length(array) === 0) return initialValue;
+  // recursive case
   const newInitialValue = reducerFn(initialValue, head(array));
   return reduce(reducerFn, newInitialValue, tail(array));
 }
@@ -225,7 +245,6 @@ function reduce(reducerFn, initialValue, array) {
 wholes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 sum = reduce(
   (accumulator, value) => {
-    // TODO your code here
     return accumulator + value;
   },
   0,
