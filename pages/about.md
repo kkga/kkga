@@ -39,7 +39,8 @@ of my favorite [game design books and resources](/notes/gamedesign-resources).
 
 ### Elsewhere
 
+- Email: [me@kkga.me](mailto:me@kkga.me)
+- Matrix: [@kkga:matrix.org](https://matrix.to/#/@kkga:matrix.org)
 - Twitter: [@kkga\_](https://twitter.com/kkga_)
 - GitHub: [kkga](https://github.com/kkga)
 - Flickr: [gadzhi](https://flickr.com/gadzhi)
-- Email: [me@kkga.me](mailto:me@kkga.me)
