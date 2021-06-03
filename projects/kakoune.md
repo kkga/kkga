@@ -12,8 +12,10 @@ tags:
 - [gdscript.kak][gdscript.kak] -- syntax hightlighting for
   [Godot](https://godotengine.org)'s GDScript
 - [foot.kak][foot.kak] -- integration for [foot](https://codeberg.org/dnkl/foot)
+- [todo.kak][todo.kak] -- toggle checkboxes
 
 [saturn.kak]: https://github.com/kkga/saturn.kak
 [gdscript.kak]: https://github.com/kkga/gdscript.kak
 [envy.kak]: https://github.com/kkga/envy.kak
 [foot.kak]: https://github.com/kkga/foot.kak
+[todo.kak]: https://github.com/kkga/todo.kak
