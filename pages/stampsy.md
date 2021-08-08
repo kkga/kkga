@@ -1,6 +1,6 @@
 ---
 title: Stampsy
-description: Platform for sharing visual stories.
+description: Platform for sharing visual stories
 layout: post
 tags: work
 date: 2019-11-18

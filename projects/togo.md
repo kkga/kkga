@@ -1,6 +1,6 @@
 ---
 title: togo
-description: CLI task manager for todo.txt.
+description: CLI task manager for todo.txt
 date: 2020-12-03
 tags:
   - projects

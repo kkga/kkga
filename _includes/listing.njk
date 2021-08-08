@@ -14,7 +14,7 @@
 			{{ item.data.description }}
 			{% endif %}
 			{% if item.date %}
-			<time class="listing-item-date" datetime="{{ item.date | htmlDateString }}">{{ item.date | readableDate }}</time>
+			(<time class="listing-item-date" datetime="{{ item.date | htmlDateString }}">{{ item.date | readableDate }}</time>)
 			{% endif %}
 		</div>
     </li>

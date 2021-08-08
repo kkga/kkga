@@ -1,6 +1,6 @@
 ---
 title: Spacegray
-description: UI theme for Sublime Text.
+description: UI theme for Sublime Text
 date: 2013-12-31
 tags:
   - projects

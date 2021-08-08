@@ -1,6 +1,6 @@
 ---
 title: Webflow
-description: Some of the projects I've worked on at Webflow.
+description: Some of the projects I've worked on at Webflow during 2015-2021
 layout: post
 date: 2021-08-08
 permalink: webflow/

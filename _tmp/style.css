@@ -596,14 +596,18 @@ h3 {
 }
 
 h4 {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0px;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 700;
 }
 
-p, figure, video, ul, table, pre {
+p {
+  margin-bottom: 1rem;
+}
+
+figure, video, ul, table, pre {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
