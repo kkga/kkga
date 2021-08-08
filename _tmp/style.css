@@ -356,7 +356,7 @@ ul {
  */
 
 html {
-  font-family: Rubik, sans-serif; /* 1 */
+  font-family: Inter, sans-serif; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -565,29 +565,24 @@ video {
 
 html {
   --tw-bg-opacity: 1;
-  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
-}
-
-body {
-  --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
-  font-family: Rubik, sans-serif;
+  font-family: Inter, sans-serif;
 }
 
 h1 {
   margin-bottom: 0.25rem;
   font-size: 2.25rem;
   line-height: 2.5rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.025em;
 }
 
 h2 {
   margin-top: 2rem;
   margin-bottom: 1rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 600;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
   letter-spacing: -0.025em;
 }
 
@@ -596,17 +591,16 @@ h3 {
   margin-bottom: 1rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.025em;
 }
 
 h4 {
   margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: 600;
-  letter-spacing: -0.025em;
+  margin-bottom: 0px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
 }
 
 p, figure, video, ul, table, pre {
@@ -672,8 +666,8 @@ a:hover {
 figcaption {
   margin-top: 0.25rem;
   text-align: center;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   --tw-text-opacity: 1;
   color: rgba(107, 114, 128, var(--tw-text-opacity));
 }
@@ -681,6 +675,14 @@ figcaption {
 hr {
   margin-top: 2rem;
   margin-bottom: 2rem;
+  border-color: currentColor;
+}
+
+small {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgba(107, 114, 128, var(--tw-text-opacity));
 }
 
 .container {
@@ -22452,7 +22454,7 @@ hr {
 }
 
 .font-sans {
-  font-family: Rubik, sans-serif;
+  font-family: Inter, sans-serif;
 }
 
 .text-xs {
@@ -53683,7 +53685,7 @@ hr {
   }
 
   .sm\:font-sans {
-    font-family: Rubik, sans-serif;
+    font-family: Inter, sans-serif;
   }
 
   .sm\:text-xs {
@@ -84902,7 +84904,7 @@ hr {
   }
 
   .md\:font-sans {
-    font-family: Rubik, sans-serif;
+    font-family: Inter, sans-serif;
   }
 
   .md\:text-xs {
@@ -116121,7 +116123,7 @@ hr {
   }
 
   .lg\:font-sans {
-    font-family: Rubik, sans-serif;
+    font-family: Inter, sans-serif;
   }
 
   .lg\:text-xs {
@@ -147340,7 +147342,7 @@ hr {
   }
 
   .xl\:font-sans {
-    font-family: Rubik, sans-serif;
+    font-family: Inter, sans-serif;
   }
 
   .xl\:text-xs {
@@ -178559,7 +178561,7 @@ hr {
   }
 
   .\32xl\:font-sans {
-    font-family: Rubik, sans-serif;
+    font-family: Inter, sans-serif;
   }
 
   .\32xl\:text-xs {
