@@ -6,6 +6,12 @@ layout: layouts/base.njk
 	{% if title %}
 	<h1>{{ title }}</h1>
 	{% endif %}
+
+	<div class="text-gray-500">
+		{% if description %}
+		{{ description }}<br/>
+		{% endif %}
+	</div>
 </header>
 
 {{ content | safe }}

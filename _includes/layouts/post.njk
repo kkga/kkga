@@ -12,19 +12,19 @@ layout: layouts/base.njk
 		{% endif %}
 		</h1>
 
-		<div class="text-sm text-gray-500">
+		<div class="text-gray-500">
 			{% if description %}
 			{{ description }}<br/>
 			{% endif %}
 
-			Updated <date>{{ page.date | readableDate }}</date>
+			updated <date>{{ page.date | readableDate }}</date>
 
 			{% if tags %}
 			&nbsp;&middot;&nbsp;
 			<ul class="inline">
 			{% for tag in tags %}
 			  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-			  <li class="inline"><a class="text-current" href="{{ tagUrl | url }}">#{{ tag }}</a></li>
+			  <li class="inline"><a href="{{ tagUrl | url }}">#{{ tag }}</a></li>
 			{% endfor %}
 			</ul>
 			{% endif %}

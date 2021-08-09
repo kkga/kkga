@@ -3,6 +3,8 @@ title: About
 date: 2021-08-08
 permalink: about/
 layout: post
+eleventyNavigation:
+  key: about
 ---
 
 <div class="grid grid-cols-1 gap-8 md:grid-cols-6">

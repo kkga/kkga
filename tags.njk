@@ -10,8 +10,8 @@ pagination:
   addAllPagesToCollections: true
 layout: page
 eleventyComputed:
-  title: Tagged “{{ tag }}”
-permalink: /tags/{{ tag }}/
+  title: "#{{ tag }}"
+permalink: /tags/{{ tag | slug }}/
 ---
 
 {% set list = collections[ tag ] %}
