@@ -9,7 +9,7 @@ permalink: stampsy/
 
 ## Stampsy web, 2014
 
-Worked as a designer (and partly as a front-end engineer) at Stampsy — a web
+Worked as a designer (and partly as a front-end engineer) at Stampsy--a web
 platform for sharing and discovering visual stories. I designed the product and
 built a modular CSS architecture behind it.
 

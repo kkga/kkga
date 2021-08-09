@@ -9,8 +9,8 @@ layout: post
 
 <div class="md:col-span-4">
 
-My name is Gadzhi Kharkharov. I was born in
-[Dagestan](https://wikipedia.org/wiki/Dagestan), but currently living in Moscow.
+My name is Gadzhi Kharkharov. Born in
+[Dagestan](https://wikipedia.org/wiki/Dagestan), living in Moscow.
 
 Designing software is what I do for work and joy.
 
