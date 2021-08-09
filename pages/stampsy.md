@@ -9,7 +9,7 @@ permalink: stampsy/
 
 Stampsy is a social platform for sharing and discovering visual stories.
 
-I worked with the team during 2012--2015 and it was the first start-up company I
+I worked with the team during 2012--2014 and it was the first start-up company I
 joined full-time after doing mostly freelance work.
 
 ---
@@ -44,7 +44,7 @@ styled React components.
 <video controls autoplay loop muted width="100%">
   <source src="/img/about/stampsy/stampsy-site.mp4" />
 </video>
-<figcaption>Marketing website</figcaption>
+<figcaption>Marketing website I designed in 2014</figcaption>
 </figure>
 
 ![Feed view](/img/about/stampsy/stampsy-web-0.png)
