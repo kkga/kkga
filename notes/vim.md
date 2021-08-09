@@ -8,7 +8,7 @@ tags:
 ---
 
 If I had to choose one single piece of software, I'd choose
-[Vim](<https://en.wikipedia.org/wiki/Vim_(text_editor)>).
+[Vim](https://en.wikipedia.org/wiki/Vim_(text_editor)).
 
 I've only been a Vim user for a couple years, but I think I'm going to use it
 (or some future reincarnation of it) for the rest of my life. It takes a while
