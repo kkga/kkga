@@ -612,6 +612,10 @@ figure, video, ul, table, pre {
   margin-bottom: 1rem;
 }
 
+figure video, figure img {
+  margin: 0px;
+}
+
 ul {
   list-style-position: inside;
   list-style-type: disc;

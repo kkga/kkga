@@ -28,6 +28,10 @@
   pre {
     @apply my-4;
   }
+  figure video,
+  figure img {
+    @apply m-0;
+  }
   ul {
     @apply list-disc list-inside;
   }
