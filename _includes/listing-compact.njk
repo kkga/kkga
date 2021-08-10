@@ -1,0 +1,14 @@
+<ul class="list-none m-0 md:grid md:grid-cols-2">
+{% for item in list | reverse %}
+    {% if item.url != page.url %}
+    <li class="py-1">
+		<a class="inline-block text-current font-bold" href="{{ item.url | url }}">
+			{% if item.data.title %}{{ item.data.title }}
+			{% elseif item.url %}{{ item.url }}
+			{% else %}{{ item }}
+			{% endif %}
+		</a>
+    </li>
+    {% endif %}
+{% endfor %}
+</ul>

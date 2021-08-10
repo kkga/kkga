@@ -1,5 +1,6 @@
 <ul class="list-none">
 {% for item in list | reverse %}
+    {% if item.url != page.url %}
     <li class="py-2">
 		<a class="inline-block text-current" href="{{ item.url | url }}">
 			<h3 class="text-base my-0">
@@ -18,5 +19,6 @@
 			{% endif %}
 		</div>
     </li>
+    {% endif %}
 {% endfor %}
 </ul>

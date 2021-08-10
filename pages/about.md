@@ -48,11 +48,13 @@ of my favorite [game design books and resources](/notes/gamedesign-resources).
 
 <img class="w-32 md:w-full" src="/img/about/face.jpg" />
 
-- Email: [me@kkga.me](mailto:me@kkga.me)
-- Matrix: [@kkga:matrix.org](https://matrix.to/#/@kkga:matrix.org)
-- Twitter: [@kkga\_](https://twitter.com/kkga_)
-- GitHub: [kkga](https://github.com/kkga)
-- Flickr: [gadzhi](https://flickr.com/gadzhi)
+<ul class="list-none text-sm">
+  <li><a href="mailto:me@kkga.me">me@kkga.me</a></li>
+  <li><a href="https://twitter.com/kkga_">twitter.com/kkga_</a></li>
+  <li><a href="https://matrix.to/#/@kkga:matrix.org">@kkga:matrix.org</a></li>
+  <li><a href="https://github.com/kkga">github.com/kkga</a></li>
+  <li><a href="https://flickr.com/gadzhi">flickr.com/gadzhi</a></li>
+</ul>
 
 </div>
 
