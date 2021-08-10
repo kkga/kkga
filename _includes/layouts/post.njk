@@ -38,7 +38,7 @@ layout: layouts/base.njk
 
     {% for tag in tags  %}
         {% if collections[ tag ] | length > 1 %}
-        <div class="text-sm p-4 bg-gray-50 my-4">
+        <div class="text-sm mb-8">
     		{% set tagUrl %}/tags/{{ tag }}/{% endset %}
     		<h5 class="mb-2 font-bold text-gray-500 text-xs text-current uppercase tracking-wide">More in <a href="{{ tagUrl | url }}">#{{ tag }}</a></h5>
             {% set list = collections[ tag ] %}
