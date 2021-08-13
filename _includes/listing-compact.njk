@@ -1,7 +1,7 @@
-<ul class="list-none m-0 md:grid md:grid-cols-2">
+<ul class="list-none m-0 md:grid md:grid-cols-3 gap-2">
 {% for item in list | reverse %}
     {% if item.url != page.url %}
-    <li class="py-1">
+    <li>
 		<a class="inline-block text-current font-bold" href="{{ item.url | url }}">
 			{% if item.data.title %}{{ item.data.title }}
 			{% elseif item.url %}{{ item.url }}

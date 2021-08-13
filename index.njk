@@ -9,31 +9,33 @@ Software designer. Based in Moscow, Russia.<br />
 {% block content %}
 <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
 	<div>
-		<h2 class="my-2 text-gray-500 text-sm uppercase tracking-wide">Projects</h2>
-		{% set list = collections.projects | head(-6) %}
-		{% include "listing.njk" %}
-	</div>
-
-	<div>
-		<h2 class="my-2 text-gray-500 text-sm uppercase tracking-wide">Work</h2>
+		<h2 class="my-2 text-gray-500 text-base font-normal">Work</h2>
 		{% set list = collections.work | head(-6) %}
 		{% include "listing.njk" %}
 	</div>
 
 	<div>
-		<h2 class="my-2 text-gray-500 text-sm uppercase tracking-wide ">Notes</h2>
-		{% set list = collections.notes | head(-6) %}
-		{% set length = collections.notes | length %}
+		<h2 class="my-2 text-gray-500 text-base font-normal">Projects</h2>
+		{% set list = collections.projects | head(-6) %}
+		{% set length = collections.projects | length %}
 		{% include "listing.njk" %}
-		<a class="text-sm" href="/tags/note">See all {{length}} notes &rarr;</a>
+		<a class="text-sm" href="/tags/projects">All {{length}} projects &rarr;</a>
 	</div>
 
 	<div>
-		<h2 class="my-2 text-gray-500 text-sm uppercase tracking-wide">Dlog</h2>
+		<h2 class="my-2 text-gray-500 text-base font-normal">Notes</h2>
+		{% set list = collections.notes | head(-6) %}
+		{% set length = collections.notes | length %}
+		{% include "listing.njk" %}
+		<a class="text-sm" href="/tags/note">All {{length}} notes &rarr;</a>
+	</div>
+
+	<div>
+		<h2 class="my-2 text-gray-500 text-base font-normal">Dlog</h2>
 		{% set list = collections.dlog | head(-6) %}
 		{% set length = collections.notes | length %}
 		{% include "listing.njk" %}
-		<a class="text-sm" href="/tags/dlog">See all {{length}} dlog entries &rarr;</a>
+		<a class="text-sm" href="/tags/dlog">All {{length}} dlog entries &rarr;</a>
 	</div>
 </div>
 {% endblock %}

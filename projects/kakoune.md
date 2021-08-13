@@ -5,6 +5,7 @@ date: 2021-05-04
 tags:
   - projects
   - kakoune
+  - vim
 ---
 
 Being a [Vim user](/notes/vim), I've been experimenting with
