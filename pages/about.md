@@ -36,7 +36,7 @@ behind it.<br/> **[Learn more about my work Stampsy ->](/stampsy)**
 Recently I became interested in video
 [game design and development](/tags/gamedev). It's a fun area that is hard to
 master and I try to spend my free time tinkering with various personal projects.
-I have a [dlog](/tags/dlog) where I sometime post (very rough) updates on this
+I have a [dlog](/tags/dlog) where I sometimes post (very rough) updates on this
 journey.
 
 I also enjoy reading about game design theory and practice. Here's a collection
