@@ -13,7 +13,7 @@ Being a [Vim user](/notes/vim), I've been experimenting with
 for doing any sorts of text- or code-editing. It's a delightful piece of
 software that improves on many Vim concepts. I could never describe it better
 than
-[Screwtapello did](https://gist.github.com/Screwtapello/563628f777f0fc9f4d5fb681058d63ec).
+[Screwtape did](https://gist.github.com/Screwtapello/563628f777f0fc9f4d5fb681058d63ec).
 
 Here's a list of various small (and mostly useless) plugins I've created for
 Kakoune.
