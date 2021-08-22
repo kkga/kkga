@@ -11,10 +11,14 @@ eleventyNavigation:
 
 <div class="md:col-span-4">
 
-My name is Gadzhi Kharkharov. Born in
-[Dagestan](https://wikipedia.org/wiki/Dagestan), living in Moscow.
+<div class="text-lg">
+
+My name is Gadzhi. Born in [Dagestan](https://wikipedia.org/wiki/Dagestan),
+living in Moscow.
 
 Designing software is what I do for work and joy.
+
+</div>
 
 ### Work
 
@@ -48,7 +52,7 @@ of my favorite [game design books and resources](/notes/gamedesign-resources).
 
 <img class="w-32 md:w-full" src="/img/about/face.jpg" />
 
-<ul class="list-none text-sm">
+<ul class="list-none">
   <li><a href="mailto:me@kkga.me">me@kkga.me</a></li>
   <li><a href="https://twitter.com/kkga_">twitter.com/kkga_</a></li>
   <li><a href="https://matrix.to/#/@kkga:matrix.org">@kkga:matrix.org</a></li>

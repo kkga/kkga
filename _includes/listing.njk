@@ -10,12 +10,14 @@
 			{% endif %}
 			</h3>
 		</a>
-		<div class="text-sm text-gray-500">
+		{% if item.date %}
+		<div class="text-sm text-gray-500 inline-block">
+			/ <time datetime="{{ item.date | htmlDateString }}">{{ item.date | readableDate }}</time>
+        </div>
+		{% endif %}
+		<div class="text-sm">
 			{% if item.data.description %}
 			{{ item.data.description }}
-			{% endif %}
-			{% if item.date %}
-			(<time datetime="{{ item.date | htmlDateString }}">{{ item.date | readableDate }}</time>)
 			{% endif %}
 		</div>
     </li>

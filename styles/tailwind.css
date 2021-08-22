@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    @apply bg-white font-sans;
+    @apply bg-gray-200 font-sans;
   }
   h1 {
     @apply font-bold text-4xl tracking-tight mb-1;
@@ -48,7 +48,7 @@
     @apply table-auto w-full;
   }
   pre {
-    @apply overflow-x-auto whitespace-pre text-xs leading-tight bg-gray-50 p-4;
+    @apply overflow-x-auto whitespace-pre text-xs leading-tight bg-gray-50 p-3;
   }
   code {
     @apply text-sm;
