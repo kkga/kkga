@@ -29,6 +29,7 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
 
+  // Filters
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
     if (n < 0) {
@@ -36,15 +37,14 @@ module.exports = function (eleventyConfig) {
     }
     return array.slice(0, n);
   });
-
   eleventyConfig.addFilter("min", (...numbers) => {
     return Math.min.apply(null, numbers);
   });
 
+  // Collections
   eleventyConfig.addCollection("notes", function (collectionApi) {
     return collectionApi.getFilteredByGlob("notes/*.md");
   });
-
   eleventyConfig.addCollection("tagList", function (collection) {
     let tagSet = new Set();
     collection.getAll().forEach(function (item) {
@@ -75,13 +75,10 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.setUseGitIgnore(false);
-  eleventyConfig.addWatchTarget("./_tmp/style.css");
-  eleventyConfig.addPassthroughCopy({ "./_tmp/style.css": "./style.css" });
-  eleventyConfig.addPassthroughCopy({ "./styles/prism.css": "./prism.css" });
-  eleventyConfig.addPassthroughCopy("img");
-  eleventyConfig.addShortcode("version", function () {
-    return now;
+  eleventyConfig.addPassthroughCopy({
+    "./_includes/assets/prism.css": "./prism.css",
   });
+  eleventyConfig.addPassthroughCopy("img");
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
@@ -101,21 +98,21 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   // Browsersync Overrides
-  eleventyConfig.setBrowserSyncConfig({
-    callbacks: {
-      ready: function (_err, browserSync) {
-        const content_404 = fs.readFileSync("_site/404.html");
+  // eleventyConfig.setBrowserSyncConfig({
+  //   callbacks: {
+  //     ready: function (_err, browserSync) {
+  //       const content_404 = fs.readFileSync("_site/404.html");
 
-        browserSync.addMiddleware("*", (_req, res) => {
-          // Provides the 404 content without redirect.
-          res.write(content_404);
-          res.end();
-        });
-      },
-    },
-    ui: false,
-    ghostMode: false,
-  });
+  //       browserSync.addMiddleware("*", (_req, res) => {
+  //         // Provides the 404 content without redirect.
+  //         res.write(content_404);
+  //         res.end();
+  //       });
+  //     },
+  //   },
+  //   ui: false,
+  //   ghostMode: false,
+  // });
 
   return {
     templateFormats: ["md", "njk", "html", "liquid"],

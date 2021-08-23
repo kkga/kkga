@@ -8,7 +8,7 @@
     <meta name="description" content="{{ description or metadata.description }}">
 
     <link rel="shortcut icon" type="image/jpg" href="/img/about/face.jpg"/>
-    <link rel="stylesheet" href="/style.css?v={% version %}"/>
+    <link rel="stylesheet" href="/global.css"/>
     <link rel="stylesheet" href="{{ '/prism.css' | url }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">

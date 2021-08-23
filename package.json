@@ -1,21 +1,19 @@
 {
   "scripts": {
-    "dev": "eleventy --serve & postcss styles/tailwind.css --o _tmp/style.css --watch",
-    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss styles/tailwind.css --o _site/style.css && cleancss _site/style.css -o _site/style.css"
+    "dev": "eleventy --serve & tailwindcss -w -i _includes/assets/global.css -o _site/global.css",
+    "build": "eleventy && tailwindcss --minify -i _includes/assets/global.css -o _site/global.css",
+    "debug": "DEBUG=* eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-navigation": "^0.3.2",
     "@11ty/eleventy-plugin-rss": "^1.1.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.6",
-    "autoprefixer": "^10.2.5",
-    "clean-css-cli": "^5.2.1",
     "luxon": "^1.25.0",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.2.5",
     "markdown-it-implicit-figures": "^0.10.0",
-    "postcss": "^8.2.1",
-    "postcss-cli": "^8.3.1",
-    "tailwindcss": "^2.0.4"
+    "tailwindcss": "^2.0.4",
+    "autoprefixer": "^10.2.5"
   }
 }
