@@ -7,7 +7,7 @@ tags:
   - void
 ---
 
-![Sway running on Void Linux](/img/laptop-sway-void.png)
+![Sway running on Void Linux](/img/notes/laptop-sway-void.png)
 
 ## Hardware
 
@@ -48,7 +48,7 @@ tags:
 ## Sound
 
 - note: initially had issues with sound device not working: had to add
-  `options snd_hda_intel dmic_detect=0 ` in `modprobe.d`;
+  `options snd_hda_intel dmic_detect=0` in `modprobe.d`;
   - update 2021-04-11: as of Linux 5.11, removed any extra options -- both audio
     and mic work fine
 - install `pipewire`, enable `pipewire-pulse` in pipewire config;
