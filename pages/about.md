@@ -24,16 +24,17 @@ Designing software is what I do for work and joy.
 
 #### Webflow (2015--2021)
 
-Worked at [Webflow](https://webflow.com) -- a tool that makes producing for web
-more approachable. Mostly focused on figuring out how to create the right visual
-tools for designers.<br/> **[Learn more about my work at Webflow ->](/webflow)**
+Worked at [Webflow](https://webflow.com) -- a platform that makes producing for
+web more approachable. Mostly focused on figuring out how to create the right
+visual tools for designers.<br/>
+**[Learn more about my work at Webflow ->](/webflow)**
 
 #### Stampsy (2012--2014)
 
 Worked as a designer (and partly as a front-end engineer) at
-[Stampsy](https://stampsy.com) -- a web platform for sharing and discovering
-visual stories. I designed the product and built a modular CSS architecture
-behind it.<br/> **[Learn more about my work Stampsy ->](/stampsy)**
+[Stampsy](https://stampsy.com) -- a small web platform for creating and
+discovering visual stories. I designed the product and built a modular CSS
+architecture behind it.<br/> **[Learn more about my work Stampsy ->](/stampsy)**
 
 ### Game design
 

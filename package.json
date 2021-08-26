@@ -5,15 +5,15 @@
     "debug": "DEBUG=* eleventy"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
-    "@11ty/eleventy-navigation": "^0.3.2",
-    "@11ty/eleventy-plugin-rss": "^1.1.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.6",
-    "luxon": "^1.25.0",
-    "markdown-it": "^8.4.2",
-    "markdown-it-anchor": "^5.2.5",
-    "markdown-it-implicit-figures": "^0.10.0",
-    "tailwindcss": "^2.0.4",
-    "autoprefixer": "^10.2.5"
+    "@11ty/eleventy": "latest",
+    "@11ty/eleventy-navigation": "latest",
+    "@11ty/eleventy-plugin-rss": "latest",
+    "@11ty/eleventy-plugin-syntaxhighlight": "latest",
+    "luxon": "latest",
+    "markdown-it": "latest",
+    "markdown-it-anchor": "latest",
+    "markdown-it-implicit-figures": "latest",
+    "tailwindcss": "latest",
+    "autoprefixer": "latest"
   }
 }

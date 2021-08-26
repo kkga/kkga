@@ -60,7 +60,7 @@
     @apply mt-1 text-base text-gray-500 text-center;
   }
   hr {
-    @apply my-8 border-current;
+    @apply my-8;
   }
   small {
     @apply text-sm text-gray-500;

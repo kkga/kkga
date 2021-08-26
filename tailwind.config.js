@@ -1,16 +1,16 @@
 module.exports = {
   mode: "jit",
-  purge: {
-    content: ["_site/**/*.html"],
-    options: {
-      safelist: [],
-    },
-  },
+  purge: ["./**/*.{njk,md}"],
   theme: {
     fontFamily: {
       sans: ["Inter", "sans-serif"],
     },
+    container: {
+      center: true,
+    },
   },
-  variants: {},
+  variants: {
+    container: [],
+  },
   plugins: [],
 };

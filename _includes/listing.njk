@@ -1,7 +1,7 @@
-<ul class="list-none m-0">
+<ul class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 list-none m-0">
 {% for item in list | reverse %}
     {% if item.url != page.url %}
-    <li class="py-2">
+    <li>
 		<a class="inline-block text-current" href="{{ item.url | url }}">
 			<h3 class="text-base my-0">
 			{% if item.data.title %}{{ item.data.title }}
@@ -15,7 +15,7 @@
 			/ <time datetime="{{ item.date | htmlDateString }}">{{ item.date | readableDate }}</time>
         </div>
 		{% endif %}
-		<div class="text-sm">
+		<div class="text-sm text-gray-600">
 			{% if item.data.description %}
 			{{ item.data.description }}
 			{% endif %}

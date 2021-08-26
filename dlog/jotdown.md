@@ -1,5 +1,5 @@
 ---
-title: Simple web app for quick throw-away notes
+title: Simple web app for throw-away notes
 date: 2021-03-15
 tags:
   - svelte
