@@ -11,14 +11,14 @@ eleventyNavigation:
 
 <div class="md:col-span-4">
 
-<div class="text-lg">
-
-My name is Gadzhi. Born in [Dagestan](https://wikipedia.org/wiki/Dagestan),
+<p class="text-xl">
+My name is Gadzhi. Born in <a href="https://wikipedia.org/wiki/Dagestan">Dagestan</a>,
 living in Moscow.
+</p>
 
+<p class="text-xl">
 Designing software is what I do for work and joy.
-
-</div>
+</p>
 
 ### Work
 

@@ -2,12 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
 @layer base {
   html {
-    @apply bg-white font-sans;
+    @apply bg-white font-sans font-normal;
   }
   h1 {
-    @apply font-bold text-4xl tracking-tight mb-1;
+    @apply font-bold text-5xl tracking-tight mb-1;
   }
   h2 {
     @apply font-bold text-3xl tracking-tight mt-8 mb-4;
@@ -16,14 +26,13 @@
     @apply font-bold text-xl tracking-tight mt-8 mb-4;
   }
   h4 {
-    @apply font-bold text-base mt-4 mb-0;
+    @apply font-bold text-lg mt-4 mb-0;
   }
   p {
-    @apply mb-4;
+    @apply mb-4 md:text-lg;
   }
   figure,
   video,
-  ul,
   table,
   pre {
     @apply my-4;
@@ -48,10 +57,7 @@
     @apply table-auto w-full;
   }
   pre {
-    @apply overflow-x-auto whitespace-pre text-xs leading-tight bg-gray-50 border border-gray-100 p-3;
-  }
-  code {
-    @apply text-sm;
+    @apply overflow-x-auto whitespace-pre leading-tight bg-gray-50 border border-gray-100 p-3;
   }
   a {
     @apply text-green-700 hover:underline;

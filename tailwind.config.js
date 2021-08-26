@@ -3,7 +3,11 @@ module.exports = {
   purge: ["./**/*.{njk,md}"],
   theme: {
     fontFamily: {
-      sans: ["Inter", "sans-serif"],
+      sans: ["Inter var", "sans-serif"],
+    },
+    fontWeight: {
+      normal: 450,
+      bold: 800,
     },
     container: {
       center: true,

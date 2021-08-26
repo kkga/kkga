@@ -90,7 +90,7 @@ $ echo 'xpkg -m > /home/kkga/void-pkglist.txt' >> /etc/cron.daily/pkglist-update
 Void's handbook has a section on [how runit works][runit].
 
 One thing to note though, is how trivial it is to create user services for
-programs you want to run as daemons[^syncthing]. Check the dedicated section on
+programs you want to run as daemons. Check the dedicated section on
 [user-services][user-services].
 
 ---
@@ -146,14 +146,14 @@ instructions.
 
 ---
 
-## See also
+#### See also
 
 - [XBPS](/notes/xbps)
 - [Void Linux on a laptop](/notes/laptop-void)
 
 ---
 
-## External links
+#### External links
 
 - [Stable Void Linux Setup Guide](https://kennydodrill.net/posts/stable-void-linux-setup-guide/)
 - [rinsmiles ́ Guide to the Void](https://drive.google.com/file/d/1hPPO4h2tD-_uGppOX79MsrHGPkDKmQpG/view)
@@ -164,7 +164,3 @@ instructions.
 [void-handbook]: https://docs.voidlinux.org/
 [runit]: https://docs.voidlinux.org/config/services/index.html
 [user-services]: https://docs.voidlinux.org/config/services/user-services.html
-
-[^syncthing]:
-    For example, I'm starting [syncthing](https://syncthing.net) as a
-    user-service, instead of polluting my `.xinitrc`.
