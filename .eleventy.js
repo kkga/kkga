@@ -78,6 +78,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "./_includes/assets/prism.css": "./prism.css",
   });
+  eleventyConfig.addPassthroughCopy({
+    "./_includes/assets/Inter-roman.var.woff2": "./Inter-roman.var.woff2",
+  });
   eleventyConfig.addPassthroughCopy("img");
 
   /* Markdown Overrides */
