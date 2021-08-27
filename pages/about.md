@@ -52,7 +52,7 @@ of my favorite [game design books and resources](/notes/gamedesign-resources).
 
 <img class="w-32 md:w-full" src="/img/about/face.jpg" />
 
-<ul class="list-none">
+<ul class="my-4 list-none">
   <li><a href="mailto:me@kkga.me">me@kkga.me</a></li>
   <li><a href="https://twitter.com/kkga_">twitter.com/kkga_</a></li>
   <li><a href="https://matrix.to/#/@kkga:matrix.org">@kkga:matrix.org</a></li>
