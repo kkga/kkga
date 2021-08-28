@@ -32,16 +32,20 @@
     @apply font-bold text-xl tracking-tight mt-8 mb-4;
   }
   h4 {
-    @apply font-bold text-lg mt-4 mb-0;
+    @apply font-bold text-base mt-4 mb-0;
   }
   p {
-    @apply mb-4 md:text-lg;
+    @apply mb-4;
   }
   figure,
   video,
   table,
   pre {
     @apply my-4;
+  }
+  ul,
+  ol {
+    @apply my-2;
   }
   figure video,
   figure img {
@@ -69,7 +73,7 @@
     @apply text-green-700 hover:underline;
   }
   figcaption {
-    @apply mt-1 text-base text-gray-500 text-center;
+    @apply mt-1 text-base text-gray-500;
   }
   hr {
     @apply my-8;
