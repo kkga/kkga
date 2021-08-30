@@ -80,6 +80,8 @@ grid layouts.
     <source src='/img/about/webflow-grid.mp4' />
 </video>
 
+![Grid playground](/img/about/webflow-grid-playground.gif)
+
 Shortly after the initial release, we've added a fully visual support for
 working with
 [Grid template areas](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas),
