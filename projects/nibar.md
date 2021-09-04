@@ -2,8 +2,6 @@
 title: Nibar
 description: Custom status bar for macOS
 date: 2020-03-02
-tags:
-  - projects
 ---
 
 - https://github.com/kkga/nibar

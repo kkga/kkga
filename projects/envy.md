@@ -2,9 +2,7 @@
 title: Envy
 description: Light color scheme for Vim with comfortable contrast
 date: 2021-01-13
-tags:
-  - projects
-  - vim
+tags: vim
 ---
 
 - https://github.com/kkga/vim-envy

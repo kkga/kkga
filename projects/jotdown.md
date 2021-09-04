@@ -2,8 +2,6 @@
 title: Jotdown
 description: Web app for jotting things down
 date: 2021-03-11
-tags:
-  - projects
 ---
 
 Jotdown is a simple app for jotting things down.

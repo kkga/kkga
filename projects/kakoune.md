@@ -3,7 +3,6 @@ title: Kakoune plugins
 description: Various plugins for the sophisticated text editor
 date: 2021-05-04
 tags:
-  - projects
   - kakoune
   - vim
 ---

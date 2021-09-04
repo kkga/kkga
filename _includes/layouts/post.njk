@@ -4,6 +4,7 @@ layout: layouts/base.njk
 
 <article>
 	<header class="my-16">
+
 		<h1>
 		{% if title %}
 		{{ title }}
@@ -20,7 +21,7 @@ layout: layouts/base.njk
 			updated <date>{{ page.date | readableDate }}</date>
 
 			{% if tags %}
-			&nbsp;&middot;&nbsp;
+			/
 			<ul class="inline">
 			{% for tag in tags %}
 			  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
@@ -28,6 +29,7 @@ layout: layouts/base.njk
 			{% endfor %}
 			</ul>
 			{% endif %}
+
 		</div>
 
 	</header>

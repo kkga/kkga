@@ -5,7 +5,7 @@
 @layer base {
   @font-face {
     font-family: "Inter var";
-    font-weight: 100 900;
+    font-weight: 100 700;
     font-display: swap;
     font-style: normal;
     font-named-instance: "Regular";
@@ -13,17 +13,19 @@
   }
   @font-face {
     font-family: "Inter var";
-    font-weight: 100 900;
+    font-weight: 100 700;
     font-display: swap;
     font-style: italic;
     font-named-instance: "Italic";
     src: url("/Inter-italic.var.woff2?v=3.19") format("woff2");
   }
-  html {
-    @apply bg-white font-sans font-normal;
+  html,
+  body {
+    @apply bg-white font-normal;
+    font-family: "Inter var", sans-serif;
   }
   h1 {
-    @apply font-bold text-5xl tracking-tight mb-1;
+    @apply font-bold text-4xl tracking-tight mb-4;
   }
   h2 {
     @apply font-bold text-3xl tracking-tight mt-8 mb-4;
@@ -33,6 +35,9 @@
   }
   h4 {
     @apply font-bold text-base mt-4 mb-0;
+  }
+  h4 + ul {
+    @apply mt-0;
   }
   p {
     @apply mb-4;

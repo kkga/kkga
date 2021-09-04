@@ -42,9 +42,9 @@ module.exports = function (eleventyConfig) {
   });
 
   // Collections
-  eleventyConfig.addCollection("notes", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("notes/*.md");
-  });
+  // eleventyConfig.addCollection("notes", function (collectionApi) {
+  //   return collectionApi.getFilteredByGlob("notes/*.md");
+  // });
   eleventyConfig.addCollection("tagList", function (collection) {
     let tagSet = new Set();
     collection.getAll().forEach(function (item) {

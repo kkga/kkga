@@ -46,6 +46,18 @@ various personal projects. I have a [dlog](/tags/dlog) where I sometimes post
 I also enjoy reading about game design theory and practice. Here's a collection
 of my favorite [game design books and resources](/notes/gamedesign-resources).
 
+### Programming
+
+When it comes to programming, I'm a master of none. Tinkering with code has been
+a big part of my life for as long as I remember and it still brings me joy and
+makes time pass faster.
+
+Whether it's making design prototypes with JavaScript at work, making games with
+Godot or Unity, writing shell scripts for my
+[Linux desktop](https://github.com/kkga/dotfiles) or making little CLI apps. I
+love it all and always try to learn more. I put occasionally useful things on
+[my GitHub](https://github.com/kkga).
+
 </div>
 
 <div class="md:col-span-2">

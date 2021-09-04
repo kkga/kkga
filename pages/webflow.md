@@ -1,15 +1,14 @@
 ---
 title: Webflow
-description: Some of the projects I've worked on at Webflow during 2015-2021
+description: Selected projects at Webflow 2015-2021
 layout: post
 date: 2021-08-08
 permalink: webflow/
-tags:
-  - work
+tags: work
 ---
 
-[Webflow](https://webflow.com) is a "no-code" web platform. I joined Webflow in
-its early days as one of the first 2 designers on the team.
+[Webflow](https://webflow.com) is a "no-code" web platform. I joined the team in
+its early days as one of the first 2 designers.
 
 Starting from 2015 and until 2021, I've worked on a variety of designer-oriented
 features ranging from layout- and animation-creation tools to marketing pages
@@ -43,8 +42,6 @@ preserve its unique content.
 - <https://webflow.com/blog/content-overrides-for-symbols> -- feature overview
   on Webflow blog
 
-#### Demos
-
 ![Defining overrides inside a symbol](/img/about/webflow-symbols-1.gif)
 
 ![Overriding content on a symbol instance](/img/about/webflow-symbols-2.gif)
@@ -56,14 +53,15 @@ preserve its unique content.
 ## Grid
 
 [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
-transformed the way web developers create layouts. The challenge was to
-translate this powerful new layout mechanism into Webflow.
+transformed the way web developers create layouts. The challenge was to abstract
+some of the complexity and translate this powerful new layout mechanism into
+Webflow.
 
 Compared to all previous tools designed in Webflow where most properties of an
 element are adjusted via a panel, we wanted the Grid to be different. Given the
 visual nature of CSS Grid, we felt that Webflow is the perfect medium to create
-a fully visual way of creating grid layouts by utilizing as much direct
-on-canvas manipulation as possible.
+a fully visual way of creating grid layouts by utilizing direct on-canvas
+manipulation.
 
 Together with the team I've worked on exploring various ways to interact with a
 grid on canvas. After months of iterations and tests, we came up with a powerful
@@ -73,8 +71,6 @@ grid layouts.
 #### Relevant links
 
 - <https://www.webflow.com/grid> -- product overview on Webflow
-
-#### Demos
 
 <video controls autoplay loop muted width="100%">
     <source src='/img/about/webflow-grid.mp4' />
@@ -126,8 +122,6 @@ uncomplicated way to create rich animations and interactions.
 - <https://webflow.com/interactions-animations> -- product overview on Webflow
 - <https://webflow.com/ix2> -- launch page that fully utilizes the feature
   (designed by [Ryan Morrison](https://ryry.io))
-
-#### Demos
 
 Here are various animations and interactions created with the help of this
 feature in Webflow.

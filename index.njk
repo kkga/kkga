@@ -7,32 +7,40 @@ Software designer. Based in Moscow, Russia.<br />
 {% endblock %}
 
 {% block content %}
-<div class="grid grid-cols-1 gap-x-8 gap-y-12">
+<div class="grid grid-cols-1 gap-x-8 gap-y-16">
+
 	<div>
 		<h2 class="mt-0 mb-4 pb-2 border-b text-gray-500 text-base font-normal">Work</h2>
 		{% set list = collections.work | head(-6) %}
 		{% include "listing.njk" %}
 	</div>
+
 	<div>
-		<h2 class="mt-0 mb-4 pb-2 border-b text-gray-500 text-base font-normal">Projects</h2>
-		{% set list = collections.projects | head(-6) %}
-		{% set length = collections.projects | length %}
+		<h2 class="mt-0 mb-4 pb-2 border-b text-gray-500 text-base font-normal">
+    		<a href="/tags/project" class="text-current">Little things and experiments -></a>
+		</h2>
+		{% set list = collections.project | head(-6) %}
+		{% set length = collections.project | length %}
 		{% include "listing.njk" %}
-		<a class="block mt-4 text-sm" href="/tags/projects">All {{length}} projects &rarr;</a>
 	</div>
+
 	<div>
-		<h2 class="mt-0 mb-4 pb-2 border-b text-gray-500 text-base font-normal">Notes</h2>
-		{% set list = collections.notes | head(-6) %}
-		{% set length = collections.notes | length %}
+		<h2 class="mt-0 mb-4 pb-2 border-b text-gray-500 text-base font-normal">
+    		<a href="/tags/note" class="text-current">Notes -></a>
+		</h2>
+		{% set list = collections.note | head(-9) %}
+		{% set length = collections.note | length %}
 		{% include "listing.njk" %}
-		<a class="block mt-4 text-sm" href="/tags/note">All {{length}} notes &rarr;</a>
 	</div>
+
 	<div>
-		<h2 class="mt-0 mb-4 pb-2 border-b text-gray-500 text-base font-normal">Dlog</h2>
-		{% set list = collections.dlog | head(-6) %}
-		{% set length = collections.notes | length %}
+		<h2 class="mt-0 mb-4 pb-2 border-b text-gray-500 text-base font-normal">
+    		<a href="/tags/dlog" class="text-current">Dlog -></a>
+		</h2>
+		{% set list = collections.dlog | head(-9) %}
+		{% set length = collections.dlog | length %}
 		{% include "listing.njk" %}
-		<a class="block mt-4 text-sm" href="/tags/dlog">All {{length}} dlog entries &rarr;</a>
 	</div>
+
 </div>
 {% endblock %}
