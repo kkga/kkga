@@ -10,7 +10,7 @@ tags:
 [Kakoune](https://github.com/mawww/kakoune) has a client-server architecture,
 which makes it easy to integrate with other tools.
 
-For example, start a new session with:
+For example, starting a new session with:
 
 ```shell
 kak -s myproject
