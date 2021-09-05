@@ -42,8 +42,8 @@ removes the need to handle all of this manually.
 However, management of Kakoune sessions is still up to the user. Simply running
 `kak my_file` will always create a new session to open the given file.
 
-With `kakoune.cr`, you can set the
-["context"](https://github.com/alexherbo2/kakoune.cr#how-does-it-work) for any
+With kakoune.cr, you can set the
+[context](https://github.com/alexherbo2/kakoune.cr#how-does-it-work) for any
 command to execute in the relevant session/client, but you still need to create
 that session upfront.
 
