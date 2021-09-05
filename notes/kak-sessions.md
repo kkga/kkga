@@ -1,5 +1,6 @@
 ---
-title: Automatic session management in Kakoune
+title: Automatic sessions in Kakoune
+description: So that I can keep ignoring proper session management
 date: 2021-09-05
 tags:
   - kakoune
@@ -11,19 +12,19 @@ which makes it easy to integrate with other tools.
 
 For example, start a new session with:
 
-```sh
+```shell
 kak -s myproject
 ```
 
 ... lets you connect a new client to it with:
 
-```sh
+```shell
 kak -c myproject
 ```
 
 ... or send commands to the given client as stdin to the session:
 
-```sh
+```shell
 echo eval -client client0 edit README.md | kak -p myproject
 ```
 
@@ -31,7 +32,7 @@ This makes integration with other tools possible. For example, you could pick a
 file in a terminal with fzf and open it in a given Kakoune client and session
 with:
 
-```sh
+```shell
 fzf | xargs -I {} echo eval -client client0 edit '{}' | kak -p myproject
 ```
 
@@ -67,7 +68,7 @@ called:
 Here is the full script
 ([file on GitHub](https://github.com/kkga/dotfiles/blob/master/.local/bin/kaks)):
 
-```sh
+```shell
 #!/bin/sh
 # Kakoune wrapper. Used as "EDITOR=kaks".
 # Uses kcr (https://github.com/alexherbo2/kakoune.cr) session, if it exists.
