@@ -39,9 +39,8 @@ Doing that by hand is not the way to go, so you would either write scripts for
 this or just use [kakoune.cr](https://github.com/alexherbo2/kakoune.cr), which
 is a brilliant tool that removes the need to handle all of this manually.
 
-However, management of Kakoune sessions is still up to the user. Simply running
-`kak my_file` will always create a new session to open the given file.
-
+However, the actual management of sessions is still up to the user. Simply
+running `kak my_file` will always create a new session to open the given file.
 With kakoune.cr, you can set the
 [context](https://github.com/alexherbo2/kakoune.cr#how-does-it-work) for any
 command to execute in the relevant session/client, but you still need to create
