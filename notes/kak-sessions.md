@@ -1,6 +1,6 @@
 ---
 title: Automatic sessions in Kakoune
-description: Because I keep forgetting to create them
+description: Writing a small wrapper script to automate session management
 date: 2021-09-05
 tags:
   - kakoune
