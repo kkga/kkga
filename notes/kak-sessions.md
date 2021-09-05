@@ -29,15 +29,15 @@ echo eval -client client0 edit README.md | kak -p myproject
 ```
 
 This makes integration with other tools possible. For example, you could pick a
-file in a terminal with fzf and open it in a given Kakoune client and session
-with:
+file in a terminal with fzf and open it in a given client and session with:
 
 ```shell
 fzf | xargs -I {} echo eval -client client0 edit '{}' | kak -p myproject
 ```
 
-[kakoune.cr](https://github.com/alexherbo2/kakoune.cr) is a brilliant tool that
-removes the need to handle all of this manually.
+Doing that by hand is not the way to go, so you would either write scripts for
+this or just use [kakoune.cr](https://github.com/alexherbo2/kakoune.cr), which
+is a brilliant tool that removes the need to handle all of this manually.
 
 However, management of Kakoune sessions is still up to the user. Simply running
 `kak my_file` will always create a new session to open the given file.
@@ -49,8 +49,8 @@ that session upfront.
 
 Most of the time, I ended up having multiple Kakoune windows editing related
 files in separate, disconnected sessions, because I forgot creating a single
-session for the project upfront. This makes navigating between buffers
-frustrating as.
+session for the project upfront. This makes navigating buffers and overall
+workflow frustrating.
 
 As a solution, I've been using the following wrapper script (`kaks`) as a global
 `EDITOR` value in shell. It automates session handling based on where it's
