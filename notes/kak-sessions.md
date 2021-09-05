@@ -36,12 +36,12 @@ fzf | xargs -I {} echo eval -client client0 edit '{}' | kak -p myproject
 ```
 
 Doing that by hand is not the way to go, so you would either write scripts for
-this or just use [kakoune.cr](https://github.com/alexherbo2/kakoune.cr), which
-is a brilliant tool that removes the need to handle all of this manually.
+this or just use [kakoune.cr](https://github.com/alexherbo2/kakoune.cr) (kcr),
+which is a brilliant tool that removes the need to handle all of this manually.
 
 However, the actual management of sessions is still up to the user. Simply
 running `kak my_file` will always create a new session to open the given file.
-With kakoune.cr, you can set the
+With kcr, you can set the
 [context](https://github.com/alexherbo2/kakoune.cr#how-does-it-work) for any
 command to execute in the relevant session/client, but you still need to create
 that session upfront.
@@ -55,9 +55,8 @@ As a solution, I've been using the following wrapper script (`kaks`) as a global
 `EDITOR` value in shell. It automates session handling based on where it's
 called:
 
-- if there is a `kakoune.cr` session in context (`KAKOUNE_SESSION` is set), it
-  passes the arguments to it, so programs connected with `kakoune.cr` work as
-  expected;
+- if there is a kcr session in context (`KAKOUNE_SESSION` is set), it passes the
+  arguments to it, so programs connected with kcr work as expected;
 - if the file is inside git directory, it tries to connect to an existing
   session based on directory name or creates a new one;
 - otherwise, it just uses the `default` session, which in my case is
