@@ -1,6 +1,6 @@
 ---
 title: Automatic sessions in Kakoune
-description: So that I can keep ignoring proper session management
+description: Because I keep forgetting to create them
 date: 2021-09-05
 tags:
   - kakoune
