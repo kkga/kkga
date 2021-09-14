@@ -21,7 +21,7 @@ tags: programming
 - https://yourbasic.org/golang/
 - https://exercism.io/my/tracks/go
 - https://github.com/go-training/training
-- https://dave.cheney.net/practical-go
+- (*) https://dave.cheney.net/practical-go
 
 ### Books
 
