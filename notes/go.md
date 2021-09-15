@@ -16,6 +16,7 @@ tags: programming
 
 ### Unofficial
 
+- https://www.digitalocean.com/community/tutorial_series/how-to-code-in-go
 - https://gophercises.com/
 - https://golangresources.com
 - https://yourbasic.org/golang/
