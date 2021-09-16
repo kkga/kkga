@@ -2,9 +2,15 @@
 title: Automatic sessions in Kakoune
 description: Writing a small wrapper script to automate session management
 date: 2021-09-05
+dateUp: 2021-09-16
 tags:
   - kakoune
   - setup
+---
+
+**Update, 16 Sep 2021**: this functionality is now included in
+[kks](/projects/kks), so I don't use the script provided below anymore.
+
 ---
 
 [Kakoune](https://github.com/mawww/kakoune) has a client-server architecture,

@@ -18,7 +18,7 @@ layout: layouts/base.njk
 			{{ description }}<br/>
 			{% endif %}
 
-			updated <date>{{ page.date | readableDate }}</date>
+			<date>{{ page.date | readableDate }}{%if dateUp %} (updated {{ dateUp | readableDate }}){% endif %}</date>
 
 			{% if tags %}
 			/

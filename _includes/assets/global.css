@@ -72,7 +72,13 @@
     @apply table-auto w-full;
   }
   pre {
-    @apply overflow-x-auto whitespace-pre text-sm md:text-base leading-tight bg-gray-50 border border-gray-100 p-2 md:p-3;
+    @apply overflow-x-auto whitespace-pre text-sm leading-tight bg-gray-50 border border-gray-100 p-2 md:p-3;
+  }
+  code {
+    @apply bg-gray-200;
+  }
+  pre code {
+    @apply bg-transparent;
   }
   a {
     @apply text-green-700 hover:underline;
