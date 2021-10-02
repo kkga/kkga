@@ -4,6 +4,7 @@ description: Handy Kakoune companion
 date: 2021-09-12
 tags:
   - kakoune
+  - go
 ---
 
 kks is a handy [Kakoune](https://kakoune.org) companion.
