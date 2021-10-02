@@ -31,7 +31,11 @@ tags: programming
 - https://github.com/karlseguin/the-little-go-book
 - https://github.com/quii/learn-go-with-tests
 
-## misc
+## Misc
 
 - code organization notes:
   https://dave.cheney.net/2014/12/01/five-suggestions-for-setting-up-a-go-project
+
+## Interesting projects
+
+- https://github.com/spf13/afero
