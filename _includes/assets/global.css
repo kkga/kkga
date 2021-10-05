@@ -4,25 +4,49 @@
 
 @layer base {
   @font-face {
-    font-family: "Inter var";
-    font-weight: 100 700;
-    font-display: swap;
+    font-family: "Rubik";
+    src: url("Rubik-Regular.eot");
+    src: url("Rubik-Regular.eot?#iefix") format("embedded-opentype"),
+      url("Rubik-Regular.woff2") format("woff2"),
+      url("Rubik-Regular.woff") format("woff"),
+      url("Rubik-Regular.ttf") format("truetype");
     font-style: normal;
-    font-named-instance: "Regular";
-    src: url("/Inter-roman.var.woff2?v=3.19") format("woff2");
+    font-weight: 400;
   }
   @font-face {
-    font-family: "Inter var";
-    font-weight: 100 700;
-    font-display: swap;
+    font-family: "Rubik";
+    src: url("Rubik-Italic.eot");
+    src: url("Rubik-Italic.eot?#iefix") format("embedded-opentype"),
+      url("Rubik-Italic.woff2") format("woff2"),
+      url("Rubik-Italic.woff") format("woff"),
+      url("Rubik-Italic.ttf") format("truetype");
     font-style: italic;
-    font-named-instance: "Italic";
-    src: url("/Inter-italic.var.woff2?v=3.19") format("woff2");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Rubik";
+    src: url("Rubik-SemiBold.eot");
+    src: url("Rubik-SemiBold.eot?#iefix") format("embedded-opentype"),
+      url("Rubik-SemiBold.woff2") format("woff2"),
+      url("Rubik-SemiBold.woff") format("woff"),
+      url("Rubik-SemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "Rubik";
+    src: url("Rubik-SemiBoldItalic.eot");
+    src: url("Rubik-SemiBoldItalic.eot?#iefix") format("embedded-opentype"),
+      url("Rubik-SemiBoldItalic.woff2") format("woff2"),
+      url("Rubik-SemiBoldItalic.woff") format("woff"),
+      url("Rubik-SemiBoldItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 700;
   }
   html,
   body {
     @apply bg-white font-normal;
-    font-family: "Inter var", sans-serif;
+    font-family: "Rubik", sans-serif;
   }
   h1 {
     @apply font-bold text-4xl tracking-tight mb-4;

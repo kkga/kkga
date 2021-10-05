@@ -2,9 +2,9 @@ module.exports = {
   mode: "jit",
   purge: ["./**/*.{njk,md}"],
   theme: {
-    // fontFamily: {
-    //   sans: ["Inter var", "sans-serif"],
-    // },
+    fontFamily: {
+      sans: ["Rubik", "sans-serif"],
+    },
     fontWeight: {
       normal: 450,
       bold: 800,
