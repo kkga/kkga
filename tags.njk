@@ -14,5 +14,4 @@ eleventyComputed:
 permalink: /tags/{{ tag | slug }}/
 ---
 
-{% set list = collections[ tag ] %}
-{% include "listing.njk" %}
+{% set list = collections[ tag ] %} {% include "listing.njk" %}
