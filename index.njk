@@ -8,7 +8,6 @@ Software designer. Based in Moscow, Russia.<br />
 
 {% block content %}
 <div class="grid grid-cols-1 gap-x-8 gap-y-16">
-
 	<div>
 		<h2 class="mt-0 mb-4 pb-2 border-b text-gray-500 text-base font-normal">Work</h2>
 		{% set list = collections.work | head(-6) %}
@@ -17,7 +16,7 @@ Software designer. Based in Moscow, Russia.<br />
 
 	<div>
 		<h2 class="mt-0 mb-4 pb-2 border-b text-gray-500 text-base font-normal">
-		<a href="/tags/project"	class="text-current">Little	things and experiments -></a>
+		<a href="/tags/project"	class="no-underline text-current">Little things and experiments -></a>
 		</h2>
 		{% set list = collections.project | head(-6) %}
 		{% set length = collections.project | length %}
@@ -26,7 +25,7 @@ Software designer. Based in Moscow, Russia.<br />
 
 	<div>
 		<h2 class="mt-0 mb-4 pb-2 border-b text-gray-500 text-base font-normal">
-    		<a href="/tags/note" class="text-current">Notes -></a>
+    		<a href="/tags/note" class="no-underline text-current">Notes -></a>
 		</h2>
 		{% set list = collections.note | head(-9) %}
 		{% set length = collections.note | length %}
@@ -35,12 +34,11 @@ Software designer. Based in Moscow, Russia.<br />
 
 	<div>
 		<h2 class="mt-0 mb-4 pb-2 border-b text-gray-500 text-base font-normal">
-			<a href="/tags/dlog" class="text-current">Dlog -></a>
+			<a href="/tags/dlog" class="no-underline text-current">Dlog -></a>
 		</h2>
 		{% set list = collections.dlog | head(-9) %}
 		{% set length = collections.dlog | length %}
 		{% include "listing.njk" %}
 	</div>
-
 </div>
 {% endblock %}

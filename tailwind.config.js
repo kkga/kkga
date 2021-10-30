@@ -1,6 +1,6 @@
 module.exports = {
   mode: "jit",
-  purge: ["./**/*.{njk,md}"],
+  purge: ["./**/*.{njk,md}", "./eleventy.js"],
   theme: {
     fontFamily: {
       sans: ["Rubik", "sans-serif"],
@@ -11,6 +11,10 @@ module.exports = {
     },
     container: {
       center: true,
+    },
+    listStyleType: {
+      none: "none",
+      square: "square",
     },
   },
   variants: {

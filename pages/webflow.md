@@ -20,6 +20,52 @@ sadly, can not be shown.
 
 ---
 
+## Grid
+
+[CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+transformed the way web developers create layouts. The challenge was to abstract
+some of the complexity and translate this powerful new layout mechanism into
+Webflow.
+
+Compared to all previous tools designed in Webflow where most properties of an
+element are adjusted via a panel, we wanted the Grid to be different. Given the
+visual nature of CSS Grid, we felt that Webflow is the perfect medium to create
+a fully visual way of creating grid layouts by utilizing direct on-canvas
+manipulation.
+
+Together with the team I've worked on exploring various ways to interact with a
+grid on canvas. After months of iterations and tests, we came up with a powerful
+and simple solution that fully utilizes Webflow's visual nature for creating
+grid layouts.
+
+#### Relevant links
+
+- <https://www.webflow.com/grid> -- product overview on Webflow
+
+<figure class="lg:-mx-24">
+    <video controls autoplay loop muted width="100%"> <source src='/img/about/webflow-grid.mp4' /> </video>
+    <figcaption>Overview of grid's main features</figcaption>
+</figure>
+
+<figure>
+    <img src="/img/about/webflow-grid-playground.gif"/>
+    <figcaption>Grid playground built in Webflow for feature release</figcaption>
+</figure>
+
+Shortly after the initial release, we've added a fully visual support for
+working with
+[Grid template areas](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas),
+making it even easier to create and adjust grid layouts using direct on-canvas
+manipulation.
+
+![Defining grid areas on canvas](/img/about/webflow-grid-areas-1.gif)
+
+![Dragging elements into grid areas](/img/about/webflow-grid-areas-2.gif)
+
+![Adjusting areas for smaller screens](/img/about/webflow-grid-areas-3.gif)
+
+---
+
 ## Symbol overrides
 
 Webflow’s symbols let authors reuse a common layout across multiple pages -- for
@@ -50,48 +96,6 @@ preserve its unique content.
 
 ---
 
-## Grid
-
-[CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
-transformed the way web developers create layouts. The challenge was to abstract
-some of the complexity and translate this powerful new layout mechanism into
-Webflow.
-
-Compared to all previous tools designed in Webflow where most properties of an
-element are adjusted via a panel, we wanted the Grid to be different. Given the
-visual nature of CSS Grid, we felt that Webflow is the perfect medium to create
-a fully visual way of creating grid layouts by utilizing direct on-canvas
-manipulation.
-
-Together with the team I've worked on exploring various ways to interact with a
-grid on canvas. After months of iterations and tests, we came up with a powerful
-and simple solution that fully utilizes Webflow's visual nature for creating
-grid layouts.
-
-#### Relevant links
-
-- <https://www.webflow.com/grid> -- product overview on Webflow
-
-<video controls autoplay loop muted width="100%">
-    <source src='/img/about/webflow-grid.mp4' />
-</video>
-
-![Grid playground](/img/about/webflow-grid-playground.gif)
-
-Shortly after the initial release, we've added a fully visual support for
-working with
-[Grid template areas](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas),
-making it even easier to create and adjust grid layouts using direct on-canvas
-manipulation.
-
-![Defining grid areas on canvas](/img/about/webflow-grid-areas-1.gif)
-
-![Dragging elements into grid areas](/img/about/webflow-grid-areas-2.gif)
-
-![Adjusting areas for smaller screens](/img/about/webflow-grid-areas-3.gif)
-
----
-
 ## Interactions and animations
 
 When I started working on "Interactions 2.0", Webflow already had simple tools
@@ -110,21 +114,23 @@ This interface metaphor proved to strike a perfect balance between a full-blown
 timeline usually found in professional animation software and a simple,
 uncomplicated way to create rich animations and interactions.
 
-<div class="grid grid-cols-4 gap-4">
-<img class="w-full" src="/img/about/webflow-ix-ui-click-actions.jpg">
-<img class="w-full" src="/img/about/webflow-ix-ui-hover-actions.jpg">
-<img class="w-full" src="/img/about/webflow-ix-ui-mouse-actions.jpg">
-<img class="w-full" src="/img/about/webflow-ix-ui-scroll-actions.jpg">
-</div>
-
 #### Relevant links
 
 - <https://webflow.com/interactions-animations> -- product overview on Webflow
 - <https://webflow.com/ix2> -- launch page that fully utilizes the feature
   (designed by [Ryan Morrison](https://ryry.io))
 
-Here are various animations and interactions created with the help of this
-feature in Webflow.
+<div class="lg:-mx-24 grid grid-cols-4 gap-4">
+<img class="w-full" src="/img/about/webflow-ix-ui-click-actions.jpg">
+<img class="w-full" src="/img/about/webflow-ix-ui-hover-actions.jpg">
+<img class="w-full" src="/img/about/webflow-ix-ui-mouse-actions.jpg">
+<img class="w-full" src="/img/about/webflow-ix-ui-scroll-actions.jpg">
+</div>
+
+### In the wild
+
+Here are various animations and interactions created using this feature in
+Webflow.
 
 <video controls autoplay loop muted width="100%">
     <source src='/img/about/webflow-ix.mp4' />
@@ -134,7 +140,7 @@ feature in Webflow.
     <source src='/img/about/webflow-ix-easing.mp4' />
 </video>
 
-<div class="grid grid-cols-2 gap-4">
+<div class="lg:-mx-24 grid grid-cols-2 gap-4">
 <img class="w-full border" src="/img/about/webflow-ix-cubes.gif">
 <img class="w-full" src="/img/about/webflow-ix-parallax.gif">
 <img class="w-full" src="/img/about/webflow-ix-demo.gif">
@@ -168,7 +174,7 @@ interface.
 - [flexboxgame.com](https://www.flexboxgame.com/) -- Flexbox learning game I
   built in Webflow
 
-<div class="grid grid-cols-2 gap-4">
+<div class="lg:-mx-24 grid grid-cols-2 gap-x-4 gap-y-8">
 
 <figure class="col-span-full">
 <img src="/img/about/webflow-flexbox.gif">

@@ -69,8 +69,12 @@
   figure,
   video,
   table,
-  pre {
-    @apply my-4;
+  pre,
+  article > .grid {
+    @apply my-8;
+  }
+  article > .grid > figure {
+    @apply m-0;
   }
   ul,
   ol {
@@ -81,7 +85,7 @@
     @apply m-0;
   }
   ul {
-    @apply list-disc list-inside;
+    @apply list-square list-inside;
   }
   ul ul {
     @apply my-0 ml-4;
@@ -105,10 +109,12 @@
     @apply bg-transparent;
   }
   a {
-    @apply text-green-700 hover:underline;
+    @apply hover:text-red-500 underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 10%;
   }
   figcaption {
-    @apply mt-1 text-base text-gray-500;
+    @apply mt-2 text-sm text-gray-500;
   }
   hr {
     @apply my-8;

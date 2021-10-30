@@ -74,6 +74,11 @@ module.exports = function (eleventyConfig) {
     return [...tagSet];
   });
 
+  // external link shortcode
+  eleventyConfig.addShortcode("extlink", function (text, url) {
+    return `<div class="extlink">${text}: <a href="${url}">${url}</a></div>`;
+  });
+
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.addPassthroughCopy({
     "./_includes/assets/prism.css": "./prism.css",
@@ -99,23 +104,6 @@ module.exports = function (eleventyConfig) {
       figcaption: true,
     });
   eleventyConfig.setLibrary("md", markdownLibrary);
-
-  // Browsersync Overrides
-  // eleventyConfig.setBrowserSyncConfig({
-  //   callbacks: {
-  //     ready: function (_err, browserSync) {
-  //       const content_404 = fs.readFileSync("_site/404.html");
-
-  //       browserSync.addMiddleware("*", (_req, res) => {
-  //         // Provides the 404 content without redirect.
-  //         res.write(content_404);
-  //         res.end();
-  //       });
-  //     },
-  //   },
-  //   ui: false,
-  //   ghostMode: false,
-  // });
 
   return {
     templateFormats: ["md", "njk", "html", "liquid"],

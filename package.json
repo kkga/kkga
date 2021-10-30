@@ -9,11 +9,11 @@
     "@11ty/eleventy-navigation": "latest",
     "@11ty/eleventy-plugin-rss": "latest",
     "@11ty/eleventy-plugin-syntaxhighlight": "latest",
+    "autoprefixer": "latest",
     "luxon": "latest",
     "markdown-it": "latest",
     "markdown-it-anchor": "latest",
     "markdown-it-implicit-figures": "latest",
-    "tailwindcss": "latest",
-    "autoprefixer": "latest"
+    "tailwindcss": "latest"
   }
 }
