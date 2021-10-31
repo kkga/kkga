@@ -31,7 +31,7 @@ styled React components.
 
 - <https://stampsy.com>
 
-<div class="grid grid-cols-2 gap-x-4">
+<div class="lg:-mx-24 grid grid-cols-2 gap-4">
 
 <figure class="col-span-full">
 <video controls autoplay loop muted width="100%">
@@ -65,7 +65,7 @@ In 2012, before becoming a web platform, Stampsy was an experimental iPad app
 for creating stories with a simple design editor. I designed and prototyped a
 lot of its touch-based interactions with different tools and codez.
 
-<figure>
+<figure class="lg:-mx-24">
 <video controls autoplay loop muted width="100%">
   <source src='/img/about/stampsy/stampsy-ipad.mp4' />
 </video>

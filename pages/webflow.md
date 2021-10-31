@@ -120,31 +120,40 @@ uncomplicated way to create rich animations and interactions.
 - <https://webflow.com/ix2> -- launch page that fully utilizes the feature
   (designed by [Ryan Morrison](https://ryry.io))
 
-<div class="lg:-mx-24 grid grid-cols-4 gap-4">
-<img class="w-full" src="/img/about/webflow-ix-ui-click-actions.jpg">
-<img class="w-full" src="/img/about/webflow-ix-ui-hover-actions.jpg">
-<img class="w-full" src="/img/about/webflow-ix-ui-mouse-actions.jpg">
-<img class="w-full" src="/img/about/webflow-ix-ui-scroll-actions.jpg">
-</div>
+<figure class="lg:-mx-24">
+    <div class="grid grid-cols-4 gap-4">
+        <img class="w-full" src="/img/about/webflow-ix-ui-click-actions.jpg">
+        <img class="w-full" src="/img/about/webflow-ix-ui-hover-actions.jpg">
+        <img class="w-full" src="/img/about/webflow-ix-ui-mouse-actions.jpg">
+        <img class="w-full" src="/img/about/webflow-ix-ui-scroll-actions.jpg">
+    </div>
+    <figcaption>Examples of timed and dynamic animations triggered by various events</figcaption>
+</figure>
+
+<figure class="lg:-mx-24">
+    <video controls autoplay loop muted width="100%">
+        <source src='/img/about/webflow-ix.mp4' />
+    </video>
+    <figcaption>Overview of creating various animations</figcaption>
+</figure>
+
+<figure class="lg:-mx-24">
+    <video controls autoplay loop muted width="100%">
+        <source src='/img/about/webflow-ix-easing.mp4' />
+    </video>
+    <figcaption>Adjusting the easing curve on an intro animation</figcaption>
+</figure>
 
 ### In the wild
 
 Here are various animations and interactions created using this feature in
 Webflow.
 
-<video controls autoplay loop muted width="100%">
-    <source src='/img/about/webflow-ix.mp4' />
-</video>
-
-<video controls autoplay loop muted width="100%">
-    <source src='/img/about/webflow-ix-easing.mp4' />
-</video>
-
 <div class="lg:-mx-24 grid grid-cols-2 gap-4">
-<img class="w-full border" src="/img/about/webflow-ix-cubes.gif">
-<img class="w-full" src="/img/about/webflow-ix-parallax.gif">
-<img class="w-full" src="/img/about/webflow-ix-demo.gif">
-<img class="w-full" src="/img/about/webflow-ix-hover.gif">
+    <img class="w-full border" src="/img/about/webflow-ix-cubes.gif">
+    <img class="w-full" src="/img/about/webflow-ix-parallax.gif">
+    <img class="w-full" src="/img/about/webflow-ix-demo.gif">
+    <img class="w-full" src="/img/about/webflow-ix-hover.gif">
 </div>
 
 ---
