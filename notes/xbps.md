@@ -1,6 +1,6 @@
 ---
 title: XBPS
-description: Short guide on the Void Linux package repository.
+description: Short guide on the Void Linux package repository
 date: 2021-01-15
 tags:
   - software

@@ -1,22 +1,25 @@
-<ul class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 list-none m-0">
+<ul class="list-none space-y-4 sm:space-y-2 m-0">
 {% for item in list | reverse %}
     {% if item.url != page.url %}
-    <li>
-		<a class="inline-block text-current" href="{{ item.url | url }}">
-			<h3 class="text-base my-0">
+    <li class="sm:flex items-baseline gap-2">
+		<a class="no-underline flex-shrink-0 block text-current" href="{{ item.url | url }}">
+			<h3 class="text-base overflow-hidden overflow-ellipsis my-0">
 			{% if item.data.title %}{{ item.data.title }}
 			{% elseif item.url %}{{ item.url }}
 			{% else %}{{ item }}
 			{% endif %}
 			</h3>
 		</a>
-		<div class="text-sm text-gray-600">
-			{% if item.data.description %}
+		<div class="hidden sm:block flex-1 border-b self-center"></div>
+
+		{% if item.data.description %}
+		<span class="text-sm sm:text-right block sm:overflow-ellipsis sm:overflow-hidden sm:whitespace-nowrap text-gray-600">
 			{{ item.data.description }}
-			{% endif %}
-		</div>
+		</span>
+		{% endif %}
+
 		{% if item.date %}
-		<div class="text-sm text-gray-400">
+		<div class="hidden sm:block flex-shrink-0 text-sm font-mono text-gray-400">
 			<time datetime="{{ item.date | htmlDateString }}">{{ item.date | readableDate }}</time>
         </div>
 		{% endif %}

@@ -7,38 +7,30 @@ Software designer. Based in Moscow, Russia.<br />
 {% endblock %}
 
 {% block content %}
-<div class="grid grid-cols-1 gap-x-8 gap-y-16">
-	<div>
-		<h2 class="mt-0 mb-4 pb-2 border-b text-gray-500 text-base font-normal">Work</h2>
-		{% set list = collections.work | head(-6) %}
-		{% include "listing.njk" %}
-	</div>
 
-	<div>
-		<h2 class="mt-0 mb-4 pb-2 border-b text-gray-500 text-base font-normal">
-		<a href="/tags/project"	class="no-underline text-current">Little things and experiments -></a>
-		</h2>
-		{% set list = collections.project | head(-6) %}
-		{% set length = collections.project | length %}
-		{% include "listing.njk" %}
-	</div>
+<h2 class="mt-12 mb-4 text-gray-500 text-base font-normal">Work</h2>
+{% set list = collections.work | head(-6) %}
+{% include "listing.njk" %}
 
-	<div>
-		<h2 class="mt-0 mb-4 pb-2 border-b text-gray-500 text-base font-normal">
-    		<a href="/tags/note" class="no-underline text-current">Notes -></a>
-		</h2>
-		{% set list = collections.note | head(-9) %}
-		{% set length = collections.note | length %}
-		{% include "listing.njk" %}
-	</div>
+<h2 class="mt-12 mb-4 text-gray-500 text-base font-normal">
+<a href="/tags/project"	class="no-underline text-current">Little things and experiments -></a>
+</h2>
+{% set list = collections.project | head(-12) %}
+{% set length = collections.project | length %}
+{% include "listing.njk" %}
 
-	<div>
-		<h2 class="mt-0 mb-4 pb-2 border-b text-gray-500 text-base font-normal">
-			<a href="/tags/dlog" class="no-underline text-current">Dlog -></a>
-		</h2>
-		{% set list = collections.dlog | head(-9) %}
-		{% set length = collections.dlog | length %}
-		{% include "listing.njk" %}
-	</div>
-</div>
+<h2 class="mt-12 mb-4 text-gray-500 text-base font-normal">
+	<a href="/tags/note" class="no-underline text-current">Notes -></a>
+</h2>
+{% set list = collections.note | head(-9) %}
+{% set length = collections.note | length %}
+{% include "listing.njk" %}
+
+<h2 class="mt-12 mb-4 text-gray-500 text-base font-normal">
+	<a href="/tags/dlog" class="no-underline text-current">Dlog -></a>
+</h2>
+{% set list = collections.dlog | head(-9) %}
+{% set length = collections.dlog | length %}
+{% include "listing.njk" %}
+
 {% endblock %}

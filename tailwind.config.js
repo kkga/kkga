@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ["Rubik", "sans-serif"],
+      mono: ["Cascadia Code", "JetBrains Mono", "SF Mono", "monospace"],
     },
     fontWeight: {
       normal: 450,

@@ -1,6 +1,6 @@
 ---
 title: Vim
-description: Text editor for life.
+description: Text editor for life
 date: 2021-01-15
 tags:
   - software
