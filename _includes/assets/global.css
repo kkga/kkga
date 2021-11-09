@@ -124,11 +124,11 @@
   }
 
   .toc {
-    @apply sm:max-w-xs	px-3 py-2 bg-gray-50 border-gray-100 border m-0 text-sm text-gray-400
+    @apply sm:max-w-xs	px-3 py-2 border m-0 text-sm text-gray-400
   }
 
   .toc ol {
-    @apply list-decimal m-0 py-0 pl-4
+    @apply list-decimal m-0 py-0 pl-5
   }
 
   .toc::before {
