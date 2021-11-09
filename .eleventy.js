@@ -3,6 +3,7 @@ const fs = require("fs");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
+const pluginToc = require("eleventy-plugin-toc");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItImplicitFigures = require("markdown-it-implicit-figures");
@@ -12,6 +13,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
+  eleventyConfig.addPlugin(pluginToc, {
+    tags: ["h2"],
+  });
 
   eleventyConfig.setDataDeepMerge(true);
 
@@ -102,7 +106,8 @@ module.exports = function (eleventyConfig) {
     })
     .use(markdownItImplicitFigures, {
       figcaption: true,
-    });
+    })
+    .use(markdownItAnchor);
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   return {

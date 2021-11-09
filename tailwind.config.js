@@ -16,6 +16,7 @@ module.exports = {
     listStyleType: {
       none: "none",
       square: "square",
+      decimal: "decimal",
     },
   },
   variants: {
