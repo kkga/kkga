@@ -4,49 +4,49 @@
 
 @layer base {
   @font-face {
-    font-family: "Rubik";
-    src: url("Rubik-Regular.eot");
-    src: url("Rubik-Regular.eot?#iefix") format("embedded-opentype"),
-      url("Rubik-Regular.woff2") format("woff2"),
-      url("Rubik-Regular.woff") format("woff"),
-      url("Rubik-Regular.ttf") format("truetype");
+    font-family: 'Rubik';
+    src: url('Rubik-Regular.eot');
+    src: url('Rubik-Regular.eot?#iefix') format('embedded-opentype'),
+      url('Rubik-Regular.woff2') format('woff2'),
+      url('Rubik-Regular.woff') format('woff'),
+      url('Rubik-Regular.ttf') format('truetype');
     font-style: normal;
     font-weight: 400;
   }
   @font-face {
-    font-family: "Rubik";
-    src: url("Rubik-Italic.eot");
-    src: url("Rubik-Italic.eot?#iefix") format("embedded-opentype"),
-      url("Rubik-Italic.woff2") format("woff2"),
-      url("Rubik-Italic.woff") format("woff"),
-      url("Rubik-Italic.ttf") format("truetype");
+    font-family: 'Rubik';
+    src: url('Rubik-Italic.eot');
+    src: url('Rubik-Italic.eot?#iefix') format('embedded-opentype'),
+      url('Rubik-Italic.woff2') format('woff2'),
+      url('Rubik-Italic.woff') format('woff'),
+      url('Rubik-Italic.ttf') format('truetype');
     font-style: italic;
     font-weight: 400;
   }
   @font-face {
-    font-family: "Rubik";
-    src: url("Rubik-SemiBold.eot");
-    src: url("Rubik-SemiBold.eot?#iefix") format("embedded-opentype"),
-      url("Rubik-SemiBold.woff2") format("woff2"),
-      url("Rubik-SemiBold.woff") format("woff"),
-      url("Rubik-SemiBold.ttf") format("truetype");
+    font-family: 'Rubik';
+    src: url('Rubik-SemiBold.eot');
+    src: url('Rubik-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('Rubik-SemiBold.woff2') format('woff2'),
+      url('Rubik-SemiBold.woff') format('woff'),
+      url('Rubik-SemiBold.ttf') format('truetype');
     font-style: normal;
     font-weight: 700;
   }
   @font-face {
-    font-family: "Rubik";
-    src: url("Rubik-SemiBoldItalic.eot");
-    src: url("Rubik-SemiBoldItalic.eot?#iefix") format("embedded-opentype"),
-      url("Rubik-SemiBoldItalic.woff2") format("woff2"),
-      url("Rubik-SemiBoldItalic.woff") format("woff"),
-      url("Rubik-SemiBoldItalic.ttf") format("truetype");
+    font-family: 'Rubik';
+    src: url('Rubik-SemiBoldItalic.eot');
+    src: url('Rubik-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('Rubik-SemiBoldItalic.woff2') format('woff2'),
+      url('Rubik-SemiBoldItalic.woff') format('woff'),
+      url('Rubik-SemiBoldItalic.ttf') format('truetype');
     font-style: italic;
     font-weight: 700;
   }
   html,
   body {
     @apply bg-white font-normal;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
   }
   h1 {
     @apply font-bold text-4xl tracking-tight mb-4;
@@ -124,16 +124,15 @@
   }
 
   .toc {
-    @apply sm:max-w-xs	px-3 py-2 border m-0 text-sm text-gray-400
+    @apply sm:max-w-xs	px-3 py-2 bg-gray-50 m-0 text-sm text-gray-500;
   }
 
   .toc ol {
-    @apply list-decimal m-0 py-0 pl-5
+    @apply no-underline font-bold m-0;
   }
 
   .toc::before {
-    content: "Contents";
-    display: block;
-    font-weight: bold
+    content: 'Contents';
+    @apply block border-b mb-1 pb-1;
   }
 }
