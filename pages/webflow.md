@@ -8,15 +8,14 @@ tags: work
 ---
 
 [Webflow](https://webflow.com) is a "no-code" web platform. I joined the team in
-its early days as one of the first 2 designers.
+its early days as one of the first two designers.
 
-Starting from 2015 and until 2021, I've worked on a variety of designer-oriented
-features ranging from layout- and animation-creation tools to marketing pages
+Starting from 2015 and until 2021, I've worked on a variety of designer-focused
+products ranging from layout systems and animation tools to marketing pages
 and iconography in my early days.
 
 This is a collection of various projects I've worked on during these years.
-Latest and some of the most impactful of my projects are still unreleased and,
-sadly, can not be shown.
+Latest and some of the most impactful stuff is still unreleased and, sadly, can not be shown.
 
 ---
 

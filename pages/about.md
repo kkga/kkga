@@ -20,7 +20,7 @@ living in Moscow.
 Designing software is what I do for work and joy.
 </p>
 
-### Work
+## Work
 
 #### Webflow (2015--2021)
 
@@ -36,7 +36,7 @@ Worked as a designer (and partly as a front-end engineer) at
 discovering visual stories. I designed the product and built a modular CSS
 architecture behind it.<br/> **[Learn more about my work Stampsy →](/stampsy)**
 
-### Game design
+## Game design
 
 Recently I became interested in video game design and development. It's a fun
 area that is hard to master and I try to spend my free time tinkering with
@@ -46,7 +46,7 @@ various personal projects. I have a [dlog](/tags/dlog) where I sometimes post
 I also enjoy reading about game design theory and practice. Here's a collection
 of my favorite [game design books and resources](/notes/gamedesign-resources).
 
-### Programming
+## Programming
 
 When it comes to programming, I'm a master of none. Tinkering with code has been
 a big part of my life for as long as I remember and it still brings me joy and
