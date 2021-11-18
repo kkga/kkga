@@ -132,7 +132,7 @@
   }
 
   .toc {
-    @apply sm:max-w-xs	px-3 py-2 bg-gray-50 m-0 text-sm text-gray-500;
+    @apply sm:max-w-xs italic m-0 text-sm text-gray-500;
   }
 
   .toc ol {
