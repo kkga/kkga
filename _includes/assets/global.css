@@ -53,7 +53,7 @@
   }
 
   body {
-    @apply font-mono text-sm font-normal bg-white;
+    @apply font-mono text-sm text-gray-200 bg-gray-900;
   }
   h1 {
     @apply font-sans text-6xl mb-4;
@@ -108,39 +108,24 @@
     @apply table-auto w-full;
   }
   pre {
-    @apply overflow-x-auto whitespace-pre text-sm leading-tight bg-gray-50 border border-gray-100 p-2 md:p-3;
+    @apply overflow-x-auto whitespace-pre text-sm leading-tight bg-gray-800 p-2 md:p-3;
   }
   code {
-    @apply bg-gray-200;
+    @apply text-gray-50 bg-gray-700;
   }
   pre code {
     @apply bg-transparent;
   }
   a {
-    @apply hover:text-red-500 underline;
-    text-underline-offset: 2px;
-    text-decoration-thickness: 8%;
+    @apply text-amber-500 hover:underline;
   }
   figcaption {
-    @apply italic mt-2 text-sm text-gray-500;
+    @apply italic mt-2 text-sm text-gray-400;
   }
   hr {
-    @apply my-8;
+    @apply my-8 border-gray-700;
   }
   small {
-    @apply text-sm text-gray-500;
-  }
-
-  .toc {
-    @apply sm:max-w-xs italic m-0 text-sm text-gray-500;
-  }
-
-  .toc ol {
-    @apply no-underline font-bold m-0;
-  }
-
-  .toc::before {
-    content: 'Contents';
-    @apply block border-b mb-1 pb-1;
+    @apply text-sm text-gray-400;
   }
 }
