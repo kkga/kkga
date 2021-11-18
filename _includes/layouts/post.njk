@@ -6,7 +6,7 @@ layout: layouts/base.njk
 	<header class="my-16">
 		<h1> {% if title %} {{ title }} {% else %} {{ page.url }} {% endif %} </h1>
 
-		<div class="text-gray-500 text-sm">
+		<div class="text-gray-500 italic">
 			{% if description %}
 			{{ description }}<br/>
 			{% endif %}
@@ -35,9 +35,9 @@ layout: layouts/base.njk
 
     {% for tag in tags  %}
         {% if collections[ tag ] | length > 1 %}
-        <div class="text-sm my-8">
+        <div class="text-sm my-12">
     		{% set tagUrl %}/tags/{{ tag }}/{% endset %}
-    		<h5 class="mb-4 font-normal text-gray-500 text-base">More in <a class="text-current no-underline" href="{{ tagUrl | url }}">#{{ tag }}</a></h5>
+    		<h2>More in <a class="text-current no-underline" href="{{ tagUrl | url }}">#{{ tag }}</a></h2>
             {% set list = collections[ tag ] %}
             {% include "listing.njk" %}
             {% endif %}

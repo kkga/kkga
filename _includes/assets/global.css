@@ -4,61 +4,68 @@
 
 @layer base {
   @font-face {
-    font-family: 'Rubik';
-    src: url('Rubik-Regular.eot');
-    src: url('Rubik-Regular.eot?#iefix') format('embedded-opentype'),
-      url('Rubik-Regular.woff2') format('woff2'),
-      url('Rubik-Regular.woff') format('woff'),
-      url('Rubik-Regular.ttf') format('truetype');
+    font-family: 'MD Nichrome';
+    src: url('MDNichrome-Regular.otf');
     font-style: normal;
     font-weight: 400;
   }
   @font-face {
-    font-family: 'Rubik';
-    src: url('Rubik-Italic.eot');
-    src: url('Rubik-Italic.eot?#iefix') format('embedded-opentype'),
-      url('Rubik-Italic.woff2') format('woff2'),
-      url('Rubik-Italic.woff') format('woff'),
-      url('Rubik-Italic.ttf') format('truetype');
+    font-family: 'MD Nichrome';
+    src: url('MDNichrome-RegularOblique.otf');
     font-style: italic;
     font-weight: 400;
   }
   @font-face {
-    font-family: 'Rubik';
-    src: url('Rubik-SemiBold.eot');
-    src: url('Rubik-SemiBold.eot?#iefix') format('embedded-opentype'),
-      url('Rubik-SemiBold.woff2') format('woff2'),
-      url('Rubik-SemiBold.woff') format('woff'),
-      url('Rubik-SemiBold.ttf') format('truetype');
+    font-family: 'MD Nichrome';
+    src: url('MDNichrome-Bold.otf');
     font-style: normal;
     font-weight: 700;
   }
   @font-face {
-    font-family: 'Rubik';
-    src: url('Rubik-SemiBoldItalic.eot');
-    src: url('Rubik-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
-      url('Rubik-SemiBoldItalic.woff2') format('woff2'),
-      url('Rubik-SemiBoldItalic.woff') format('woff'),
-      url('Rubik-SemiBoldItalic.ttf') format('truetype');
+    font-family: 'MD Nichrome';
+    src: url('MDNichrome-BoldOblique.otf');
     font-style: italic;
     font-weight: 700;
   }
-  html,
+
+  @font-face {
+    font-family: 'MD IO';
+    src: url('MDIO0.3-Regular.woff2') format('woff2'),
+      url('MDIO0.3-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'MD IO';
+    src: url('MDIO0.3-Italic.woff2') format('woff2'),
+      url('MDIO0.3-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'MD IO';
+    src: url('MDIO0.3-Bold.woff2') format('woff2'),
+      url('MDIO0.3-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+
   body {
-    @apply bg-white font-normal;
-    font-family: 'Rubik', sans-serif;
+    @apply font-mono text-sm font-normal bg-white;
   }
   h1 {
-    @apply font-bold text-4xl tracking-tight mb-4;
+    @apply font-sans text-6xl mb-4;
   }
   h2 {
-    @apply font-bold text-3xl tracking-tight mt-8 mb-4;
+    @apply font-sans text-4xl my-6;
   }
   h3 {
-    @apply font-bold text-xl tracking-tight mt-8 mb-4;
+    @apply font-sans text-2xl my-6;
   }
   h4 {
-    @apply font-bold text-base mt-4 mb-0;
+    @apply font-mono text-sm font-bold uppercase my-3;
   }
   h4 + ul {
     @apply mt-0;
@@ -66,6 +73,7 @@
   p {
     @apply mb-4;
   }
+
   figure,
   video,
   table,
@@ -111,10 +119,10 @@
   a {
     @apply hover:text-red-500 underline;
     text-underline-offset: 2px;
-    text-decoration-thickness: 10%;
+    text-decoration-thickness: 8%;
   }
   figcaption {
-    @apply mt-2 text-sm text-gray-500;
+    @apply italic mt-2 text-sm text-gray-500;
   }
   hr {
     @apply my-8;

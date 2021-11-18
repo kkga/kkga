@@ -88,7 +88,7 @@ module.exports = function (eleventyConfig) {
     "./_includes/assets/prism.css": "./prism.css",
   });
   eleventyConfig.addPassthroughCopy({
-    "./_includes/assets/*.woff2": "./",
+    "./_includes/assets/fonts/*": "./",
   });
   eleventyConfig.addPassthroughCopy("img");
 

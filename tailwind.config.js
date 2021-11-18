@@ -3,12 +3,18 @@ module.exports = {
   purge: ["./**/*.{njk,md}", "./eleventy.js"],
   theme: {
     fontFamily: {
-      sans: ["Rubik", "sans-serif"],
-      mono: ["Cascadia Code", "JetBrains Mono", "SF Mono", "monospace"],
+      sans: ["MD Nichrome", "sans-serif"],
+      mono: [
+        "MD IO",
+        "Cascadia Code",
+        "JetBrains Mono",
+        "SF Mono",
+        "monospace",
+      ],
     },
     fontWeight: {
-      normal: 450,
-      bold: 800,
+      normal: 400,
+      bold: 700,
     },
     container: {
       center: true,

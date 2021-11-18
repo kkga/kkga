@@ -1,35 +1,35 @@
 {% extends "_includes/layouts/base.njk" %}
 
 {% block header %}
-<h1 class="text-base my-0">Gadzhi Kharkharov</h1>
-Software designer. Based in Moscow, Russia.<br />
+<h1 class="font-mono text-sm font-bold uppercase mt-0 mb-4">Gadzhi Kharkharov</h1>
+Software designer. Based in Moscow, Russia.<br>
 <a href="/about">More about me</a>.
 {% endblock %}
 
 {% block content %}
 
-<h2 class="mt-12 mb-4 text-gray-500 text-base font-normal">Work</h2>
-{% set list = collections.work | head(-6) %}
+<h2 class="mt-12 mb-6">Work</h2>
+{% set list = collections.work %}
 {% include "listing.njk" %}
 
-<h2 class="mt-12 mb-4 text-gray-500 text-base font-normal">
-<a href="/tags/project"	class="no-underline text-current">Little things and experiments -></a>
+<h2 class="mt-12 mb-6">
+	<a href="/tags/project"	class="no-underline text-current">Little things and experiments</a>
 </h2>
-{% set list = collections.project | head(-12) %}
+{% set list = collections.project %}
 {% set length = collections.project | length %}
 {% include "listing.njk" %}
 
-<h2 class="mt-12 mb-4 text-gray-500 text-base font-normal">
-	<a href="/tags/note" class="no-underline text-current">Notes -></a>
+<h2 class="mt-12 mb-6">
+	<a href="/tags/note" class="no-underline text-current">Notes</a>
 </h2>
-{% set list = collections.note | head(-9) %}
+{% set list = collections.note %}
 {% set length = collections.note | length %}
 {% include "listing.njk" %}
 
-<h2 class="mt-12 mb-4 text-gray-500 text-base font-normal">
-	<a href="/tags/dlog" class="no-underline text-current">Dlog -></a>
+<h2 class="mt-12 mb-6">
+	<a href="/tags/dlog" class="no-underline text-current">Dlog</a>
 </h2>
-{% set list = collections.dlog | head(-9) %}
+{% set list = collections.dlog %}
 {% set length = collections.dlog | length %}
 {% include "listing.njk" %}
 
