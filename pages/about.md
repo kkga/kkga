@@ -13,10 +13,7 @@ eleventyNavigation:
 
 <p class="font-sans text-xl">
 My name is Gadzhi. Born in <a href="https://wikipedia.org/wiki/Dagestan">Dagestan</a>,
-living in Moscow.
-</p>
-
-<p class="font-sans text-xl">
+living in Moscow.<br>
 Designing software is what I do for work and joy.
 </p>
 
@@ -54,9 +51,9 @@ makes time pass faster.
 
 Whether it's making design prototypes with JavaScript at work, making games with
 Godot or Unity, writing shell scripts for my
-[Linux desktop](https://github.com/kkga/dotfiles) or making little CLI apps. I
-love it all and always try to learn more. I put occasionally useful things on
-[my GitHub](https://github.com/kkga).
+[Linux desktop](https://github.com/kkga/dotfiles) or making little CLI apps with
+Go, I love it all and always try to learn more. I put occasionally useful things
+on [my GitHub](https://github.com/kkga).
 
 ---
 

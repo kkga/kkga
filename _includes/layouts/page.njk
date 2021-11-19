@@ -1,17 +1,13 @@
----
-layout: layouts/base.njk
----
+{% extends "_includes/layouts/base.njk" %}
 
-<header class="my-16">
-	{% if title %}
-	<h1>{{ title }}</h1>
-	{% endif %}
-
-	<div class="text-gray-400 text-sm">
-		{% if description %}
-		{{ description }}<br/>
-		{% endif %}
-	</div>
-</header>
+{% block header %}
+<nav>
+  <a href="/" class="inline-block uppercase font-bold">kkga</a>
+  <span class="text-gray-500">/</span>
+  <h2 class="inline font-mono font-mono uppercase text-sm m-0">
+    {% if title %} {{ title }} {% else %} {{ page.url }} {% endif %}
+  </h2>
+</nav>
+{% endblock %}
 
 {{ content | safe }}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full min-h-full">
+<html lang="en" style="min-height: 100vh">
   <head>
     <title>{{ title or metadata.title }}</title>
 
@@ -35,12 +35,10 @@
     ></script>
   </head>
 
-  <body class="p-4 max-w-4xl mx-auto min-h-full sm:p-8">
-    <header class="mb-24">
+  <body class="p-4 max-w-4xl mx-auto sm:p-8" style="min-height: 100vh">
+    <header class="mb-20">
       {% block header %}
-      <nav>
-        <a href="/" class="inline-block uppercase font-bold">kkga</a>
-      </nav>
+      <nav><a href="/" class="inline-block uppercase font-bold">kkga</a></nav>
       {% endblock %}
     </header>
 
