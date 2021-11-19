@@ -52,20 +52,21 @@
     font-style: normal;
   }
 
+  /* text */
   body {
     @apply font-mono text-sm text-gray-200 bg-gray-900;
   }
   h1 {
-    @apply font-sans text-6xl mb-4;
+    @apply font-sans text-6xl mt-8 mb-4;
   }
   h2 {
-    @apply font-sans text-4xl my-6;
+    @apply font-sans text-3xl mt-8 mb-4;
   }
   h3 {
-    @apply font-sans text-2xl my-6;
+    @apply font-sans text-2xl mt-8 mb-4;
   }
   h4 {
-    @apply font-mono text-sm font-bold uppercase my-3;
+    @apply font-mono text-sm font-bold uppercase mt-8 mb-2;
   }
   h4 + ul {
     @apply mt-0;
@@ -74,6 +75,12 @@
     @apply mb-4;
   }
 
+  /* links */
+  a {
+    @apply text-amber-500 hover:underline;
+  }
+
+  /* content spacing */
   figure,
   video,
   table,
@@ -92,14 +99,25 @@
   figure img {
     @apply m-0;
   }
+
+  /* list */
   ul {
     @apply list-square list-inside;
   }
   ul ul {
     @apply my-0 ml-4;
   }
+
+  /* table */
   thead {
-    @apply text-left text-sm;
+    @apply text-left text-sm uppercase border-b border-gray-700;
+  }
+  tr {
+    @apply py-4 border-gray-800;
+  }
+  td,
+  th {
+    @apply py-1;
   }
   tbody {
     @apply divide-y;
@@ -107,25 +125,22 @@
   table {
     @apply table-auto w-full;
   }
+
+  /* code */
   pre {
-    @apply overflow-x-auto whitespace-pre text-sm leading-tight bg-gray-800 p-2 md:p-3;
+    @apply rounded overflow-x-auto whitespace-pre text-sm leading-tight bg-gray-800 p-2 md:p-3;
   }
   code {
-    @apply text-gray-50 bg-gray-700;
+    @apply text-gray-50 rounded px-2 bg-gray-800;
   }
   pre code {
-    @apply bg-transparent;
+    @apply bg-transparent p-0;
   }
-  a {
-    @apply text-amber-500 hover:underline;
-  }
+
   figcaption {
     @apply italic mt-2 text-sm text-gray-400;
   }
   hr {
-    @apply my-8 border-gray-700;
-  }
-  small {
-    @apply text-sm text-gray-400;
+    @apply my-8 border-gray-800;
   }
 }
