@@ -3,6 +3,7 @@ const colors = require("tailwindcss/colors");
 module.exports = {
   mode: "jit",
   purge: ["./**/*.{njk,md}", "./eleventy.js"],
+  darkMode: "media",
   theme: {
     colors: {
       transparent: "transparent",
