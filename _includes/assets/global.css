@@ -8,25 +8,31 @@
     src: url('MDNichrome-Regular.otf');
     font-style: normal;
     font-weight: 400;
-  }
-  @font-face {
-    font-family: 'MD Nichrome';
-    src: url('MDNichrome-RegularOblique.otf');
-    font-style: italic;
-    font-weight: 400;
+    font-display: swap;
   }
   @font-face {
     font-family: 'MD Nichrome';
     src: url('MDNichrome-Bold.otf');
     font-style: normal;
     font-weight: 700;
+    font-display: swap;
+  }
+  /*
+  @font-face {
+    font-family: 'MD Nichrome';
+    src: url('MDNichrome-RegularOblique.otf');
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
   }
   @font-face {
     font-family: 'MD Nichrome';
     src: url('MDNichrome-BoldOblique.otf');
     font-style: italic;
     font-weight: 700;
+    font-display: swap;
   }
+  */
 
   @font-face {
     font-family: 'MD IO';
@@ -34,22 +40,23 @@
       url('MDIO0.3-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
   }
-
+  @font-face {
+    font-family: 'MD IO';
+    src: url('MDIO0.3-Bold.woff2') format('woff2'),
+      url('MDIO0.3-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+  }
   @font-face {
     font-family: 'MD IO';
     src: url('MDIO0.3-Italic.woff2') format('woff2'),
       url('MDIO0.3-Italic.woff') format('woff');
     font-weight: 400;
     font-style: italic;
-  }
-
-  @font-face {
-    font-family: 'MD IO';
-    src: url('MDIO0.3-Bold.woff2') format('woff2'),
-      url('MDIO0.3-Bold.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
+    font-display: swap;
   }
 
   html {
@@ -133,15 +140,14 @@
 
   /* code */
   pre {
-    @apply
-    p-4
+    @apply p-4
     -mx-4
     md:px-8
     md:-mx-8
     overflow-x-auto
     whitespace-pre
     leading-snug
-    bg-gray-800
+    bg-gray-800;
   }
   code {
     @apply text-gray-50 rounded px-1 bg-gray-800;
