@@ -2,13 +2,11 @@
 {% for item in list | reverse %}
     {% if item.url != page.url %}
     <li class="sm:flex items-baseline gap-2">
-		<a class="no-underline flex-shrink-0 block" href="{{ item.url | url }}">
-			<h4 class="overflow-hidden overflow-ellipsis my-0">
-			{% if item.data.title %}{{ item.data.title }}
-			{% elseif item.url %}{{ item.url }}
-			{% else %}{{ item }}
-			{% endif %}
-			</h4>
+		<a class="flex-shrink-0 block overflow-hidden overflow-ellipsis uppercase font-bold" href="{{ item.url | url }}">
+    		{% if item.data.title %}{{ item.data.title }}
+    		{% elseif item.url %}{{ item.url }}
+    		{% else %}{{ item }}
+    		{% endif %}
 		</a>
 		<div class="hidden sm:block flex-1 border-b border-gray-300 dark:border-gray-700 self-center"></div>
 
