@@ -2,7 +2,10 @@ const colors = require("tailwindcss/colors");
 
 module.exports = {
   mode: "jit",
-  purge: ["./**/*.{njk,md}", "./eleventy.js"],
+  content: [
+    './public/**/*.html',
+    './src/**/*.{astro,js,jsx,svelte,ts,tsx,vue}',
+  ],
   darkMode: "media",
   theme: {
     colors: {

@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "MD Nichrome";
+  src: url("/assets/fonts/MDNichrome-Regular.otf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MD Nichrome";
+  src: url("/assets/fonts/MDNichrome-Bold.otf");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MD IO";
+  src: url("/assets/fonts/MDIO0.4-Medium.woff2") format("woff2"),
+    url("/assets/fonts/MDIO0.4-Medium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MD IO";
+  src: url("/assets/fonts/MDIO0.4-Bold.woff2") format("woff2"),
+    url("/assets/fonts/MDIO0.4-Bold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MD IO";
+  src: url("/assets/fonts/MDIO0.4-Italic.woff2") format("woff2"),
+    url("/assets/fonts/MDIO0.4-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}

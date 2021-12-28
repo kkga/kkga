@@ -3,46 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
-    font-family: 'MD Nichrome';
-    src: url('MDNichrome-Regular.otf');
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: 'MD Nichrome';
-    src: url('MDNichrome-Bold.otf');
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'MD IO';
-    src: url('MDIO0.4-Medium.woff2') format('woff2'),
-      url('MDIO0.4-Medium.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: 'MD IO';
-    src: url('MDIO0.4-Bold.woff2') format('woff2'),
-      url('MDIO0.4-Bold.woff') format('woff');
-    font-weight: 700;
-    font-display: swap;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'MD IO';
-    src: url('MDIO0.4-Italic.woff2') format('woff2'),
-      url('MDIO0.4-Italic.woff') format('woff');
-    font-weight: 400;
-    font-style: italic;
-    font-display: swap;
-  }
-
   html {
     @apply bg-gray-100 dark:bg-black;
   }
@@ -54,7 +14,7 @@
     dark:text-gray-300 dark:bg-gray-900;
   }
   h1 {
-    font-feature-settings: 'ss02';
+    font-feature-settings: "ss02";
     @apply font-sans text-6xl my-12;
   }
   h2 {

@@ -1,0 +1,23 @@
+---
+import metadata from "../data/metadata.json";
+import BaseHead from "../components/BaseHead.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en" style="min-height: 100vh">
+  <head>
+    <BaseHead />
+  </head>
+
+  <body class="p-4 max-w-4xl mx-auto sm:p-8" style="min-height: 100vh">
+    <header class="mb-20">
+      <nav><a href="/" class="inline-block uppercase font-bold">kkga</a></nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

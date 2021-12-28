@@ -1,12 +1,15 @@
-{% extends "_includes/layouts/base.njk" %}
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+---
 
-{% block header %}
+<BaseLayout>
 <h1 class="font-mono text-sm font-bold uppercase my-0">Gadzhi Kharkharov</h1>
-Software designer. Based in Moscow, Russia.<br>
+Software designer. Based in Moscow, Russia.<br />
 <a href="/about">More about me</a>.
-{% endblock %}
+</BaseLayout>
 
-{% block content %}
+
+<!--{% block content %}
 
 <h2 class="mt-12 mb-6">Work</h2>
 {% set list = collections.work %}
@@ -34,3 +37,4 @@ Software designer. Based in Moscow, Russia.<br>
 {% include "listing.njk" %}
 
 {% endblock %}
+-->
