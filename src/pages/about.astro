@@ -1,12 +1,12 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import PageLayout from "../layouts/PageLayout.astro";
 import { Markdown } from "astro/components";
 
 const title = "About";
 const date = "2021-08-08";
 ---
 
-<BaseLayout>
+<PageLayout content={{ title, date }}>
   <div class="grid grid-cols-1 gap-8 md:grid-cols-6">
     <div class="md:col-span-4">
       <p class="font-sans text-xl">
@@ -84,4 +84,4 @@ const date = "2021-08-08";
       </ul>
     </div>
   </div>
-</BaseLayout>
+</PageLayout>

@@ -1,17 +1,22 @@
 ---
-import metadata from "../data/metadata.json";
 import BaseHead from "../components/BaseHead.astro";
+
+const { title, description, permalink } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en" style="min-height: 100vh">
   <head>
-    <BaseHead />
+    <BaseHead {title} {description} {permalink} />
   </head>
 
   <body class="p-4 max-w-4xl mx-auto sm:p-8" style="min-height: 100vh">
+    <nav class="mb-20">
+      <slot name="nav" />
+    </nav>
+
     <header class="mb-20">
-      <nav><a href="/" class="inline-block uppercase font-bold">kkga</a></nav>
+      <slot name="header" />
     </header>
 
     <main>

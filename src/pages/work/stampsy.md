@@ -1,10 +1,10 @@
 ---
 title: Stampsy
 description: Platform for sharing visual stories
-layout: post
 date: 2019-11-18
-permalink: stampsy/
-tags: work
+tags:
+  - work
+layout: ../../layouts/PageLayout.astro
 ---
 
 Stampsy is a social platform for sharing and discovering visual stories.
