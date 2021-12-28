@@ -1,5 +1,6 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
+import PageHeader from "../components/PageHeader.jsx";
 
 const { title, description, permalink } = Astro.props;
 ---
@@ -11,13 +12,7 @@ const { title, description, permalink } = Astro.props;
   </head>
 
   <body class="p-4 max-w-4xl mx-auto sm:p-8" style="min-height: 100vh">
-    <nav class="mb-20">
-      <slot name="nav" />
-    </nav>
-
-    <header class="mb-20">
-      <slot name="header" />
-    </header>
+    <slot name="header" />
 
     <main>
       <slot />

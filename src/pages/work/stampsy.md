@@ -14,8 +14,6 @@ joined full-time after doing mostly freelance work.
 
 ---
 
-## Web platform for sharing visual stories
-
 My work ranged from full-cycle product and user interface design to front-end
 engineering and CSS styling.
 
@@ -58,8 +56,6 @@ styled React components.
 </div>
 
 ---
-
-## Stampsy iPad app
 
 In 2012, before becoming a web platform, Stampsy was an experimental iPad app
 for creating stories with a simple design editor. I designed and prototyped a

@@ -1,7 +1,8 @@
 {
   "title": "Gadzhi Kharkharov",
-  "url": "https://kkga.me/",
+  "shortTitle": "kkga",
   "description": "Gadzhi Kharkharov, software designer.",
+  "url": "https://kkga.me/",
   "feed": {
     "subtitle": "Gadzhi Kharkharov, software designer.",
     "filename": "feed.xml",

@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHeader from "../components/PageHeader.jsx";
 import Listing from "../components/Listing.jsx";
+import metadata from "../data/metadata.json";
 
 let work = await Astro.fetchContent("./work/*.md");
 work = work.sort(
@@ -24,16 +26,13 @@ dlogNotes = dlogNotes.sort(
 ---
 
 <BaseLayout>
-  <div slot="header">
-    <h1 class="font-mono text-sm font-bold uppercase my-0">
-      Gadzhi Kharkharov
-    </h1>
-    Software designer. Based in Moscow, Russia.<br />
-    <a href="/about">More about me</a>.
-  </div>
-
+  <PageHeader
+    title={metadata.title}
+    description="Software designer. Based in Moscow, Russia."
+    showAboutLink={true}
+  />
   <Listing title="Work" items={work} />
-  <Listing title="Projects" items={projects} />
+  <Listing title="Play" items={projects} />
   <Listing title="Notes" items={notes} />
   <Listing title="Dlog" items={dlogNotes} />
 </BaseLayout>

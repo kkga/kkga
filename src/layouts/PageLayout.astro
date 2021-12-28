@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+import PageHeader from "../components/PageHeader.jsx";
 import metadata from "../data/metadata.json";
 import { formatDateFull } from "../utils.js";
 
@@ -9,36 +10,11 @@ const { title, description, tags, date, author, heroImage, permalink, alt } =
 ---
 
 <BaseLayout {title}>
-  <div slot="nav">
-    <a href="/" class="inline-block uppercase font-bold">kkga</a>
-  </div>
+  <PageHeader slot="header" {description} {date} {tags} />
 
-  <div slot="header">
-    <div class="mb-20 text-gray-500 italic">
-      {description && <p class="m-0">{description}</p>}
-
-      <div class="flex">
-        <date>{formatDateFull(date)}</date>
-
-        {tags && (
-          <span class="mx-2">/</span>
-          <ul class="inline m-0 list-none">
-            {tags.map((tag) => {
-              const tagUrl = `/tags/${tag}`;
-
-              return (
-                <li className="m-0 inline">
-                  <a href={tagUrl}>#{tag}</a>
-                </li>
-              );
-            })}
-          </ul>
-        )}
-      </div>
-    </div>
-
-    <h1>{title}</h1>
-  </div>
+  <header class="mb-20">
+    <h1 class="text-center">{title}</h1>
+  </header>
 
   <slot />
 </BaseLayout>
