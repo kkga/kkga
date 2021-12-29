@@ -4,7 +4,7 @@ import { formatDateShort } from "../utils.js";
 export default function Listing({ title, items }) {
   return (
     <>
-      <h3>{title}</h3>
+      <h2>{title}</h2>
       <ul className="list-none space-y-4 sm:space-y-2 m-0">
         {items.map((item) => {
           return <ListItem {...item} />;
@@ -33,7 +33,7 @@ function ListItem({ title, url, description, date } = item) {
       {date &&
         (
           <div className="hidden sm:block flex-shrink-0 text-gray-500">
-            <time datetime={date}>
+            <time dateTime={date}>
               {formatDateShort(date)}
             </time>
           </div>

@@ -29,7 +29,7 @@ export default function PageHeader(
         {tags && (
           <>
             <span className="mx-2">/</span>
-            <ul className="inline m-0 list-none">
+            <ul className="inline-flex gap-2 m-0 list-none">
               {tags.map((tag) => {
                 const tagUrl = `/tags/${tag}`;
 

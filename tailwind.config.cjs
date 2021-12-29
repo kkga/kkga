@@ -4,7 +4,7 @@ module.exports = {
   mode: "jit",
   content: [
     './public/**/*.html',
-    './src/**/*.{astro,js,jsx,svelte,ts,tsx,vue}',
+    './src/**/*.{md,astro,js,jsx,svelte,ts,tsx,vue}',
   ],
   darkMode: "media",
   theme: {

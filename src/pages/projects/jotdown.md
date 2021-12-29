@@ -2,6 +2,12 @@
 title: Jotdown
 description: Web app for jotting things down
 date: 2021-03-11
+tags:
+  - svelte
+layout: ../../layouts/PageLayout.astro
+setup: |
+  import ProjectLink from '../../components/ProjectLink.jsx'
+  import Figure from '../../components/Figure.jsx'
 ---
 
 Jotdown is a simple app for jotting things down.
@@ -10,9 +16,8 @@ It lives in a browser tab, quick to switch to and quick to navigate with a
 keyboard. The content is stored in your browser, so you can close the tab and
 come back to it later.
 
-- https://jotdown.page
-- Source code: https://github.com/kkga/jotdown
+<ProjectLink url="https://jotdown.page" title="jotdown.page" />
+<ProjectLink url="https://github.com/kkga/jotdown" title="Source code on GitHub" />
 
-!["Bird's eye view"](/img/projects/jotdown1.png)
-
-![Zoomed view](/img/projects/jotdown2.png)
+<Figure caption="Sheets overview" image="/img/projects/jotdown1.png" />
+<Figure caption="Zoomed view" image="/img/projects/jotdown2.png" />

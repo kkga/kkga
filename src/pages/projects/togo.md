@@ -2,13 +2,15 @@
 title: togo
 description: CLI for todo.txt
 date: 2020-12-03
+layout: ../../layouts/PageLayout.astro
+setup: |
+  import ProjectLink from '../../components/ProjectLink.jsx'
+  import Figure from '../../components/Figure.jsx'
 ---
 
 CLI for `todo.txt` and an attempt at learning Go.
 
-Source code: https://github.com/kkga/togo
-
----
+<ProjectLink url="https://github.com/kkga/togo" title="Source code on GitHub" />
 
 ### Usage
 

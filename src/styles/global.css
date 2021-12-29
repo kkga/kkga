@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    @apply bg-gray-100 dark:bg-black;
+    @apply bg-gray-200 dark:bg-black;
   }
 
   /* text */
@@ -15,10 +15,10 @@
   }
   h1 {
     font-feature-settings: "ss02";
-    @apply font-sans text-center text-6xl my-12;
+    @apply font-sans font-bold text-center text-6xl my-12;
   }
   h2 {
-    @apply font-sans text-4xl uppercase mt-8 mb-6;
+    @apply font-sans font-bold text-3xl uppercase mt-8 mb-6;
   }
   h3 {
     @apply font-mono text-sm font-bold uppercase mt-8 mb-2;
