@@ -1,0 +1,30 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+import { Markdown } from "astro/components";
+import { formatDateFull } from "../utils.js";
+
+let dlogNotes = await Astro.fetchContent("./dlog/*.md");
+dlogNotes = dlogNotes.sort(
+  (a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf()
+);
+
+console.log(dlogNotes);
+const title = "Dlog";
+const description = "Dev- or design-log with short notes";
+---
+
+<PageLayout content={{ title, description }}>
+  <div class="flex flex-col gap-12">
+    {dlogNotes.map((note) => {
+      return (
+        <div key={note.url}>
+          <time class="italic text-gray-500" dateTime={note.date}>
+            {formatDateFull(note.date)}
+          </time>
+          <h3 class="mt-0 mb-4">{note.title}</h3>
+          <Markdown content={note.content.source} />
+        </div>
+      );
+    })}
+  </div>
+</PageLayout>

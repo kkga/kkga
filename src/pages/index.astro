@@ -18,11 +18,6 @@ let notes = await Astro.fetchContent("./notes/*.md");
 notes = notes.sort(
   (a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf()
 );
-
-let dlogNotes = await Astro.fetchContent("./dlog/*.md");
-dlogNotes = dlogNotes.sort(
-  (a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf()
-);
 ---
 
 <BaseLayout>
@@ -36,6 +31,5 @@ dlogNotes = dlogNotes.sort(
     <Listing title={"Work"} items={work} />
     <Listing title={"Play"} items={projects} />
     <Listing title={"Notes"} items={notes} />
-    <Listing title={"Dlog"} items={dlogNotes} />
   </div>
 </BaseLayout>

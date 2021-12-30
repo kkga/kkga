@@ -14,6 +14,8 @@ export default function Footer({ children }) {
         <nav className="flex gap-1 text-gray-500">
           <a className="text-current" href="/">index</a>
           <span>&middot;</span>
+          <a className="text-current" href="/dlog">dlog</a>
+          <span>&middot;</span>
           <a className="text-current" href="/now">now</a>
           <span>&middot;</span>
           <a className="text-current" href="/uses">uses</a>
