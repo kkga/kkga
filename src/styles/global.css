@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-gray-200 dark:bg-black;
+  }
+
+  /* text */
+  body {
+    @apply font-mono text-sm
+    text-gray-700 dark:text-gray-300;
+  }
+  h1 {
+    font-feature-settings: "ss02";
+    @apply font-sans font-bold text-center text-6xl my-12;
+  }
+  h2 {
+    @apply font-sans font-bold text-3xl uppercase mt-8 mb-6;
+  }
+  h3 {
+    @apply font-sans text-2xl font-bold uppercase mt-8 mb-4;
+  }
+  h4 {
+    @apply font-mono text-sm font-bold uppercase mt-8 mb-2;
+  }
+  h4 + ul {
+    @apply mt-0;
+  }
+  p {
+    @apply mb-4;
+  }
+
+  /* links */
+  a {
+    @apply text-accent-700
+    dark:text-accent-600
+    hover:underline;
+  }
+
+  /* content spacing */
+  figure,
+  video,
+  table,
+  pre {
+    @apply my-8;
+  }
+  ul,
+  ol {
+    @apply my-2;
+  }
+
+  /* list */
+  ul {
+    @apply list-square list-inside;
+  }
+  ul ul {
+    @apply my-0 ml-4;
+  }
+
+  /* table */
+  thead {
+    @apply text-left text-sm uppercase border-b
+    border-gray-200
+    dark:border-gray-700;
+  }
+  tr {
+    @apply py-4
+    border-gray-100
+    dark:border-gray-800;
+  }
+  td,
+  th {
+    @apply py-1;
+  }
+  tbody {
+    @apply divide-y;
+  }
+  table {
+    @apply table-auto w-full;
+  }
+
+  /* code */
+  pre {
+    @apply p-4
+    -mx-4
+    md:px-8
+    md:-mx-8
+    overflow-x-auto
+    whitespace-pre
+    leading-snug
+    bg-gray-50
+    dark:bg-gray-800;
+  }
+  code {
+    @apply rounded px-1
+    text-gray-900 bg-gray-200
+    dark:text-gray-50 dark:bg-gray-800;
+  }
+  pre code {
+    @apply bg-transparent p-0;
+  }
+
+  /* spacing */
+  hr {
+    @apply my-8
+    border-gray-200
+    dark:border-gray-800;
+  }
+}

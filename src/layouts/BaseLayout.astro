@@ -1,0 +1,24 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import PageHeader from "../components/PageHeader.jsx";
+import Footer from "../components/Footer.jsx";
+
+const { title, description, permalink } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" style="min-height: 100vh">
+  <head>
+    <BaseHead {title} {description} {permalink} />
+  </head>
+
+  <body class="flex flex-col max-w-3xl mx-auto" style="min-height: 100vh">
+    <slot name="header" />
+
+    <main class="flex-1 p-4 sm:p-8 bg-white dark:bg-gray-900">
+      <slot />
+    </main>
+
+    <Footer />
+  </body>
+</html>

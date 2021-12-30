@@ -1,0 +1,47 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import PageHeader from "../components/PageHeader.jsx";
+import Listing from "../components/Listing.jsx";
+import metadata from "../data/metadata.json";
+import { formatDateFull } from "../utils.js";
+
+const { content, showPageHeader = true } = Astro.props;
+const { title, description, tags, date, author, heroImage, permalink, alt } =
+  content;
+---
+
+<BaseLayout {title} {description} {permalink}>
+  <PageHeader slot="header" {description} {date} {tags} />
+
+  <article>
+    {showPageHeader && (
+      <header class="mb-20">
+        <slot name="title">
+          {title && <h1 class="text-center">{title}</h1>}
+        </slot>
+      </header>
+    )}
+
+    <slot />
+  </article>
+
+  <div class="text-gray-500 italic flex justify-end items-baseline">
+    {date && <time dateTime={date}>{formatDateFull(date)}</time>}
+    {tags && (
+      <>
+        <span class="mx-2">/</span>
+        <ul class="inline-flex gap-2 m-0 list-none">
+          {tags.map((tag) => {
+            const tagUrl = `/tags/${tag}`;
+
+            return (
+              <li class="m-0 inline">
+                <a href={tagUrl}>#{tag}</a>
+              </li>
+            );
+          })}
+        </ul>
+      </>
+    )}
+  </div>
+</BaseLayout>

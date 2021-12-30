@@ -1,20 +1,15 @@
 {
   "scripts": {
-    "dev": "eleventy --serve & tailwindcss -w -i _includes/assets/global.css -o _site/global.css",
-    "build": "eleventy && tailwindcss --minify -i _includes/assets/global.css -o _site/global.css",
-    "debug": "DEBUG=* eleventy"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "check": "astro check",
+    "preview": "astro preview"
   },
   "devDependencies": {
-    "@11ty/eleventy": "latest",
-    "@11ty/eleventy-navigation": "latest",
-    "@11ty/eleventy-plugin-rss": "latest",
-    "@11ty/eleventy-plugin-syntaxhighlight": "latest",
-    "eleventy-plugin-toc": "latest",
-    "autoprefixer": "latest",
-    "luxon": "latest",
-    "markdown-it": "latest",
-    "markdown-it-anchor": "latest",
-    "markdown-it-implicit-figures": "latest",
+    "@astrojs/renderer-react": "latest",
+    "astro": "latest",
+    "prettier-plugin-astro": "latest",
     "tailwindcss": "latest"
   }
 }

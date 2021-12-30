@@ -1,0 +1,53 @@
+---
+import metadata from "../data/metadata.json";
+
+export interface Props {
+  title: string;
+  description: string;
+  permalink: string;
+}
+const { title, description, permalink } = Astro.props;
+---
+
+<!-- Global Metadata -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<link rel="shortcut icon" type="image/jpg" href="/img/about/face.jpg" />
+
+<!-- Primary Meta Tags -->
+<title>{title || metadata.title}</title>
+<meta name="title" content={title || metadata.title} />
+<meta name="description" content={description || metadata.description} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={permalink || metadata.url} />
+<meta property="og:title" content={title || metadata.title} />
+<meta property="og:description" content={description || metadata.description} />
+<meta property="og:image" content="https://astro.build/social.jpg?v=1" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={permalink || metadata.url} />
+<meta property="twitter:title" content={title || metadata.title} />
+<meta
+  property="twitter:description"
+  content={description || metadata.description}
+/>
+<meta property="twitter:image" content="https://astro.build/social.jpg?v=1" />
+
+<!-- Styles -->
+<link rel="stylesheet" href={Astro.resolve("../styles/global.css")} />
+<link rel="stylesheet" href={Astro.resolve("../styles/prism.css")} />
+
+<!-- Fonts -->
+<link rel="stylesheet" href={Astro.resolve("../styles/fonts.css")} />
+
+<!-- Analytics -->
+<script
+  data-host="https://microanalytics.io"
+  data-dnt="false"
+  src="https://microanalytics.io/js/script.js"
+  id="ZwSg9rf6GA"
+  async
+  defer></script>
