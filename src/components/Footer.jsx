@@ -17,6 +17,8 @@ export default function Footer({ children }) {
           <a className="text-current" href="/now">now</a>
           <span>&middot;</span>
           <a className="text-current" href="/uses">uses</a>
+          <span>&middot;</span>
+          <a className="text-current" href="/rss.xml">rss</a>
         </nav>
       </div>
     </footer>
