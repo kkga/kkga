@@ -6,7 +6,7 @@ export default function Footer({ children }) {
       {children}
       <div className="sm:flex justify-between">
         <span className="text-gray-500">
-          Gadzhi Kharkharov &copy; 2019&ndash;present
+          Gadzhi Kharkharov &copy; 2019&ndash;2021
         </span>
 
         <nav className="flex gap-1 text-gray-500">
