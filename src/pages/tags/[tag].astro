@@ -1,0 +1,47 @@
+---
+import PageLayout from "../../layouts/PageLayout.astro";
+import Listing from "../../components/Listing.jsx";
+
+export function getStaticPaths() {
+  const allPages = Astro.fetchContent("../**/*.md");
+
+  const allTags = new Set();
+  allPages.map((page) => {
+    page.tags && page.tags.map((tag) => allTags.add(tag.toLowerCase()));
+  });
+
+  return Array.from(allTags).map((tag) => {
+    const filteredPages = allPages.filter(
+      (page) => page.tags && page.tags.includes(tag)
+    );
+    return {
+      params: { tag },
+      props: {
+        pages: filteredPages,
+        allTags: allTags,
+      },
+    };
+  });
+}
+
+const { params } = Astro.request;
+const { pages, allTags } = Astro.props;
+const title = `#${params.tag}`;
+---
+
+<PageLayout showPageHeader={false} content={{ title }}>
+  <Listing {title} items={pages} />
+  <hr />
+  <div class="my-8 flex flex-wrap gap-2 italic">
+    Other tags:
+    {Array.from(allTags)
+      .filter((tag) => tag !== params.tag)
+      .map((tag) => {
+        return (
+          <a key={tag} href={`/tags/${tag}`}>
+            #{tag}
+          </a>
+        );
+      })}
+  </div>
+</PageLayout>
