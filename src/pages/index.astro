@@ -27,12 +27,15 @@ dlogNotes = dlogNotes.sort(
 
 <BaseLayout>
   <PageHeader
+    slot="header"
     title={metadata.title}
     description="Software designer. Based in Moscow, Russia."
     showAboutLink={true}
   />
-  <Listing title="Work" items={work} />
-  <Listing title="Play" items={projects} />
-  <Listing title="Notes" items={notes} />
-  <Listing title="Dlog" items={dlogNotes} />
+  <div class="flex flex-col gap-12">
+    <Listing title="Work" items={work} />
+    <Listing title="Play" items={projects} />
+    <Listing title="Notes" items={notes} />
+    <Listing title="Dlog" items={dlogNotes} />
+  </div>
 </BaseLayout>

@@ -11,13 +11,15 @@ const { title, description, permalink } = Astro.props;
     <BaseHead {title} {description} {permalink} />
   </head>
 
-  <body class="p-4 max-w-3xl mx-auto sm:p-8" style="min-height: 100vh">
+  <body class="flex flex-col max-w-3xl mx-auto" style="min-height: 100vh">
     <slot name="header" />
 
-    <main>
+    <main class="flex-1 p-4 sm:p-8 bg-white dark:bg-gray-900">
       <slot />
     </main>
 
-    <footer></footer>
+    <footer>
+      <slot name="footer" />
+    </footer>
   </body>
 </html>

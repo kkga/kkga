@@ -2,6 +2,8 @@
 title: Webflow
 description: Selected projects at Webflow 2015-2021
 date: 2021-08-08
+tags:
+  - work
 layout: ../../layouts/PageLayout.astro
 setup: |
   import Grid from '../../components/Grid.jsx'
@@ -192,6 +194,8 @@ interface.
     className="col-span-full"
     image="/img/about/webflow-flexbox.gif"
     caption="Flexbox in action" />
+</Grid>
+<Grid className="grid-cols-2">
   <Figure
     image="/img/about/webflow-flexbox.webp"
     caption="First iteration of Flexbox controls" />

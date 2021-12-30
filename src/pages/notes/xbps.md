@@ -6,6 +6,7 @@ tags:
   - software
   - linux
   - void
+layout: ../../layouts/PageLayout.astro
 ---
 
 Void provides a comprehensive [manual][manual] on how to work with the source

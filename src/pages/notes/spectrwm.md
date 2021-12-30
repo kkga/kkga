@@ -1,12 +1,11 @@
 ---
 title: Spectrwm
-description:
-  Some notes I'm collecting while setting up a comfortable desktop with my new
-  favorite window manager
+description: Notes on my favorite window manager
 date: 2020-11-15
 tags:
   - software
   - linux
+layout: ../../layouts/PageLayout.astro
 ---
 
 ## what I like

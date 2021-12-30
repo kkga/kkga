@@ -5,12 +5,19 @@ export default function Figure({ video, image, caption, className }) {
     <figure className={`my-8 ${className}`}>
       {video &&
         (
-          <video controls autoPlay loop muted width="100%">
+          <video
+            className="shadow-md"
+            controls
+            autoPlay
+            loop
+            muted
+            width="100%"
+          >
             <source src={video} />
           </video>
         )}
       {image &&
-        <img src={image} />}
+        <img className="shadow-md" src={image} />}
       <figcaption>{caption}</figcaption>
     </figure>
   );

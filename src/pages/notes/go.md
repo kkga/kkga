@@ -1,9 +1,10 @@
 ---
 title: Go
 date: 2021-01-15
-tags: 
+tags:
   - programming
   - go
+layout: ../../layouts/PageLayout.astro
 ---
 
 ## Resources

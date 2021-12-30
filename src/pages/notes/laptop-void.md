@@ -5,6 +5,7 @@ tags:
   - software
   - linux
   - void
+layout: ../../layouts/PageLayout.astro
 ---
 
 ![Sway running on Void Linux](/img/notes/laptop-sway-void.png)

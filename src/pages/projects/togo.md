@@ -2,6 +2,8 @@
 title: togo
 description: CLI for todo.txt
 date: 2020-12-03
+tags:
+  - go
 layout: ../../layouts/PageLayout.astro
 setup: |
   import ProjectLink from '../../components/ProjectLink.jsx'

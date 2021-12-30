@@ -6,15 +6,21 @@ export default function PageHeader(
   { title, description, showAboutLink = false, date, tags },
 ) {
   return (
-    <header className="mb-20 flex justify-between items-baseline font-mono text-sm">
-      {title
-        ? <h1 className="m-0 uppercase text-sm font-mono font-bold">{title}</h1>
-        : (
-          <a href="/" className="uppercase text-sm font-bold">
-            {metadata.shortTitle}
-          </a>
-        )}
-      <div className="text-right text-gray-600 italic">
+    <header className="py-3 px-4 sm:px-8 bg-white dark:bg-gray-900 sm:flex justify-between items-baseline font-mono text-sm">
+      <div>
+        {title
+          ? (
+            <h1 className="m-0 uppercase text-sm font-mono font-bold">
+              {title}
+            </h1>
+          )
+          : (
+            <a href="/" className="uppercase text-sm font-bold">
+              {metadata.shortTitle}
+            </a>
+          )}
+      </div>
+      <div className="sm:text-right text-gray-600 italic">
         {description && <p className="m-0">{description}</p>}
 
         {showAboutLink && (

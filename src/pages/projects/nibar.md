@@ -2,6 +2,8 @@
 title: Nibar
 description: Custom status bar for macOS
 date: 2020-03-02
+tags:
+  - macos
 layout: ../../layouts/PageLayout.astro
 setup: |
   import ProjectLink from '../../components/ProjectLink.jsx'

@@ -2,6 +2,8 @@
 title: Stampsy
 description: Platform for sharing visual stories
 date: 2019-11-18
+tags:
+  - work
 layout: ../../layouts/PageLayout.astro
 setup: |
   import Grid from '../../components/Grid.jsx'

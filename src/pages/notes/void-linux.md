@@ -1,11 +1,12 @@
 ---
 title: Void Linux
-description: This note is WIP. I add more content as I use the OS.
+description: Notes on setting up a comfortable desktop
 date: 2020-11-15
 tags:
   - software
   - linux
   - void
+layout: ../../layouts/PageLayout.astro
 ---
 
 After going through a variety of Linux distributions (from PopOS/Fedora to Arch
