@@ -5,7 +5,7 @@ export default function ProjectLink({ title, url }) {
     <>
       <a
         href={url}
-        className="inline-block my-2 py-1 px-3
+        className="rounded inline-block my-2 py-1 px-3
         shadow-sm hover:no-underline
         bg-accent-50 border border-accent-300
         dark:text-white dark:border-accent-800 dark:bg-accent-900

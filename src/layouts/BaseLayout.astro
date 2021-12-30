@@ -7,7 +7,7 @@ const { title, description, permalink } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en" style="min-height: 100vh">
+<html lang="en" class="bg-gray-200 dark:bg-black" style="min-height: 100vh">
   <head>
     <BaseHead {title} {description} {permalink} />
   </head>
@@ -19,6 +19,8 @@ const { title, description, permalink } = Astro.props;
       <slot />
     </main>
 
-    <Footer />
+    <Footer>
+      <slot name="footer" />
+    </Footer>
   </body>
 </html>

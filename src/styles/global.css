@@ -3,10 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    @apply bg-gray-200 dark:bg-black;
-  }
-
   /* text */
   body {
     @apply font-mono text-sm

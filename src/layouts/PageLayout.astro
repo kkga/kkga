@@ -25,7 +25,8 @@ const { title, description, tags, date, author, heroImage, permalink, alt } =
     <slot />
   </article>
 
-  <div class="mt-8 text-gray-500 italic text-right">
+  <div class="float-right mt-8 text-gray-500 italic text-right">
+    <hr class="my-2" />
     {date && <time dateTime={date}>{formatDateFull(date)}</time>}
     {tags && (
       <ul class="gap-2 m-0 list-none">

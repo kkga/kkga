@@ -1,6 +1,6 @@
 ---
 import Listing from "../components/Listing.jsx";
-const allPages = Astro.fetchContent("../pages/work/*.md");
+const allPages = Astro.fetchContent("../pages/**/*.md");
 
 const allTags = new Set();
 allPages.map((page) => {
@@ -18,13 +18,10 @@ const { tags } = Astro.props;
         page.tags.includes(tag) &&
         page.url != Astro.request.url.pathname
     );
+    console.log(filteredPages);
     return (
       filteredPages.length > 0 && (
-        <Listing
-          slot="footer"
-          title={`More in #${tag}`}
-          items={filteredPages}
-        />
+        <Listing title={`More in #${tag}`} items={filteredPages} />
       )
     );
   })}

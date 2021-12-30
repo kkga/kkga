@@ -156,7 +156,7 @@ uncomplicated way to create rich animations and interactions.
 Here are various animations and interactions created using this feature in
 Webflow.
 
-<Grid className="grid-cols-2 gap-x-0">
+<Grid className="grid-cols-2 gap-4">
   <Img src="/img/about/webflow-ix-cubes.gif" />
   <Img src="/img/about/webflow-ix-parallax.gif" />
   <Img src="/img/about/webflow-ix-demo.gif" />

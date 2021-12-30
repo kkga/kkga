@@ -1,7 +1,7 @@
 export default function Video({ src }) {
   return (
     <video
-      className="shadow-md m-0"
+      className="rounded shadow-md m-0"
       controls
       autoPlay
       loop
