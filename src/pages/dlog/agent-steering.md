@@ -1,4 +1,5 @@
 ---
+layout: "../../layouts/PageLayout.astro"
 title: Wrapping up initial version of enemy agent steering
 date: 2020-03-14
 ---

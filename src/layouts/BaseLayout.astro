@@ -1,6 +1,7 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import PageHeader from "../components/PageHeader.jsx";
+import Footer from "../components/Footer.jsx";
 
 const { title, description, permalink } = Astro.props;
 ---
@@ -18,8 +19,6 @@ const { title, description, permalink } = Astro.props;
       <slot />
     </main>
 
-    <footer>
-      <slot name="footer" />
-    </footer>
+    <Footer />
   </body>
 </html>

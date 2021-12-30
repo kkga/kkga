@@ -1,8 +1,9 @@
 ---
+layout: "../../layouts/PageLayout.astro"
 title: Simple web app for throw-away notes
 date: 2021-03-15
-tags:
-  - svelte
+setup: |
+  import Video from '../../components/Video.jsx'
 ---
 
 I recently discovered the [Svelte](https://svelte.dev/) web framework. Its
@@ -28,6 +29,4 @@ Source code is available [on GitHub](https://github.com/kkga/jotdown).
 
 Here's a quick demo of how it works:
 
-<video controls autoplay loop muted width="100%">
-    <source src='/img/dlog/jotdown.mp4' />
-</video>
+<Video src='/img/dlog/jotdown.mp4' />

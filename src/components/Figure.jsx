@@ -1,24 +1,12 @@
 import React from "react";
 
-export default function Figure({ video, image, caption, className }) {
+export default function Figure({ children, caption, className }) {
   return (
-    <figure className={`my-8 ${className}`}>
-      {video &&
-        (
-          <video
-            className="shadow-md"
-            controls
-            autoPlay
-            loop
-            muted
-            width="100%"
-          >
-            <source src={video} />
-          </video>
-        )}
-      {image &&
-        <img className="shadow-md" src={image} />}
-      <figcaption>{caption}</figcaption>
+    <figure className={`my-6 ${className && className}`}>
+      {children}
+      <figcaption className="italic mt-2 text-sm text-center text-gray-500">
+        {caption}
+      </figcaption>
     </figure>
   );
 }

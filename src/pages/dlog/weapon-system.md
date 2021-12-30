@@ -1,4 +1,5 @@
 ---
+layout: "../../layouts/PageLayout.astro"
 title: Weapon system
 date: 2020-03-15
 ---

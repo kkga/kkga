@@ -3,26 +3,15 @@ import BaseLayout from "./BaseLayout.astro";
 import PageHeader from "../components/PageHeader.jsx";
 import Listing from "../components/Listing.jsx";
 import metadata from "../data/metadata.json";
+import { formatDateFull } from "../utils.js";
 
 const { content, showPageHeader = true } = Astro.props;
 const { title, description, tags, date, author, heroImage, permalink, alt } =
   content;
-
-const projects = Astro.fetchContent("../pages/projects/*.md");
-const dlog = Astro.fetchContent("../pages/dlog/*.md");
-const notes = Astro.fetchContent("../pages/notes/*.md");
-const work = Astro.fetchContent("../pages/work/*.md");
-const allPages = [...projects, ...notes, ...dlog, ...work];
-
-const allTags = new Set();
-allPages.map((page) => {
-  page.tags && page.tags.map((tag) => allTags.add(tag.toLowerCase()));
-});
-const pathname = Astro.request.url.pathname;
 ---
 
 <BaseLayout {title} {description} {permalink}>
-  <PageHeader slot="header" {pathname} {description} {date} {tags} />
+  <PageHeader slot="header" {description} {date} {tags} />
 
   <article>
     {showPageHeader && (
@@ -36,30 +25,23 @@ const pathname = Astro.request.url.pathname;
     <slot />
   </article>
 
-  <div slot="footer" class="flex flex-col gap-8 px-4 sm:px-8 py-6 bg-gray-100">
-    {tags &&
-      tags.map((tag) => {
-        const filteredPages = allPages.filter(
-          (page) =>
-            page.tags &&
-            page.tags.includes(tag) &&
-            page.url != Astro.request.url.pathname
-        );
-        return (
-          filteredPages.length > 0 && (
-            <Listing
-              slot="footer"
-              title={`More in #${tag}`}
-              items={filteredPages}
-            />
-          )
-        );
-      })}
-    <div class="flex justify-between">
-      <span class="text-gray-500">
-        Gadzhi Kharkharov &copy; 2019&ndash;present
-      </span>
-      <a class="text-gray-500" href="/">index</a>
-    </div>
+  <div class="text-gray-500 italic flex justify-end items-baseline">
+    {date && <time dateTime={date}>{formatDateFull(date)}</time>}
+    {tags && (
+      <>
+        <span class="mx-2">/</span>
+        <ul class="inline-flex gap-2 m-0 list-none">
+          {tags.map((tag) => {
+            const tagUrl = `/tags/${tag}`;
+
+            return (
+              <li class="m-0 inline">
+                <a href={tagUrl}>#{tag}</a>
+              </li>
+            );
+          })}
+        </ul>
+      </>
+    )}
   </div>
 </BaseLayout>

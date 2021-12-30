@@ -1,4 +1,5 @@
 ---
+layout: "../../layouts/PageLayout.astro"
 title: New project, yet again
 date: 2020-11-02
 ---

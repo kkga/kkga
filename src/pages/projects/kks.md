@@ -9,6 +9,7 @@ layout: ../../layouts/PageLayout.astro
 setup: |
   import ProjectLink from '../../components/ProjectLink.jsx'
   import Grid from '../../components/Grid.jsx'
+  import Video from '../../components/Video.jsx'
   import Figure from '../../components/Figure.jsx'
 ---
 
@@ -20,5 +21,7 @@ command-line interface which can be utilized by shell scripts.
 <ProjectLink url="https://github.com/kkga/kks" title="Source code on GitHub" />
 
 <Grid breakout>
-  <Figure video='/img/projects/kks.mp4' />
+  <Figure>
+  <Video src='/img/projects/kks.mp4' />
+  </Figure>
 </Grid>

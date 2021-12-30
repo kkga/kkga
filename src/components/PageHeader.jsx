@@ -20,7 +20,7 @@ export default function PageHeader(
             </a>
           )}
       </div>
-      <div className="sm:text-right text-gray-600 italic">
+      <div className="sm:text-right text-gray-500 italic">
         {description && <p className="m-0">{description}</p>}
 
         {showAboutLink && (

@@ -1,12 +1,10 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  mode: "jit",
   content: [
     './public/**/*.html',
     './src/**/*.{md,astro,js,jsx,svelte,ts,tsx,vue}',
   ],
-  darkMode: "media",
   theme: {
     colors: {
       transparent: "transparent",
@@ -14,7 +12,7 @@ module.exports = {
       black: colors.black,
       white: colors.white,
       gray: colors.neutral,
-      amber: colors.amber,
+      accent: colors.teal,
     },
     fontFamily: {
       sans: ["MD Nichrome", "sans-serif"],

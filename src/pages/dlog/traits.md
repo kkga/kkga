@@ -1,4 +1,5 @@
 ---
+layout: "../../layouts/PageLayout.astro"
 title: Character development. Traits.
 date: 2020-03-25
 ---

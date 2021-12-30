@@ -1,4 +1,5 @@
 ---
+layout: "../../layouts/PageLayout.astro"
 title: Tokei output
 date: 2020-03-20
 ---

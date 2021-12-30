@@ -7,6 +7,7 @@ tags:
 layout: ../../layouts/PageLayout.astro
 setup: |
   import ProjectLink from '../../components/ProjectLink.jsx'
+  import Img from '../../components/Img.jsx'
   import Figure from '../../components/Figure.jsx'
 ---
 
@@ -19,5 +20,10 @@ come back to it later.
 <ProjectLink url="https://jotdown.page" title="jotdown.page" />
 <ProjectLink url="https://github.com/kkga/jotdown" title="Source code on GitHub" />
 
-<Figure caption="Sheets overview" image="/img/projects/jotdown1.png" />
-<Figure caption="Zoomed view" image="/img/projects/jotdown2.png" />
+<Figure>
+<Img src="/img/projects/jotdown1.png" />
+</Figure>
+
+<Figure>
+<Img src="/img/projects/jotdown2.png" />
+</Figure>

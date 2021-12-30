@@ -1,4 +1,5 @@
 ---
+layout: "../../layouts/PageLayout.astro"
 title: First dlog note
 date: 2020-03-07
 ---

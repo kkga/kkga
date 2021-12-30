@@ -4,7 +4,7 @@ import { formatDateShort } from "../utils.js";
 export default function Listing({ title, items }) {
   return (
     <div>
-      <h3 class="mt-0">{title}</h3>
+      <h3 className="mt-0">{title}</h3>
       <ul className="list-none space-y-2 m-0">
         {items.map((item) => {
           return <ListItem {...item} />;
@@ -14,9 +14,9 @@ export default function Listing({ title, items }) {
   );
 }
 
-function ListItem({ title, url, description, date } = item) {
+function ListItem({ title, url, description, date }) {
   return (
-    <li className="sm:flex items-baseline gap-2">
+    <li key={url} className="sm:flex items-baseline gap-2">
       <a
         href={url}
         className="flex-shrink-0 block overflow-hidden overflow-ellipsis uppercase font-bold"

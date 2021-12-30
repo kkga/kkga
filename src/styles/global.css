@@ -34,8 +34,8 @@
 
   /* links */
   a {
-    @apply text-amber-700
-    dark:text-amber-500
+    @apply text-accent-700
+    dark:text-accent-600
     hover:underline;
   }
 
@@ -43,20 +43,12 @@
   figure,
   video,
   table,
-  pre,
-  article > .grid {
+  pre {
     @apply my-8;
-  }
-  article > .grid > figure {
-    @apply m-0;
   }
   ul,
   ol {
     @apply my-2;
-  }
-  figure video,
-  figure img {
-    @apply m-0;
   }
 
   /* list */
@@ -108,12 +100,6 @@
   }
   pre code {
     @apply bg-transparent p-0;
-  }
-
-  /* captions */
-  figcaption {
-    @apply italic mt-2 text-sm text-center
-    text-gray-500;
   }
 
   /* spacing */

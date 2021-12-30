@@ -3,12 +3,13 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "check": "astro check",
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/renderer-react": "^0.4.0",
-    "astro": "^0.22.1",
-    "prettier-plugin-astro": "^0.0.11",
-    "tailwindcss": "^3.0.7"
+    "@astrojs/renderer-react": "latest",
+    "astro": "latest",
+    "prettier-plugin-astro": "latest",
+    "tailwindcss": "latest"
   }
 }

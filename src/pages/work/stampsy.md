@@ -8,6 +8,8 @@ layout: ../../layouts/PageLayout.astro
 setup: |
   import Grid from '../../components/Grid.jsx'
   import Figure from '../../components/Figure.jsx'
+  import Video from '../../components/Video.jsx'
+  import Img from '../../components/Img.jsx'
   import ProjectLink from '../../components/ProjectLink.jsx'
 ---
 
@@ -32,21 +34,28 @@ styled React components.
 <ProjectLink title="Stampsy" url="https://stampsy.com" />
 
 <Grid breakout>
-  <Figure
-    video="/img/about/stampsy/stampsy-web.mp4"
-    caption="Promo video featuring parts of my user interface work"
-  />
-  <Figure
-    video="/img/about/stampsy/stampsy-site.mp4"
-    caption="Marketing website I designed in 2014"
-  />
+  <Figure caption="Promo video featuring parts of my user interface work">
+    <Video src="/img/about/stampsy/stampsy-web.mp4" />
+  </Figure>
 </Grid>
 
+<Figure caption="Marketing website I designed in 2014">
+  <Video src="/img/about/stampsy/stampsy-site.mp4" />
+</Figure>
+
 <Grid breakout className="grid-cols-2">
-  <Figure caption="Feed view" image="/img/about/stampsy/stampsy-web-0.png" />
-  <Figure caption="Story page" image="/img/about/stampsy/stampsy-web-1.png" />
-  <Figure caption="User-curated collection page" image="/img/about/stampsy/stampsy-web-2.png" />
-  <Figure caption="Visual editor for creating stories" image="/img/about/stampsy/stampsy-web-3.png" />
+  <Figure caption="Feed view">
+  <Img src="/img/about/stampsy/stampsy-web-0.png" />
+  </Figure>
+  <Figure caption="Story page">
+  <Img src="/img/about/stampsy/stampsy-web-1.png" />
+  </Figure>
+  <Figure caption="User-curated collection page">
+  <Img src="/img/about/stampsy/stampsy-web-2.png" />
+  </Figure>
+  <Figure caption="Visual editor for creating stories">
+  <Img src="/img/about/stampsy/stampsy-web-3.png" />
+  </Figure>
 </Grid>
 
 ---
@@ -56,8 +65,7 @@ for creating stories with a simple design editor. I designed and prototyped a
 lot of its touch-based interactions with different tools and codez.
 
 <Grid breakout>
-  <Figure
-    video="/img/about/stampsy/stampsy-ipad.mp4"
-    caption="Creating and sharing a story in Stampsy iPad app"
-  />
+  <Figure caption="Creating and sharing a story in Stampsy iPad app">
+    <Video src="/img/about/stampsy/stampsy-ipad.mp4" />
+  </Figure>
 </Grid>

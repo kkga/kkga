@@ -8,6 +8,7 @@ layout: ../../layouts/PageLayout.astro
 setup: |
   import ProjectLink from '../../components/ProjectLink.jsx'
   import Figure from '../../components/Figure.jsx'
+  import Img from '../../components/Img.jsx'
 ---
 
 Simple alternative status bar which displays a list of workspaces and some
@@ -17,4 +18,6 @@ managers, like [yabai](https://github.com/koekeishiya/yabai) or
 
 <ProjectLink url="https://github.com/kkga/nibar" title="Source code on GitHub" />
 
-<Figure image="https://raw.githubusercontent.com/kkga/nibar/master/ss.png" />
+<Figure>
+<Img src="https://raw.githubusercontent.com/kkga/nibar/master/ss.png" />
+</Figure>

@@ -1,4 +1,5 @@
 ---
+layout: "../../layouts/PageLayout.astro"
 title: Tower defense demo
 date: 2020-11-07
 ---

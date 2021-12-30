@@ -1,4 +1,5 @@
 ---
+layout: "../../layouts/PageLayout.astro"
 title: Not much progress
 date: 2020-03-08
 ---

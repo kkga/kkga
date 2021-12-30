@@ -8,6 +8,8 @@ layout: ../../layouts/PageLayout.astro
 setup: |
   import Grid from '../../components/Grid.jsx'
   import Figure from '../../components/Figure.jsx'
+  import Img from '../../components/Img.jsx'
+  import Video from '../../components/Video.jsx'
   import ProjectLink from '../../components/ProjectLink.jsx'
 ---
 
@@ -45,15 +47,14 @@ grid layouts.
 <ProjectLink url="https://www.webflow.com/grid" title="Product overview on Webflow" />
 
 <Grid breakout>
-  <Figure
-    video="/img/about/webflow-grid.mp4"
-    caption="Overview of grid's main features"
-  />
-  <Figure
-    image="/img/about/webflow-grid-playground.gif"
-    caption="Grid playground built in Webflow for feature release"
-  />
+  <Figure caption="Overview of grid's main features">
+    <Video src="/img/about/webflow-grid.mp4" />
+  </Figure>
 </Grid>
+
+<Figure caption="Grid playground built in Webflow for feature release" >
+  <Img src="/img/about/webflow-grid-playground.gif" />
+</Figure>
 
 Shortly after the initial release, we've added a fully visual support for
 working with
@@ -61,15 +62,15 @@ working with
 making it even easier to create and adjust grid layouts using direct on-canvas
 manipulation.
 
-<Figure
-  caption="Defining grid areas on canvas"
-  image="/img/about/webflow-grid-areas-1.gif" />
-<Figure
-  caption="Dragging elements into grid areas"
-  image="/img/about/webflow-grid-areas-2.gif" />
-<Figure
-  caption="Adjusting areas for smaller screens"
-  image="/img/about/webflow-grid-areas-3.gif" />
+<Figure caption="Defining grid areas on canvas">
+  <Img src="/img/about/webflow-grid-areas-1.gif" />
+</Figure>
+<Figure caption="Dragging elements into grid areas">
+  <Img src="/img/about/webflow-grid-areas-2.gif" />
+</Figure>
+<Figure caption="Adjusting areas for smaller screens">
+  <Img src="/img/about/webflow-grid-areas-3.gif" />
+</Figure>
 
 ---
 
@@ -94,15 +95,15 @@ preserve its unique content.
   url="https://webflow.com/blog/content-overrides-for-symbols"
   title="Feature overview on Webflow blog" />
 
-<Figure
-  caption="Defining overrides inside a symbol"
-  image="/img/about/webflow-symbols-1.gif" />
-<Figure
-  caption="Overriding content on a symbol instance"
-  image="/img/about/webflow-symbols-2.gif" />
-<Figure
-  caption="Adjusting layout across multiple symbols"
-  image="/img/about/webflow-symbols-3.gif" />
+<Figure caption="Defining overrides inside a symbol">
+  <Img src="/img/about/webflow-symbols-1.gif" />
+</Figure>
+<Figure caption="Overriding content on a symbol instance">
+  <Img src="/img/about/webflow-symbols-2.gif" />
+</Figure>
+<Figure caption="Adjusting layout across multiple symbols">
+  <Img src="/img/about/webflow-symbols-3.gif" />
+</Figure>
 
 ---
 
@@ -133,33 +134,33 @@ uncomplicated way to create rich animations and interactions.
   title="Launch page that fully utilizes the feature" />
 
 <Grid breakout>
-  <figure>
-    <div class="grid grid-cols-4 gap-4">
-        <img class="w-full" src="/img/about/webflow-ix-ui-click-actions.jpg">
-        <img class="w-full" src="/img/about/webflow-ix-ui-hover-actions.jpg">
-        <img class="w-full" src="/img/about/webflow-ix-ui-mouse-actions.jpg">
-        <img class="w-full" src="/img/about/webflow-ix-ui-scroll-actions.jpg">
-    </div>
-    <figcaption>Examples of timed and dynamic animations triggered by various events</figcaption>
-  </figure>
-  <Figure
-    video="/img/about/webflow-ix.mp4"
-    caption="Overview of creating various animations" />
-  <Figure
-    video="/img/about/webflow-ix-easing.mp4"
-    caption="Adjusting the easing curve on an intro animation" />
+  <Figure caption="Examples of timed and dynamic animations triggered by various events">
+    <Grid className="grid-cols-4">
+      <Img src="/img/about/webflow-ix-ui-click-actions.jpg" />
+      <Img src="/img/about/webflow-ix-ui-hover-actions.jpg" />
+      <Img src="/img/about/webflow-ix-ui-mouse-actions.jpg" />
+      <Img src="/img/about/webflow-ix-ui-scroll-actions.jpg" />
+    </Grid>
+  </Figure>
 </Grid>
+
+<Figure caption="Overview of creating various animations" >
+  <Video src="/img/about/webflow-ix.mp4" />
+</Figure>
+<Figure caption="Adjusting the easing curve on an intro animation" >
+  <Video src="/img/about/webflow-ix-easing.mp4" />
+</Figure>
 
 ### In the wild
 
 Here are various animations and interactions created using this feature in
 Webflow.
 
-<Grid className="grid-cols-2">
-  <Figure image="/img/about/webflow-ix-cubes.gif" />
-  <Figure image="/img/about/webflow-ix-parallax.gif" />
-  <Figure image="/img/about/webflow-ix-demo.gif" />
-  <Figure image="/img/about/webflow-ix-hover.gif" />
+<Grid className="grid-cols-2 gap-x-0">
+  <Img src="/img/about/webflow-ix-cubes.gif" />
+  <Img src="/img/about/webflow-ix-parallax.gif" />
+  <Img src="/img/about/webflow-ix-demo.gif" />
+  <Img src="/img/about/webflow-ix-hover.gif" />
 </Grid>
 
 ---
@@ -184,22 +185,22 @@ interface.
 
 <ProjectLink
   url="https://flexbox.webflow.com"
-  title="Educational marketing website I built for feature release" />
+  title="Educational site I built for feature release" />
 <ProjectLink
   url="https://www.flexboxgame.com/"
   title="Flexbox learning game I built in Webflow" />
 
-<Grid breakout className="grid-cols-2">
-  <Figure
-    className="col-span-full"
-    image="/img/about/webflow-flexbox.gif"
-    caption="Flexbox in action" />
+<Grid breakout>
+  <Figure caption="Flexbox in action">
+    <Img src="/img/about/webflow-flexbox.gif" />
+  </Figure>
 </Grid>
+
 <Grid className="grid-cols-2">
-  <Figure
-    image="/img/about/webflow-flexbox.webp"
-    caption="First iteration of Flexbox controls" />
-  <Figure
-    image="/img/about/webflow-flexbox-site.webp"
-    caption="Educational marketing website" />
+  <Figure caption="First iteration of Flexbox controls" >
+    <Img src="/img/about/webflow-flexbox.webp" />
+  </Figure>
+  <Figure caption="Educational marketing website" >
+    <Img src="/img/about/webflow-flexbox-site.webp" />
+  </Figure>
 </Grid>
