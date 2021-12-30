@@ -9,7 +9,7 @@ layout: ../../layouts/PageLayout.astro
 ---
 
 All of these resouces are five-star. I've marked my favorites with an extra star
-(✦).
+(*).
 
 ### Classics
 
@@ -29,9 +29,9 @@ All of these resouces are five-star. I've marked my favorites with an extra star
 ### Talks
 
 - [Practical Creativity](https://www.youtube.com/watch?v=zyVTxGpEO30) by
-  [Raph Koster](https://twitter.com/raphkoster) (✦)
+  [Raph Koster](https://twitter.com/raphkoster) (*)
 - [Magic: The Gathering: Twenty Years, Twenty Lessons Learned](https://youtu.be/QHHg99hwQGY)
-  by [Mark Rosewater](https://en.wikipedia.org/wiki/Mark_Rosewater) (✦)
+  by [Mark Rosewater](https://en.wikipedia.org/wiki/Mark_Rosewater) (*)
 - [Game Design Theory I Wish I had Known When I Started](https://youtu.be/qwPe3OHR04c)
   by [Daniel Cook](http://www.lostgarden.com/)
 - [Storytime, PAX East 2016](https://youtu.be/UwBl7Rnkt78) by
@@ -43,7 +43,7 @@ All of these resouces are five-star. I've marked my favorites with an extra star
 ### Books
 
 - [Designing Games](https://tynansylvester.com/book/) by
-  [Tynan Sylverster](https://twitter.com/TynanSylvester) (✦)
+  [Tynan Sylverster](https://twitter.com/TynanSylvester) (*)
 - [A Theory of Fun for Game Design](https://www.theoryoffun.com) by
   [Raph Koster](https://twitter.com/raphkoster)
 - [Game Feel](http://www.game-feel.com) by Steve Swink

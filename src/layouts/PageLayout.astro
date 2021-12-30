@@ -25,23 +25,20 @@ const { title, description, tags, date, author, heroImage, permalink, alt } =
     <slot />
   </article>
 
-  <div class="text-gray-500 italic flex justify-end items-baseline">
+  <div class="mt-8 text-gray-500 italic text-right">
     {date && <time dateTime={date}>{formatDateFull(date)}</time>}
     {tags && (
-      <>
-        <span class="mx-2">/</span>
-        <ul class="inline-flex gap-2 m-0 list-none">
-          {tags.map((tag) => {
-            const tagUrl = `/tags/${tag}`;
+      <ul class="gap-2 m-0 list-none">
+        {tags.map((tag) => {
+          const tagUrl = `/tags/${tag}`;
 
-            return (
-              <li class="m-0 inline">
-                <a href={tagUrl}>#{tag}</a>
-              </li>
-            );
-          })}
-        </ul>
-      </>
+          return (
+            <li key={tagUrl} class="m-0 inline">
+              <a href={tagUrl}>#{tag}</a>
+            </li>
+          );
+        })}
+      </ul>
     )}
   </div>
 </BaseLayout>

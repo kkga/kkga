@@ -10,7 +10,7 @@ export default function PageHeader(
       <div>
         {title
           ? (
-            <h1 className="m-0 uppercase text-sm font-mono font-bold">
+            <h1 className="m-0 uppercase text-left text-sm font-mono font-bold">
               {title}
             </h1>
           )
@@ -40,7 +40,7 @@ export default function PageHeader(
                 const tagUrl = `/tags/${tag}`;
 
                 return (
-                  <li className="m-0 inline">
+                  <li key={tagUrl} className="m-0 inline">
                     <a href={tagUrl}>#{tag}</a>
                   </li>
                 );
