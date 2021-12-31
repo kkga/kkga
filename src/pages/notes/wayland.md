@@ -4,7 +4,7 @@ date: 2021-03-13
 tags:
   - software
   - linux
-layout: ../../layouts/PageLayout.astro
+layout: ../../layouts/PostLayout.astro
 ---
 
 ## Apps

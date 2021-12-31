@@ -6,7 +6,7 @@ dateUp: 2021-09-16
 tags:
   - kakoune
   - setup
-layout: ../../layouts/PageLayout.astro
+layout: ../../layouts/PostLayout.astro
 ---
 
 **Update, 16 Sep 2021**: this functionality is now included in

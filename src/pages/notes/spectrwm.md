@@ -5,7 +5,7 @@ date: 2020-11-15
 tags:
   - software
   - linux
-layout: ../../layouts/PageLayout.astro
+layout: ../../layouts/PostLayout.astro
 ---
 
 ## what I like

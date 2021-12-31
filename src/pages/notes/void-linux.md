@@ -6,7 +6,7 @@ tags:
   - software
   - linux
   - void
-layout: ../../layouts/PageLayout.astro
+layout: ../../layouts/PostLayout.astro
 ---
 
 After going through a variety of Linux distributions (from PopOS/Fedora to Arch

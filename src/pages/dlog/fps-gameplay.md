@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/PageLayout.astro"
+layout: "../../layouts/PostLayout.astro"
 title: Refocusing on gameplay
 date: 2020-03-20
 ---

@@ -4,7 +4,7 @@ description: Selected projects at Webflow 2015-2021
 date: 2021-08-08
 tags:
   - work
-layout: ../../layouts/PageLayout.astro
+layout: ../../layouts/PostLayout.astro
 setup: |
   import Grid from '../../components/Grid.jsx'
   import Figure from '../../components/Figure.jsx'

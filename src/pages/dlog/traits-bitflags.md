@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/PageLayout.astro"
+layout: "../../layouts/PostLayout.astro"
 title: Using bit flags in Godot
 date: 2020-03-29
 ---

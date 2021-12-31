@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import PageHeader from "../components/PageHeader.jsx";
+import MainHeader from "../components/MainHeader.jsx";
 import Listing from "../components/Listing.jsx";
 import metadata from "../data/metadata.json";
 
@@ -21,10 +21,10 @@ notes = notes.sort(
 ---
 
 <BaseLayout>
-  <PageHeader
+  <MainHeader
     slot="header"
     title={metadata.title}
-    description="Software designer. Based in Moscow, Russia."
+    description={metadata.description}
     showAboutLink={true}
   />
   <div class="flex flex-col gap-12">

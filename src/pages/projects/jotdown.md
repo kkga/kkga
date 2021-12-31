@@ -4,7 +4,7 @@ description: Web app for jotting things down
 date: 2021-03-11
 tags:
   - svelte
-layout: ../../layouts/PageLayout.astro
+layout: ../../layouts/PostLayout.astro
 setup: |
   import ProjectLink from '../../components/ProjectLink.jsx'
   import Img from '../../components/Img.jsx'

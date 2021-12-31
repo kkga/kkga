@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/PageLayout.astro"
+layout: "../../layouts/PostLayout.astro"
 title: First dlog note
 date: 2020-03-07
 ---

@@ -2,7 +2,10 @@
 import BaseLayout from "./BaseLayout.astro";
 import MainHeader from "../components/MainHeader.jsx";
 import PageTitle from "../components/PageTitle.jsx";
+import RelevantPages from "../components/RelevantPages.astro";
 import { formatDateFull } from "../utils.js";
+
+// const allPages = Astro.fetchContent("/src/pages/notes/*.md");
 
 const { content, showTitle = true } = Astro.props;
 const { title, description, tags, date } = content;
@@ -11,9 +14,12 @@ const { title, description, tags, date } = content;
 <BaseLayout {title} {description}>
   <MainHeader slot="header" {description} {date} {tags} />
 
-  {showTitle && <PageTitle {title} /> }
+  <article>
+    {showTitle && <PageTitle {title} /> }
+    <slot />
+  </article>
 
-  <slot />
+  <!--{tags && tags.map((tag) => <RelevantPages {tag} /> )}-->
 
   <div class="float-right mt-8 text-gray-500 italic text-right">
     <hr class="my-2" />

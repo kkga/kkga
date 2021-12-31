@@ -4,7 +4,7 @@ description: Custom status bar for macOS
 date: 2020-03-02
 tags:
   - macos
-layout: ../../layouts/PageLayout.astro
+layout: ../../layouts/PostLayout.astro
 setup: |
   import ProjectLink from '../../components/ProjectLink.jsx'
   import Figure from '../../components/Figure.jsx'

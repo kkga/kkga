@@ -4,7 +4,7 @@ description: CLI todo manager for iCalendar
 date: 2021-10-05
 tags:
   - go
-layout: ../../layouts/PageLayout.astro
+layout: ../../layouts/PostLayout.astro
 setup: |
   import ProjectLink from '../../components/ProjectLink.jsx'
   import Figure from '../../components/Figure.jsx'

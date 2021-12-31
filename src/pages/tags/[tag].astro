@@ -6,7 +6,7 @@ import metadata from "../../data/metadata.json";
 export async function getStaticPaths({ rss }) {
   const allPages = Astro.fetchContent("../**/*.md");
   const sortedPages = allPages.sort(
-    (a, b) => new Date(b.date) - new Date(a.date)
+    (a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf()
   );
 
   const allTags = new Set();
@@ -50,7 +50,7 @@ const { pages, allTags } = Astro.props;
 const title = `#${params.tag}`;
 ---
 
-<PageLayout showPageHeader={false} content={{ title }}>
+<PageLayout showTitle={false} content={{ title }}>
   <Listing {title} items={pages} />
   <hr />
   <div class="my-8 flex flex-wrap gap-2 italic">

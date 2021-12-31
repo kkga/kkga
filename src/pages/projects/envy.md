@@ -4,7 +4,7 @@ description: Light color scheme for Vim with comfortable contrast
 date: 2021-01-13
 tags:
   - vim
-layout: ../../layouts/PageLayout.astro
+layout: ../../layouts/PostLayout.astro
 setup: |
   import ProjectLink from '../../components/ProjectLink.jsx'
 ---

@@ -4,7 +4,7 @@ date: 2021-04-06
 tags:
   - kakoune
   - setup
-layout: ../../layouts/PageLayout.astro
+layout: ../../layouts/PostLayout.astro
 ---
 
 I wanted a simple, no-plugins solution for inserting various bits of text into

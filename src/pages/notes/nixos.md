@@ -4,7 +4,7 @@ tags:
   - software
   - linux
 date: 2021-01-15
-layout: ../../layouts/PageLayout.astro
+layout: ../../layouts/PostLayout.astro
 ---
 
 [NixOS](https://nixos.org/) is a linux distribution with a unique approach to

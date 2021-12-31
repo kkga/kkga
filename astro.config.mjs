@@ -12,5 +12,12 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
   renderers: [
     "@astrojs/renderer-react",
   ],
-  vite: {},
+  vite: {
+    resolve: {
+      alias: {
+        $: "/src",
+        $components: "/src/components",
+      },
+    },
+  },
 });

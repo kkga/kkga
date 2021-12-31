@@ -5,7 +5,7 @@ date: 2021-09-12
 tags:
   - kakoune
   - go
-layout: ../../layouts/PageLayout.astro
+layout: ../../layouts/PostLayout.astro
 setup: |
   import ProjectLink from '../../components/ProjectLink.jsx'
   import Grid from '../../components/Grid.jsx'

@@ -2,7 +2,7 @@ import React from "react";
 import metadata from "../data/metadata.json";
 import { formatDateFull } from "../utils.js";
 
-export default function PageHeader(
+export default function MainHeader(
   { title, description, showAboutLink = false, date, tags },
 ) {
   return (
