@@ -1,7 +1,7 @@
 ---
-layout: "../../layouts/PostLayout.astro"
 title: Character development. Traits.
 date: 2020-03-25
+layout: ../../layouts/PostLayout.astro
 ---
 
 as planned, i tried to spend some time over the weekend planning my designs

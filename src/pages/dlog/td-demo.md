@@ -1,7 +1,7 @@
 ---
-layout: "../../layouts/PostLayout.astro"
 title: Tower defense demo
 date: 2020-11-07
+layout: ../../layouts/PostLayout.astro
 ---
 
 quick demo of the current state of the game.

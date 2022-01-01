@@ -1,7 +1,7 @@
 ---
-layout: "../../layouts/PostLayout.astro"
 title: First dlog note
 date: 2020-03-07
+layout: ../../layouts/PostLayout.astro
 ---
 
 this is an experiment. i saw a similar log on the web and it felt like a great

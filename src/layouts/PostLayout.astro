@@ -3,12 +3,10 @@ import BaseLayout from "./BaseLayout.astro";
 import MainHeader from "../components/MainHeader.jsx";
 import PageTitle from "../components/PageTitle.jsx";
 import RelevantPages from "../components/RelevantPages.astro";
-import { formatDateFull } from "../utils.js";
-
-// const allPages = Astro.fetchContent("/src/pages/notes/*.md");
 
 const { content, showTitle = true } = Astro.props;
 const { title, description, tags, date } = content;
+const { url } = Astro.request;
 ---
 
 <BaseLayout {title} {description}>
@@ -19,23 +17,5 @@ const { title, description, tags, date } = content;
     <slot />
   </article>
 
-  <!--{tags && tags.map((tag) => <RelevantPages {tag} /> )}-->
-
-  <div class="float-right mt-8 text-gray-500 italic text-right">
-    <hr class="my-2" />
-    {date && <time dateTime={date}>{formatDateFull(date)}</time>}
-    {tags && (
-      <ul class="gap-2 m-0 list-none">
-        {tags.map((tag) => {
-          const tagUrl = `/tags/${tag}`;
-
-          return (
-            <li key={tagUrl} class="m-0 inline">
-              <a href={tagUrl}>#{tag}</a>
-            </li>
-          );
-        })}
-      </ul>
-    )}
-  </div>
+  {tags && tags.map((tag) => <RelevantPages url={url.pathname} {tag} /> )}
 </BaseLayout>
