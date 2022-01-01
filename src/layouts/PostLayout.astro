@@ -2,7 +2,7 @@
 import BaseLayout from "./BaseLayout.astro";
 import MainHeader from "../components/MainHeader.jsx";
 import PageTitle from "../components/PageTitle.jsx";
-import RelevantPages from "../components/RelevantPages.astro";
+// import RelevantPages from "../components/RelevantPages.astro";
 
 const { content, showTitle = true } = Astro.props;
 const { title, description, tags, date } = content;
@@ -17,5 +17,5 @@ const { url } = Astro.request;
     <slot />
   </article>
 
-  {tags && tags.map((tag) => <RelevantPages url={url.pathname} {tag} /> )}
+  <!--{tags && tags.map((tag) => <RelevantPages url={url.pathname} {tag} /> )}-->
 </BaseLayout>

@@ -4,12 +4,11 @@ import Listing from "../components/Listing.jsx";
 const { url, tag } = Astro.props;
 
 const allPages = Astro.fetchContent("../pages/dlog/*.md");
-// const filteredPages = allPages
-//   .filter((page) => page.url !== url)
-//   .filter((page) => page.tags && page.tags.includes(tag));
+const filteredPages = allPages
+  .filter((page) => page.url !== url)
+  .filter((page) => page.tags && page.tags.includes(tag));
 ---
 
-<Listing title={`More in #${tag}`} items={allPages} />
-<!--
-{filteredPages.length > 0 && ( )}
--->
+{filteredPages.length > 0 && (
+  <Listing title={`More in #${tag}`} items={allPages} />
+)}
