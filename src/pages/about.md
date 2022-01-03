@@ -1,8 +1,8 @@
 ---
-layout: ../layouts/PageLayout.astro
 title: About
 description: Some things about me
 date: 2021-08-08
+layout: ../layouts/PostLayout.astro
 setup: |
   import PageSubHead from "../components/PageSubHead.jsx"
   import FaceAndLinks from "../components/FaceAndLinks.jsx"

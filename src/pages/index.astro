@@ -15,9 +15,7 @@ projects = projects.sort(
   (a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf()
 );
 
-let notes = Astro.fetchContent("../data/notes/*.md").map(
-  (note) => (note = { ...note, url: `/notes/${toSlug(note.title)}` })
-);
+let notes = Astro.fetchContent("./notes/*.md");
 notes = notes.sort(
   (a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf()
 );
@@ -28,7 +26,7 @@ notes = notes.sort(
     <span>{metadata.description} <a href="/about">More about me</a>.</span>
   </MainHeader>
   <div class="col-start-2 flex flex-col gap-12">
-    <Listing title={"Work"} description="Professional projects" items={work} />
+    <Listing title={"Work"} items={work} />
     <Listing title={"Play"} items={projects} />
     <Listing title={"Notes"} items={notes} />
   </div>

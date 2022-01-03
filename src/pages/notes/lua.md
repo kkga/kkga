@@ -3,6 +3,7 @@ title: Lua
 date: 2021-01-15
 tags:
   - programming
+layout: ../../layouts/PostLayout.astro
 ---
 
 ## Resources

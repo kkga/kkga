@@ -1,8 +1,8 @@
 ---
-layout: ../layouts/PageLayout.astro
 title: Now
 description: What I'm up to these days
 date: 2021-12-30
+layout: ../layouts/PostLayout.astro
 ---
 
 This is a ["/now"](https://nownownow.com/about) page. You should have one too.

@@ -9,8 +9,8 @@ export default function ProjectLink({ title, url }) {
         hover:no-underline
         bg-gray-300
         hover:bg-accent-600 hover:text-white
-        dark:bg-accent-900
-        hover:dark:bg-accent-800"
+        dark:bg-gray-900
+        hover:dark:bg-accent-900"
       >
         {title} ↗
       </a>

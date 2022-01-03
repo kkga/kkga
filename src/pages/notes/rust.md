@@ -4,6 +4,7 @@ date: 2021-01-15
 tags:
   - software
   - programming
+layout: ../../layouts/PostLayout.astro
 ---
 
 ## courses/books

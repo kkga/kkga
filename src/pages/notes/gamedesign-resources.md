@@ -4,6 +4,7 @@ description: Collection of articles, books, videos and other things I found usef
 date: 2020-11-18
 tags:
   - gamedev
+layout: ../../layouts/PostLayout.astro
 ---
 
 All of these resouces are five-star. I've marked my favorites with an extra star

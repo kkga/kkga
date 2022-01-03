@@ -4,6 +4,7 @@ date: 2021-01-03
 tags:
   - software
   - linux
+layout: ../../layouts/PostLayout.astro
 ---
 
 ![Sway running on Void Linux](/img/notes/laptop-sway-void.png)

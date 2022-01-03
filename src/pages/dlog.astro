@@ -1,5 +1,5 @@
 ---
-import PageLayout from "../layouts/PageLayout.astro";
+import PostLayout from "../layouts/PostLayout.astro";
 import { Markdown } from "astro/components";
 import { formatDateFull } from "../utils.js";
 
@@ -12,7 +12,7 @@ const title = "Dlog";
 const description = "Dev- or design-log with short notes";
 ---
 
-<PageLayout content={{ title, description }}>
+<PostLayout content={{ title, description }}>
   <div class="flex flex-col gap-12">
     {dlogNotes.map((note) => {
       return (
@@ -26,4 +26,4 @@ const description = "Dev- or design-log with short notes";
       );
     })}
   </div>
-</PageLayout>
+</PostLayout>

@@ -9,7 +9,7 @@
   /* text */
   body {
     @apply font-mono text-base
-    text-gray-800 dark:text-gray-300;
+    text-gray-800 dark:text-gray-400;
   }
   h1 {
     font-feature-settings: "ss02";
@@ -95,7 +95,7 @@
   code {
     @apply rounded px-1
     text-gray-900 bg-gray-200
-    dark:text-gray-50 dark:bg-gray-800;
+    dark:text-gray-300 dark:bg-gray-800;
   }
   pre code {
     @apply bg-transparent p-0;

@@ -1,5 +1,5 @@
 ---
-import PageLayout from "../../layouts/PageLayout.astro";
+import PostLayout from "../../layouts/PostLayout.astro";
 import Listing from "../../components/Listing.jsx";
 import metadata from "../../data/metadata.json";
 
@@ -50,7 +50,7 @@ const { pages, allTags } = Astro.props;
 const title = `#${params.tag}`;
 ---
 
-<PageLayout showTitle={false} content={{ title }}>
+<PostLayout showTitle={false} content={{ title }}>
   <Listing {title} items={pages} />
   <div class="text-sm my-8 flex flex-wrap gap-x-2 italic">
     Other tags:
@@ -64,4 +64,4 @@ const title = `#${params.tag}`;
         );
       })}
   </div>
-</PageLayout>
+</PostLayout>

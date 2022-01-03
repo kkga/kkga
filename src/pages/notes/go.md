@@ -4,6 +4,7 @@ date: 2021-01-15
 tags:
   - programming
   - go
+layout: ../../layouts/PostLayout.astro
 ---
 
 ## Resources

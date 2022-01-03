@@ -1,13 +1,12 @@
 ---
-import PageLayout from "../layouts/PageLayout.astro";
+import PostLayout from "../layouts/PostLayout.astro";
 
 const title = "404";
 const description = "Looks like nothing lives here";
 ---
 
-<PageLayout content={{ title, description }}>
-  <h1 slot="title" class="text-9xl">{title}</h1>
-  <p class="text-center">
+<PostLayout content={{ title, description }}>
+  <p>
     You might want to go <a href="/">home</a>.
   </p>
-</PageLayout>
+</PostLayout>

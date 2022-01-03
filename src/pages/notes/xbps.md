@@ -5,6 +5,7 @@ date: 2021-01-15
 tags:
   - software
   - linux
+layout: ../../layouts/PostLayout.astro
 ---
 
 Void provides a comprehensive [manual][manual] on how to work with the source
