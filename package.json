@@ -3,7 +3,6 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "postbuild": "node ./scripts/search/prepare-index.js",
     "check": "astro check",
     "preview": "astro preview"
   },
@@ -11,8 +10,8 @@
     "@astrojs/renderer-react": "^0.4.0",
     "astro": "^0.22.3",
     "autoprefixer": "^10.4.1",
-    "globby": "^12.0.2",
     "prettier-plugin-astro": "^0.0.11",
+    "slugify": "^1.6.4",
     "tailwindcss": "^3.0.8"
   }
 }

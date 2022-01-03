@@ -3,50 +3,50 @@ import metadata from "../data/metadata.json";
 import { formatDateFull } from "../utils.js";
 
 export default function MainHeader(
-  { title, description, showAboutLink = false, date, tags },
+  { title, description, date, tags, children },
 ) {
   return (
-    <header className="py-3 px-4 sm:px-8 bg-white dark:bg-gray-900 sm:flex justify-between items-baseline font-mono text-sm">
-      <div>
+    <header className="lg:grid grid-cols-header items-baseline p-4 sm:px-6">
+      <div className="font-black text-sm">
         {title
           ? (
-            <h1 className="m-0 uppercase text-left text-sm font-mono font-bold">
+            <h1 className="m-0 text-sm uppercase text-left font-black font-mono">
               {title}
             </h1>
           )
           : (
-            <a href="/" className="uppercase text-sm font-bold">
-              {metadata.shortTitle}
-            </a>
+            <>
+              <span className="font-bold mr-2">&larr;</span>
+              <a href="/" className="uppercase font-bold">
+                index
+              </a>
+            </>
           )}
       </div>
-      <div className="sm:text-right text-gray-500 italic">
-        {description && <p className="m-0">{description}</p>}
 
-        {showAboutLink && (
-          <p className="m-0">
-            <a href="/about">More about me</a>.
-          </p>
-        )}
+      <div className="mt-4 lg:m-0 italic font-bold">
+        {description && <span>{description}</span>}
+        {children}
+      </div>
 
+      <div className="lg:text-right">
         {date &&
-          <time dateTime={date}>{formatDateFull(date)}</time>}
+          <time className="block" dateTime={date}>{formatDateFull(date)}</time>}
+      </div>
 
+      <div className="lg:text-right">
         {tags && (
-          <>
-            <span className="mx-2">/</span>
-            <ul className="inline-flex gap-2 m-0 list-none">
-              {tags.map((tag) => {
-                const tagUrl = `/tags/${tag}`;
+          <ul className="inline-flex gap-2 m-0 list-none">
+            {tags.map((tag) => {
+              const tagUrl = `/tags/${tag}`;
 
-                return (
-                  <li key={tagUrl} className="m-0 inline">
-                    <a href={tagUrl}>#{tag}</a>
-                  </li>
-                );
-              })}
-            </ul>
-          </>
+              return (
+                <li key={tagUrl} className="m-0 inline">
+                  <a href={tagUrl}>#{tag}</a>
+                </li>
+              );
+            })}
+          </ul>
         )}
       </div>
     </header>

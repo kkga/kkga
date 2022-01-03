@@ -11,25 +11,11 @@ const { title, description, tags, date } = content;
 <BaseLayout {title} {description}>
   <MainHeader slot="header" {description} {date} {tags} />
 
-  {showTitle && <PageTitle {title} /> }
+  <div class="col-start-2">
+    {showTitle && (
+      <PageTitle {title} />
+    ) }
 
-  <slot />
-
-  <div class="float-right mt-8 text-gray-500 italic text-right">
-    <hr class="my-2" />
-    {date && <time dateTime={date}>{formatDateFull(date)}</time>}
-    {tags && (
-      <ul class="gap-2 m-0 list-none">
-        {tags.map((tag) => {
-          const tagUrl = `/tags/${tag}`;
-
-          return (
-            <li key={tagUrl} class="m-0 inline">
-              <a href={tagUrl}>#{tag}</a>
-            </li>
-          );
-        })}
-      </ul>
-    )}
+    <slot />
   </div>
 </BaseLayout>

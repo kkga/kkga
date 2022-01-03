@@ -7,8 +7,7 @@ tags:
 layout: ../../layouts/PostLayout.astro
 setup: |
   import ProjectLink from '../../components/ProjectLink.jsx'
-  import Figure from '../../components/Figure.jsx'
-  import Grid from '../../components/Grid.jsx'
+  import Video from '../../components/Video.jsx'
 ---
 
 `tdx` is a todo manager for [iCalendar](https://en.wikipedia.org/wiki/ICalendar)
@@ -29,6 +28,6 @@ CalDAV-enabled todo program, such as iOS Reminders.
 - deleting todos
 - purging completed/cancelled todos
 
-<Grid breakout>
-  <Figure video='/img/projects/tdx.mp4' />
-</Grid>
+### Demo
+
+<Video src='/img/projects/tdx.mp4' />

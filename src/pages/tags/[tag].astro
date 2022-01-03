@@ -52,8 +52,7 @@ const title = `#${params.tag}`;
 
 <PageLayout showTitle={false} content={{ title }}>
   <Listing {title} items={pages} />
-  <hr />
-  <div class="my-8 flex flex-wrap gap-2 italic">
+  <div class="text-sm my-8 flex flex-wrap gap-x-2 italic">
     Other tags:
     {Array.from(allTags)
       .filter((tag) => tag !== params.tag)

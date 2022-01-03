@@ -1,21 +1,24 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.jsx";
+import Texture from "../components/Texture.jsx";
 import metadata from "../data/metadata.json";
 
 const { title, description } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="min-h-screen bg-gray-200 dark:bg-black">
+<html lang="en" class="min-h-screen bg-gray-100 dark:bg-black">
   <head>
     <BaseHead {title} {description} />
   </head>
 
-  <body class="min-h-screen flex flex-col max-w-3xl mx-auto">
+  <body class="relative min-h-screen flex flex-col text-sm">
     <slot name="header" />
 
-    <main class="flex-1 p-4 sm:p-8 bg-white dark:bg-gray-900">
+    <main
+      class="grid grid-cols-main flex-1 px-4 py-8 sm:px-6 sm:py-12 lg:py-16"
+    >
       <slot />
     </main>
 

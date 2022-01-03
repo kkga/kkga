@@ -1,3 +1,5 @@
+import slugify from "slugify";
+
 export const formatDateShort = (date) =>
   new Date(date).toLocaleDateString("en-us", {
     month: "short",
@@ -18,3 +20,5 @@ export const toTitleCase = (str) =>
       return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
     },
   );
+
+export const toSlug = (str) => slugify(str, { lower: true });

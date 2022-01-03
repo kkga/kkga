@@ -8,15 +8,15 @@
 @layer base {
   /* text */
   body {
-    @apply font-mono text-sm
-    text-gray-700 dark:text-gray-300;
+    @apply font-mono text-base
+    text-gray-800 dark:text-gray-300;
   }
   h1 {
     font-feature-settings: "ss02";
-    @apply font-sans font-bold text-center text-6xl my-12;
+    @apply font-sans font-bold text-6xl my-12;
   }
   h2 {
-    @apply font-sans font-bold text-3xl uppercase mt-8 mb-6;
+    @apply font-sans font-bold text-4xl uppercase mt-8 mb-6;
   }
   h3 {
     @apply font-sans text-2xl font-bold uppercase mt-8 mb-4;
@@ -47,7 +47,7 @@
   }
   ul,
   ol {
-    @apply my-2;
+    @apply my-4;
   }
 
   /* list */
@@ -82,14 +82,14 @@
 
   /* code */
   pre {
-    @apply p-4
-    -mx-4
-    md:px-8
-    md:-mx-8
+    @apply px-4 py-3
     overflow-x-auto
+    shadow-sm
+    text-sm
     whitespace-pre
     leading-snug
-    bg-gray-50
+    rounded
+    bg-white
     dark:bg-gray-800;
   }
   code {

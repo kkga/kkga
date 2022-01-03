@@ -1,0 +1,81 @@
+---
+import PostLayout from "../../layouts/PostLayout.astro";
+import Listing from "../../components/Listing.jsx";
+import { toSlug } from "../../utils.js";
+import metadata from "../../data/metadata.json";
+
+export async function getStaticPaths({ rss }) {
+  const data = Astro.fetchContent("../../data/notes/*.md").filter(
+    ({ draft }) => !draft
+  );
+
+  const allNotes = data.map(
+    ({ title, description, tags, date, astro, file, url }) => {
+      let relatedNotes = [];
+      if (tags) {
+        relatedNotes = data
+          .filter((note) => note.file.pathname != file.pathname)
+          .filter((note) => note.tags.some((tag) => tags.includes(tag)))
+          .map(
+            (note) => (note = { ...note, url: `/notes/${toSlug(note.title)}` })
+          );
+      }
+
+      return {
+        params: { slug: toSlug(title) },
+        props: {
+          title,
+          description,
+          tags,
+          date,
+          html: astro.html,
+          md: astro.source,
+          related: relatedNotes,
+        },
+      };
+    }
+  );
+
+  //  rss({
+  //    title: `Articles • ${site.title}`,
+  //    description: site.description,
+  //    customData: `<language>en-us</language><author><name>${
+  //      site.title
+  //    }</name></author><id>${site.url}${site.rss.articles}</id><updated>${isoDate(
+  //      new Date()
+  //    )}</updated>`,
+  //    items: allArticles.map(({ props }) => {
+  //      const { article, md } = props
+  //
+  //      return {
+  //        title: article.title,
+  //        link: `/articles/${article.slug}/`,
+  //        pubDate: isoDate(article.published_date),
+  //        customData: `<id>${article.slug}</id><updated>${isoDate(
+  //          article.modified_date || article.published_date
+  //        )}</updated><content type="html"><![CDATA[ ${mdToHtml(
+  //          md
+  //        )} ]]></content>`,
+  //      }
+  //    }),
+  //    dest: `/${site.rss.articles}`,
+  //  })
+
+  return allNotes;
+}
+
+const { title, description, tags, date, html, md, related } = Astro.props;
+---
+
+<PostLayout content={{ title, description, tags, date }}>
+  {html}
+
+  {related.length > 0 && <hr /><Listing title="Related notes" items={related} />}
+
+  <!--  {related.map((note) => (
+    <div>
+      <a href=`/notes/${toSlug(note.title)}`>{note.title}({note.tags})</a>
+    </div>
+  ))}
+--></PostLayout
+>

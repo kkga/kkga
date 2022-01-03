@@ -21,8 +21,8 @@ products ranging from layout systems and animation tools to marketing pages and
 iconography in my early days.
 
 This is a collection of various projects I've worked on during these years.
-Latest and some of the most impactful stuff is still unreleased and, sadly, can
-not be shown.
+Latest and some of the most impactful things are still unreleased and, sadly,
+can not be shown.
 
 ---
 

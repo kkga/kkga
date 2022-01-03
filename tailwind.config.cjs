@@ -2,8 +2,8 @@ const colors = require("tailwindcss/colors");
 
 module.exports = {
   content: [
-    './public/**/*.html',
-    './src/**/*.{md,astro,js,jsx,svelte,ts,tsx,vue}',
+    "./public/**/*.html",
+    "./src/**/*.{md,astro,js,jsx,svelte,ts,tsx,vue}",
   ],
   theme: {
     colors: {
@@ -11,7 +11,7 @@ module.exports = {
       current: "currentColor",
       black: colors.black,
       white: colors.white,
-      gray: colors.neutral,
+      gray: colors.stone,
       accent: colors.teal,
     },
     fontFamily: {
@@ -27,6 +27,8 @@ module.exports = {
     fontWeight: {
       normal: 400,
       bold: 700,
+      black: 800,
+      ultra: 900,
     },
     container: {
       center: true,
@@ -36,9 +38,20 @@ module.exports = {
       square: "square",
       decimal: "decimal",
     },
+    extend: {
+      gridTemplateColumns: {
+        "main": "minmax(0, 1fr) minmax(0,88ch) minmax(0,1fr)",
+        "header": "minmax(0, 1fr) minmax(0,64ch) minmax(0,24ch) minmax(0,1fr)",
+      },
+      backgroundImage: {
+        "dust": "url(/img/dust-dark.png)",
+      },
+    },
   },
   variants: {
     container: [],
   },
   plugins: [],
 };
+
+// vim:ft=javascript

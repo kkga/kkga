@@ -2,7 +2,6 @@
 import BaseLayout from "./BaseLayout.astro";
 import MainHeader from "../components/MainHeader.jsx";
 import PageTitle from "../components/PageTitle.jsx";
-// import RelevantPages from "../components/RelevantPages.astro";
 
 const { content, showTitle = true } = Astro.props;
 const { title, description, tags, date } = content;
@@ -12,10 +11,12 @@ const { url } = Astro.request;
 <BaseLayout {title} {description}>
   <MainHeader slot="header" {description} {date} {tags} />
 
-  <article>
-    {showTitle && <PageTitle {title} /> }
-    <slot />
-  </article>
+  <div class="col-start-2">
+    <article className="sm:text-base">
+      {showTitle && <PageTitle {title} /> }
+      <slot />
+    </article>
+  </div>
 
-  <!--{tags && tags.map((tag) => <RelevantPages url={url.pathname} {tag} /> )}-->
+  <div class="col-start-2"></div>
 </BaseLayout>
