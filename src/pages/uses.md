@@ -10,13 +10,7 @@ layout: ../layouts/PostLayout.astro
 One of my favorite websites is [usesthis.com](https://usesthis.com/). I always
 liked reading about the tools people use to get through their day to day.
 
-This page outlines some details around my own setup.
-
-- I use 2 operating systems: macOS and Linux;
-- macOS is mostly used for work, while Linux is my preferred OS for personal
-  computering needs;
-- even though I’ve been a macOS user for 15+ years, I like Linux more,
-  especially lately.
+This page outlines a few details around my own setup.
 
 ### Hardware
 
@@ -25,11 +19,31 @@ This page outlines some details around my own setup.
 - MacBook Air M1
 - iPad Pro 11
 - Logitech MX Ergo trackball mouse
+- Corne-ish Zen keyboard
+
+#### Note on keyboards
+
+I’m experimenting with keyboards and layouts a lot lately.
+
+I’ve had a bunch of various keyboards over the last couple years, but I prefer the low-profile Choc switches by Kailh (the Purpz version).
+
+My current layout configuration for Corne-ish Zen can be found [here](https://github.com/kkga/zmk-config-Corne-ish-Zen).
 
 ### Software
+
+I use macOS for work, while Linux is my preferred OS for personal computering needs.
+Even though I’ve been a macOS user for 15+ years, I like Linux more these days.
+
+My Linux setup is barebones: I don’t use a full-fledged desktop environment. A tiling window manager, a fast terminal and a browser — that’s all I need.
+
+I do all text editing and coding in Kakoune, which is my favorite piece of software.
+
+Here's a list of essential pieces:
 
 - Arch Linux on laptop
 - Void Linux on desktop
 - Sway (window manager)
 - Foot (terminal)
 - Kakoune (text editor)
+
+My desktop configuration lives in [GitHub repo](https://github.com/kkga/config).
