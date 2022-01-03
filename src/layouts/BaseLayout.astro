@@ -16,9 +16,7 @@ const { title, description } = Astro.props;
   <body class="relative min-h-screen flex flex-col text-sm">
     <slot name="header" />
 
-    <main
-      class="grid grid-cols-main flex-1 px-4 py-8 sm:px-6 sm:py-12 lg:py-16"
-    >
+    <main class="grid grid-cols-main flex-1 px-4 py-12 sm:px-6 lg:py-16">
       <slot />
     </main>
 

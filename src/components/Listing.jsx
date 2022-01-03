@@ -4,7 +4,7 @@ export default function Listing({ title, items }) {
   return (
     <div>
       <h3 className="mt-0 mb-4">{title}</h3>
-      <ul className="flex flex-col list-none gap-x-8 gap-y-4 sm:gap-y-2">
+      <ul className="flex flex-col list-none gap-x-8 divide-y dark:divide-gray-800 sm:divide-y-0">
         {items.map((item) => <ListItem key={item.url} {...item} />)}
       </ul>
     </div>
@@ -13,10 +13,10 @@ export default function Listing({ title, items }) {
 
 function ListItem({ title, url, description, date }) {
   return (
-    <li className="flex flex-col sm:flex-row sm:items-center gap-0 sm:gap-2 leading-tight">
+    <li className="sm:flex sm:flex-row sm:items-center py-2 sm:py-1 gap-0 sm:gap-2 leading-tight">
       <a
         href={url}
-        className="flex-shrink-0 block overflow-hidden overflow-ellipsis uppercase font-black"
+        className="uppercase font-black inline-block sm:flex-shrink-0 sm:overflow-hidden sm:overflow-ellipsis "
       >
         {title}
       </a>
@@ -24,7 +24,7 @@ function ListItem({ title, url, description, date }) {
       </div>
       {description &&
         (
-          <span className="italic sm:text-right sm:overflow-ellipsis sm:overflow-hidden sm:whitespace-nowrap">
+          <span className="inline italic ml-2 sm:text-right sm:overflow-ellipsis sm:overflow-hidden sm:whitespace-nowrap">
             {description}
           </span>
         )}

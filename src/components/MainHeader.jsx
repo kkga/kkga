@@ -23,7 +23,7 @@ export default function MainHeader(
           )}
       </div>
 
-      <div className="mt-4 lg:m-0 italic font-bold">
+      <div className="mt-4 lg:m-0 italic">
         {description && <span>{description}</span>}
         {children}
       </div>
