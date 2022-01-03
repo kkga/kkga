@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Footer({ children }) {
   return (
     <footer className="flex flex-col gap-8 px-4 sm:px-6 py-4 text-sm">

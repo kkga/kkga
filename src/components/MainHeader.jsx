@@ -1,4 +1,3 @@
-import React from "react";
 import metadata from "../data/metadata.json";
 import { formatDateFull } from "../utils.js";
 

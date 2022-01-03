@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Figure({ children, caption, className }) {
   return (
     <figure className={`my-6 ${className && className}`}>

@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Grid({ children, breakout = false, className }) {
   return (
     <div

@@ -1,11 +1,10 @@
-import React from "react";
 import { formatDateShort } from "../utils.js";
 
 export default function Listing({ title, items }) {
   return (
     <div>
       <h3 className="mt-0 mb-4">{title}</h3>
-      <ul className="flex flex-col list-none gap-x-8 gap-y-4">
+      <ul className="flex flex-col list-none gap-x-8 gap-y-2">
         {items.map((item) => <ListItem key={item.url} {...item} />)}
       </ul>
     </div>
