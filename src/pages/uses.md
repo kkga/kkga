@@ -42,14 +42,27 @@ Even though I’ve been a macOS user for 15+ years, I like Linux more these days
 
 My Linux setup is barebones: I don’t use a full-fledged desktop environment. A tiling window manager, a fast terminal and a browser — that’s all I need.
 
-I do all text editing and coding in Kakoune, which is my favorite piece of software.
+I do all text editing and coding in Kakoune, which is a terminal-based text editor and my favorite piece of software.
 
 Here's a list of essential pieces:
+
+#### Linux
 
 - Arch Linux on laptop
 - Void Linux on desktop
 - Sway (window manager)
+- Firefox
 - Foot (terminal)
+
+#### macOS
+
+- Firefox and Safari
+- Figma (UI design tool)
+- iTerm2 (terminal)
+
+#### Terminal
+
+- Fish (shell)
 - Kakoune (text editor)
 
-My desktop configuration lives in a [GitHub repo](https://github.com/kkga/config).
+Current desktop configuration lives in a [GitHub repo](https://github.com/kkga/config).
