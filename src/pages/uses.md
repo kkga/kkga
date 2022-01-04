@@ -19,7 +19,9 @@ This page outlines a few details around my own setup.
 - MacBook Air M1
 - iPad Pro 11
 - Logitech MX Ergo trackball mouse
-- Corne-ish Zen keyboard
+- [Corne-ish Zen][corneish] keyboard
+
+[corneish]: https://lowprokb.ca/products/corne-ish-zen-2
 
 #### Note on keyboards
 
@@ -27,7 +29,11 @@ I’m experimenting with keyboards and layouts a lot lately.
 
 I’ve had a bunch of various keyboards over the last couple years, but I prefer the low-profile Choc switches by Kailh (the Purpz version).
 
-My current layout configuration for Corne-ish Zen can be found [here](https://github.com/kkga/zmk-config-Corne-ish-Zen).
+My layout config has been slimming down in size since I started experimenting. I’m currently using a 34 keys layout and this picture gives an idea of how it works.
+
+![34 keys](/img/34keys.png)
+
+The current layout configuration for Corne-ish Zen can be found [here](https://github.com/kkga/zmk-config-Corne-ish-Zen).
 
 ### Software
 
@@ -46,4 +52,4 @@ Here's a list of essential pieces:
 - Foot (terminal)
 - Kakoune (text editor)
 
-My desktop configuration lives in [GitHub repo](https://github.com/kkga/config).
+My desktop configuration lives in a [GitHub repo](https://github.com/kkga/config).
