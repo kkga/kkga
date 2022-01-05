@@ -22,7 +22,7 @@
     @apply font-sans text-2xl font-bold uppercase mt-8 mb-4;
   }
   h4 {
-    @apply font-mono text-sm font-bold uppercase mt-8 mb-2;
+    @apply font-mono text-sm font-bold uppercase mt-4 mb-2;
   }
   h4 + ul {
     @apply mt-0;
