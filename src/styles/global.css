@@ -49,6 +49,17 @@
   ol {
     @apply my-4;
   }
+  hr {
+    @apply my-8
+    border-gray-200
+    dark:border-gray-800;
+  }
+
+  /* article media */
+  article img,
+  article video {
+    @apply shadow-md rounded;
+  }
 
   /* list */
   ul {
@@ -99,12 +110,5 @@
   }
   pre code {
     @apply bg-transparent p-0;
-  }
-
-  /* spacing */
-  hr {
-    @apply my-8
-    border-gray-200
-    dark:border-gray-800;
   }
 }

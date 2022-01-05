@@ -12,7 +12,7 @@ liked reading about the tools people use to get through their day to day.
 
 This page outlines a few details around my own setup.
 
-### Hardware
+## Hardware
 
 - Lenovo X1 Carbon Gen 9
 - Custom PC with Ryzen 3600 cpu
@@ -27,22 +27,31 @@ This page outlines a few details around my own setup.
 
 I’m experimenting with keyboards and layouts a lot lately.
 
-I’ve had a bunch of various keyboards over the last couple years, but I prefer the low-profile Choc switches by Kailh (the Purpz version).
+I’ve had a bunch of various keyboards over the last couple years, but I prefer
+the low-profile Choc switches by Kailh (the Purpz version).
 
-My layout config has been slimming down in size since I started experimenting. I’m currently using a 34 keys layout and this picture gives an idea of how it works.
+My layout config has been slimming down in size since I started experimenting.
+At the moment I’m using a 34 keys layout and this picture gives an idea of how
+it works.
 
-![34 keys](/img/34keys.png)
+[![34 keys](/img/34keys.png)](/img/34keys.png)
 
-The current layout configuration for Corne-ish Zen can be found [here](https://github.com/kkga/zmk-config-Corne-ish-Zen).
+The current layout configuration for Corne-ish Zen lives
+[here](https://github.com/kkga/zmk-config-Corne-ish-Zen).
 
-### Software
+---
 
-I use macOS for work, while Linux is my preferred OS for personal computering needs.
-Even though I’ve been a macOS user for 15+ years, I like Linux more these days.
+## Software
 
-My Linux setup is barebones: I don’t use a full-fledged desktop environment. A tiling window manager, a fast terminal and a browser — that’s all I need.
+I use macOS for work, while Linux is my preferred OS for personal computering
+needs. Even though I’ve been a macOS user for 15+ years, I like Linux more these
+days.
 
-I do all text editing and coding in Kakoune, which is a terminal-based text editor and my favorite piece of software.
+My Linux setup is barebones: I don’t use a full-fledged desktop environment. A
+tiling window manager, a fast terminal and a browser — that’s all I need.
+
+I do all text editing and coding in Kakoune, which is a terminal-based text
+editor and my favorite piece of software.
 
 Here's a list of essential pieces:
 
@@ -65,4 +74,5 @@ Here's a list of essential pieces:
 - Fish (shell)
 - Kakoune (text editor)
 
-Current desktop configuration lives in a [GitHub repo](https://github.com/kkga/config).
+Current desktop configuration lives in a
+[GitHub repo](https://github.com/kkga/config).
