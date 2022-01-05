@@ -24,7 +24,7 @@ function ListItem({ title, url, description, date }) {
       </div>
       {description &&
         (
-          <span className="inline italic ml-2 sm:text-right sm:overflow-ellipsis sm:overflow-hidden sm:whitespace-nowrap">
+          <span className="inline italic ml-2 sm:ml-0 sm:text-right sm:overflow-ellipsis sm:overflow-hidden sm:whitespace-nowrap">
             {description}
           </span>
         )}

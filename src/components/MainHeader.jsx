@@ -28,12 +28,12 @@ export default function MainHeader(
         {children}
       </div>
 
-      <div className="lg:text-right">
+      <div className="lg:text-right italic">
         {date &&
           <time className="block" dateTime={date}>{formatDateFull(date)}</time>}
       </div>
 
-      <div className="lg:text-right">
+      <div className="lg:text-right italic">
         {tags && (
           <ul className="inline-flex gap-2 m-0 list-none">
             {tags.map((tag) => {
