@@ -7,6 +7,7 @@ tags:
 layout: ../../layouts/PostLayout.astro
 setup: |
   import ProjectLink from '../../components/ProjectLink.jsx'
+  import Grid from '../../components/Grid.jsx'
   import Figure from '../../components/Figure.jsx'
   import Img from '../../components/Img.jsx'
 ---
@@ -18,6 +19,8 @@ managers, like [yabai](https://github.com/koekeishiya/yabai) or
 
 <ProjectLink url="https://github.com/kkga/nibar" title="Source code on GitHub" />
 
+<Grid breakout>
 <Figure>
 <Img src="https://raw.githubusercontent.com/kkga/nibar/master/ss.png" />
 </Figure>
+</Grid>

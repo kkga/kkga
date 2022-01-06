@@ -23,17 +23,17 @@ export default function MainHeader(
           )}
       </div>
 
-      <div className="mt-4 lg:m-0 italic">
+      <div className="mt-4 lg:m-0">
         {description && <span>{description}</span>}
         {children}
       </div>
 
-      <div className="lg:text-right italic">
+      <div className="lg:text-right">
         {date &&
           <time className="block" dateTime={date}>{formatDateFull(date)}</time>}
       </div>
 
-      <div className="lg:text-right italic">
+      <div className="lg:text-right">
         {tags && (
           <ul className="inline-flex gap-2 m-0 list-none">
             {tags.map((tag) => {

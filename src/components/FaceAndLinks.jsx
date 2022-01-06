@@ -4,7 +4,7 @@ export default function FaceAndLinks() {
   return (
     <div className="my-8 flex items-start gap-4">
       <img className="rounded border w-32 shrink-0" src="/img/about/face.jpg" />
-      <ul className="my-0 text-sm italic font-bold list-none space-y-1">
+      <ul className="my-0 text-sm list-none space-y-1">
         {Object.keys(metadata.links).map((key) => {
           return (
             <li key={key}>

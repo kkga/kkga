@@ -52,7 +52,7 @@ const title = `#${params.tag}`;
 
 <PostLayout showTitle={false} content={{ title }}>
   <Listing {title} items={pages} />
-  <div class="text-sm my-8 flex flex-wrap gap-x-2 italic">
+  <div class="text-sm my-8 flex flex-wrap gap-x-2">
     Other tags:
     {Array.from(allTags)
       .filter((tag) => tag !== params.tag)
