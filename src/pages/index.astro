@@ -3,7 +3,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import MainHeader from "../components/MainHeader.jsx";
 import Listing from "../components/Listing.jsx";
 import metadata from "../data/metadata.json";
-import { toSlug } from "../utils.js";
 
 let work = Astro.fetchContent("./work/*.md");
 work = work.sort(
