@@ -15,7 +15,10 @@ module.exports = {
       accent: colors.teal,
     },
     fontFamily: {
-      sans: ["MD Nichrome", "sans-serif"],
+      sans: [
+        "MD Nichrome",
+        "sans-serif",
+      ],
       mono: [
         "MD IO",
         "Cascadia Code",
