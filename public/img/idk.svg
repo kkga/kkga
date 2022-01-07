@@ -1,0 +1,9 @@
+<svg data-ref="svg" xmlns="http://www.w3.org/2000/svg" class="surface" viewBox="-40,-40,1040,560" width="1040" height="560">
+        <defs>
+          <pattern width="2.0833333333333335%" height="4.166666666666667%" viewBox="0,0,20,20" id="dot-ODIyMDcxNDA3ODY3NDQyMA==">
+            <circle cx="10" cy="10" r="1" fill="#000"></circle>
+          </pattern>
+        </defs>
+        <rect data-ref="dots" x="0" y="0" width="960" height="480" fill="url('#dot-ODIyMDcxNDA3ODY3NDQyMA==')"></rect>
+        <g data-ref="content" stroke="black" stroke-linecap="round" fill="none" stroke-width="10"><path d="M370,130C370,160,400,190,430,190"></path><path d="M470,110C470,140,500,170,530,170"></path><path d="M470,350C470,270,550,190,630,190"></path></g>
+      </svg>
