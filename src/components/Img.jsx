@@ -1,3 +1,10 @@
-export default function Img({ src }) {
-  return <img className="m-0" src={src} />;
+export default function Img({ src, border }) {
+  return (
+    <img
+      className={`m-0 ${
+        border ? "border border-gray-400 dark:border-gray-800" : ""
+      }`}
+      src={src}
+    />
+  );
 }

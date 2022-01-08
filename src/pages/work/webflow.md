@@ -48,7 +48,7 @@ grid layouts.
 
 <Grid breakout>
   <Figure caption="Overview of grid's main features">
-    <Video src="/img/about/webflow-grid.mp4" />
+    <Video border src="/img/about/webflow-grid.mp4" />
   </Figure>
 </Grid>
 
@@ -136,16 +136,16 @@ uncomplicated way to create rich animations and interactions.
 <Grid breakout>
   <Figure caption="Examples of timed and dynamic animations triggered by various events">
     <Grid className="grid-cols-4">
-      <Img src="/img/about/webflow-ix-ui-click-actions.jpg" />
-      <Img src="/img/about/webflow-ix-ui-hover-actions.jpg" />
-      <Img src="/img/about/webflow-ix-ui-mouse-actions.jpg" />
-      <Img src="/img/about/webflow-ix-ui-scroll-actions.jpg" />
+      <Img border src="/img/about/webflow-ix-ui-click-actions.jpg" />
+      <Img border src="/img/about/webflow-ix-ui-hover-actions.jpg" />
+      <Img border src="/img/about/webflow-ix-ui-mouse-actions.jpg" />
+      <Img border src="/img/about/webflow-ix-ui-scroll-actions.jpg" />
     </Grid>
   </Figure>
 </Grid>
 
 <Figure caption="Overview of creating various animations" >
-  <Video src="/img/about/webflow-ix.mp4" />
+  <Video border src="/img/about/webflow-ix.mp4" />
 </Figure>
 <Figure caption="Adjusting the easing curve on an intro animation" >
   <Video src="/img/about/webflow-ix-easing.mp4" />
@@ -192,15 +192,15 @@ interface.
 
 <Grid breakout>
   <Figure caption="Flexbox in action">
-    <Img src="/img/about/webflow-flexbox.gif" />
+    <Img border src="/img/about/webflow-flexbox.gif" />
   </Figure>
 </Grid>
 
 <Grid className="grid-cols-2">
   <Figure caption="First iteration of Flexbox controls" >
-    <Img src="/img/about/webflow-flexbox.webp" />
+    <Img border src="/img/about/webflow-flexbox.webp" />
   </Figure>
   <Figure caption="Educational marketing website" >
-    <Img src="/img/about/webflow-flexbox-site.webp" />
+    <Img border src="/img/about/webflow-flexbox-site.webp" />
   </Figure>
 </Grid>

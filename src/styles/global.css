@@ -7,9 +7,13 @@
 
 @layer base {
   /* text */
+  html {
+    @apply min-h-screen bg-gray-100 dark:bg-gray-700;
+  }
   body {
     @apply font-mono text-base
-    text-gray-800 dark:text-gray-400;
+    relative min-h-screen flex flex-col text-sm
+    text-gray-800 dark:text-gray-300;
   }
   h1 {
     font-feature-settings: "ss02";
@@ -36,8 +40,14 @@
   /* links */
   a {
     @apply text-accent-700
-    dark:text-accent-600
-    hover:underline;
+    hover:text-accent-600
+    dark:text-accent-300
+    dark:hover:text-accent-200;
+  }
+
+  main {
+    @apply lg:grid grid-flow-col-dense grid-cols-main
+    gap-x-4 flex-1 px-4 py-12 sm:px-6 lg:py-16;
   }
 
   /* content spacing */
@@ -54,7 +64,7 @@
   hr {
     @apply my-8
     border-gray-200
-    dark:border-gray-800;
+    dark:border-gray-600;
   }
 
   /* article media */

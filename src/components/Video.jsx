@@ -1,12 +1,13 @@
-export default function Video({ src }) {
+export default function Video({ src, border }) {
   return (
     <video
-      className="m-0"
       controls
       autoPlay
       loop
       muted
-      width="100%"
+      className={`m-0 ${
+        border ? "border border-gray-400 dark:border-gray-800" : ""
+      }`}
     >
       <source src={src} />
     </video>

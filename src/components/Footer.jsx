@@ -1,6 +1,6 @@
 export default function Footer({ children }) {
   return (
-    <footer className="flex flex-col gap-8 px-4 sm:px-6 py-4 text-gray-500 dark:text-gray-600">
+    <footer className="flex flex-col gap-8 px-4 sm:px-6 py-4 text-gray-500 dark:text-gray-400">
       {children}
       <div className="sm:flex justify-between">
         <nav className="flex gap-1">

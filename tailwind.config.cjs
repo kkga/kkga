@@ -12,7 +12,7 @@ module.exports = {
       black: colors.black,
       white: colors.white,
       gray: colors.stone,
-      accent: colors.teal,
+      accent: colors.indigo,
     },
     fontFamily: {
       sans: [
