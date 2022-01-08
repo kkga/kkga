@@ -4,7 +4,7 @@ export default function Listing({ title, items }) {
   return (
     <div>
       <h2 className="mt-0 mb-4">{title}</h2>
-      <ul className="flex flex-col list-none gap-x-8 divide-y dark:divide-gray-800 sm:divide-y-0">
+      <ul className="flex flex-col list-none gap-x-8 divide-y dark:divide-gray-500 sm:divide-y-0">
         {items.map((item) => <ListItem key={item.url} {...item} />)}
       </ul>
     </div>
