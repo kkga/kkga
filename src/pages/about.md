@@ -15,21 +15,17 @@ living in Moscow.<br /> Designing software is what I do for work and joy.
 
 ## Work
 
-#### [Retool](https://retool.com) (Design engineer, 2021--)
+- **[Retool](https://retool.com)** (_2021--present, design engineer_) -- a tool
+  for building internal tools;
+- **[Webflow](https://webflow.com)** (_2015--2021, product designer_) -- a
+  platform that makes producing for web more approachable. Mostly focused on
+  figuring out how to create the right visual tools for designers;
+- **[Stampsy](https://stampsy.com)** (_2012--2014, designer/engineer_) -- a
+  small social platform for creating visual stories. I designed the product and
+  built a modular CSS architecture behind it.
 
-A tool for building internal tools.
-
-#### [Webflow](https://webflow.com) (Product designer, 2015--2021)
-
-A platform that makes producing for web more approachable. I was trying to
-figure out how to create the right visual tools for designers.</br>
-**[See my work at Webflow →](/work/webflow)**
-
-#### [Stampsy](https://stampsy.com) (Designer/engineer, 2012--2014)
-
-A small social platform for creating visual stories. I designed the product and
-built a modular CSS architecture behind it.</br>
-**[See my work at Stampsy →](/work/stampsy)**
+[See my work at Webflow →](/work/webflow)</br>
+[See my work at Stampsy →](/work/stampsy)
 
 ## Game design
 

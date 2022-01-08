@@ -16,7 +16,7 @@ function ListItem({ title, url, description, date }) {
     <li className="sm:flex sm:flex-row sm:items-center py-2 sm:py-1 gap-0 sm:gap-2 leading-tight">
       <a
         href={url}
-        className="uppercase font-black inline-block sm:flex-shrink-0 sm:overflow-hidden sm:overflow-ellipsis "
+        className="uppercase font-bold inline-block sm:flex-shrink-0 sm:overflow-hidden sm:overflow-ellipsis "
       >
         {title}
       </a>

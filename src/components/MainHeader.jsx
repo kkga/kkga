@@ -6,10 +6,10 @@ export default function MainHeader(
 ) {
   return (
     <header className="lg:grid grid-cols-header items-baseline p-4 sm:px-6">
-      <div className="font-black text-sm">
+      <div className="text-sm">
         {title
           ? (
-            <h1 className="m-0 text-sm uppercase text-left font-black font-mono">
+            <h1 className="m-0 text-sm uppercase text-left font-bold font-mono">
               {title}
             </h1>
           )

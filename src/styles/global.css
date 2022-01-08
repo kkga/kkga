@@ -65,7 +65,7 @@
 
   /* list */
   ul {
-    @apply list-square list-inside;
+    @apply list-disc;
   }
   ul ul {
     @apply my-0 ml-4;

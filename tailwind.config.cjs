@@ -36,11 +36,6 @@ module.exports = {
     container: {
       center: true,
     },
-    listStyleType: {
-      none: "none",
-      square: "square",
-      decimal: "decimal",
-    },
     extend: {
       gridTemplateColumns: {
         "main": "minmax(0, 1fr) minmax(0,88ch) minmax(0,1fr)",

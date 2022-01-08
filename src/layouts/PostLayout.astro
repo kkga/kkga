@@ -17,7 +17,7 @@ const headers = content.astro?.headers.filter((h) => h.depth <= 2);
   </div>
       }
   <div class="col-start-2 z-10">
-    <article className="sm:text-base">
+    <article>
       {showTitle && <PageTitle {title} /> }
       <slot />
     </article>
