@@ -59,7 +59,7 @@
   }
   ul,
   ol {
-    @apply my-4 list-inside;
+    @apply my-4;
   }
   hr {
     @apply my-8
@@ -75,7 +75,7 @@
 
   /* list */
   ul {
-    @apply list-disc;
+    @apply list-disc list-inside sm:list-outside;
   }
   ul ul {
     @apply my-0 ml-4;

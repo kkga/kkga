@@ -15,7 +15,9 @@ export default function MainHeader(
           )
           : (
             <>
-              <span className="font-bold mr-2">&larr;</span>
+              <span className="font-bold mr-2 text-gray-500 dark:text-gray-400">
+                &larr;
+              </span>
               <a href="/" className="uppercase font-bold">
                 index
               </a>
@@ -23,12 +25,12 @@ export default function MainHeader(
           )}
       </div>
 
-      <div className="mt-4 lg:m-0">
+      <div className="mt-4 lg:m-0 text-gray-500 dark:text-gray-400">
         {description && <span>{description}</span>}
         {children}
       </div>
 
-      <div className="lg:text-right">
+      <div className="lg:text-right text-gray-500 dark:text-gray-400">
         {date &&
           <time className="block" dateTime={date}>{formatDateFull(date)}</time>}
       </div>
@@ -40,8 +42,11 @@ export default function MainHeader(
               const tagUrl = `/tags/${tag}`;
 
               return (
-                <li key={tagUrl} className="m-0 inline">
-                  <a href={tagUrl}>#{tag}</a>
+                <li
+                  key={tagUrl}
+                  className="m-0 inline text-gray-500 dark:text-gray-400 "
+                >
+                  <a className="text-current" href={tagUrl}>#{tag}</a>
                 </li>
               );
             })}

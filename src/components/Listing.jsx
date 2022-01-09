@@ -24,14 +24,14 @@ function ListItem({ title, url, description, date }) {
       </div>
       {description &&
         (
-          <span className="inline italic ml-2 sm:ml-0 sm:text-right sm:overflow-ellipsis sm:overflow-hidden sm:whitespace-nowrap">
+          <span className="inline italic ml-2 sm:ml-0 sm:text-right sm:overflow-ellipsis sm:overflow-hidden sm:whitespace-nowrap text-gray-500 dark:text-gray-400">
             {description}
           </span>
         )}
       {date &&
         (
           <time
-            className="hidden sm:block whitespace-nowrap sm:ml-2"
+            className="hidden sm:block whitespace-nowrap text-gray-500 dark:text-gray-400 sm:ml-2"
             dateTime={date}
           >
             {formatDateShort(date)}
