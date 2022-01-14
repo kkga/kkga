@@ -20,8 +20,10 @@ This page outlines a few details around my own setup.
 - iPad Pro 11
 - Logitech MX Ergo trackball mouse
 - [Corne-ish Zen][corneish] keyboard
+- [Ferris Sweep][sweep] keyboard
 
 [corneish]: https://lowprokb.ca/products/corne-ish-zen-2
+[sweep]: https://github.com/davidphilipbarr/Sweep
 
 #### Note on keyboards
 
@@ -34,10 +36,9 @@ My layout config has been slimming down in size since I started experimenting.
 At the moment I’m using a 34 keys layout and this picture gives an idea of how
 it works.
 
-[![34 keys](/img/34keys.png)](/img/34keys.png)
+[![34 keys](https://raw.githubusercontent.com/kkga/zmk-config/8dca556f29d930dd6b40fbb823cf11ec9c70bd71/34keys.png)](https://raw.githubusercontent.com/kkga/zmk-config/8dca556f29d930dd6b40fbb823cf11ec9c70bd71/34keys.png)
 
-The current layout configuration for Corne-ish Zen lives
-[here](https://github.com/kkga/zmk-config-Corne-ish-Zen).
+Current layout configuration lives [here](https://github.com/kkga/zmk-config).
 
 ---
 
