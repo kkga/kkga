@@ -17,10 +17,13 @@ const description = "Dev- or design-log with short notes";
     {dlogNotes.map((note) => {
       return (
         <div key={note.url}>
-          <time class="italic text-gray-500" dateTime={note.date}>
+          <time
+            class="italic dark:text-gray-400 text-gray-500"
+            dateTime={note.date}
+          >
             {formatDateFull(note.date)}
           </time>
-          <h3 class="mt-0 mb-4">{note.title}</h3>
+          <h2 class="mt-0 mb-4">{note.title}</h2>
           <Markdown content={note.content.source} />
         </div>
       );

@@ -1,0 +1,102 @@
+---
+import PostLayout from "../../layouts/PostLayout.astro";
+import metadata from "../../data/metadata.json";
+import { formatDateFull } from "../../utils.js";
+import { Markdown } from "astro/components";
+
+export async function getStaticPaths({ rss }) {
+  const allPages = Astro.fetchContent("./*.md");
+  const sortedPages = allPages.sort(
+    (a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf()
+  );
+
+  const allTags = new Set();
+  sortedPages.map((page) => {
+    page.tags && page.tags.map((tag) => allTags.add(tag.toLowerCase()));
+  });
+
+  rss({
+    // The RSS Feed title, description, and custom metadata.
+    title: metadata.title,
+    description: metadata.description,
+    customData: `<language>en-us</language>`,
+    // The list of items for your RSS feed, sorted.
+    items: sortedPages.map((item) => ({
+      title: item.title,
+      description: item.description,
+      link: item.url,
+      pubDate: item.date,
+    })),
+    // Optional: Customize where the file is written to.
+    // Otherwise, defaults to "/rss.xml"
+    // dest: "/rss.xml",
+  });
+
+  return Array.from(allTags).map((tag) => {
+    const filteredPages = allPages.filter(
+      (page) => page.tags && page.tags.includes(tag)
+    );
+    return {
+      params: { tag },
+      props: {
+        pages: filteredPages,
+        allTags: allTags,
+      },
+    };
+  });
+}
+
+const { params } = Astro.request;
+const { pages, allTags } = Astro.props;
+const title = `TIL in #${params.tag}`;
+---
+
+<PostLayout content={{ title }}>
+  <div class="text-sm mb-12 flex flex-wrap gap-x-2">
+    <a href="/til">All TILs</a>
+    <span>&nbsp;&middot;&nbsp;</span>
+    Other tags:
+    {Array.from(allTags)
+      .filter((tag) => tag !== params.tag)
+      .map((tag) => {
+        return (
+          <a key={tag} href={`/til/${tag}`}>
+            #{tag}
+          </a>
+        );
+      })}
+  </div>
+  <div class="flex flex-col gap-12">
+    {pages.map((note) => {
+      return (
+        <div key={note.url}>
+          <div class="flex italic text-gray-500 dark:text-gray-400">
+            <time dateTime={note.date}>
+              {formatDateFull(note.date)}
+            </time>
+            {note.tags && (
+              <span>&nbsp;&middot;&nbsp;</span>
+              <ul class="inline-flex gap-2 m-0 list-none">
+                {note.tags.map((tag) => {
+                  return (
+                    <li key={tag} class="m-0 inline">
+                      {" "}
+                      #{tag}{" "}
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
+          </div>
+          <h3 class="mt-0 mb-4">
+            <a class="text-current" href={note.url}>
+              {note.title}
+            </a>
+          </h3>
+
+          <Markdown content={note.content.source} />
+        </div>
+      );
+    })}
+  </div>
+</PostLayout>

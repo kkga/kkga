@@ -6,7 +6,7 @@ tags:
 layout: ../../layouts/PostLayout.astro
 ---
 
-Say you're on branch `foo` and you need some files from branch `bar`.
+Say you're on branch `foo` and you need to grab some files from branch `bar`.
 
 Turns out, [`git-checkout`](https://git-scm.com/docs/git-checkout) can help:
 

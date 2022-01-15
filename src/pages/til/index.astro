@@ -1,24 +1,41 @@
 ---
-import PostLayout from "../layouts/PostLayout.astro";
+import PostLayout from "../../layouts/PostLayout.astro";
+import { formatDateFull } from "../../utils.js";
 import { Markdown } from "astro/components";
-import { formatDateFull } from "../utils.js";
 
-let tilNotes = await Astro.fetchContent("./til/*.md");
+let tilNotes = await Astro.fetchContent("./*.md");
 tilNotes = tilNotes.sort(
   (a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf()
 );
 
+const allTags = new Set();
+tilNotes.map((page) => {
+  page.tags && page.tags.map((tag) => allTags.add(tag.toLowerCase()));
+});
+
+console.log(tilNotes);
+
 const title = "TIL";
-const description = "random everyday things i don't want to forget";
+const description = "random bits i don't want to forget";
 ---
 
 <PostLayout content={{ title, description }}>
+  <div class="text-sm mb-12 flex flex-wrap gap-x-2">
+    All tags:
+    {Array.from(allTags).map((tag) => {
+      return (
+        <a key={tag} href={`/til/${tag}`}>
+          #{tag}
+        </a>
+      );
+    })}
+  </div>
   <div class="flex flex-col gap-12">
     {tilNotes.map((note) => {
       return (
         <div key={note.url}>
           <div class="flex italic text-gray-500 dark:text-gray-400">
-            <time class="italic text-gray-500" dateTime={note.date}>
+            <time dateTime={note.date}>
               {formatDateFull(note.date)}
             </time>
             {note.tags && (
@@ -26,21 +43,14 @@ const description = "random everyday things i don't want to forget";
               <ul class="inline-flex gap-2 m-0 list-none">
                 {note.tags.map((tag) => {
                   return (
-                    <li key={tag} class="m-0 inline">
-                      {" "}
-                      #{tag}{" "}
-                    </li>
+                    <li key={tag} class="m-0 inline">#{tag}</li>
                   );
                 })}
               </ul>
             )}
           </div>
-          <h3 class="mt-0 mb-4">
-            <a class="text-current" href={note.url}>
-              {note.title}
-            </a>
-          </h3>
 
+          <h2 class="mt-0 mb-4">{note.title}</h2>
           <Markdown content={note.content.source} />
         </div>
       );
