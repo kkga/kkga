@@ -36,7 +36,7 @@ My layout config has been slimming down in size since I started experimenting.
 At the moment I’m using a 34 keys layout and this picture gives an idea of how
 it works.
 
-[![34 keys](https://raw.githubusercontent.com/kkga/zmk-config/8dca556f29d930dd6b40fbb823cf11ec9c70bd71/34keys.png)](https://raw.githubusercontent.com/kkga/zmk-config/8dca556f29d930dd6b40fbb823cf11ec9c70bd71/34keys.png)
+[![34 keys](https://raw.githubusercontent.com/kkga/zmk-config/master/34keys.png)](https://raw.githubusercontent.com/kkga/zmk-config/master/34keys.png)
 
 Current layout configuration lives [here](https://github.com/kkga/zmk-config).
 
