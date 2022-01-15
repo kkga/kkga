@@ -1,0 +1,16 @@
+---
+title: Checkout files from another branch in git
+date: 2021-01-15
+tags:
+    - git
+layout: ../../layouts/PostLayout.astro
+---
+
+Say you're on branch `foo` and you need some files from branch `bar`.
+
+Turns out, [`git-checkout`](https://git-scm.com/docs/git-checkout) can help:
+
+```shell
+# on branch foo
+git checkout bar path/to/file
+```
