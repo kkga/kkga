@@ -8,7 +8,7 @@
 @layer base {
   /* text */
   html {
-    @apply min-h-screen bg-gray-100 dark:bg-gray-700;
+    @apply min-h-screen bg-gray-100 dark:bg-gray-900;
   }
   body {
     @apply font-mono text-base
@@ -63,8 +63,10 @@
   }
   hr {
     @apply my-8
+    border-b-2
     border-gray-200
-    dark:border-gray-600;
+    border-dotted
+    dark:border-gray-700;
   }
 
   /* article media */
@@ -114,6 +116,7 @@
     leading-snug
     rounded
     bg-white
+    shadow-sm
     dark:bg-gray-800;
   }
   code {

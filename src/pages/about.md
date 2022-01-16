@@ -49,8 +49,6 @@ Godot or Unity, writing shell scripts for my
 Go, I love it all and always try to learn more. I put occasionally useful things
 on [my GitHub](https://github.com/kkga).
 
-<FaceAndLinks />
-
 ---
 
 ## This website
@@ -65,3 +63,7 @@ The typefaces are set in
 
 Source code is available [on GitHub](https://github.com/kkga/kkga). You can
 freely clone it and use as a base for your own website.
+
+---
+
+<FaceAndLinks />

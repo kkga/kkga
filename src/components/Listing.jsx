@@ -20,7 +20,7 @@ function ListItem({ title, url, description, date }) {
       >
         {title}
       </a>
-      <div className="hidden sm:block basis-16 flex-1 mt-1 border-t-2 h-1 border-dotted border-gray-400 dark:border-gray-500">
+      <div className="hidden sm:block basis-16 flex-1 mt-1 border-t-2 h-1 border-dotted border-gray-400 dark:border-gray-700">
       </div>
       {description &&
         (

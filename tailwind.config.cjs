@@ -11,8 +11,8 @@ module.exports = {
       current: "currentColor",
       black: colors.black,
       white: colors.white,
-      gray: colors.stone,
-      accent: colors.indigo,
+      gray: colors.slate,
+      accent: colors.blue,
     },
     fontFamily: {
       sans: [
