@@ -4,7 +4,7 @@ import metadata from "../../data/metadata.json";
 import { formatDateFull } from "../../utils.js";
 import { Markdown } from "astro/components";
 
-export async function getStaticPaths({ rss }) {
+export async function getStaticPaths() {
   const allPages = Astro.fetchContent("./*.md");
   const sortedPages = allPages.sort(
     (a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf()
@@ -13,23 +13,6 @@ export async function getStaticPaths({ rss }) {
   const allTags = new Set();
   sortedPages.map((page) => {
     page.tags && page.tags.map((tag) => allTags.add(tag.toLowerCase()));
-  });
-
-  rss({
-    // The RSS Feed title, description, and custom metadata.
-    title: metadata.title,
-    description: metadata.description,
-    customData: `<language>en-us</language>`,
-    // The list of items for your RSS feed, sorted.
-    items: sortedPages.map((item) => ({
-      title: item.title,
-      description: item.description,
-      link: item.url,
-      pubDate: item.date,
-    })),
-    // Optional: Customize where the file is written to.
-    // Otherwise, defaults to "/rss.xml"
-    // dest: "/rss.xml",
   });
 
   return Array.from(allTags).map((tag) => {
