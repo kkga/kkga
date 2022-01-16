@@ -21,7 +21,7 @@ layout: ../../layouts/PostLayout.astro
 
 Do nothing but return output based on nothing but input.
 
-### Imperative
+#### Imperative
 
 ```javascript
 let name = "Alonzo";
@@ -35,7 +35,7 @@ console.log(`${greeting}, ${name}!`);
 // Howdy, Alonzo!
 ```
 
-### Functional
+#### Functional
 
 ```javascript
 function greet(greeting, name) {
@@ -49,7 +49,7 @@ greet("Howdy", "Alan");
 // "Howdy, Alan!
 ```
 
-### Side effects
+#### Side effects
 
 ```javascript
 let thesis = { name: "Church's", date: 1936 };
@@ -63,7 +63,7 @@ renameThesis("Church-Turing"); // Renamed!
 thesis; //{name: "Church-Turing", date: 1936}
 ```
 
-### No side effects
+#### No side effects
 
 ```javascript
 const thesis = { name: "Church's", date: 1936 };
@@ -87,7 +87,9 @@ thesis2; // {name: "Church-Turing", date: 1936}
 - **Iteration** -- imperative, looping, stateful
 - **Recursion** -- functional, self-referential, stateless
 
-### Iteration
+Some examples of achieving the same effect through iteration and recursion.
+
+#### Iteration
 
 ```javascript
 function sum(numbers) {
@@ -101,7 +103,7 @@ function sum(numbers) {
 sum([0, 1, 2, 3, 4]); // 10
 ```
 
-### Recursion
+#### Recursion
 
 ```javascript
 function sum(numbers) {
@@ -117,7 +119,7 @@ function sum(numbers) {
 sum([0, 1, 2, 3, 4]); // 10
 ```
 
-### Iteration
+#### Iteration
 
 ```javascript
 function iterativeFibonacci(n) {
@@ -135,7 +137,7 @@ function iterativeFibonacci(n) {
 }
 ```
 
-### Recursion
+#### Recursion
 
 ```javascript
 function recursiveFibonacci(n) {
@@ -156,7 +158,7 @@ work & how to use them.
 Link to my fork of exercises on Observable:
 https://observablehq.com/d/3003212404713bcf
 
-### Filter
+#### Filter
 
 The filter function takes a "predicate" function (a function that takes in a
 value and returns a boolean) and an array, applies the predicate function to
@@ -185,7 +187,7 @@ greaterThanFour = filter(
 // greaterThanFour is [5,6,7,8,9,10]
 ```
 
-### Map
+#### Map
 
 The map function takes a one-argument function and an array, and applies the
 function to each element in the array, returning a new array of the resulting
@@ -218,7 +220,7 @@ fizzBuzz = map((n) => {
 // fizzBuzz is [fizzbuzz,1,2,fizz,4,buzz,fizz,7,8,fizz,buzz]
 ```
 
-### Reduce
+#### Reduce
 
 The `reduce` function is the odd one of the bunch. Unlike `filter` and `map`,
 which each take an array and return another array, reduce takes in an array and
