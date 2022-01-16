@@ -12,6 +12,13 @@ liked reading about the tools people use to get through their day to day.
 
 This page outlines a few details around my own setup.
 
+I don't have a carefully arranged photo of my desk, so here's a snapshot of my
+messy workspace in the middle of some work:
+
+![desk](img/desk.jpg)
+
+---
+
 ## Hardware
 
 - Lenovo X1 Carbon Gen 9
@@ -19,6 +26,7 @@ This page outlines a few details around my own setup.
 - MacBook Air M1
 - iPad Pro 11
 - Logitech MX Ergo trackball mouse
+- Apple Magic Trackpad
 - [Corne-ish Zen][corneish] keyboard
 - [Ferris Sweep][sweep] keyboard
 
