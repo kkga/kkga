@@ -1,9 +1,10 @@
 ---
 title: tmux
-date: 2021-01-16
+date: 2022-01-16
 tags:
     - setup
     - software
+layout: ../../layouts/PostLayout.astro
 ---
 
 ## useful configuration settings
