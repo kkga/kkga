@@ -7,7 +7,7 @@ tags:
 layout: ../layouts/PostLayout.astro
 setup: |
   import Figure from "../components/Figure.jsx"
-  import Grid from '../../components/Grid.jsx'
+  import Grid from '../components/Grid.jsx'
 ---
 
 One of my favorite websites is [usesthis.com](https://usesthis.com/). I always
