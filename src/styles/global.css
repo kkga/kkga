@@ -53,12 +53,12 @@
   /* content spacing */
   figure,
   video,
-  table,
-  pre {
+  table {
     @apply my-8;
   }
   ul,
-  ol {
+  ol,
+  pre {
     @apply my-4;
   }
   hr {
