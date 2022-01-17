@@ -7,6 +7,7 @@ tags:
 layout: ../layouts/PostLayout.astro
 setup: |
   import Figure from "../components/Figure.jsx"
+  import Grid from '../../components/Grid.jsx'
 ---
 
 One of my favorite websites is [usesthis.com](https://usesthis.com/). I always
@@ -64,11 +65,13 @@ tiling window manager, a fast terminal and a browser — that’s all I need.
 I do all text editing and coding in Kakoune, which is a terminal-based text
 editor and my favorite piece of software.
 
-<Figure caption="Some terminal windows running in Sway on my laptop">
-  <a href="https://raw.githubusercontent.com/kkga/config/master/.local/share/desktop.png">
-    <img src="https://raw.githubusercontent.com/kkga/config/master/.local/share/desktop.png" />
-  </a>
-</Figure>
+<Grid breakout>
+  <Figure caption="Some terminal windows running in Sway on my laptop">
+    <a href="https://raw.githubusercontent.com/kkga/config/master/.local/share/desktop.png">
+      <img src="https://raw.githubusercontent.com/kkga/config/master/.local/share/desktop.png" />
+    </a>
+  </Figure>
+</Grid>
 
 Here's a list of essential pieces:
 
