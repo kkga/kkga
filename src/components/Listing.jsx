@@ -13,14 +13,14 @@ export default function Listing({ title, items }) {
 
 function ListItem({ title, url, description, date }) {
   return (
-    <li className="sm:flex sm:flex-row sm:items-center py-2 sm:py-1 gap-0 sm:gap-2 leading-tight">
+    <li className="sm:flex sm:flex-row sm:items-center py-2 sm:py-1 gap-0 sm:gap-2 sm:leading-tight">
       <a
         href={url}
         className="uppercase font-bold inline-block sm:flex-shrink-0 sm:overflow-hidden sm:overflow-ellipsis "
       >
         {title}
       </a>
-      <div className="hidden sm:block basis-16 flex-1 mt-1 border-t-2 h-1 border-dotted border-gray-400 dark:border-gray-700">
+      <div className="hidden sm:block basis-16 flex-1 mt-1 border-t-2 h-1 border-dotted border-gray-400 dark:border-gray-900">
       </div>
       {description &&
         (
