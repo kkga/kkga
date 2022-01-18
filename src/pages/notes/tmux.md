@@ -1,5 +1,5 @@
 ---
-title: tmux
+title: tmux configuration notes
 date: 2022-01-16
 tags:
     - setup
@@ -7,9 +7,9 @@ tags:
 layout: ../../layouts/PostLayout.astro
 ---
 
-## useful configuration settings
+## useful settings
 
-```sh
+```shell
 set -g history-limit 99999 # set big history limit
 set -g mode-keys vi # use vim keybindings in copy mode
 set -g escape-time 0 # disable delay for escape key press
