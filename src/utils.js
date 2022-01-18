@@ -1,3 +1,8 @@
+export const getFileModifiedDate = (file) => {
+  const { mtime } = fs.statSync(file);
+  return new Date(mtime);
+};
+
 export const formatDateShort = (date) =>
   new Date(date).toLocaleDateString("en-us", {
     month: "short",

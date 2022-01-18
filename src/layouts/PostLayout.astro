@@ -6,7 +6,7 @@ import Toc from "../components/Toc.jsx";
 
 const { content, showTitle = true } = Astro.props;
 const { title, description, tags, date } = content;
-const headers = content.astro?.headers.filter((h) => h.depth <= 2);
+const headers = content.astro?.headers?.filter((h) => h.depth <= 2);
 ---
 
 <BaseLayout {title} {description}>
