@@ -82,12 +82,29 @@ Here's a list of essential pieces:
 - Sway (window manager)
 - Firefox
 - Foot (terminal)
+- [Syncthing](https://syncthing.net/) -- private, reliable and open-source file
+  sync
 
 #### macOS
 
-- Firefox and Safari
-- Figma (UI design tool)
-- iTerm2 (terminal)
+- [Firefox](https://www.mozilla.org/en-US/firefox/new/) -- good web browser
+- [Figma](https://figma.com/) -- UI design tool
+- [iTerm2](https://iterm2.com/) -- terminal
+- [Rectangle](https://github.com/rxhanson/Rectangle) -- simple window management
+- [Itsycal](https://www.mowglii.com/itsycal/) -- tiny menubar calendar with Vim
+  keybindings and Zoom join buttons
+- [Maccy](https://maccy.app/) -- lightweight clipboard manager
+- [Syncthing](https://syncthing.net/) -- private, reliable and open-source file
+  sync (macOS has a simple menu bar app)
+- [Bumpr](https://www.getbumpr.com) -- a simple utility to control where links
+  open
+- [Shottr](https://shottr.cc/) -- small and fast screenshot tool
+- [Spaceman](https://github.com/Jaysce/Spaceman) -- view Spaces in the menu bar
+- [AltTab](https://github.com/lwouis/alt-tab-macos) -- Windows-style window
+  switcher
+- [MonitorControl](https://github.com/MonitorControl/MonitorControl) -- makes
+  controlling displays more reliable
+- [Claquette](https://www.peakstep.com/claquette/) -- good screen recorder
 
 #### Terminal
 
