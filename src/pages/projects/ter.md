@@ -24,9 +24,9 @@ and to get a bit less terrible at [TypeScript](https://www.typescriptlang.org/).
 
 <Grid breakout className="grid-cols-2">
   <Figure>
-    <Img src="/img/projects/ter-1.png" />
+    <Img border src="/img/projects/ter-1.png" />
   </Figure>
   <Figure>
-    <Img src="/img/projects/ter-2.png" />
+    <Img border src="/img/projects/ter-2.png" />
   </Figure>
 </Grid>
