@@ -7,6 +7,9 @@ tags:
 layout: ../../layouts/PostLayout.astro
 setup: |
   import ProjectLink from '../../components/ProjectLink.jsx'
+  import Grid from '../../components/Grid.jsx'
+  import Figure from '../../components/Figure.jsx'
+  import Img from '../../components/Img.jsx'
 ---
 
 Ter is a tiny wiki engine with Zettelkasten flavor.
@@ -18,3 +21,12 @@ I worked on Ter to get familiar with [Deno](https://deno.land), which is fun,
 and to get a bit less terrible at [TypeScript](https://www.typescriptlang.org/).
 
 <ProjectLink url="https://github.com/kkga/ter" title="Source code on GitHub" />
+
+<Grid breakout className="grid-cols-2">
+  <Figure>
+    <Img src="projects/ter-1.png" />
+  </Figure>
+  <Figure>
+    <Img src="projects/ter-2.png" />
+  </Figure>
+</Grid>
