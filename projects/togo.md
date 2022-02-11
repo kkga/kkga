@@ -9,7 +9,7 @@ tags:
 
 CLI for `todo.txt` and an early attempt at learning Go.
 
-<ProjectLink url="https://github.com/kkga/togo" title="Source code on GitHub" />
+**-> [Source code on GitHub](https://github.com/kkga/togo)**
 
 ### Usage
 

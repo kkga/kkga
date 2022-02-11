@@ -1,5 +1,4 @@
 ---
-title: Ter
 description: Tiny wiki-style site builder
 date: 2022-02-03
 tags:

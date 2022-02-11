@@ -13,13 +13,10 @@ It lives in a browser tab, quick to switch to and quick to navigate with a
 keyboard. The content is stored in your browser, so you can close the tab and
 come back to it later.
 
-<ProjectLink url="https://jotdown.page" title="jotdown.page" />
-<ProjectLink url="https://github.com/kkga/jotdown" title="Source code on GitHub" />
+**-> [jotdown.page](https://jotdown.page)**<br/> **->
+[Source code on GitHub](https://github.com/kkga/jotdown)**
 
-<Figure>
-<Img src="/img/projects/jotdown1.png" />
-</Figure>
-
-<Figure>
-<Img src="/img/projects/jotdown2.png" />
-</Figure>
+<div class="full-bleed" style="display:grid; column-gap: 1rem; grid-template-columns: repeat(2, 1fr)">
+  <img src="/img/projects/jotdown1.png" />
+  <img src="/img/projects/jotdown2.png" />
+</div>

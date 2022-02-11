@@ -12,10 +12,8 @@ system info. Intended for usage with workspace-switching oriented window
 managers, like [yabai](https://github.com/koekeishiya/yabai) or
 [Amethyst](https://github.com/ianyh/Amethyst).
 
-<ProjectLink url="https://github.com/kkga/nibar" title="Source code on GitHub" />
+**-> [Source code on GitHub](https://github.com/kkga/nibar)**
 
-<Grid breakout>
-<Figure>
-<Img src="https://raw.githubusercontent.com/kkga/nibar/master/ss.png" />
-</Figure>
-</Grid>
+<figure class="full-bleed">
+  <img src="https://raw.githubusercontent.com/kkga/nibar/master/ss.png" />
+</figure>

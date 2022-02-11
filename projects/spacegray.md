@@ -13,12 +13,12 @@ today, this wasn't the case when it just appeared several years ago.
 Spacegray was one of the first custom UI themes for it and became quite popular:
 it's been installed by ~400k users and has ~7k stars on GitHub.
 
-<ProjectLink url="https://github.com/kkga/spacegray" title="Source code on GitHub" />
+**-> [Source code on GitHub](https://github.com/kkga/spacegray)**
 
-<Figure caption="Dark variant">
-<Img src="https://raw.githubusercontent.com/kkga/spacegray/master/screenshots/spacegray.png" />
-</Figure>
+<figure class="full-bleed">
+  <img src="https://raw.githubusercontent.com/kkga/spacegray/master/screenshots/spacegray.png" />
+</figure>
 
-<Figure caption="Light variant">
-<Img src="https://raw.githubusercontent.com/kkga/spacegray/master/screenshots/spacegray-light.png" />
-</Figure>
+<figure class="full-bleed">
+  <img src="https://raw.githubusercontent.com/kkga/spacegray/master/screenshots/spacegray-light.png" />
+</figure>

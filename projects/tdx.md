@@ -13,7 +13,7 @@ files.
 iCalendar-compatibility means it can be a nice and simple CLI companion to any
 CalDAV-enabled todo program, such as iOS Reminders.
 
-<ProjectLink url="https://github.com/kkga/tdx" title="Source code on GitHub" />
+**-> [Source code on GitHub](https://github.com/kkga/tdx)**
 
 ### Features
 
@@ -27,4 +27,6 @@ CalDAV-enabled todo program, such as iOS Reminders.
 
 ### Demo
 
-<Video src='/img/projects/tdx.mp4' />
+<video class="full-bleed" controls autoplay>
+  <source src='/img/projects/tdx.mp4'>
+</video>
