@@ -18,18 +18,11 @@ than
 Here's a list of various small (and mostly useless) plugins I've created for
 Kakoune.
 
-| name                         | description                                                                       |
-| ---------------------------- | --------------------------------------------------------------------------------- |
-| [ui.kak][ui.kak]             | toggle UI highlighters                                                            |
-| [gdscript.kak][gdscript.kak] | syntax hightlighting for [Godot](https://godotengine.org)'s GDScript              |
-| [foot.kak][foot.kak]         | integration for [foot](https://codeberg.org/dnkl/foot)                            |
-| [todo.kak][todo.kak]         | toggle checkboxes                                                                 |
-| [saturn.kak][saturn.kak]     | dark colorscheme                                                                  |
-| [envy.kak][envy.kak]         | light colorscheme, port of my [Vim colorscheme](https://github.com/kkga/vim-envy) |
-
-[ui.kak]: https://github.com/kkga/ui.kak
-[saturn.kak]: https://github.com/kkga/saturn.kak
-[gdscript.kak]: https://github.com/kkga/gdscript.kak
-[envy.kak]: https://github.com/kkga/envy.kak
-[foot.kak]: https://github.com/kkga/foot.kak
-[todo.kak]: https://github.com/kkga/todo.kak
+| name                           | description                                                                       |
+| ------------------------------ | --------------------------------------------------------------------------------- |
+| <github.com/kkga/ui.kak>       | toggle UI highlighters                                                            |
+| <github.com/kkga/saturn.kak>   | syntax hightlighting for [Godot](https://godotengine.org)'s GDScript              |
+| <github.com/kkga/gdscript.kak> | integration for [foot](https://codeberg.org/dnkl/foot)                            |
+| <github.com/kkga/envy.kak>     | toggle checkboxes                                                                 |
+| <github.com/kkga/foot.kak>     | dark colorscheme                                                                  |
+| <github.com/kkga/todo.kak>     | light colorscheme, port of my [Vim colorscheme](https://github.com/kkga/vim-envy) |
