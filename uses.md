@@ -15,8 +15,6 @@ messy workspace in the middle of some work:
 
 ![desk](img/desk.jpg)
 
----
-
 ## Hardware
 
 - Lenovo X1 Carbon Gen 9
@@ -39,10 +37,7 @@ I’ve had a bunch of various keyboards over the last couple years, but I prefer
 the low-profile Choc switches by Kailh (the Purpz version).
 
 My layout config has been slimming down in size since I started experimenting.
-At the moment I’m using a 34 keys layout and this picture gives an idea of how
-it works.
-
-[![34 keys](https://raw.githubusercontent.com/kkga/zmk-config/master/34keys.png)](https://raw.githubusercontent.com/kkga/zmk-config/master/34keys.png)
+At the moment I’m using a 34 keys layout (an it actually works well).
 
 Current layout configuration lives [here](https://github.com/kkga/zmk-config).
 
@@ -67,7 +62,16 @@ editor and my favorite piece of software.
 
 Here's a list of essential pieces:
 
+#### Terminal
+
+- Fish (shell)
+- Kakoune (text editor)
+- [kks](projects/kks.md) -- a small Kakoune companion I wrote
+
 #### Linux
+
+Looks like Firefox is the only "GUI program" that I use here. I spend most of my
+time in the terminal.
 
 - Arch Linux on laptop
 - Void Linux on desktop
@@ -79,6 +83,8 @@ Here's a list of essential pieces:
 
 #### macOS
 
+macOS setup is, naturally, more GUI-centric.
+
 - [Firefox](https://www.mozilla.org/en-US/firefox/new/) -- good web browser
 - [Figma](https://figma.com/) -- UI design tool
 - [iTerm2](https://iterm2.com/) -- terminal
@@ -86,8 +92,7 @@ Here's a list of essential pieces:
 - [Itsycal](https://www.mowglii.com/itsycal/) -- tiny menubar calendar with Vim
   keybindings and Zoom join buttons
 - [Maccy](https://maccy.app/) -- lightweight clipboard manager
-- [Syncthing](https://syncthing.net/) -- private, reliable and open-source file
-  sync (macOS has a simple menu bar app)
+- [Syncthing](https://syncthing.net/) -- macOS has a simple menu bar app
 - [Bumpr](https://www.getbumpr.com) -- a simple utility to control where links
   open
 - [Shottr](https://shottr.cc/) -- small and fast screenshot tool
@@ -97,12 +102,6 @@ Here's a list of essential pieces:
 - [MonitorControl](https://github.com/MonitorControl/MonitorControl) -- makes
   controlling displays more reliable
 - [Claquette](https://www.peakstep.com/claquette/) -- good screen recorder
-
-#### Terminal
-
-- Fish (shell)
-- Kakoune (text editor)
-- [kks](projects/kks.md) -- a small Kakoune companion I wrote
 
 Current desktop configuration lives in a
 [GitHub repo](https://github.com/kkga/config).
