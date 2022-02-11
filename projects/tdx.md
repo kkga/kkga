@@ -25,8 +25,7 @@ CalDAV-enabled todo program, such as iOS Reminders.
 - deleting todos
 - purging completed/cancelled todos
 
-### Demo
-
-<video class="full-bleed" controls autoplay>
-  <source src='/img/projects/tdx.mp4'>
-</video>
+<figure class="full-bleed">
+  <video controls autoplay><source src='/img/projects/tdx.mp4'></video>
+  <figcaption>Demo of various features</figcaption>
+</figure>
