@@ -5,7 +5,6 @@ date: 2021-01-15
 tags:
   - software
   - vim
-layout: ../../layouts/PostLayout.astro
 ---
 
 If I had to choose one single piece of software, I'd choose

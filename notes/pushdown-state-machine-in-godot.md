@@ -4,7 +4,6 @@ date: 2021-01-17
 tags:
   - gamedev
   - godot
-layout: ../../layouts/PostLayout.astro
 ---
 
 ```gdscript

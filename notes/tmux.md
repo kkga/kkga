@@ -4,7 +4,6 @@ date: 2022-01-16
 tags:
     - setup
     - software
-layout: ../../layouts/PostLayout.astro
 ---
 
 ## useful settings

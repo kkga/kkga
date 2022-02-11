@@ -5,7 +5,6 @@ date: 2021-04-22
 tags:
   - programming
   - javascript
-layout: ../../layouts/PostLayout.astro
 ---
 
 #### Resources

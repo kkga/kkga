@@ -5,7 +5,6 @@ date: 2020-11-15
 tags:
   - software
   - linux
-layout: ../../layouts/PostLayout.astro
 ---
 
 After going through a variety of Linux distributions (from PopOS/Fedora to Arch
