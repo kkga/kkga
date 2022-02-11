@@ -16,7 +16,7 @@ come back to it later.
 **-> [jotdown.page](https://jotdown.page)**<br/> **->
 [Source code on GitHub](https://github.com/kkga/jotdown)**
 
-<div class="full-bleed" style="display:grid; column-gap: 1rem; grid-template-columns: repeat(2, 1fr)">
+<div class="full-bleed grid-2c">
   <img src="/img/projects/jotdown1.png" />
   <img src="/img/projects/jotdown2.png" />
 </div>
