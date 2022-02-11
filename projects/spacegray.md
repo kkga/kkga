@@ -16,10 +16,10 @@ it's been installed by ~400k users and has ~7k stars on GitHub.
 **-> [Source code on GitHub](https://github.com/kkga/spacegray)**
 
 <div class="grid-2c full-bleed">
-  <figure class="full-bleed">
+  <figure>
     <img src="https://raw.githubusercontent.com/kkga/spacegray/master/screenshots/spacegray.png" />
   </figure>
-  <figure class="full-bleed">
+  <figure>
     <img src="https://raw.githubusercontent.com/kkga/spacegray/master/screenshots/spacegray-light.png" />
   </figure>
 </div>
