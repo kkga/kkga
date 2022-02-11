@@ -18,11 +18,11 @@ than
 Here's a list of various small (and mostly useless) plugins I've created for
 Kakoune.
 
-| name                           | description                                                                       |
-| ------------------------------ | --------------------------------------------------------------------------------- |
-| <github.com/kkga/ui.kak>       | toggle UI highlighters                                                            |
-| <github.com/kkga/saturn.kak>   | syntax hightlighting for [Godot](https://godotengine.org)'s GDScript              |
-| <github.com/kkga/gdscript.kak> | integration for [foot](https://codeberg.org/dnkl/foot)                            |
-| <github.com/kkga/envy.kak>     | toggle checkboxes                                                                 |
-| <github.com/kkga/foot.kak>     | dark colorscheme                                                                  |
-| <github.com/kkga/todo.kak>     | light colorscheme, port of my [Vim colorscheme](https://github.com/kkga/vim-envy) |
+| name/link                            | description                                                                       |
+| ------------------------------------ | --------------------------------------------------------------------------------- |
+| https://github.com/kkga/ui.kak       | toggle UI highlighters                                                            |
+| https://github.com/kkga/saturn.kak   | syntax hightlighting for [Godot](https://godotengine.org)'s GDScript              |
+| https://github.com/kkga/gdscript.kak | integration for [foot](https://codeberg.org/dnkl/foot)                            |
+| https://github.com/kkga/envy.kak     | toggle checkboxes                                                                 |
+| https://github.com/kkga/foot.kak     | dark colorscheme                                                                  |
+| https://github.com/kkga/todo.kak     | light colorscheme, port of my [Vim colorscheme](https://github.com/kkga/vim-envy) |
