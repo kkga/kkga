@@ -4,6 +4,7 @@ date: 2022-01-17
 tags:
   - keyboard
 ---
+<!--deno-fmt-ignore-file-->
 
 [Ferris]: https://github.com/pierrechevalier83/ferris
 [Sweep]: https://github.com/davidphilipbarr/Sweep
@@ -20,4 +21,3 @@ tags:
 | [Roost]            | 36   | based on Sweep                          |
 | [samoklava]        | 36   | declarative design that can be adjusted |
 | [Architeuthis dux] | 34   | splayed columns                         |
-

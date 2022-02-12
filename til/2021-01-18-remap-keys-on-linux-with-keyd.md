@@ -4,7 +4,6 @@ date: 2021-01-18
 tags:
     - linux
     - keyboard
-layout: ../../layouts/PostLayout.astro
 ---
 
 Today I learned about the existence of [keyd], which is a system-wide daemon

@@ -29,8 +29,7 @@ me.
 After getting through the initial valley of despair, start sculpting [your own
 .vimrc][vimrc].
 
-If you're more of a video tutorial person, thoughtbot has a nice consise course
-[here][thoughtbot].
+If you're more of a video tutorial person, thoughtbot has a nice consise course [here][thoughtbot].
 
 [grok-vi]:
   http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118

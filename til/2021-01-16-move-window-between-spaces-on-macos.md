@@ -3,7 +3,6 @@ title: Move window between spaces on macOS
 date: 2021-01-16
 tags:
     - macos
-layout: ../../layouts/PostLayout.astro
 ---
 
 I always use multiple spaces on macOS and the typical way to move windows

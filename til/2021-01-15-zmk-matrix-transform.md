@@ -4,7 +4,6 @@ date: 2021-01-15
 tags:
     - zmk
     - keyboard
-layout: ../../layouts/PostLayout.astro
 ---
 
 I've had an issue with [ZMK](https://zmk.dev) when I wanted to use my existing
