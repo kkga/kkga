@@ -21,8 +21,8 @@ Kakoune.
 | name/link                            | description                                                                       |
 | ------------------------------------ | --------------------------------------------------------------------------------- |
 | https://github.com/kkga/ui.kak       | toggle UI highlighters                                                            |
-| https://github.com/kkga/saturn.kak   | syntax hightlighting for [Godot](https://godotengine.org)'s GDScript              |
-| https://github.com/kkga/gdscript.kak | integration for [foot](https://codeberg.org/dnkl/foot)                            |
-| https://github.com/kkga/envy.kak     | toggle checkboxes                                                                 |
-| https://github.com/kkga/foot.kak     | dark colorscheme                                                                  |
-| https://github.com/kkga/todo.kak     | light colorscheme, port of my [Vim colorscheme](https://github.com/kkga/vim-envy) |
+| https://github.com/kkga/saturn.kak   | dark colorscheme                                                                  |
+| https://github.com/kkga/gdscript.kak | syntax hightlighting for [Godot](https://godotengine.org)'s GDScript              |
+| https://github.com/kkga/envy.kak     | light colorscheme, port of my [Vim colorscheme](https://github.com/kkga/vim-envy) |
+| https://github.com/kkga/foot.kak     | integration for [foot](https://codeberg.org/dnkl/foot)                            |
+| https://github.com/kkga/todo.kak     | toggle checkboxes                                                                 |
