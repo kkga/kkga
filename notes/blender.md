@@ -1,3 +1,8 @@
+---
+tags:
+  - gamedev
+---
+
 # Blender
 
 ## Courses

@@ -1,3 +1,8 @@
+---
+tags:
+  - gamedev
+---
+
 # Practical Creativity
 
 Notes on talk by Raph Koster at GDC 14:

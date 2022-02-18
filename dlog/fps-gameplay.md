@@ -1,7 +1,6 @@
 ---
 title: Refocusing on gameplay
 date: 2020-03-20
-layout: ../../layouts/PostLayout.astro
 ---
 
 Last few evenings/nights/mornings I've been mostly working on random parts that

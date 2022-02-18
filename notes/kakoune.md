@@ -1,5 +1,7 @@
 ---
 date: 17-08-2021
+tags:
+  - kakoune
 ---
 
 # Kakoune

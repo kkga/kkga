@@ -1,7 +1,6 @@
 ---
 title: Using bit flags in Godot
 date: 2020-03-29
-layout: ../../layouts/PostLayout.astro
 ---
 
 here's a little tip i wanted to share.

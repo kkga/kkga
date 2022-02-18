@@ -1,7 +1,6 @@
 ---
 title: Not much progress
 date: 2020-03-08
-layout: ../../layouts/PostLayout.astro
 ---
 
 not much progress today as i didn't really get a chance to focus.

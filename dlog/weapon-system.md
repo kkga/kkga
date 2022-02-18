@@ -1,7 +1,6 @@
 ---
 title: Weapon system
 date: 2020-03-15
-layout: ../../layouts/PostLayout.astro
 ---
 
 Refactoring day. After wrapping up the initial work on steering AI, I decided to

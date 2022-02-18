@@ -1,6 +1,5 @@
 ---
 title: List of keyboards with <=36 keys
-date: 2022-01-17
 tags:
   - keyboard
 ---

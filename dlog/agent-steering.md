@@ -1,7 +1,6 @@
 ---
 title: Wrapping up initial version of enemy agent steering
 date: 2020-03-14
-layout: ../../layouts/PostLayout.astro
 ---
 
 yesterday i spent most of the day tracking a weird bug with the physics of AI

@@ -1,3 +1,8 @@
+---
+tags:
+  - gamedev
+---
+
 1. [**A mundane day in an action shooter hero's life.**](https://www.reddit.com/r/gameideas/comments/84nl4s/an_classic_shooter_with_only_one_action_button/)
 2. [A small game that lets you escape its boundaries into a larger world.](https://www.reddit.com/r/gameideas/comments/84xwsr/turning_scope_creep_into_a_game_the_game_starts/)
 3. [**A sci-fi adventure in which you had all the abilities from the start.**](https://www.reddit.com/r/gameideas/comments/864g4m/the_player_has_all_the_abilities_from_the_start/)

@@ -1,3 +1,8 @@
+---
+tags:
+  - gamedev
+---
+
 # Clockwork Game Design
 
 by Keith Burgun, 2015, #book

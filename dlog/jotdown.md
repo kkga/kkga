@@ -1,7 +1,6 @@
 ---
 title: Simple web app for throw-away notes
 date: 2021-03-15
-layout: ../../layouts/PostLayout.astro
 ---
 
 I recently discovered the [Svelte](https://svelte.dev/) web framework. Its

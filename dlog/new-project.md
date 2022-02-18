@@ -1,7 +1,6 @@
 ---
 title: New project, yet again
 date: 2020-11-02
-layout: ../../layouts/PostLayout.astro
 ---
 
 The FPS project joined the big pile of unfinished prototypes and I’m working on
