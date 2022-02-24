@@ -11,6 +11,8 @@ tags:
 [Roost]: https://github.com/forrestbaer/roost
 [samoklava]: https://github.com/soundmonster/samoklava
 [Architeuthis dux]: https://github.com/tapioki/cephalopoda/tree/main/Architeuthis%20dux
+[Tipper-TF]: https://github.com/weteor/Tipper-TF
+[Clog]: https://github.com/smores56/clog
 
 | Name               | Keys | Notes                                   |
 | ------------------ | ---- | --------------------------------------- |
@@ -20,3 +22,5 @@ tags:
 | [Roost]            | 36   | based on Sweep                          |
 | [samoklava]        | 36   | declarative design that can be adjusted |
 | [Architeuthis dux] | 34   | splayed columns                         |
+| [Tipper-TF]        | 34   | unibody split BLE, splayed columns      |
+| [Clog]             | 34   | split with pinky clusters               |
