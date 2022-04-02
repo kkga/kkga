@@ -32,4 +32,5 @@ tags:
 
 ## misc
 
+- update dependencies: https://github.com/hayd/deno-udd
 - https://github.com/nanojsx/nano
