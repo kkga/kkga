@@ -12,6 +12,7 @@ tags:
 ## 34-36 key layouts
 
 - https://github.com/filterpaper/zmk-config (hypergolic)
+- https://github.com/AlaaSaadAbdo/zmk-sweep (sweep)
 
 ## interesting layouts
 
