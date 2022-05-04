@@ -11,6 +11,7 @@ tags:
 - https://droces.github.io/Deno-Cheat-Sheet/
 - https://burkeholland.dev/deno-first-look/
 - Web APIs: https://deno.com/blog/every-web-api-in-deno
+- cheatheet: https://oscarotero.com/deno/
 
 ## static site generators
 
