@@ -16,7 +16,6 @@ command-line interface which can be utilized by shell scripts.
 **-> [Source code on GitHub](https://github.com/kkga/kks)**
 
 <figure class="full-bleed">
-  <video controls autoplay>
-    <source src='/img/projects/kks.mp4'>
-  </video>
+  <video controls autoplay><source src='/img/projects/kks.mp4'></video>
+  <figcaption>Interacting with Kakoune via kks in multiple terminal windows</figcaption>
 </figure>
