@@ -11,7 +11,7 @@ Before that I worked at [Webflow](https://webflow.com). You can
 [read more about my professional work](work.md), if you’re interested.
 
 Outside of work, I like tinkering with various [personal projects](projects),
-learning new things or playing video games.
+learning new things or playing hard video games (mainly by From Software).
 
 ### Quick links
 
