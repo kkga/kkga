@@ -2,7 +2,7 @@
 title: Compare directories with diff
 date: 2022-05-29
 tags:
-    - macOS
+    - macos
     - linux
 ---
 
