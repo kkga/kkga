@@ -1,6 +1,6 @@
 ---
 title: Transforming a keyboard matrix in ZMK
-date: 2021-01-15
+date: 2022-01-15
 tags:
     - zmk
     - keyboard

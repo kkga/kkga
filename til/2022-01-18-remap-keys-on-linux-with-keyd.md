@@ -1,6 +1,6 @@
 ---
 title: Remap keys on Linux with keyd
-date: 2021-01-18
+date: 2022-01-18
 tags:
     - linux
     - keyboard
