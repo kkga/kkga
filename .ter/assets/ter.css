@@ -31,6 +31,8 @@ ROOT -------------------------------------------------------------------------
 
   /* Scales */
   --width-body: 48rem;
+  --width-aside: 24rem;
+  --padding-paragraph: 40px;
   --font-size-base: 16px;
   --font-size-s: 0.875rem;
   --font-size-xs: 0.75rem;
@@ -95,14 +97,15 @@ h1 {
   line-height: var(--line-height-head);
 }
 
-h1:first-child {
-  margin-top: 0;
-}
-
 h2 {
   font-size: var(--font-size-l);
   font-weight: var(--font-weight-m);
   line-height: var(--line-height-subhead);
+}
+
+h1:first-child,
+h2:first-child {
+  margin-top: 0;
 }
 
 small {
@@ -110,28 +113,26 @@ small {
   color: var(--color-text-secondary);
 }
 
-h1 + *,
-h2 + *,
-h3 + *,
-h4 + *,
-h5 + *,
-h6 + * {
+:is(h1, h2, h3, h4, h5, h6) + * {
   margin-top: 0;
 }
 
 /*
-TOP-LEVEL STUFF ------------------------------------------------------------
+BASE TAGS ---------------------------------------------------------------------
 */
+
+html {
+  background-color: black;
+}
 
 body {
   box-sizing: border-box;
-  display: grid;
-  grid-template-columns: 1fr min(var(--width-body), calc(100% - 2rem)) 1fr;
-  grid-template-rows: auto 1fr auto;
-  grid-gap: 3rem 1rem;
   min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
   margin: 0;
-  padding: 1rem 0;
+  padding: 1rem;
   background: var(--color-bg-body);
   color: var(--color-text-body);
   font-family: var(--font-sans), system-ui, sans-serif;
@@ -141,31 +142,11 @@ body {
   letter-spacing: var(--leading-base);
 }
 
-footer {
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-m);
-  color: var(--color-text-tertiary);
+body > :is(header, main, aside, footer) {
+  margin: 0 auto;
+  max-width: var(--width-body);
+  width: 100%;
 }
-
-body > header,
-body > footer,
-body > main {
-  grid-column: 2;
-}
-
-main > article {
-  margin-bottom: 3rem;
-}
-
-main > nav {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-/*
-BASE TAGS ---------------------------------------------------------------------
-*/
 
 a {
   color: var(--color-text-accent);
@@ -173,19 +154,16 @@ a {
   display: inline-block;
 }
 
+:is(h1, h2, h3, h4, h5, h6) a {
+  color: currentcolor !important;
+}
+
 a:visited {
   color: var(--color-text-accent-alt);
 }
 
 a[href]:hover {
-  text-decoration: none;
-  color: var(--color-text-accent);
-  background-color: var(--color-bg-secondary);
-  border-radius: calc(1em * 0.25);
-  padding-left: calc(1em * 0.25);
-  padding-right: calc(1em * 0.25);
-  margin-left: calc(1em * -0.25);
-  margin-right: calc(1em * -0.25);
+  text-decoration: underline;
 }
 
 a[rel~="external"] {
@@ -252,10 +230,14 @@ figcaption {
 }
 
 details {
-  padding: 0.5em 0.75em;
-  background: var(--color-bg-secondary);
-  border-radius: var(--radius-xs);
   font-size: var(--font-size-s);
+  color: var(--color-text-tertiary);
+}
+
+details[open] {
+  color: var(--color-text-body);
+  border-bottom: 1px solid var(--color-bg-secondary);
+  padding-bottom: 1rem;
 }
 
 summary {
@@ -313,203 +295,115 @@ ol ol {
 HEADER/BREADCRUMBS -------------------------------------------------------------------
 */
 
-body > header {
+body > header,
+article > header {
   display: flex;
   flex-direction: column;
   align-items: baseline;
   justify-content: space-between;
-  gap: 0.5em;
+  gap: 0.25em;
   font-size: var(--font-size-s);
   line-height: var(--line-height-tight);
   color: var(--color-text-tertiary);
 }
 
-@media only screen and (min-width: 32em) {
-  body > header {
-    flex-direction: row;
-  }
+body > header:not(:hover) :is(nav, div, a) {
+  color: var(--color-text-tertiary) !important;
 }
 
-body > header time {
-  color: var(--color-text-tertiary);
+article > header:not(:hover) :is(nav, div, li a) {
+  color: var(--color-text-tertiary) !important;
 }
 
-.breadcrumbs {
+:is(body > header, article > header) :is(ol, ul) {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.breadcrumbs-item {
+:is(body > header, article > header) :is(ol, ul) li {
   display: inline-block;
-  margin: 0;
 }
 
-.breadcrumbs-item:not(:first-child)::before {
+article > header :is(h1, h2, h3, h4, h5, h6) {
+  margin: 0;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-tight);
+  font-weight: var(--font-weight-b);
+  color: var(--color-text-body);
+}
+
+body > header ol li:not(:first-child)::before {
   content: "/";
   color: var(--color-text-tertiary);
 }
 
-.breadcrumbs-item--tag:not(:first-child)::before {
-  content: "|";
-}
-
-.breadcrumbs-item a {
-  text-decoration: none;
-  color: var(--color-text-secondary);
-}
-
-.header-meta {
-  display: flex;
-  flex-direction: column;
-}
-
-.header-meta-row {
-  display: flex;
-}
-
-.header-meta-row > *:not(:first-child)::before {
-  content: "·";
-  margin: 0 0.5em;
-  color: var(--color-text-tertiary);
-}
-
-@media only screen and (min-width: 32em) {
-  .header-meta {
-    align-items: flex-end;
-  }
-}
-
-.header-meta-time {
-  display: block;
-}
-
-.header-meta-tags {
-  display: flex;
-  gap: 0.5em;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.header-meta-tag a {
-  text-decoration: none;
-  color: currentcolor;
-  margin: 0;
-}
-
-.header-meta-tag a::before {
-  content: "#";
-  color: var(--color-text-tertiary);
-}
-
 /*
-INDEX/TAG LIST -----------------------------------------------------------------
+ASIDE -----------------------------------------------------------------
 */
 
-.list-heading {
-  color: var(--color-text-secondary);
+body > aside {
+  color: var(--color-text-tertiary);
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+}
+
+body > aside > section:not(:hover) :is(nav, div, a) {
+  color: var(--color-text-tertiary) !important;
+}
+
+aside section h6 {
   margin: 0;
   line-height: 2;
   font-size: var(--font-size-xs);
-  letter-spacing: 0;
   font-weight: var(--font-weight-m);
+  letter-spacing: 0;
   display: flex;
-  gap: 0.5em;
+  gap: 4px;
   align-items: baseline;
 }
 
-.list-heading a {
+aside section h6 a {
   color: inherit;
 }
 
-.list-heading::after {
+aside section h6::after {
   flex: 1;
   content: "";
   border-top: 1px solid var(--color-bg-secondary);
 }
 
-.list-pages {
+aside section :is(ul, ol) {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.list-tags {
+aside section :is(ul, ol) li {
   display: flex;
-  column-gap: 0.5em;
-  flex-flow: row wrap;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.list-page a {
-  line-height: var(--line-height-spaced);
-  font-size: var(--font-size-s);
-  text-decoration: none;
-  display: flex;
-  gap: 0.5em;
   align-items: baseline;
-  margin: 0;
-  color: currentcolor;
+  gap: 4px;
 }
 
-.list-tag a {
-  text-decoration: none;
-  color: currentcolor;
-  font-size: var(--font-size-s);
-  font-weight: var(--font-weight-m);
-}
-
-.list-tag a::before {
-  content: "#";
-  color: var(--color-text-tertiary);
-}
-
-.list-page-name {
-  max-width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-weight: var(--font-weight-m);
-  margin-right: 0.5em;
-}
-
-.list-page--index .list-page-name {
-  font-weight: var(--font-weight-b);
-}
-
-.list-page-name::before {
-  content: "◇ ";
-}
-
-.list-page--index .list-page-name::before {
-  content: "❖ ";
-}
-
-.list-page--index .list-page-name::after {
-  content: "";
-}
-
-.list-page--pinned .list-page-name::after {
-  content: "★";
-}
-
-.list-page-description {
-  max-width: 100%;
-  margin-right: 0.125em;
+aside section :is(ul, ol) li a + span {
+  display: block;
   flex: 1;
-  text-align: right;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: var(--color-text-tertiary);
+  border-bottom: 1px dashed var(--color-bg-secondary);
 }
 
-.list-page-time {
+aside time {
   margin-left: auto;
-  margin-right: 0.125em;
-  white-space: nowrap;
+  color: var(--color-text-tertiary);
+  font-size: var(--font-size-xs);
+}
+
+/*
+FOOTER -----------------------------------------------------------------
+*/
+
+body > footer {
+  margin-top: auto;
+  font-size: var(--font-size-xs);
   color: var(--color-text-tertiary);
 }
