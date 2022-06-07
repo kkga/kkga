@@ -1,15 +1,15 @@
 <style>
-    .grid-2c {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-    }
+  .grid-2c {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
 
-    @media only screen and (min-width: 64em) {
-        .full-bleed {
-            margin-left: -8rem;
-            margin-right: -8rem;
-        }
+  @media only screen and (min-width: 64em) {
+    .full-bleed {
+      margin-left: -8rem;
+      margin-right: -8rem;
     }
+  }
 </style>
 <script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer></script>
