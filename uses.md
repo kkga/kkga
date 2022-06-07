@@ -50,8 +50,8 @@ days.
 Linux setup is barebones: I don’t use a full-fledged desktop environment. A
 tiling window manager, a fast terminal and a browser — that’s all I need.
 
-I do all text editing and coding in Kakoune, which is a terminal-based text
-editor and my favorite piece of software.
+I do all text editing and coding in [Kakoune](https://kakoune.org/), which is a
+terminal-based text editor and my favorite piece of software.
 
 <figure class="full-bleed">
   <a href="https://raw.githubusercontent.com/kkga/config/master/.local/share/desktop.png">
@@ -64,8 +64,8 @@ Here's a list of essential pieces:
 
 #### Terminal
 
-- Fish (shell)
-- Kakoune (text editor)
+- [Fish](https://fishshell.com/) (shell)
+- [Kakoune](https://kakoune.org/) (text editor)
 - [kks](projects/kks.md) -- a small Kakoune companion I wrote
 
 #### Linux

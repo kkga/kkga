@@ -5,8 +5,8 @@ pinned: true
 ---
 
 My name is Gadzhi. Born in
-<a href="https://wikipedia.org/wiki/Dagestan">Dagestan</a>, living in Moscow.
-Designing software is what I do for work and joy.
+<a href="https://wikipedia.org/wiki/Dagestan">Dagestan</a>, living in
+Moscow.<br/> Designing software is what I do for work and joy.
 
 ## Work
 
