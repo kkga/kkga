@@ -26,14 +26,13 @@ it.<br/> [See my work at Stampsy →](/work/stampsy.md)
 
 ## Game design
 
-I got interested in video game design and development. It's a fun area that is
+I'm interested in video game design and development. It's a fun area that is
 hard to master and I try to spend my free time tinkering with various personal
 projects. I have a [dlog](/dlog) where I sometimes post (rough) updates on this
 journey.
 
 I also enjoy reading about game design theory and practice. Here's a collection
-of my favorite
-[game design books and resources](/notes/gamedesign-resources.md).
+of my favorite [books and resources](/notes/gamedesign-resources.md).
 
 ## Programming
 
@@ -43,14 +42,15 @@ makes time pass faster.
 
 Whether it's making design prototypes with JavaScript at work, making games with
 Godot or Unity, writing shell scripts for my
-[Linux desktop](https://github.com/kkga/dotfiles) or making little CLI apps with
-Go, I love it all and always try to learn more. I put occasionally useful things
-on [my GitHub](https://github.com/kkga).
+[Linux desktop](https://github.com/kkga/dotfiles) or making little CLI programs
+with Go, I love it all and always try to learn more. I put occasionally useful
+things on [my GitHub](https://github.com/kkga).
 
 ## This website
 
 ...is fairly simple. Written mostly in markdown and built with
-[Ter](https://ter.kkga.me) -- a small wiki-style site generator that I made.
+[Ter](https://ter.kkga.me) -- a small wiki-style site generator that I made. The
+font is set to [Recursive](https://www.recursive.design/).
 
 <img width=160 src="/img/about/face.jpg"/>
 
