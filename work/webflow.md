@@ -36,7 +36,7 @@ grid on canvas. After months of iterations and tests, we came up with a powerful
 and simple solution that fully utilizes Webflow's visual nature for creating
 grid layouts.
 
-**-> [Product overview on Webflow](https://www.webflow.com/grid)**
+- **[Product overview on Webflow](https://www.webflow.com/grid)**
 
 <figure class="full-bleed">
   <video controls autoplay>
@@ -88,7 +88,7 @@ use-cases by turning various recurring layouts into symbols, each with its own
 content. As authors restructure the layout of that symbol, each instance will
 preserve its unique content.
 
-**-> [Feature overview on Webflow blog][symbols-overview]**
+- **[Feature overview on Webflow blog][symbols-overview]**
 
 [symbols-overview]: https://webflow.com/blog/content-overrides-for-symbols
 
@@ -125,8 +125,8 @@ This interface metaphor proved to strike a perfect balance between a full-blown
 timeline usually found in professional animation software and a simple,
 uncomplicated way to create rich animations and interactions.
 
-**-> [Product overview on Webflow][interactions]**<br /> **->
-[Launch page that fully utilizes the feature][ix2-site]**
+- **[Product overview on Webflow][interactions]**
+- **[Launch page that fully utilizes the feature][ix2-site]**
 
 [interactions]: https://webflow.com/interactions-animations
 [ix2-site]: https://webflow.com/ix2
@@ -179,8 +179,8 @@ Flexbox remains one of the most used layout tools in Webflow. Since the initial
 release in 2016, I've worked on several updates that improve and streamline the
 interface.
 
-**-> [Educational site I built for feature release][flexbox-site]**<br/> **->
-[Flexbox learning game I built in Webflow][flexbox-game]**
+- **[Educational site I built for feature release][flexbox-site]**
+- **[Flexbox learning game I built in Webflow][flexbox-game]**
 
 [flexbox-site]: https://flexbox.webflow.com
 [flexbox-game]: https://www.flexboxgame.com
