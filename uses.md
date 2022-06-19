@@ -64,46 +64,45 @@ Here's a list of essential pieces:
 
 #### Terminal
 
-- [Fish](https://fishshell.com/) (shell)
-- [Kakoune](https://kakoune.org/) (text editor)
-- [kks](projects/kks.md) -- a small Kakoune companion I wrote
+| Program                         | Description                       |
+| ------------------------------- | --------------------------------- |
+| [Fish](https://fishshell.com/)  | shell                             |
+| [Kakoune](https://kakoune.org/) | text editor                       |
+| [kks](projects/kks.md)          | a small Kakoune companion I wrote |
 
 #### Linux
 
 Looks like Firefox is the only "GUI program" that I use here. I spend most of my
 time in the terminal.
 
-- Arch Linux on laptop
-- Void Linux on desktop
-- Sway (window manager)
-- Firefox
-- Foot (terminal)
-- [Syncthing](https://syncthing.net/) -- private, reliable and open-source file
-  sync
+| Program                                | Description                                 |
+| -------------------------------------- | ------------------------------------------- |
+| [Arch Linux](https://archlinux.org/)   | OS (on laptop)                              |
+| [Void Linux](https://voidlinux.org/)   | OS (on desktop)                             |
+| [Sway](https://swaywm.org/)            | tiling window manager                       |
+| [Firefox](https://firefox.com/)        | good web browser                            |
+| [Foot](https://codeberg.org/dnkl/foot) | great terminal                              |
+| [Syncthing](https://syncthing.net/)    | private, reliable and open-source file sync |
 
 #### macOS
 
 macOS setup is, naturally, more GUI-centric.
 
-- [Firefox](https://www.mozilla.org/en-US/firefox/new/) -- good web browser
-- [Kitty](https://sw.kovidgoyal.net/kitty/) -- good terminal
-- [Figma/FigJam](https://figma.com/) -- UI design tool
-- [yabai](https://github.com/koekeishiya/yabai) -- tiling window manager (i
-  mostly use stacks)
-- [Itsycal](https://www.mowglii.com/itsycal/) -- tiny menubar calendar with Vim
-  keybindings and Zoom join buttons
-- [Maccy](https://maccy.app/) -- lightweight clipboard manager
-- [Syncthing](https://syncthing.net/) -- macOS has a simple menu bar app
-- [Bumpr](https://www.getbumpr.com) -- a nice utility to control where links
-  open
-- [Shottr](https://shottr.cc/) -- small and fast screenshot tool
-- [Spaceman](https://github.com/Jaysce/Spaceman) -- shows macOS space indicators
-  in the menu bar (good yabai companion)
-- [AltTab](https://github.com/lwouis/alt-tab-macos) -- Windows-style window
-  switcher
-- [MonitorControl](https://github.com/MonitorControl/MonitorControl) -- makes
-  controlling external displays more reliable
-- [Claquette](https://www.peakstep.com/claquette/) -- good screen recorder
+| Program                                                            | Description                                                         |
+| ------------------------------------------------------------------ | ------------------------------------------------------------------- |
+| [Firefox](https://www.mozilla.org/en-US/firefox/new/)              | good web browser                                                    |
+| [Kitty](https://sw.kovidgoyal.net/kitty/)                          | good terminal                                                       |
+| [Figma/FigJam](https://figma.com/)                                 | UI design tool                                                      |
+| [yabai](https://github.com/koekeishiya/yabai)                      | tiling window manager (i mostly use stacks)                         |
+| [Itsycal](https://www.mowglii.com/itsycal/)                        | tiny menubar calendar with Vim keybindings and Zoom join buttons    |
+| [Maccy](https://maccy.app/)                                        | lightweight clipboard manager                                       |
+| [Syncthing](https://syncthing.net/)                                | macOS has a simple menu bar app                                     |
+| [Bumpr](https://www.getbumpr.com)                                  | a nice utility to control where links open                          |
+| [Shottr](https://shottr.cc/)                                       | small and fast screenshot tool                                      |
+| [Spaceman](https://github.com/Jaysce/Spaceman)                     | shows macOS space indicators in the menu bar (good yabai companion) |
+| [AltTab](https://github.com/lwouis/alt-tab-macos)                  | Windows-style window switcher                                       |
+| [MonitorControl](https://github.com/MonitorControl/MonitorControl) | makes controlling external displays more reliable                   |
+| [Claquette](https://www.peakstep.com/claquette/)                   | good screen recorder                                                |
 
 Current desktop configuration lives in a
 [GitHub repo](https://github.com/kkga/config).
