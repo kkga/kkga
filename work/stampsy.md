@@ -24,7 +24,7 @@ Later on I moved to building a responsive CSS architecture for the app and
 helped the front-end team by transforming the design system into reusable and
 styled React components.
 
-**-> [Stampsy](https://stampsy.com)**
+- **[Stampsy](https://stampsy.com)**
 
 <figure class="full-bleed">
   <video controls autoplay><source src="/img/about/stampsy/stampsy-web.mp4" /></video>

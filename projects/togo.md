@@ -9,7 +9,7 @@ tags:
 
 CLI for `todo.txt` and an early attempt at learning Go.
 
-**-> [Source code on GitHub](https://github.com/kkga/togo)**
+- **[Source code on GitHub](https://github.com/kkga/togo)**
 
 ### Usage
 

@@ -12,7 +12,7 @@ system info. Intended for usage with workspace-switching oriented window
 managers, like [yabai](https://github.com/koekeishiya/yabai) or
 [Amethyst](https://github.com/ianyh/Amethyst).
 
-**-> [Source code on GitHub](https://github.com/kkga/nibar)**
+- **[Source code on GitHub](https://github.com/kkga/nibar)**
 
 <figure class="full-bleed">
   <img src="https://raw.githubusercontent.com/kkga/nibar/master/ss.png" />
