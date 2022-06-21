@@ -49,8 +49,7 @@ things on [my GitHub](https://github.com/kkga).
 ## This website
 
 ...is fairly simple. Written mostly in markdown and built with
-[Ter](https://ter.kkga.me) -- a small wiki-style site generator that I made. The
-font is set to [Recursive](https://www.recursive.design/).
+[Ter](https://ter.kkga.me) -- a small wiki-style site generator that I made.
 
 <img width=160 src="/img/about/face.jpg"/>
 
