@@ -53,7 +53,7 @@ things on [my GitHub](https://github.com/kkga).
 ...is fairly simple. Written mostly in markdown and built with
 [Ter](https://ter.kkga.me) -- a small wiki-style site generator that I made.
 
-<img width=160 src="/img/about/face.jpg"/>
+![](/img/about/leica.jpg)
 
 `x` at `kkga.me` / [twitter](https://twitter.com/kkga_) /
-[github](https://github.com/kkga) / [flickr](https://flickr.com/gadzh)
+[github](https://github.com/kkga) / [flickr](https://flickr.com/gadzhi)
