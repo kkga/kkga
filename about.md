@@ -10,6 +10,8 @@ My name is Gadzhi. Born in
 <a href="https://wikipedia.org/wiki/Dagestan">Dagestan</a>, living in
 Moscow.<br/> Designing software is what I do for work and joy.
 
+![](/img/about/leica.jpg)
+
 ## Work
 
 **[Retool](https://retool.com)** <small>(2021&ndash;present, design
@@ -52,8 +54,6 @@ things on [my GitHub](https://github.com/kkga).
 
 ...is fairly simple. Written mostly in markdown and built with
 [Ter](https://ter.kkga.me) -- a small wiki-style site generator that I made.
-
-![](/img/about/leica.jpg)
 
 `x` at `kkga.me` / [twitter](https://twitter.com/kkga_) /
 [github](https://github.com/kkga) / [flickr](https://flickr.com/gadzhi)

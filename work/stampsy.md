@@ -11,6 +11,17 @@ Stampsy is a social platform for sharing and discovering visual stories.
 I worked with the team during 2012&ndash;2014 and it was the first start-up
 company I joined full-time after doing mostly freelance work.
 
+<div class="full-bleed" style="display: grid; column-gap: 1rem; grid-template-columns: repeat(2,1fr)">
+  <figure>
+    <img src="/img/about/stampsy/dan_and_varya.jpg" />
+    <figcaption>Dan and Varya</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/about/stampsy/roman_and_sergey.jpg" />
+    <figcaption>Roman and Sergey</figcaption>
+  </figure>
+</div>
+
 ---
 
 My work ranged from full-cycle product and user interface design to front-end
