@@ -4,6 +4,8 @@ date: 2021-08-08
 pinned: true
 ---
 
+# About
+
 My name is Gadzhi. Born in
 <a href="https://wikipedia.org/wiki/Dagestan">Dagestan</a>, living in
 Moscow.<br/> Designing software is what I do for work and joy.
