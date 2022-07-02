@@ -40,13 +40,13 @@ grid layouts.
 
 <figure class="full-bleed">
   <video controls autoplay>
-    <source src="/img/about/webflow-grid.mp4">
+    <source src="/img/webflow/webflow-grid.mp4">
   </video>
   <figcaption>Overview of grid's main features</figcaption>
 </figure>
 
 <figure>
-  <img src="/img/about/webflow-grid-playground.gif" />
+  <img src="/img/webflow/webflow-grid-playground.gif" />
   <figcaption>Grid playground built in Webflow for feature release</figcaption>
 </figure>
 
@@ -57,17 +57,17 @@ making it even easier to create and adjust grid layouts using direct on-canvas
 manipulation.
 
 <figure>
-  <img src="/img/about/webflow-grid-areas-1.gif" />
+  <img src="/img/webflow/webflow-grid-areas-1.gif" />
   <figcaption>Defining grid areas on canvas</figcaption>
 </figure>
 
 <figure>
-  <img src="/img/about/webflow-grid-areas-2.gif" />
+  <img src="/img/webflow/webflow-grid-areas-2.gif" />
   <figcaption>Dragging elements into grid areas</figcaption>
 </figure>
 
 <figure>
-  <img src="/img/about/webflow-grid-areas-3.gif" />
+  <img src="/img/webflow/webflow-grid-areas-3.gif" />
   <figcaption>Adjusting areas for smaller screens</figcaption>
 </figure>
 
@@ -93,17 +93,17 @@ preserve its unique content.
 [symbols-overview]: https://webflow.com/blog/content-overrides-for-symbols
 
 <figure>
-  <img src="/img/about/webflow-symbols-1.gif" />
+  <img src="/img/webflow/webflow-symbols-1.gif" />
   <figcaption>Defining overrides inside a symbol</figcaption>
 </figure>
 
 <figure>
-  <img src="/img/about/webflow-symbols-2.gif" />
+  <img src="/img/webflow/webflow-symbols-2.gif" />
   <figcaption>Overriding content on a symbol instance</figcaption>
 </figure>
 
 <figure>
-  <img src="/img/about/webflow-symbols-3.gif" />
+  <img src="/img/webflow/webflow-symbols-3.gif" />
   <figcaption>Adjusting layout across multiple symbols</figcaption>
 </figure>
 
@@ -132,30 +132,30 @@ uncomplicated way to create rich animations and interactions.
 [ix2-site]: https://webflow.com/ix2
 
 <figure class="full-bleed" style="display: grid; column-gap: 0.5rem; grid-template-columns: repeat(4, 1fr)">
-  <img src="/img/about/webflow-ix-ui-click-actions.jpg" />
-  <img src="/img/about/webflow-ix-ui-hover-actions.jpg" />
-  <img src="/img/about/webflow-ix-ui-mouse-actions.jpg" />
-  <img src="/img/about/webflow-ix-ui-scroll-actions.jpg" />
+  <img src="/img/webflow/webflow-ix-ui-click-actions.jpg" />
+  <img src="/img/webflow/webflow-ix-ui-hover-actions.jpg" />
+  <img src="/img/webflow/webflow-ix-ui-mouse-actions.jpg" />
+  <img src="/img/webflow/webflow-ix-ui-scroll-actions.jpg" />
   <figcaption style="grid-column: 1/-1">
     Examples of timed and dynamic animations triggered by various events
   </figcaption>
 </figure>
 
 <figure>
-  <video controls src="/img/about/webflow-ix.mp4"></video>
+  <video controls src="/img/webflow/webflow-ix.mp4"></video>
   <figcaption>Overview of creating various animations</figcaption>
 </figure>
 
 <figure>
-  <video controls src="/img/about/webflow-ix-easing.mp4"></video>
+  <video controls src="/img/webflow/webflow-ix-easing.mp4"></video>
   <figcaption>Adjusting the easing curve on an intro animation</figcaption>
 </figure>
 
 <figure style="display: grid; grid-template-columns: repeat(2, 1fr)">
-  <img src="/img/about/webflow-ix-cubes.gif" />
-  <img src="/img/about/webflow-ix-parallax.gif" />
-  <img src="/img/about/webflow-ix-demo.gif" />
-  <img src="/img/about/webflow-ix-hover.gif" />
+  <img src="/img/webflow/webflow-ix-cubes.gif" />
+  <img src="/img/webflow/webflow-ix-parallax.gif" />
+  <img src="/img/webflow/webflow-ix-demo.gif" />
+  <img src="/img/webflow/webflow-ix-hover.gif" />
   <figcaption style="grid-column: 1/-1">
     In the wild: various animations and interactions created using this feature in Webflow
   </figcaption>
@@ -186,13 +186,13 @@ interface.
 [flexbox-game]: https://www.flexboxgame.com
 
 <figure>
-  <img src="/img/about/webflow-flexbox.gif" />
+  <img src="/img/webflow/webflow-flexbox.gif" />
   <figcaption>Flexbox in action</figcaption.
 </figure>
 
 <figure style="display: grid; grid-template-columns: repeat(2, 1fr)">
-  <img src="/img/about/webflow-flexbox.webp" />
-  <img src="/img/about/webflow-flexbox-site.webp" />
+  <img src="/img/webflow/webflow-flexbox.webp" />
+  <img src="/img/webflow/webflow-flexbox-site.webp" />
   <figcaption style="grid-column: 1/-1">
     UI mockup for flexbox controls and the marketing site
   </figcaption>
