@@ -6,9 +6,9 @@ tags:
     - keyboard
 ---
 
-[Karabiner-Elements] is a macOS utility for keyboard customization. I've been
-using it for years. It uses a verbose JSON configuration which can be painful to
-work with.
+[Karabiner-Elements](https://github.com/tekezo/Karabiner-Elements) is a macOS
+utility for keyboard customization. I've been using it for years. It uses a
+verbose JSON configuration which can be painful to work with.
 
 [Goku](https://github.com/yqrashawn/GokuRakuJoudo) lets you use the
 [edn](https://github.com/edn-format/edn) for configuration, which makes it a lot
