@@ -1,0 +1,55 @@
+---
+unlisted: true
+---
+
+# Books
+
+- Game Mechanics, by Ernest Adams, Joris Dormans
+- A Theory of Fun for Game Design, by Raph Koster
+- How Not to Be Wrong: The Power of Mathematical Thinking, by Jordan Ellenberg
+- What If?, by Randall Munroe
+- Shoe Dog, by Phil Knight,
+- When Breath Becomes Air, by Paul Kalanithi
+- What I Talk About When I Talk About Running, by Haruki Murakami
+- The Storm of Creativity, by Kyna Leski
+- Ultimate Questions, by Bryan Magee
+- Sapiens, by Yuval Noah Harari
+- Deep Work, by Cal Newport
+- Don't Make Me Think, by Steve Krug
+- This Is Water, by David Foster Wallace
+- The War of Art, by Steven Pressfield
+- Tools of Titans, by Timothy Ferriss
+- Thing Explainer, by Randall Munroe
+- The Art of Procrastination, by John R. Perry
+- On the Shortness of Life, by Seneca
+- Two Lessons on Animal and Man, by Gilbert Simondon
+- A Spy's Guide to Thinking, by John Braddock
+- Ready Player One, by Ernest Cline
+- Grid systems in Graphic Design, by Josef Müller-Brockmann
+- Seven Brief Lessons on Physics, by Carlo Rovelli
+- Design Is a Job, by Mike Monteiro
+- Vivian Maier: Street Photographer, by Vivian Maier
+- Life Below: The New York City Subway, by Christophe Agou
+- Magnum Contact Sheets, by Kristen Lubben
+- Street Photography Now, by Sophie Howarth, Stephen Mclaren
+- The Design of Everyday Things, by Donald A. Norman
+- Sketching User Experiences, by Bill Buxton
+- About Face 3, by Alan Cooper
+- Zero to One, by Peter Thiel
+- The Sketchnote Handbook, by Mike Rohde
+- The Catcher in the Rye, by J.D. Salinger
+- Flow, by Mihaly Csikszentmihalyi
+- Rework, by Jason Fried
+- Eloquent JavaScript, by Marijn Haverbeke
+- Remote, by Jason Fried
+- 30 Lessons for Living, by Karl Pillemer
+- Letters from a Self-Made Merchant to His Son, by John Graham
+- A Practical Guide to Information Architecture, by Donna Spencer
+- How to Read a Book, by Mortimer J. Adler
+- Designing with the Mind in Mind, by Jeff Johnson
+- Mr. Penumbra's 24-Hour Bookstore, by Robin Sloan
+- The Old Man and the Sea, by Ernest Hemingway
+- Man 2.0: Engineering the Alpha, by John Romaniello
+- Ernest Hemingway on Writing, by Larry W. Phillips
+- Learn Python The Hard Way, by Zed A. Shaw
+- Film Is Not Dead, by Jonathan Canlas
