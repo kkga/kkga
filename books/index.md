@@ -5,21 +5,22 @@ unlisted: true
 # Books
 
 - Game Mechanics, by Ernest Adams, Joris Dormans
-- A Theory of Fun for Game Design, by Raph Koster
-- How Not to Be Wrong: The Power of Mathematical Thinking, by Jordan Ellenberg
-- What If?, by Randall Munroe
-- Shoe Dog, by Phil Knight,
+- **A Theory of Fun for Game Design, by Raph Koster**
+- **How Not to Be Wrong: The Power of Mathematical Thinking, by Jordan
+  Ellenberg**
+- **What If?, by Randall Munroe**
+- **Shoe Dog, by Phil Knight,**
 - When Breath Becomes Air, by Paul Kalanithi
 - What I Talk About When I Talk About Running, by Haruki Murakami
 - The Storm of Creativity, by Kyna Leski
 - Ultimate Questions, by Bryan Magee
-- Sapiens, by Yuval Noah Harari
+- **Sapiens, by Yuval Noah Harari**
 - Deep Work, by Cal Newport
 - Don't Make Me Think, by Steve Krug
-- This Is Water, by David Foster Wallace
-- The War of Art, by Steven Pressfield
+- **This Is Water, by David Foster Wallace**
+- **The War of Art, by Steven Pressfield**
 - Tools of Titans, by Timothy Ferriss
-- Thing Explainer, by Randall Munroe
+- **Thing Explainer, by Randall Munroe**
 - The Art of Procrastination, by John R. Perry
 - On the Shortness of Life, by Seneca
 - Two Lessons on Animal and Man, by Gilbert Simondon
@@ -35,10 +36,10 @@ unlisted: true
 - The Design of Everyday Things, by Donald A. Norman
 - Sketching User Experiences, by Bill Buxton
 - About Face 3, by Alan Cooper
-- Zero to One, by Peter Thiel
+- **Zero to One, by Peter Thiel**
 - The Sketchnote Handbook, by Mike Rohde
-- The Catcher in the Rye, by J.D. Salinger
-- Flow, by Mihaly Csikszentmihalyi
+- **The Catcher in the Rye, by J.D. Salinger**
+- **Flow, by Mihaly Csikszentmihalyi**
 - Rework, by Jason Fried
 - Eloquent JavaScript, by Marijn Haverbeke
 - Remote, by Jason Fried
