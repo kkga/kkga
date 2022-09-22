@@ -4,7 +4,7 @@ title: kkga
 
 ### Hi, I'm Gadzhi
 
-Software designer based in Moscow, Russia.
+Software designer based in ~Moscow, Russia~ İstanbul, Türkiye.
 
 I work at [Retool](https://retool.com) during the day as a design engineer.
 Before that I worked at [Webflow](https://webflow.com). You can
