@@ -1,0 +1,18 @@
+{
+  "site": {
+    "title": "kkga",
+    "rootName": "index",
+    "description": "Software designer",
+    "url": "https://kkga.me"
+  },
+  "navigation": {
+    "about": "/about",
+    "work": "/work",
+    "projects": "/projects"
+  },
+  "author": {
+    "name": "Your Name Here",
+    "email": "youremailaddress@example.com",
+    "url": "https://example.com/about-me/"
+  }
+}
