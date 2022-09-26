@@ -1,12 +1,12 @@
 # Books
 
-<small>
-`*` -- favorite<br/>
-`R` -- reading
-</small>
+
+`*` -- favorite, `R` -- reading
+
 
 |     | Title                                                   | Author                                      |
 | --- | ------------------------------------------------------- | ------------------------------------------- |
+| `R` | Homo Deus                                               | Yuval Noah Harari                           |
 | `R` | Ikigai: The Japanese Secret to a Long and Happy Life    | Francesc Miralles, Héctor García Puigcerver |
 | `R` | Guns, Germs, and Steel                                  | Jared Diamond                               |
 | `R` | Collapse                                                | Jared Diamond                               |

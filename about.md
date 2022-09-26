@@ -7,10 +7,10 @@ pinned: true
 # About
 
 My name is Gadzhi. Born in
-<a href="https://wikipedia.org/wiki/Dagestan">Dagestan</a>, living in
-Moscow.<br/> Designing software is what I do for work and joy.
+[Dagestan](https://wikipedia.org/wiki/Dagestan), living in
+~Moscow~ İstanbul. Designing software is what I do for work and joy.
 
-![](/img/about/leica.jpg)
+![me](/img/about/leica.jpg)
 
 ## Work
 
