@@ -6,9 +6,8 @@ pinned: true
 
 # About
 
-My name is Gadzhi. Born in
-[Dagestan](https://wikipedia.org/wiki/Dagestan), living in
-~Moscow~ İstanbul. Designing software is what I do for work and joy.
+My name is Gadzhi. Born in [Dagestan](https://wikipedia.org/wiki/Dagestan),
+living in ~Moscow~ İstanbul. Designing software is what I do for work and joy.
 
 ![me](/img/about/leica.jpg)
 
@@ -55,5 +54,5 @@ things on [my GitHub](https://github.com/kkga).
 ...is fairly simple. Written mostly in markdown and built with
 [Ter](https://ter.kkga.me) -- a small wiki-style site generator that I made.
 
-`x` at `kkga.me` / [twitter](https://twitter.com/kkga_) /
+x-at-kkga.me / [twitter](https://twitter.com/kkga_) /
 [github](https://github.com/kkga) / [flickr](https://flickr.com/gadzhi)

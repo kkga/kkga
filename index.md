@@ -22,4 +22,4 @@ learning new things or playing hard video games (mainly by From Software).
 - [see my "now" page](now).
 
 Lastly, you can [find me on twitter](https://twitter.com/@kkga_) or reach out
-over email: it's `x` at `kkga.me`
+over email: it's x-at-kkga.me
