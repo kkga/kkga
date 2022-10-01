@@ -1,8 +1,11 @@
-# Books
-
+---
+title: Books
+description: Poorly maintained reading list/log.
+date: 2022-08-21
+dateUpdated: 2022-10-01
+---
 
 `*` -- favorite, `R` -- reading
-
 
 |     | Title                                                   | Author                                      |
 | --- | ------------------------------------------------------- | ------------------------------------------- |

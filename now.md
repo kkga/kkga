@@ -1,9 +1,8 @@
 ---
+title: Now
 description: What I'm up to these days
 date: 2021-12-30
 ---
-
-# Now
 
 This is a ["/now"](https://nownownow.com/about) page. You should have one too.
 

@@ -1,10 +1,9 @@
 ---
+title: About
 description: Some things about me
 date: 2021-08-08
 pinned: true
 ---
-
-# About
 
 My name is Gadzhi. Born in [Dagestan](https://wikipedia.org/wiki/Dagestan),
 living in ~Moscow~ İstanbul. Designing software is what I do for work and joy.

@@ -1,11 +1,10 @@
 ---
+title: Uses
 description: My setup
 date: 2022-05-06
 tags:
   - setup
 ---
-
-# Uses
 
 One of my favorite websites is [usesthis.com](https://usesthis.com/): I like
 reading about the tools people use to get through their day to day.
