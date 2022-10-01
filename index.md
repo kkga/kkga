@@ -1,5 +1,5 @@
 ---
-title: kkga
+hideTitle: true
 ---
 
 ### Hi, I'm Gadzhi
@@ -7,13 +7,13 @@ title: kkga
 Software designer based in ~Moscow, Russia~ İstanbul, Türkiye.
 
 I work at [Retool](https://retool.com) during the day as a design engineer.
-Before that I worked at [Webflow](https://webflow.com). You can
-[read more about my professional work](work.md).
+Before that I worked as an early designer at [Webflow](https://webflow.com). You
+can [read more about my work](work.md).
 
 Outside of work, I like tinkering with small [personal projects](projects),
 learning new things or playing hard video games (mainly by From Software).
 
-### Quick links
+#### Here are some quick links
 
 - [read more about me](about);
 - [see my professional work](work);
@@ -22,4 +22,4 @@ learning new things or playing hard video games (mainly by From Software).
 - [see my "now" page](now).
 
 Lastly, you can [find me on twitter](https://twitter.com/@kkga_) or reach out
-over email: it's x-at-kkga.me
+over email: it's x-at-kkga-dot-me.
