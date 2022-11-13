@@ -11,6 +11,6 @@ tags:
 for code and text editing a while ago, but couldn't find a scheme I was happy
 with. So I made my own.
 
-- **[Source code on GitHub](https://github.com/kkga/vim-envy)**
+- [Source code on GitHub](https://github.com/kkga/vim-envy)
 
 ![](https://raw.githubusercontent.com/kkga/vim-envy/master/screenshots/envy.png)

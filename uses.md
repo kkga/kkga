@@ -1,9 +1,11 @@
 ---
 title: Uses
-description: My setup
+description: Software and hardware I use.
 date: 2022-05-06
+dateUpdated: 2022-11-05
 tags:
   - setup
+  - software
 ---
 
 One of my favorite websites is [usesthis.com](https://usesthis.com/): I like

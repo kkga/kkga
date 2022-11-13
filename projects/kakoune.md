@@ -18,11 +18,11 @@ than
 Here's a list of various small (and mostly useless) plugins I've created for
 Kakoune.
 
-| name/link                            | description                                                                       |
-| ------------------------------------ | --------------------------------------------------------------------------------- |
-| https://github.com/kkga/ui.kak       | toggle UI highlighters                                                            |
-| https://github.com/kkga/saturn.kak   | dark colorscheme                                                                  |
-| https://github.com/kkga/gdscript.kak | syntax hightlighting for [Godot](https://godotengine.org)'s GDScript              |
-| https://github.com/kkga/envy.kak     | light colorscheme, port of my [Vim colorscheme](https://github.com/kkga/vim-envy) |
-| https://github.com/kkga/foot.kak     | integration for [foot](https://codeberg.org/dnkl/foot)                            |
-| https://github.com/kkga/todo.kak     | toggle checkboxes                                                                 |
+| name/link                                            | description                                                                       |
+| ---------------------------------------------------- | --------------------------------------------------------------------------------- |
+| [ui.kak](https://github.com/kkga/ui.kak)             | toggle UI highlighters                                                            |
+| [saturn.kak](https://github.com/kkga/saturn.kak)     | dark colorscheme                                                                  |
+| [gdscript.kak](https://github.com/kkga/gdscript.kak) | syntax hightlighting for [Godot](https://godotengine.org)'s GDScript              |
+| [envy.kak](https://github.com/kkga/envy.kak)         | light colorscheme, port of my [Vim colorscheme](https://github.com/kkga/vim-envy) |
+| [foot.kak](https://github.com/kkga/foot.kak)         | integration for [foot](https://codeberg.org/dnkl/foot)                            |
+| [todo.kak](https://github.com/kkga/todo.kak)         | toggle checkboxes                                                                 |

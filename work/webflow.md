@@ -2,41 +2,56 @@
 title: Webflow
 description: Selected projects at Webflow 2015-2021
 date: 2021-08-08
-toc: true
 ---
 
-# Webflow
+[Webflow](https://webflow.com) is a "no-code" web platform.
 
-[Webflow](https://webflow.com) is a "no-code" web platform. I joined the team in
-its early days as one of the first two designers.
-
-Starting from 2015 and until 2021, I've worked on a variety of designer-focused
-products ranging from layout systems and animation tools to marketing pages and
-iconography in my early days.
+I joined the team in its early days as one of the first two designers. From 2015
+to 2021 I've worked on a variety of new features and enhancements for the
+"Webflow Designer" including layout systems, animation/interaction tooling among
+many others.
 
 This is a collection of various projects I've worked on during these years.
 Latest and some of the most impactful things are still unreleased and, sadly,
 can not be shown.
 
-## Grid
+<figure>
+  <video autoplay playsinline loop muted>
+    <source src="/img/webflow/webflow-video.mp4">
+  </video>
+  <figcaption>Webflow Designer</figcaption>
+</figure>
+
+---
+
+## Grid layout with direct manipulation
 
 [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
 transformed the way web developers create layouts. The challenge was to abstract
 some of the complexity and translate this powerful new layout mechanism into
 Webflow.
 
-Compared to all previous tools designed in Webflow where most properties of an
-element are adjusted via a panel, we wanted the Grid to be different. Given the
+Compared to all previous tools in Webflow where most style properties are
+adjusted via the inspector panel, we wanted the Grid to be different. Given the
 visual nature of CSS Grid, we felt that Webflow is the perfect medium to create
 a fully visual way of creating grid layouts by utilizing direct on-canvas
 manipulation.
+
+<figure>
+  <video autoplay playsinline loop muted>
+    <source src="/img/webflow/webflow-grid-reel.mp4">
+  </video>
+  <figcaption>Working with grid layout in Webflow</figcaption>
+</figure>
+
+#### External links
+
+- [Product overview on Webflow](https://www.webflow.com/grid)
 
 Together with the team I've worked on exploring various ways to interact with a
 grid on canvas. After months of iterations and tests, we came up with a powerful
 and simple solution that fully utilizes Webflow's visual nature for creating
 grid layouts.
-
-- **[Product overview on Webflow](https://www.webflow.com/grid)**
 
 <figure class="full-bleed">
   <video controls autoplay>
@@ -50,8 +65,7 @@ grid layouts.
   <figcaption>Grid playground built in Webflow for feature release</figcaption>
 </figure>
 
-Shortly after the initial release, we've added a fully visual support for
-working with
+Shortly after the initial release, we've added support for working with
 [Grid template areas](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas),
 making it even easier to create and adjust grid layouts using direct on-canvas
 manipulation.
@@ -71,45 +85,51 @@ manipulation.
   <figcaption>Adjusting areas for smaller screens</figcaption>
 </figure>
 
-## Symbol overrides
+---
 
-Webflow’s symbols let authors reuse a common layout across multiple pages -- for
-example, a navigation bar, a footer, or a sign up form.
+## Components and instance overrides
 
-Up until now, there was no way of using the same symbol with different content.
-This limitation greatly decreased the range of cases where symbols can be used.
+Webflow’s "Symbols" was a mechanism to reuse an element across multiple pages --
+for example, a navigation bar, a footer, or a sign up form. However, there was
+no way of using the same Symbol with different content -- this limitation
+greatly decreased the range of cases where symbols can be used.
 
-I've worked on adding dynamic content overrides to symbols, which would let
-authors define text, images, videos or links that are editable on different
-symbol instances.
+I worked on evolving Symbols to Components by adding dynamic content overrides,
+which would let authors define text, images, links and other properties that are
+editable on individual Component instances.
 
-With this feature, authors can utilize symbols for a much wider range of
-use-cases by turning various recurring layouts into symbols, each with its own
-content. As authors restructure the layout of that symbol, each instance will
-preserve its unique content.
+This update allowed authors to utilize an existing mechanism for a much wider
+range of use-cases by turning various recurring layouts into Components and
+reusing them across their project with indvidiual content overrides. As they
+make structural and stylistic changes to the Components, each instance would
+reflect the new changes and still retain the content overrides.
 
-- **[Feature overview on Webflow blog][symbols-overview]**
+#### External links
+
+- [Feature overview on Webflow blog][symbols-overview]
 
 [symbols-overview]: https://webflow.com/blog/content-overrides-for-symbols
 
 <figure>
   <img src="/img/webflow/webflow-symbols-1.gif" />
-  <figcaption>Defining overrides inside a symbol</figcaption>
+  <figcaption>Defining overrides on a component</figcaption>
 </figure>
 
 <figure>
   <img src="/img/webflow/webflow-symbols-2.gif" />
-  <figcaption>Overriding content on a symbol instance</figcaption>
+  <figcaption>Overriding content on instances</figcaption>
 </figure>
 
 <figure>
   <img src="/img/webflow/webflow-symbols-3.gif" />
-  <figcaption>Adjusting layout across multiple symbols</figcaption>
+  <figcaption>Adjusting layout across multiple instances</figcaption>
 </figure>
+
+---
 
 ## Interactions and animations
 
-When I started working on "Interactions 2.0", Webflow already had simple tools
+When I started working on "Interactions 2.0", Webflow already had basic tooling
 to add interactions and animations to elements on a page. However, we wanted a
 more poweful and flexible solution that would let authors create rich, sequenced
 animations using a visual timeline. Another goal was to let authors create
@@ -121,22 +141,30 @@ idea of a simplified vertical timeline that would let authors stack various
 "actions" along an axis. The vertical axis can represent either time or a
 dynamic value from user's input, like mouse position or scroll progress.
 
+<figure>
+  <img src="/img/webflow/webflow-ix-mock.webp"/>
+</figure>
+
 This interface metaphor proved to strike a perfect balance between a full-blown
 timeline usually found in professional animation software and a simple,
 uncomplicated way to create rich animations and interactions.
 
-- **[Product overview on Webflow][interactions]**
-- **[Launch page that fully utilizes the feature][ix2-site]**
+#### External links
+
+- [Product overview on Webflow][interactions]
+- [Launch page that fully utilizes the feature][ix2-site]
 
 [interactions]: https://webflow.com/interactions-animations
 [ix2-site]: https://webflow.com/ix2
 
-<figure class="full-bleed" style="display: grid; column-gap: 0.5rem; grid-template-columns: repeat(4, 1fr)">
-  <img src="/img/webflow/webflow-ix-ui-click-actions.jpg" />
-  <img src="/img/webflow/webflow-ix-ui-hover-actions.jpg" />
-  <img src="/img/webflow/webflow-ix-ui-mouse-actions.jpg" />
-  <img src="/img/webflow/webflow-ix-ui-scroll-actions.jpg" />
-  <figcaption style="grid-column: 1/-1">
+<figure class="full-bleed">
+    <div class="cols-4" style="gap: 0.5rem">
+      <img src="/img/webflow/webflow-ix-ui-click-actions.jpg" />
+      <img src="/img/webflow/webflow-ix-ui-hover-actions.jpg" />
+      <img src="/img/webflow/webflow-ix-ui-mouse-actions.jpg" />
+      <img src="/img/webflow/webflow-ix-ui-scroll-actions.jpg" />
+    </div>
+  <figcaption >
     Examples of timed and dynamic animations triggered by various events
   </figcaption>
 </figure>
@@ -179,15 +207,17 @@ Flexbox remains one of the most used layout tools in Webflow. Since the initial
 release in 2016, I've worked on several updates that improve and streamline the
 interface.
 
-- **[Educational site I built for feature release][flexbox-site]**
-- **[Flexbox learning game I built in Webflow][flexbox-game]**
+#### External links
+
+- [Educational site I built for feature release][flexbox-site]
+- [Flexbox learning game I built in Webflow][flexbox-game]
 
 [flexbox-site]: https://flexbox.webflow.com
 [flexbox-game]: https://www.flexboxgame.com
 
 <figure>
   <img src="/img/webflow/webflow-flexbox.gif" />
-  <figcaption>Flexbox in action</figcaption.
+  <figcaption>Flexbox in action</figcaption>
 </figure>
 
 <figure style="display: grid; grid-template-columns: repeat(2, 1fr)">

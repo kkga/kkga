@@ -11,7 +11,7 @@ Stampsy is a social platform for sharing and discovering visual stories.
 I worked with the team during 2012&ndash;2014 and it was the first start-up
 company I joined full-time after doing mostly freelance work.
 
-<div class="full-bleed" style="display: grid; column-gap: 1rem; grid-template-columns: repeat(2,1fr)">
+<div class="full-bleed cols-2">
   <figure>
     <img src="/img/stampsy/dan_and_varya.jpg" />
     <figcaption>Dan and Varya</figcaption>
@@ -21,8 +21,6 @@ company I joined full-time after doing mostly freelance work.
     <figcaption>Roman and Sergey</figcaption>
   </figure>
 </div>
-
----
 
 My work ranged from full-cycle product and user interface design to front-end
 engineering and CSS styling.
@@ -35,7 +33,9 @@ Later on I moved to building a responsive CSS architecture for the app and
 helped the front-end team by transforming the design system into reusable and
 styled React components.
 
-- **[Stampsy](https://stampsy.com)**
+#### External links
+
+- [Stampsy](https://stampsy.com)
 
 <figure class="full-bleed">
   <video controls autoplay><source src="/img/stampsy/stampsy-web.mp4" /></video>
@@ -47,7 +47,7 @@ styled React components.
   <figcaption>Marketing website I designed in 2014</figcaption>
 </figure>
 
-<div class="full-bleed" style="display: grid; column-gap: 1rem; grid-template-columns: repeat(2,1fr)">
+<div class="full-bleed cols-2">
   <figure>
     <img src="/img/stampsy/stampsy-web-0.png" />
     <figcaption>Feed view</figcaption>
