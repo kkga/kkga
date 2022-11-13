@@ -1,18 +1,18 @@
 {
-  "site": {
-    "title": "kkga",
-    "rootName": "index",
-    "description": "Software designer",
-    "url": "https://kkga.me"
-  },
-  "navigation": {
+  "title": "kkga",
+  "description": "Software designer",
+  "url": "https://kkga.me",
+  "rootName": "index",
+
+  "author_name": "Gadzhi Kharkharov",
+  "author_email": "me@kkga.me",
+  "author_url": "https://kkga.me/about/",
+
+  "lang": "en",
+  "head": "<script data-host='https://microanalytics.io' data-dnt='false' src='https://microanalytics.io/js/script.js' id='ZwSg9rf6GA' async defer></script>",
+  "nav_links": {
     "about": "/about",
     "work": "/work",
     "projects": "/projects"
-  },
-  "author": {
-    "name": "Gadzhi Kharkharov",
-    "email": "me@kkga.me",
-    "url": "https://kkga.me/about/"
   }
 }
