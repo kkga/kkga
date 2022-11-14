@@ -8,8 +8,8 @@ date: 2021-08-08
 
 I joined the team in its early days as one of the first two designers. From 2015
 to 2021 I've worked on a variety of new features and enhancements for the
-"Webflow Designer" including layout systems, animation/interaction tooling among
-many others.
+"Webflow Designer" including layout systems and animation/interaction tooling
+among many others.
 
 This is a collection of various projects I've worked on during these years.
 Latest and some of the most impactful things are still unreleased and, sadly,
@@ -89,20 +89,20 @@ manipulation.
 
 ## Components and instance overrides
 
-Webflow’s "Symbols" was a mechanism to reuse an element across multiple pages --
-for example, a navigation bar, a footer, or a sign up form. However, there was
-no way of using the same Symbol with different content -- this limitation
-greatly decreased the range of cases where symbols can be used.
+Webflow used to have "Symbols" -- a basic mechanism to reuse an element across
+multiple pages, for example: a navigation bar, a footer, or a sign up form.
+However, there was no way of using the same Symbol with different content. This
+limitation greatly decreased the range of cases where symbols can be used.
 
-I worked on evolving Symbols to Components by adding dynamic content overrides,
-which would let authors define text, images, links and other properties that are
-editable on individual Component instances.
+I worked on evolving Symbols to Components by adding parametric content
+overrides, which would let authors define text, images, links and other
+properties that are editable on individual Component instances.
 
 This update allowed authors to utilize an existing mechanism for a much wider
 range of use-cases by turning various recurring layouts into Components and
 reusing them across their project with indvidiual content overrides. As they
 make structural and stylistic changes to the Components, each instance would
-reflect the new changes and still retain the content overrides.
+reflect the new changes and still retain its content overrides.
 
 #### External links
 
@@ -139,15 +139,15 @@ position or mouse movement.
 While exploring different approaches for a visual interface, I came up with the
 idea of a simplified vertical timeline that would let authors stack various
 "actions" along an axis. The vertical axis can represent either time or a
-dynamic value from user's input, like mouse position or scroll progress.
+dynamic value from user's input, such as mouse position or scroll progress.
 
 <figure>
   <img src="/img/webflow/webflow-ix-mock.webp"/>
 </figure>
 
 This interface metaphor proved to strike a perfect balance between a full-blown
-timeline usually found in professional animation software and a simple,
-uncomplicated way to create rich animations and interactions.
+timeline usually found in professional animation software and a simple yet
+flexible way to create rich animations and interactions.
 
 #### External links
 
@@ -191,7 +191,7 @@ uncomplicated way to create rich animations and interactions.
 
 ## Flexbox
 
-Flexbox was one of the first projects I've worked on at Webflow.
+This was one of the first projects I've worked on after joining the team.
 
 The challenge was to translate a powerful
 [CSS layout mechanism](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
@@ -203,9 +203,9 @@ just 2 people. In addition to product design work, I've also built a
 [Flexbox learning game](https://flexboxgame.com) in Webflow and an educational
 [marketing website](https://flexbox.webflow.com) for feature release.
 
-Flexbox remains one of the most used layout tools in Webflow. Since the initial
-release in 2016, I've worked on several updates that improve and streamline the
-interface.
+Flexbox remains one of the most useful additions to Webflow Designer. Since the
+initial release in 2016, I've worked on several updates that improve and
+streamline the interface.
 
 #### External links
 
