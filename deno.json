@@ -1,9 +1,9 @@
 {
   "tasks": {
-    "dev": "deno run -A --unstable https://deno.land/x/ter/main.ts --serve",
-    "dev-local": "deno run -A --unstable --watch $HOME/projects/ter/main.ts --serve",
-    "build": "deno run -A --unstable https://deno.land/x/ter/main.ts",
-    "build-local": "deno run -A --unstable $HOME/projects/ter/main.ts",
+    "dev": "deno run -A https://deno.land/x/ter/main.ts --serve --debug",
+    "dev-local": "deno run -A --watch $HOME/projects/ter/main.ts --serve --debug",
+    "build": "deno run -Ar https://deno.land/x/ter/main.ts",
+    "build-local": "deno run -Ar $HOME/projects/ter/main.ts",
     "clean": "rm -rf _site"
   }
 }
