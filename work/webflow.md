@@ -190,6 +190,8 @@ flexible way to create rich animations and interactions.
   </figcaption>
 </figure>
 
+---
+
 ## Flexbox
 
 This was one of the first projects I've worked on after joining the team.
