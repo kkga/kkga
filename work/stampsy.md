@@ -2,9 +2,8 @@
 title: Stampsy
 description: Platform for sharing visual stories
 date: 2019-11-18
+toc: true
 ---
-
-# Stampsy
 
 Stampsy is a social platform for sharing and discovering visual stories.
 
@@ -21,6 +20,8 @@ company I joined full-time after doing mostly freelance work.
     <figcaption>Roman and Sergey</figcaption>
   </figure>
 </div>
+
+## Stampsy Web
 
 My work ranged from full-cycle product and user interface design to front-end
 engineering and CSS styling.
