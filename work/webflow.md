@@ -159,14 +159,12 @@ flexible way to create rich animations and interactions.
 [interactions]: https://webflow.com/interactions-animations
 [ix2-site]: https://webflow.com/ix2
 
-<figure class="full-bleed">
-    <div class="cols-4" style="gap: 0.5rem">
-      <img src="/img/webflow/webflow-ix-ui-click-actions.jpg" />
-      <img src="/img/webflow/webflow-ix-ui-hover-actions.jpg" />
-      <img src="/img/webflow/webflow-ix-ui-mouse-actions.jpg" />
-      <img src="/img/webflow/webflow-ix-ui-scroll-actions.jpg" />
-    </div>
-  <figcaption >
+<figure class="cols-4 full-bleed">
+  <img src="/img/webflow/webflow-ix-ui-click-actions.jpg" />
+  <img src="/img/webflow/webflow-ix-ui-hover-actions.jpg" />
+  <img src="/img/webflow/webflow-ix-ui-mouse-actions.jpg" />
+  <img src="/img/webflow/webflow-ix-ui-scroll-actions.jpg" />
+  <figcaption style='grid-column: 1/-1'>
     Examples of timed and dynamic animations triggered by various events
   </figcaption>
 </figure>
