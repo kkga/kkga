@@ -1,6 +1,6 @@
 ---
 title: About
-description: Some things about me
+description: Some things about me.
 date: 2021-08-08
 pinned: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: Now
-description: What I'm up to these days
+description: What I'm up to these days.
 date: 2021-12-30
 ---
 

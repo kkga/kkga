@@ -1,6 +1,5 @@
 ---
 title: Uses
-description: Software and hardware I use.
 date: 2022-05-06
 dateUpdated: 2022-11-05
 tags:
