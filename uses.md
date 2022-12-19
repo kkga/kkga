@@ -1,16 +1,15 @@
 ---
 title: Uses
 date: 2022-05-06
-dateUpdated: 2022-11-05
+dateUpdated: 2022-12-19
 tags:
   - setup
   - software
 ---
 
 One of my favorite websites is [usesthis.com](https://usesthis.com/): I like
-reading about the tools people use to get through their day to day.
-
-This page outlines a few details around my own setup.
+reading about the tools people use to get through their day to day. This page
+outlines a few details around my own setup.
 
 I didn't bother carefully arranging my desk so here's a snapshot of my messy
 workspace in the middle of some work.
@@ -50,15 +49,13 @@ needs. Even though I’ve been a macOS user for 15+ years, I like Linux more the
 days.
 
 Linux setup is barebones: I don’t use a full-fledged desktop environment. A
-tiling window manager, a fast terminal and a browser — that’s all I need.
+tiling window manager, a fast terminal and a browser -- that’s all I need.
 
 I do all text editing and coding in [Kakoune](https://kakoune.org/), which is a
 terminal-based text editor and my favorite piece of software.
 
 <figure class="full-bleed">
-  <a href="https://raw.githubusercontent.com/kkga/config/master/.local/share/desktop.png">
-    <img src="https://raw.githubusercontent.com/kkga/config/master/.local/share/desktop.png" />
-  </a>
+  <img src="https://raw.githubusercontent.com/kkga/config/master/.local/share/desktop.png" />
   <figcaption>Some terminal windows running in Sway on my laptop</figcaption>
 </figure>
 
@@ -88,23 +85,23 @@ time in the terminal.
 
 #### macOS
 
-macOS setup is, naturally, more GUI-centric.
+Naturally, more GUI-centric.
 
-| Program                                                            | Description                                                         |
-| ------------------------------------------------------------------ | ------------------------------------------------------------------- |
-| [Firefox](https://www.mozilla.org/en-US/firefox/new/)              | good web browser                                                    |
-| [Kitty](https://sw.kovidgoyal.net/kitty/)                          | good terminal                                                       |
-| [Figma/FigJam](https://figma.com/)                                 | UI design tool                                                      |
-| [yabai](https://github.com/koekeishiya/yabai)                      | tiling window manager (i mostly use stacks)                         |
-| [Itsycal](https://www.mowglii.com/itsycal/)                        | tiny menubar calendar with Vim keybindings and Zoom join buttons    |
-| [Maccy](https://maccy.app/)                                        | lightweight clipboard manager                                       |
-| [Syncthing](https://syncthing.net/)                                | macOS has a simple menu bar app                                     |
-| [Bumpr](https://www.getbumpr.com)                                  | a nice utility to control where links open                          |
-| [Shottr](https://shottr.cc/)                                       | small and fast screenshot tool                                      |
-| [Spaceman](https://github.com/Jaysce/Spaceman)                     | shows macOS space indicators in the menu bar (good yabai companion) |
-| [AltTab](https://github.com/lwouis/alt-tab-macos)                  | Windows-style window switcher                                       |
-| [MonitorControl](https://github.com/MonitorControl/MonitorControl) | makes controlling external displays more reliable                   |
-| [Claquette](https://www.peakstep.com/claquette/)                   | good screen recorder                                                |
+| Program                                                            | Description                                                      |
+| ------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| [Firefox](https://www.mozilla.org/en-US/firefox/new/)              | good web browser                                                 |
+| [Kitty](https://sw.kovidgoyal.net/kitty/)                          | good terminal                                                    |
+| [Figma/FigJam](https://figma.com/)                                 | UI design tool                                                   |
+| [yabai](https://github.com/koekeishiya/yabai)                      | tiling window manager (i mostly use stacks)                      |
+| [Itsycal](https://www.mowglii.com/itsycal/)                        | tiny menubar calendar with Vim keybindings and Zoom join buttons |
+| [Maccy](https://maccy.app/)                                        | lightweight clipboard manager                                    |
+| [Syncthing](https://syncthing.net/)                                | macOS has a simple menu bar app                                  |
+| [Velja](https://sindresorhus.com/velja)                            | a nice utility to control where links open                       |
+| [Shottr](https://shottr.cc/)                                       | small and fast screenshot tool                                   |
+| [Spaceman](https://github.com/Jaysce/Spaceman)                     | shows macOS spaces in the menu bar (good yabai companion)        |
+| [AltTab](https://github.com/lwouis/alt-tab-macos)                  | Windows-style window switcher                                    |
+| [MonitorControl](https://github.com/MonitorControl/MonitorControl) | makes controlling external displays more reliable                |
+| [Claquette](https://www.peakstep.com/claquette/)                   | good screen recorder                                             |
 
 Current desktop configuration lives in a
 [GitHub repo](https://github.com/kkga/config).
