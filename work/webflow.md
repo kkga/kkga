@@ -41,16 +41,16 @@ visual nature of CSS Grid, we felt that Webflow was the ideal platform for
 creating grid layouts in a fully visual way, using direct on-canvas
 manipulation.
 
+#### External links
+
+- [Product overview on Webflow](https://www.webflow.com/grid)
+
 <figure>
   <video autoplay playsinline loop muted>
     <source src="/img/webflow/webflow-grid-reel.mp4">
   </video>
   <figcaption>Working with grid layout in Webflow</figcaption>
 </figure>
-
-#### External links
-
-- [Product overview on Webflow](https://www.webflow.com/grid)
 
 Working with the team, I explored various ways to interact with a grid on the
 canvas. After months of iteration and testing, we developed a powerful and
