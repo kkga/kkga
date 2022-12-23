@@ -1,6 +1,5 @@
 ---
 title: About
-description: Some things about me.
 date: 2021-08-08
 pinned: true
 ---
@@ -12,19 +11,20 @@ living in ~Moscow~ İstanbul. Designing software is what I do for work and joy.
 
 ### Work
 
-[Retool](https://retool.com) <small>(2021&ndash;present, design
-engineer)</small><br/> A tool for building internal tools.
+[Retool](https://retool.com) <small>--- design engineer,
+2021&ndash;</small><br/> A tool for building internal tools. I'm working on
+[Workflows](https://retool.com/products/workflows/).
 
-[Webflow](https://webflow.com) <small>(2015&ndash;2021, product
-designer)</small>
+[Webflow](https://webflow.com) <small>--- product designer,
+2015&ndash;2021</small>
 <br/>A platform that makes producing for web more approachable. Mostly focused
-on figuring out how to create the right visual tools for designers.<br/>
-[See my work at Webflow →](/work/webflow)</br>
+on figuring out how to create the right visual tools for designers.
+[See my work at Webflow](/work/webflow).
 
-[Stampsy](https://stampsy.com) <small>(2012&ndash;2014,
-designer/engineer)</small><br/>A small social platform for creating visual
-stories. I designed the product and built a modular CSS architecture behind
-it.<br/> [See my work at Stampsy →](/work/stampsy)
+[Stampsy](https://stampsy.com) <small>--- designer/engineer,
+2012&ndash;2014</small><br/>A small social platform for creating visual stories.
+I designed the product and built a modular CSS architecture behind it.
+[See my work at Stampsy](/work/stampsy).
 
 ### Game design
 

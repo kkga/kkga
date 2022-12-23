@@ -3,7 +3,7 @@ title: Home
 showHeader: false
 ---
 
-**Hi, I'm Gadzhi.** I'm a software designer based in İstanbul, Türkiye.
+**Gadzhi** --- I'm a software designer based in İstanbul, Türkiye.
 
 I work at [Retool](https://retool.com) as a design engineer during the day.
 Before that, I was an early designer at [Webflow](https://webflow.com). You can

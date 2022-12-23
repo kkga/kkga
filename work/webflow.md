@@ -8,14 +8,15 @@ toc: true
 
 [Webflow](https://webflow.com) is a "no-code" web platform.
 
-I joined the team in its early days as one of the first two designers. From 2015
-to 2021 I've worked on a variety of new features and enhancements for the
-"Webflow Designer" including layout systems and animation/interaction tooling
-among many others.
+I joined the team as one of the first two designers in 2015. Over the past six
+years, I have contributed to the development of numerous new features and
+enhancements for the [Webflow Designer](https://webflow.com/designer). My work
+has included designing layout systems and creating animation and interaction
+tooling, among other tasks.
 
-This is a collection of various projects I've worked on during these years.
-Latest and some of the most impactful things are still unreleased and, sadly,
-can not be shown.
+This portfolio showcases some of the projects I have worked on during these
+years. Please note that some of my most recent and impactful work is still
+unreleased and cannot be shown at this time.
 
 <figure>
   <video autoplay playsinline loop muted>
@@ -28,15 +29,16 @@ can not be shown.
 
 ## Grid layout with direct manipulation
 
-[CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
-transformed the way web developers create layouts. The challenge was to abstract
-some of the complexity and translate this powerful new layout mechanism into
-Webflow.
+[CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) is
+a powerful new layout mechanism that has transformed the way web developers
+create layouts. The challenge was to make it easier to use in Webflow by
+abstracting some of the complexity and allowing users to create grid layouts
+visually, using direct on-canvas manipulation.
 
-Compared to all previous tools in Webflow where most style properties are
+Unlike previous tools in Webflow, which required most style properties to be
 adjusted via the inspector panel, we wanted the Grid to be different. Given the
-visual nature of CSS Grid, we felt that Webflow is the perfect medium to create
-a fully visual way of creating grid layouts by utilizing direct on-canvas
+visual nature of CSS Grid, we felt that Webflow was the ideal platform for
+creating grid layouts in a fully visual way, using direct on-canvas
 manipulation.
 
 <figure>
@@ -50,10 +52,10 @@ manipulation.
 
 - [Product overview on Webflow](https://www.webflow.com/grid)
 
-Together with the team I've worked on exploring various ways to interact with a
-grid on canvas. After months of iterations and tests, we came up with a powerful
-and simple solution that fully utilizes Webflow's visual nature for creating
-grid layouts.
+Working with the team, I explored various ways to interact with a grid on the
+canvas. After months of iteration and testing, we developed a powerful and
+simple solution that fully leverages Webflow's visual nature for creating grid
+layouts.
 
 <figure class="full-bleed">
   <video controls autoplay>
@@ -67,10 +69,10 @@ grid layouts.
   <figcaption>Grid playground built in Webflow for feature release</figcaption>
 </figure>
 
-Shortly after the initial release, we've added support for working with
+Shortly after the initial release, we added support for working with
 [Grid template areas](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas),
-making it even easier to create and adjust grid layouts using direct on-canvas
-manipulation.
+which made it even easier to create and adjust grid layouts using direct
+on-canvas manipulation.
 
 <figure>
   <img src="/img/webflow/webflow-grid-areas-1.gif" />
@@ -91,20 +93,23 @@ manipulation.
 
 ## Components and instance overrides
 
-Webflow used to have "Symbols" -- a basic mechanism to reuse an element across
-multiple pages, for example: a navigation bar, a footer, or a sign up form.
-However, there was no way of using the same Symbol with different content. This
-limitation greatly decreased the range of cases where symbols can be used.
+In the past, Webflow had a feature called "Symbols" which allowed users to reuse
+an element across multiple pages. For example, a user could create a Symbol for
+a navigation bar, footer, or sign-up form and reuse it on multiple pages.
+However, there was no way to use the same Symbol with different content. This
+limitation greatly reduced the range of situations in which Symbols could be
+used.
 
-I worked on evolving Symbols to Components by adding parametric content
-overrides, which would let authors define text, images, links and other
-properties that are editable on individual Component instances.
+To address this limitation, I worked on evolving Symbols into Components by
+adding the ability to override content parameters. This allowed authors to
+define text, images, links, and other properties that could be edited on
+individual Component instances.
 
-This update allowed authors to utilize an existing mechanism for a much wider
-range of use-cases by turning various recurring layouts into Components and
-reusing them across their project with indvidiual content overrides. As they
-make structural and stylistic changes to the Components, each instance would
-reflect the new changes and still retain its content overrides.
+This update significantly expanded the range of situations in which Components
+could be used. Authors could turn various recurring layouts into Components and
+reuse them across their project, applying individual content overrides as
+needed. Any structural or stylistic changes made to the Components would be
+reflected in all instances, while the content overrides would be retained.
 
 #### External links
 
@@ -131,25 +136,25 @@ reflect the new changes and still retain its content overrides.
 
 ## Interactions and animations
 
-When I started working on "Interactions 2.0", Webflow already had basic tooling
-to add interactions and animations to elements on a page. However, we wanted a
-more poweful and flexible solution that would let authors create rich, sequenced
-animations using a visual timeline. Another goal was to let authors create
-animations and interactions based on various dynamic inputs, like scroll
-position or mouse movement.
+When I started working on "Interactions 2.0", Webflow already had basic tools
+for adding interactions and animations to elements on a page. However, we wanted
+a more powerful and flexible solution that would allow authors to create rich,
+sequenced animations using a visual timeline. Additionally, we wanted to give
+authors the ability to create animations and interactions based on various
+dynamic inputs, such as scroll position or mouse movement.
 
 While exploring different approaches for a visual interface, I came up with the
-idea of a simplified vertical timeline that would let authors stack various
+idea of a simplified vertical timeline that would allow authors to stack various
 "actions" along an axis. The vertical axis can represent either time or a
-dynamic value from user's input, such as mouse position or scroll progress.
+dynamic value from user input, such as mouse position or scroll progress.
 
 <figure>
   <img src="/img/webflow/webflow-ix-mock.webp"/>
 </figure>
 
-This interface metaphor proved to strike a perfect balance between a full-blown
-timeline usually found in professional animation software and a simple yet
-flexible way to create rich animations and interactions.
+This interface metaphor proved to be a good balance between the full-blown
+timelines found in professional animation software and a simple yet flexible way
+to create rich animations and interactions.
 
 #### External links
 
@@ -193,20 +198,18 @@ flexible way to create rich animations and interactions.
 
 ## Flexbox
 
-This was one of the first projects I've worked on after joining the team.
+This was one of my first projects after joining the team. The challenge was to
+translate a powerful CSS layout mechanism into a simple and intuitive visual
+interface that allowed designers to create expressive, responsive layouts on the
+web.
 
-The challenge was to translate a powerful
-[CSS layout mechanism](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-into a simple and intuitive visual interface that allows designers to create
-expressive, responsive layouts on the web.
+This feature was released in the early days of Webflow, when the design team was
+just two people. In addition to my product design work, I also built a Flexbox
+learning game in Webflow and an educational marketing website for feature
+release.
 
-This feature was released in early days of Webflow, when the design team was
-just 2 people. In addition to product design work, I've also built a
-[Flexbox learning game](https://flexboxgame.com) in Webflow and an educational
-[marketing website](https://flexbox.webflow.com) for feature release.
-
-Flexbox remains one of the most useful additions to Webflow Designer. Since the
-initial release in 2016, I've worked on several updates that improve and
+Flexbox has proven to be a very useful addition to Webflow Designer. Since its
+initial release in 2016, I have worked on several updates that improve and
 streamline the interface.
 
 #### External links
