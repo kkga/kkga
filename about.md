@@ -4,7 +4,7 @@ date: 2021-08-08
 pinned: true
 ---
 
-![me](/img/about/leica.jpg)
+![me](/img/about/leica.webp)
 
 My name is Gadzhi. Born in [Dagestan](https://wikipedia.org/wiki/Dagestan),
 living in ~Moscow~ İstanbul. Designing software is what I do for work and joy.
