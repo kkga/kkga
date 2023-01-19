@@ -1,7 +1,7 @@
 ---
 title: Uses
 date: 2022-05-06
-dateUpdated: 2022-12-19
+dateUpdated: 2023-01-19
 tags:
   - setup
   - software
@@ -21,7 +21,7 @@ workspace in the middle of some work.
 - Lenovo X1 Carbon Gen 9
 - Custom PC with Ryzen 3600 cpu
 - MacBook Air M1
-- iPad Pro 11
+- iPad Air
 - Logitech MX Ergo trackball mouse
 - Apple Magic Trackpad
 - [Corne-ish Zen][corneish] keyboard
