@@ -48,12 +48,22 @@ Godot or Unity, writing shell scripts for my
 with Go, I love it all and always try to learn more. I put occasionally useful
 things on [my GitHub](https://github.com/kkga).
 
+### Photos
+
+I used to take a lot of photos with my favorite camera, a Leica M6 paired with
+Summicron 35mm and 50mm lenses. My old photographs can be found on my
+[Flickr](https://www.flickr.com/photos/gadzhi/albums) page.
+
+These days, I don't take as many photos but still enjoy the occasional photo
+walk with a Fujifilm X100V. I'm experimenting with a simple photo gallery here:
+https://photos.kkga.me.
+
 ### This website
 
 ...is fairly simple. Written mostly in markdown and built with
-[Ter](https://ter.kkga.me) -- a small wiki-style site generator that I made.
+[Ter](https://ter.kkga.me) --- a small wiki-style site generator that I made.
 
 ### Contact
 
 x-at-kkga.me / [twitter](https://twitter.com/kkga_) /
-[github](https://github.com/kkga) / [flickr](https://flickr.com/gadzhi)
+[github](https://github.com/kkga)
