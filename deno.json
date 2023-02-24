@@ -3,7 +3,7 @@
     "dev": "deno run -A --unstable https://deno.land/x/ter/main.ts -sd",
     "dev-local": "deno run -A --unstable --watch $HOME/projects/ter/main.ts -sd",
     "build": "deno run -A --unstable https://deno.land/x/ter/main.ts",
-    "build-local": "deno run -A --unstable $HOME/projects/ter/main.ts",
-    "clean": "rm -rf _site"
+    "build-reload": "deno run -Ar --unstable https://deno.land/x/ter/main.ts",
+    "build-local": "deno run -A --unstable $HOME/projects/ter/main.ts"
   }
 }
