@@ -83,9 +83,9 @@ time in the terminal.
 Naturally, more GUI-centric.
 
 - [Firefox](https://www.mozilla.org/en-US/firefox/new/) : good web browser
-- [Kitty](https://sw.kovidgoyal.net/kitty/) : good terminal
+- [WezTerm](https://wezfurlong.org/wezterm/) : good terminal
 - [Figma/FigJam](https://figma.com/) : UI design tool
-- [yabai](https://github.com/koekeishiya/yabai) : tiling window manager (i
+- [yabai](https://github.com/koekeishiya/yabai) : tiling window manager (I
   mostly use stacks)
 - [Itsycal](https://www.mowglii.com/itsycal/) : tiny menubar calendar with Vim
   keybindings and Zoom join buttons
