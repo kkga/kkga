@@ -1,55 +1,56 @@
 ---
-title: svelte dialog component
-date: 09-03-2023
+title: Svelte singleton dialog component using store and context
+date: 2023-03-09
 tags:
   - svelte
-  - typescript
-  - javascript
 ---
 
-So I was trying to create a simple reusable `<Dialog>` component to wrap around
+So I was trying to create a simple singleton `<Dialog>` component to wrap around
 the native html dialog.
 
 I have the `<Dialog/>` injected at the root layout which emits custom events via
 the svelte's event dispatcher: not much logic in there, just a basic wrapper
 around html `<dialog>` with custom events.
 
+In the same root layout file I create a writable store for confirmation dialogs.
+The store is basically a reactive connection to the `<Dialog/>` instance in the
+root layout as events from the `<Dialog/>` are bound to the store.
+
 ```typescript
 <script lang='ts'>
+  const confirmDialog = writable({
+    title: "",
+    message: "",
+    confirmAction: "",
+    confirm: () => {},
+    cancel: () => {},
+  });
+
   let dialog: Dialog
 </script>
 
 <Dialog
   bind:this={dialog}
-  title={$confirm.title}
-  message={$confirm.message}
-  confirmAction={$confirm.confirmAction}
-  on:confirm={$confirm.confirm}
-  on:cancel={$confirm.cancel}
+  title={$confirmDialog.title}
+  message={$confirmDialog.message}
+  confirmAction={$confirmDialog.confirmAction}
+  on:confirm={$confirmDialog.confirm}
+  on:cancel={$confirmDialog.cancel}
 />
+
 <slot />
 ```
 
-In the same root layout file I create a writable store for confirmation dialogs.
-The store is basically a reactive connection to the `<Dialog/>` instance in the
-root layout, events from the `<Dialog/>` are bound to the store. I then put the
+I then put the
 store into context and give users a simple `confirm({...})` function to update
 it, which returns a Promise that gets resolved inside the dialog.
 
 ```typescript
-const confirm = writable({
-  title: "",
-  message: "",
-  confirmAction: "",
-  confirm: () => {},
-  cancel: () => {},
-});
-
 setContext("dialog", {
   confirm: ({ title, message, confirmAction }) => {
     dialog.show();
     return new Promise((resolve) => {
-      confirm.set({
+      confirmDialog.set({
         title,
         message,
         confirmAction,
@@ -67,7 +68,7 @@ setContext("dialog", {
 });
 ```
 
-In the end, this is how I use the context in SubmitFunctions (in this case to
+In the end, this is how I use the context in Svelte SubmitFunctions across the app (in this case to
 ask for confirmation before form submission):
 
 ```typescript
