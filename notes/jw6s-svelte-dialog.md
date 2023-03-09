@@ -8,11 +8,11 @@ tags:
 ---
 
 So I was trying to create a simple reusable `<Dialog>` component to wrap around
-the native html `<dialog>` .
+the native html dialog.
 
-I have a <Dialog/> component injected at the root layout which emits custom
-events via the svelte's event dispatcher: not much logic in there, just a basic
-wrapper around html <dialog> with custom events.
+I have the `<Dialog/>` injected at the root layout which emits custom events via
+the svelte's event dispatcher: not much logic in there, just a basic wrapper
+around html `<dialog>` with custom events.
 
 ```typescript
 <script lang='ts'>
@@ -31,8 +31,8 @@ wrapper around html <dialog> with custom events.
 ```
 
 In the same root layout file I create a writable store for confirmation dialogs.
-The store is basically a reactive connection to the <Dialog/> instance in the
-root layout, events from the <Dialog/> are bound to the store. I then put the
+The store is basically a reactive connection to the `<Dialog/>` instance in the
+root layout, events from the `<Dialog/>` are bound to the store. I then put the
 store into context and give users a simple `confirm({...})` function to update
 it, which returns a Promise that gets resolved inside the dialog.
 
