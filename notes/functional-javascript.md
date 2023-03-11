@@ -3,7 +3,6 @@ title: Functional JavaScript
 description: Notes from Functional JavaScript First Steps lections
 date: 2021-04-22
 tags:
-  - programming
   - javascript
 toc: true
 ---
