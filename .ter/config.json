@@ -11,5 +11,6 @@
   "codeHighlight": true,
 
   "lang": "en",
-  "head": "<script async defer data-website-id='4bede151-7477-40b5-9791-98ea7d3a7a9a' src='https://poetic-tortoise.pikapod.net/umami.js'></script>"
+  "head": "<script async src='https://poetic-tortoise.pikapod.net/script.js' data-website-id='4bede151-7477-40b5-9791-98ea7d3a7a9a'></script>"
 }
+
