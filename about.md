@@ -30,12 +30,12 @@ for it. [View my work at Stampsy](/work/stampsy).
 
 ### Game design
 
-I'm interested in video game design and development. It's a fun area that is
-hard to master and I try to spend my free time tinkering with various personal
-projects. I have a [dlog](/dlog) where I sometimes post (rough) updates on this
-journey.
+I have a keen interest in video game design and development. It's a challenging
+and enjoyable field, and I dedicate my free time to working on various personal
+projects. I maintain a [dlog](/dlog) where I occasionally post updates on my
+progress.
 
-I also enjoy reading about game design theory and practice. Here's a collection
+I also enjoy reading about game design theory and practice. Here is a collection
 of my favorite [books and resources](/notes/gamedesign-resources.md).
 
 ### Programming
