@@ -6,25 +6,27 @@ pinned: true
 
 ![me](/img/about/leica.webp)
 
-My name is Gadzhi. Born in [Dagestan](https://wikipedia.org/wiki/Dagestan),
-living in ~Moscow~ İstanbul. Designing software is what I do for work and joy.
+My name is Gadzhi. I was born in [Dagestan](https://wikipedia.org/wiki/Dagestan)
+and currently reside in İstanbul. Designing software is both my profession and
+passion.
 
 ### Work
 
-[Retool](https://retool.com) <small>--- design engineer,
-2021&ndash;</small><br/> A tool for building internal tools. I'm working on
+[Retool](https://retool.com) <small>--- Design Engineer,
+2021&ndash;present</small><br/> Retool is a platform for building internal
+tools. I'm currently working on the development of
 [Workflows](https://retool.com/products/workflows/).
 
-[Webflow](https://webflow.com) <small>--- product designer,
+[Webflow](https://webflow.com) <small>--- Product Designer,
 2015&ndash;2021</small>
-<br/>A platform that makes producing for web more approachable. Mostly focused
-on figuring out how to create the right visual tools for designers.
-[See my work at Webflow](/work/webflow).
+<br/>Webflow is a platform that simplifies web production. My primary focus was
+on creating intuitive and powerful visual tools for designers.
+[View my work at Webflow](/work/webflow).
 
-[Stampsy](https://stampsy.com) <small>--- designer/engineer,
-2012&ndash;2014</small><br/>A small social platform for creating visual stories.
-I designed the product and built a modular CSS architecture behind it.
-[See my work at Stampsy](/work/stampsy).
+[Stampsy](https://stampsy.com) <small>--- Designer/Engineer,
+2012&ndash;2014</small><br/>Stampsy was a small social platform for creating
+visual stories. I designed the product and developed a modular CSS architecture
+for it. [View my work at Stampsy](/work/stampsy).
 
 ### Game design
 
@@ -38,25 +40,26 @@ of my favorite [books and resources](/notes/gamedesign-resources.md).
 
 ### Programming
 
-When it comes to programming, I'm a master of none. Tinkering with code has been
-a big part of my life for as long as I remember and it still brings me joy and
-makes time pass faster.
+When it comes to programming, I consider myself a jack of all trades. I have
+been tinkering with code for as long as I can remember, and it continues to
+bring me joy and make time fly.
 
-Whether it's making design prototypes with JavaScript at work, making games with
-Godot or Unity, writing shell scripts for my
-[Linux desktop](https://github.com/kkga/dotfiles) or making little CLI programs
-with Go, I love it all and always try to learn more. I put occasionally useful
-things on [my GitHub](https://github.com/kkga).
+Whether it's creating design prototypes with JavaScript at work, developing
+games with Godot or Unity, writing shell scripts for my
+[Linux desktop](https://github.com/kkga/dotfiles), or creating small CLI
+programs with Go, I love it all and always strive to learn more. I occasionally
+share useful things on [my GitHub](https://github.com/kkga).
 
-### Photos
+### Photography
 
-I used to take a lot of photos with my favorite camera, a Leica M6 paired with
-Summicron 35mm and 50mm lenses. My old photographs can be found on my
+In the past, I was an avid photographer, capturing moments with my favorite
+camera, a Leica M6 paired with Summicron 35mm and 50mm lenses. My old
+photographs can be found on my
 [Flickr](https://www.flickr.com/photos/gadzhi/albums) page.
 
-These days, I don't take as many photos but still enjoy the occasional photo
-walk with a Fujifilm X100V. I'm experimenting with a simple photo gallery here:
-https://photos.kkga.me.
+Nowadays, I don't take as many photos but still enjoy the occasional photo walk
+with a Fujifilm X100V. I'm currently experimenting with a simple photo gallery
+here: https://photos.kkga.me.
 
 ### This website
 
