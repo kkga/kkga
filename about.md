@@ -13,15 +13,17 @@ passion.
 ### Work
 
 [Retool](https://retool.com) <small>-- Design Engineer,
-2021&ndash;present</small><br/> Retool is a platform for building internal
-tools. I'm currently working on the development of
-[Workflows](https://retool.com/products/workflows/).
+2021&ndash;present</small><br/>A platform that helps businesses build custom
+internal tools and workflows without extensive coding skills, using a
+drag-and-drop interface and pre-built components. I'm currently working on the
+development of [Workflows](https://retool.com/products/workflows/).
 
 [Webflow](https://webflow.com) <small>-- Product Designer,
-2015&ndash;2021</small>
-<br/>Webflow is a platform that simplifies web production. My primary focus was
-on creating intuitive and powerful visual tools for designers.
-[View my work at Webflow](/work/webflow).
+2015&ndash;2021</small> <br/>Website design and development platform that
+enables users to create responsive websites visually without the need for
+advanced coding skills, offering hosting, content management, and other
+features. My primary focus was on creating intuitive and powerful visual tools
+for designers. [View my work at Webflow](/work/webflow).
 
 [Stampsy](https://stampsy.com) <small>-- Designer/Engineer,
 2012&ndash;2014</small><br/>Stampsy was a small social platform for creating
