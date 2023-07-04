@@ -12,23 +12,42 @@ passion.
 
 ### Work
 
-[Retool](https://retool.com) <small>-- Design Engineer,
-2021&ndash;present</small><br/>A platform that helps businesses build custom
+<dl class="cols-3">
+
+<dt>
+<a href="https://retool.com" rel="external">Retool</a>
+<small class='block font-normal'>2021&ndash;present, Design Engineer</small>
+</dt>
+
+<dd class="span-2 mb-5">
+A platform that helps businesses build custom
 internal tools and workflows without extensive coding skills, using a
-drag-and-drop interface and pre-built components. I'm currently working on the
-development of [Workflows](https://retool.com/products/workflows/).
+drag-and-drop interface and pre-built components.
+I'm currently working on the design and development of
+<a rel="external" href="https://retool.com/products/workflows/">Workflows</a>.
+</dd>
 
-[Webflow](https://webflow.com) <small>-- Product Designer,
-2015&ndash;2021</small> <br/>Website design and development platform that
-enables users to create responsive websites visually without the need for
-advanced coding skills, offering hosting, content management, and other
-features. My primary focus was on creating intuitive and powerful visual tools
-for designers. [View my work at Webflow](/work/webflow).
+<dt>
+<a href="https://webflow.com" rel="external">Webflow</a>
+<small class='block font-normal'>2015&ndash;2021, Product Designer</small>
+</dt>
 
-[Stampsy](https://stampsy.com) <small>-- Designer/Engineer,
-2012&ndash;2014</small><br/>Stampsy was a small social platform for creating
-visual stories. I designed the product and developed a modular CSS architecture
-for it. [View my work at Stampsy](/work/stampsy).
+<dd class="span-2 mb-5">
+Website design and development platform that
+enables users to create responsive websites visually.
+I primarily focused on <a href="/work/webflow">creating intuitive and powerful visual tools for designers</a>.
+</dd>
+
+<dt>
+<a href="https://stampsy.com" rel="external">Stampsy</a>
+<small class='block font-normal'>2012&ndash;2014, Designer/Engineer</small>
+</dt>
+
+<dd class="span-2">
+Stampsy was a tiny social platform for creating
+visual stories on iPad and the web. <a href="/work/stampsy">I designed the product and developed a modular CSS architecture
+for it</a>.</dd>
+</dl>
 
 ### Game design
 
@@ -66,9 +85,10 @@ here: https://photos.kkga.me.
 ### This website
 
 ...is fairly simple. Written mostly in markdown and built with
-[Ter](https://ter.kkga.me) --- a small wiki-style site generator that I made.
+[Ter](https://ter.kkga.me) -- a small wiki-style site generator that I made.
 
 ### Contact
 
-x-at-kkga.me / [twitter](https://twitter.com/kkga_) /
-[github](https://github.com/kkga)
+- email: x [at] kkga.me
+- [Twitter](https://twitter.com/kkga_)
+- [GitHub](https://github.com/kkga)
