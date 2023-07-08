@@ -16,7 +16,7 @@ passion.
 
 <dt>
 <a href="https://retool.com" rel="external">Retool</a>
-<small class='block font-normal'>2021&ndash;present, Design Engineer</small>
+<small style='font-variant-caps: small-caps' class='block font-normal'>2021&ndash;present, Design Engineer</small>
 </dt>
 
 <dd class="span-2 mb-5">
@@ -29,7 +29,7 @@ I'm currently working on the design and development of
 
 <dt>
 <a href="https://webflow.com" rel="external">Webflow</a>
-<small class='block font-normal'>2015&ndash;2021, Product Designer</small>
+<small style='font-variant-caps: small-caps' class='block font-normal'>2015&ndash;2021, Product Designer</small>
 </dt>
 
 <dd class="span-2 mb-5">
@@ -40,7 +40,7 @@ I primarily focused on <a href="/work/webflow">creating intuitive and powerful v
 
 <dt>
 <a href="https://stampsy.com" rel="external">Stampsy</a>
-<small class='block font-normal'>2012&ndash;2014, Designer/Engineer</small>
+<small style='font-variant-caps: small-caps' class='block font-normal'>2012&ndash;2014, Designer/Engineer</small>
 </dt>
 
 <dd class="span-2">
