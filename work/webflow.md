@@ -81,11 +81,6 @@ on-canvas manipulation.
 </figure>
 
 <figure>
-  <img src="/img/webflow/webflow-grid-areas-2.gif" />
-  <figcaption>Dragging elements into grid areas</figcaption>
-</figure>
-
-<figure>
   <img src="/img/webflow/webflow-grid-areas-3.gif" />
   <figcaption>Adjusting areas for smaller screens</figcaption>
 </figure>
