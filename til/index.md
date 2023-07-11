@@ -1,5 +1,5 @@
 ---
 title: TIL
-description: Today I learned
+description: Today I learned.
 layout: log
 ---

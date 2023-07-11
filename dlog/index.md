@@ -1,5 +1,5 @@
 ---
 title: Dlog
-description: dev- or design-log
+description: dev- or design-log attempt.
 layout: log
 ---
