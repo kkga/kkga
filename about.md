@@ -12,14 +12,14 @@ passion.
 
 ### Work
 
-<dl class="cols-3">
+<dl class="cols-3 items-baseline">
 
 <dt>
-<a href="https://retool.com" rel="external">Retool</a>
-<small style='font-variant-caps: small-caps' class='block font-normal'>2021&ndash;present, Design Engineer</small>
+<a class='font-medium md:leading-snug' href="https://retool.com" rel="external">Retool</a>
+<small class='block font-medium md:leading-snug'>2021&ndash;present, Design Engineer</small>
 </dt>
 
-<dd class="span-2 mb-5">
+<dd class="span-2 mb-5 text-base">
 A platform that helps businesses build custom
 internal tools and workflows without extensive coding skills, using a
 drag-and-drop interface and pre-built components.
@@ -28,22 +28,22 @@ I'm currently working on the design and development of
 </dd>
 
 <dt>
-<a href="https://webflow.com" rel="external">Webflow</a>
-<small style='font-variant-caps: small-caps' class='block font-normal'>2015&ndash;2021, Product Designer</small>
+<a href="https://webflow.com" class='font-medium md:leading-snug' rel="external">Webflow</a>
+<small class='block font-medium md:leading-snug'>2015&ndash;2021, Product Designer</small>
 </dt>
 
-<dd class="span-2 mb-5">
+<dd class="span-2 mb-5 text-base">
 Website design and development platform that
 enables users to create responsive websites visually.
 I primarily focused on <a href="/work/webflow">creating intuitive and powerful visual tools for designers</a>.
 </dd>
 
 <dt>
-<a href="https://stampsy.com" rel="external">Stampsy</a>
-<small style='font-variant-caps: small-caps' class='block font-normal'>2012&ndash;2014, Designer/Engineer</small>
+<a href="https://stampsy.com" class='font-medium md:leading-snug' rel="external">Stampsy</a>
+<small class='block font-medium md:leading-snug'>2012&ndash;2014, Designer/Engineer</small>
 </dt>
 
-<dd class="span-2">
+<dd class="span-2 text-base">
 Stampsy was a tiny social platform for creating
 visual stories on iPad and the web. <a href="/work/stampsy">I designed the product and developed a modular CSS architecture
 for it</a>.</dd>
