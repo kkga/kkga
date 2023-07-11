@@ -9,7 +9,7 @@ tags: [work]
 
 [Webflow](https://webflow.com) is a "no-code" web platform.
 
-I joined the team as one of the first two designers in 2015. Over the past six
+I joined the team as one of the first two designers in 2015. Over the next six
 years, I have contributed to the development of numerous new features and
 enhancements for the [Webflow Designer](https://webflow.com/designer). My work
 has included designing layout systems and creating animation and interaction
