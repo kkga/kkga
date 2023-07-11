@@ -1,7 +1,7 @@
 ---
 title: Uses
 date: 2022-05-06
-dateUpdated: 2023-01-19
+dateUpdated: 2023-07-11
 tags:
   - setup
   - software
@@ -20,10 +20,8 @@ workspace in the middle of some work.
 
 - Lenovo X1 Carbon Gen 9
 - Custom PC with Ryzen 3600 cpu
-- MacBook Air M1
+- MacBook Pro 14" M2
 - iPad Air
-- Logitech MX Ergo trackball mouse
-- Apple Magic Trackpad
 - [Corne-ish Zen][corneish] keyboard
 - [Ferris Sweep][sweep] keyboard
 
@@ -50,7 +48,9 @@ Linux setup is barebones: I don’t use a full-fledged desktop environment. A
 tiling window manager, a fast terminal and a browser -- that’s all I need.
 
 I do all text editing and coding in [Kakoune](https://kakoune.org/), which is a
-terminal-based text editor and my favorite piece of software.
+terminal-based text editor and my favorite piece of software. Recently, I've
+also been using [Helix](https://github.com/helix-editor/helix) from time to
+time.
 
 <figure class="full-bleed">
   <img src="https://raw.githubusercontent.com/kkga/config/master/.local/share/desktop.png" />
@@ -63,6 +63,8 @@ Here's a list of essential pieces:
 
 - [Fish](https://fishshell.com/) : shell
 - [Kakoune](https://kakoune.org/) : text editor
+- [Helix](https://github.com/helix-editor/helix) : a Kakoune-inspired text
+  editor that I've been using lately
 - [kks](projects/kks.md) : a small Kakoune companion I wrote
 
 #### Linux
