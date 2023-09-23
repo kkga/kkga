@@ -1,6 +1,5 @@
 ---
 title: Move window between spaces on macOS
-date: 2022-01-16
 tags:
     - macos
 ---

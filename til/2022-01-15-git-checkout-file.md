@@ -1,6 +1,5 @@
 ---
 title: Checkout files from another branch in git
-date: 2022-01-15
 tags:
     - git
 ---

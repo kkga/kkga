@@ -1,6 +1,5 @@
 ---
 title: Configure Karabiner with Goku
-date: 2022-07-13
 tags:
     - macos
     - keyboard

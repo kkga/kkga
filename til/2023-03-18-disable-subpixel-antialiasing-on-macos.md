@@ -1,6 +1,5 @@
 ---
 title: Disable subpixel anti-aliasing on macOS
-date: 2023-03-18
 tags:
     - macos
 ---
