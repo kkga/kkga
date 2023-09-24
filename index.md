@@ -13,4 +13,4 @@ learning new things, and playing challenging video games (particularly those by
 From Software).
 
 You can find me on [Twitter](https://twitter.com/@kkga_) or reach out via email
-at x-at-kkga.me.
+at me[at]kkga.me.

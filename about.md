@@ -16,7 +16,7 @@ passion.
 
 <dt>
 <a class='font-medium md:leading-snug' href="https://retool.com" rel="external">Retool</a>
-<small class='block font-medium md:leading-snug'>2021&ndash;present, Design Engineer</small>
+<small class='block font-medium md:leading-snug'>2021&ndash;, Design Engineer</small>
 </dt>
 
 <dd class="span-2 mb-5 text-base">
@@ -89,6 +89,12 @@ here: https://photos.kkga.me.
 
 ### Contact
 
-- email: x [at] kkga.me
-- [Twitter](https://twitter.com/kkga_)
-- [GitHub](https://github.com/kkga)
+<ul class="divide-dot flex items-baseline list-none p-0">
+<li><a href="mailto:me@kkga.me">me[at]kkga.me</a></li>
+<li><a href="https://twitter.com/kkga_">Twitter</a></li>
+<li><a href="https://github.com/kkga">GitHub</a></li>
+<li><a href="https://read.cv/kkga">read.cv</a></li>
+<li><a href="https://www.linkedin.com/in/gadzhi">LinkedIn</a></li>
+<li><a href="/files/resume-gadzhi.pdf">resume (pdf)</a></li>
+</ul>
+
