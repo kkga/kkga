@@ -2,7 +2,6 @@
 title: Webflow
 description: Selected projects 2015-2021.
 date: 2021-08-08
-dateUpdated: 2022-12-24
 toc: true
 tags: [work]
 ---
@@ -16,8 +15,8 @@ has included designing layout systems and creating animation and interaction
 tooling, among other tasks.
 
 This portfolio showcases some of the projects I have worked on during these
-years. Please note that some of my most recent and impactful work is still
-unreleased and cannot be shown at this time.
+years. Note that some of my most recent and impactful work is still unreleased
+and cannot be shown at this time.
 
 <figure>
   <video autoplay playsinline loop muted>
@@ -42,9 +41,11 @@ visual nature of CSS Grid, we felt that Webflow was the ideal platform for
 creating grid layouts in a fully visual way, using direct on-canvas
 manipulation.
 
-#### External links
+!!! abstract External links
 
-- [Product overview on Webflow](https://www.webflow.com/grid)
+- [Product overview on Webflow site](https://www.webflow.com/grid)
+
+!!!
 
 <figure>
   <video autoplay playsinline loop muted>
@@ -107,9 +108,11 @@ reuse them across their project, applying individual content overrides as
 needed. Any structural or stylistic changes made to the Components would be
 reflected in all instances, while the content overrides would be retained.
 
-#### External links
+!!! abstract External links
 
 - [Feature overview on Webflow blog][symbols-overview]
+
+!!!
 
 [symbols-overview]: https://webflow.com/blog/content-overrides-for-symbols
 
@@ -144,6 +147,16 @@ idea of a simplified vertical timeline that would allow authors to stack various
 "actions" along an axis. The vertical axis can represent either time or a
 dynamic value from user input, such as mouse position or scroll progress.
 
+!!! abstract External links
+
+- [Product overview on Webflow site][interactions]
+- [Launch page that fully utilizes the feature][ix2-site]
+
+!!!
+
+[interactions]: https://webflow.com/interactions-animations
+[ix2-site]: https://webflow.com/ix2
+
 <figure>
   <img src="/img/webflow/webflow-ix-mock.webp"/>
 </figure>
@@ -151,14 +164,6 @@ dynamic value from user input, such as mouse position or scroll progress.
 This interface metaphor proved to be a good balance between the full-blown
 timelines found in professional animation software and a simple yet flexible way
 to create rich animations and interactions.
-
-#### External links
-
-- [Product overview on Webflow][interactions]
-- [Launch page that fully utilizes the feature][ix2-site]
-
-[interactions]: https://webflow.com/interactions-animations
-[ix2-site]: https://webflow.com/ix2
 
 <figure class="cols-4 full-bleed">
   <img src="/img/webflow/webflow-ix-ui-click-actions.jpg" />
@@ -208,15 +213,17 @@ Flexbox has proven to be a very useful addition to Webflow Designer. Since its
 initial release in 2016, I have worked on several updates that improve and
 streamline the interface.
 
-#### External links
+!!! abstract External links
 
 - [Educational site I built for feature release][flexbox-site]
 - [Flexbox learning game I built in Webflow][flexbox-game]
 
+!!!
+
 [flexbox-site]: https://flexbox.webflow.com
 [flexbox-game]: https://www.flexboxgame.com
 
-<figure>
+<figure class="full-bleed">
   <img src="/img/webflow/webflow-flexbox.gif" />
   <figcaption>Flexbox in action</figcaption>
 </figure>

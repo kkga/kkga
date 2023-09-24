@@ -2,7 +2,6 @@
 title: Stampsy
 description: Platform for sharing visual stories.
 date: 2019-11-18
-toc: true
 tags: [work]
 ---
 
@@ -29,15 +28,18 @@ engineering and CSS styling.
 
 Together with the team, I've planned the initial scope of the product and its
 features, designed the web application and prototyped a lot of the Stampsy
-Editor interactions in Framer.js.
+Editor interactions in Framer.js (when it was just a small open-source library).
 
 Later on I moved to building a responsive CSS architecture for the app and
 helped the front-end team by transforming the design system into reusable and
 styled React components.
 
-#### External links
+!!! abstract External links
 
 - [Stampsy](https://stampsy.com)
+- [Story on TNW](https://thenextweb.com/news/stampsy-a-creative-medium-between-a-blog-and-a-website)
+
+!!!
 
 <figure class="full-bleed">
   <video controls autoplay><source src="/img/stampsy/stampsy-web.mp4" /></video>
@@ -73,6 +75,12 @@ styled React components.
 In 2012, before becoming a web platform, Stampsy was an experimental iPad app
 for creating stories with a simple design editor. I designed and prototyped a
 lot of its touch-based interactions with different tools and codez.
+
+!!! abstract External links
+
+- [Venturebeat](https://venturebeat.com/media/stampsy-builds-tools-for-the-next-generation-of-bloggers-and-publishers/)
+
+!!!
 
 <figure class="full-bleed">
   <video controls autoplay loop=true><source src="/img/stampsy/stampsy-ipad.mp4"/></video>
