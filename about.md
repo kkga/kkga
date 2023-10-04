@@ -6,9 +6,9 @@ pinned: true
 
 ![me](/img/about/leica.webp)
 
-My name is Gadzhi. I was born in [Dagestan](https://wikipedia.org/wiki/Dagestan)
-and currently reside in İstanbul. Designing software is both my profession and
-passion.
+My name is Gadzhi. I was born in
+[Dagestan](https://wikipedia.org/wiki/Dagestan). Designing software is both my
+profession and passion.
 
 ### Work
 
@@ -97,4 +97,3 @@ here: https://photos.kkga.me.
 <li><a href="https://www.linkedin.com/in/gadzhi">LinkedIn</a></li>
 <li><a href="/files/resume-gadzhi.pdf">resume (pdf)</a></li>
 </ul>
-
