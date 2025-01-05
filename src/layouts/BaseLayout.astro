@@ -1,0 +1,27 @@
+---
+import "../styles/tailwind.css";
+import "@fontsource-variable/dm-sans";
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body
+    class="bg-white py-8 font-sans text-black antialiased dark:bg-black dark:text-white"
+  >
+    <!-- <header class="mb-8 flex flex-col">
+      <a href="/" class="text-sm font-bold">Gadzhi Kharkharov</a>
+    </header> -->
+    <main class="grid-breakout prose py-8">
+      <slot />
+    </main>
+  </body>
+</html>

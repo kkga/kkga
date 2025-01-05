@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans Variable", sans-serif;
+}
+
+@utility grid-breakout {
+  --gap: clamp(1rem, 6vw, 3rem);
+  --full: minmax(var(--gap), 1fr);
+  --content: min(64ch, 100% - var(--gap) * 2);
+  --popout: minmax(0, 2rem);
+  --feature: minmax(0, 5rem);
+
+  display: grid;
+  grid-template-columns:
+    [full-start] var(--full)
+    [feature-start] var(--feature)
+    [popout-start] var(--popout)
+    [content-start] var(--content) [content-end]
+    var(--popout) [popout-end]
+    var(--feature) [feature-end]
+    var(--full) [full-end];
+
+  > * {
+    grid-column: content;
+  }
+  > .popout {
+    grid-column: popout;
+  }
+  > .feature {
+    grid-column: feature;
+  }
+  > .full {
+    grid-column: full;
+  }
+}
+
+@utility prose {
+  @apply text-lg;
+
+  > * {
+    @apply my-4;
+  }
+
+  > .feature {
+    @apply my-8;
+  }
+
+  /* Lists */
+
+  ol,
+  ul {
+    ol,
+    ul {
+      @apply my-1;
+    }
+
+    li {
+      @apply my-1 ml-6;
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        @apply my-1;
+      }
+    }
+  }
+
+  ol {
+    @apply list-decimal;
+
+    ol {
+      @apply list-[lower-alpha];
+
+      ol {
+        @apply list-[lower-roman];
+      }
+    }
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  figure {
+    @apply my-4;
+
+    figcaption {
+      @apply mt-4 text-center text-base dark:text-gray-400;
+    }
+  }
+
+  img {
+    @apply h-auto w-full rounded-md;
+  }
+
+  video {
+    @apply h-auto w-full rounded-md;
+  }
+
+  a {
+    @apply underline decoration-current/50 underline-offset-2 hover:decoration-current;
+  }
+
+  /* Tables */
+
+  table {
+    @apply my-4 w-full table-auto border-collapse text-left text-sm/6;
+
+    caption {
+      @apply mt-2 caption-bottom text-left text-sm/6;
+    }
+
+    thead {
+      @apply border-b border-neutral-200;
+    }
+
+    tfoot {
+      @apply border-t border-neutral-200;
+    }
+
+    tr {
+      @apply border-y border-neutral-200 first:border-t-0 last:border-b-0;
+    }
+
+    th {
+      @apply align-bottom font-semibold;
+    }
+
+    td,
+    th {
+      @apply p-2 first:pl-0 last:pr-0;
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        @apply my-2 first:mt-0 last:mb-0;
+      }
+    }
+  }
+
+  hr {
+    @apply my-12 w-1/2 place-self-center border-neutral-200 dark:border-neutral-800;
+  }
+
+  /* Typography */
+
+  del {
+    @apply line-through opacity-60;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply my-4 scroll-m-8 font-medium text-balance empty:hidden;
+  }
+
+  h1 {
+    @apply text-center text-5xl leading-tight;
+  }
+
+  h2 {
+    @apply text-center text-4xl leading-tight;
+  }
+
+  > p {
+    @apply my-4 empty:hidden;
+  }
+}

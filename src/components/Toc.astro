@@ -1,0 +1,38 @@
+---
+import type { MarkdownHeading } from "astro";
+
+interface Props {
+  headings: MarkdownHeading[];
+}
+
+const { headings } = Astro.props;
+
+const filteredHeadings = headings.filter((heading) => heading.depth <= 2);
+---
+
+<nav
+  class="fixed top-8 right-8 z-10 hidden w-[200px] rounded-lg bg-white/80 p-4 text-sm backdrop-blur-lg dark:bg-black/80"
+>
+  <ul class="m-0! flex list-none! flex-col gap-2 overflow-auto p-0!">
+    {
+      filteredHeadings.map((heading) => (
+        <li class="m-0! text-neutral-600 dark:text-neutral-400">
+          <a class="no-underline! hover:underline!" href={`#${heading.slug}`}>
+            {heading.text}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+
+<script>
+  window.addEventListener("scroll", () => {
+    const nav = document.querySelector("nav");
+    if (window.scrollY > 200) {
+      if (nav) nav.classList.remove("hidden");
+    } else {
+      if (nav) nav.classList.add("hidden");
+    }
+  });
+</script>

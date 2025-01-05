@@ -1,0 +1,29 @@
+---
+interface Props {
+  src: string;
+  poster?: string;
+  autoplay?: boolean;
+  controls?: boolean;
+  loop?: boolean;
+}
+
+const {
+  src,
+  poster,
+  autoplay = true,
+  controls = false,
+  loop = true,
+} = Astro.props;
+---
+
+<video
+  playsinline
+  width="100%"
+  autoplay={autoplay}
+  controls={controls}
+  loop={loop}
+  muted
+  poster={poster}
+>
+  <source src={src} />
+</video>

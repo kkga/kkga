@@ -1,0 +1,30 @@
+---
+import { getCollection, render } from "astro:content";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Toc from "@/components/Toc.astro";
+
+export async function getStaticPaths() {
+  const works = await getCollection("work");
+
+  return works.map((work) => ({
+    params: { id: work.id },
+    props: {
+      work,
+    },
+  }));
+}
+
+const { work } = Astro.props;
+const { Content, headings } = await render(work);
+---
+
+<BaseLayout title={work.data.title}>
+  <Toc headings={headings} />
+  <header class="mb-12 space-y-4">
+    <h1 class="text-center text-5xl font-medium">
+      {work.data.title}
+    </h1>
+    <p class="text-center text-lg">{work.data.description}</p>
+  </header>
+  <Content />
+</BaseLayout>
