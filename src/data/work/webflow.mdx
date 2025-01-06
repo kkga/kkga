@@ -30,63 +30,50 @@ import ixDemoParallax from "./assets/webflow/ix-demo-parallax.mp4";
 import ixDemoFollow from "./assets/webflow/ix-demo-follow.mp4";
 import ixDemoHover from "./assets/webflow/ix-demo-hover.mp4";
 
-import symbols1 from "./assets/webflow/webflow-symbols-1.gif";
-import symbols2 from "./assets/webflow/webflow-symbols-2.gif";
-import symbols3 from "./assets/webflow/webflow-symbols-3.gif";
+import symbols1 from "./assets/webflow/symbols-1.mp4";
+import symbols2 from "./assets/webflow/symbols-2.mp4";
+import symbols3 from "./assets/webflow/symbols-3.mp4";
 
 import flexboxVideo from "./assets/webflow/flexbox.mp4";
 import flexboxSite from "./assets/webflow/flexbox-site.webp";
 import flexboxUi from "./assets/webflow/flexbox-ui.webp";
 
-[Webflow](https://webflow.com) is a "no-code" web platform. I joined the team as
-one of the first two designers in 2015. Over the next six years, I have
-contributed to the development of numerous new features and enhancements for the
-[Webflow Designer](https://webflow.com/designer). My work has included designing
-layout systems and creating animation and interaction tooling, among other
-tasks.
-
-This portfolio showcases some of the projects I have worked on during these
-years. Note that some of my most recent and impactful work is still unreleased
-and cannot be shown at this time.
+I joined [Webflow](https://webflow.com) team as one of the first two designers
+in 2015. Over the next six years, I contributed to numerous features for the
+[Webflow Designer](https://webflow.com/designer), focusing on layout systems and
+interaction tooling. This is a selection of projects from my tenure. Some recent
+work still remains unreleased and is not shown here.
 
 <figure>
   <Video src={designerReel} />
-  <figcaption>Webflow Designer</figcaption>
+  <figcaption>Webflow Designer interface</figcaption>
 </figure>
 
 ---
 
 ## Grid layout with direct manipulation
 
-<a
-  target="_blank"
-  class="m-0 place-self-center text-base"
-  href="https://www.webflow.com/grid"
->
-  webflow.com/grid
-</a>
+<div class="mt-0 flex justify-center gap-4">
+  <a target="_blank" class="text-base" href="https://webflow.com/grid">
+    webflow.com/grid
+  </a>
+</div>
 
-[CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) is
-a powerful new layout mechanism that has transformed the way web developers
-create layouts. The challenge was to make it easier to use in Webflow by
-abstracting some of the complexity and allowing users to create grid layouts
-visually, using direct on-canvas manipulation.
+The release of
+[CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+required us to rethink how users interact with layout systems. We moved away
+from inspector-based controls to direct canvas manipulation, allowing users to
+create and modify grid layouts visually.
 
-Unlike previous tools in Webflow, which required most style properties to be
-adjusted via the inspector panel, we wanted the Grid to be different. Given the
-visual nature of CSS Grid, we felt that Webflow was the ideal platform for
-creating grid layouts in a fully visual way, using direct on-canvas
-manipulation.
+Working with the team, we tested multiple interaction patterns. The final
+implementation provides precise control while maintaining visual feedback and
+direct manipulation principles, resulting in an intuitive interface that
+preserves CSS Grid's power.
 
 <figure>
   <Video src={gridReel} />
-  <figcaption>Working with grid layout in Webflow</figcaption>
+  <figcaption>Direct manipulation of CSS Grid layouts</figcaption>
 </figure>
-
-Working with the team, I explored various ways to interact with a grid on the
-canvas. After months of iteration and testing, we developed a powerful and
-simple solution that fully leverages Webflow's visual nature for creating grid
-layouts.
 
 <figure class="feature">
   <Video
@@ -95,13 +82,13 @@ layouts.
     src={gridVideo}
     poster={gridVideoPoster.src}
   />
-  <figcaption>Overview of grid's main features</figcaption>
+  <figcaption>Detailed walkthrough of CSS Grid features</figcaption>
 </figure>
 
-Shortly after the initial release, we added support for working with
-[Grid template areas](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas),
-which made it even easier to create and adjust grid layouts using direct
-on-canvas manipulation.
+The addition of
+[Grid template areas](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas)
+support further simplified grid layout creation through direct on-canvas
+manipulation.
 
 <div class="feature">
   <Tabs>
@@ -121,58 +108,52 @@ on-canvas manipulation.
 
 ## Interactions and animations
 
-<a
-  target="_blank"
-  class="m-0 place-self-center text-base"
-  href="https://webflow.com/interactions-animations"
->
-  webflow.com/interactions-animations
-</a>
+<div class="mt-0 flex justify-center gap-4">
+  <a
+    target="_blank"
+    class="text-base"
+    href="https://webflow.com/interactions-animations"
+  >
+    webflow.com/interactions-animations
+  </a>
+  <a target="_blank" class="text-base" href="https://webflow.com/ix2">
+    webflow.com/ix2
+  </a>
+</div>
 
-<a
-  target="_blank"
-  class="m-0 place-self-center text-base"
-  href="https://webflow.com/ix2"
->
-  webflow.com/ix2 (launch page)
-</a>
+Building upon Webflow's basic animation tools, we developed a more sophisticated
+system for creating dynamic interactions. Through extensive prototyping, we
+arrived at a simplified vertical timeline interface that manages both time-based
+animations and dynamic interactions.
 
-When I started working on "Interactions 2.0", Webflow already had basic tools
-for adding interactions and animations to elements on a page. However, we wanted
-a more powerful and flexible solution that would allow authors to create rich,
-sequenced animations using a visual timeline. Additionally, we wanted to give
-authors the ability to create animations and interactions based on various
-dynamic inputs, such as scroll position or mouse movement.
+The timeline allows authors to layer multiple "actions", using it to sequence
+animations or map them to user inputs like scroll position and mouse movement.
+This metaphor provides professional-grade capabilities while maintaining an
+accessible learning curve.
 
 <figure>
   <Video src={ixReel} />
-  <figcaption>Interactions 2.0</figcaption>
+  <figcaption>Overview of the Interactions 2.0 system</figcaption>
 </figure>
 
-While exploring different approaches for a visual interface, I came up with the
-idea of a simplified vertical timeline that would allow authors to stack various
-"actions" along an axis. The vertical axis can represent either time or a
-dynamic value from user input, such as mouse position or scroll progress.
-
-<Image src={ixMock} alt="Interactions UI" />
-
-This interface metaphor proved to be a good balance between the full-blown
-timelines found in professional animation software and a simple yet flexible way
-to create rich animations and interactions.
+<figure>
+  <Image src={ixMock} alt="Scroll-driven animation control" />
+  <figcaption>Interface for scroll-driven animation control</figcaption>
+</figure>
 
 <figure class="feature grid grid-cols-4 gap-x-4">
-  <Image src={ixUiClickActions} alt="Click actions" />
-  <Image src={ixUiHoverActions} alt="Hover actions" />
-  <Image src={ixUiMouseActions} alt="Mouse actions" />
-  <Image src={ixUiScrollActions} alt="Scroll actions" />
+  <Image src={ixUiClickActions} alt="Click-triggered animations" />
+  <Image src={ixUiHoverActions} alt="Hover-triggered animations" />
+  <Image src={ixUiMouseActions} alt="Mouse-driven animations" />
+  <Image src={ixUiScrollActions} alt="Scroll-based animations" />
   <figcaption class="col-span-full">
-    Examples of timed and dynamic animations triggered by various events
+    Different types of animation triggers and their controls
   </figcaption>
 </figure>
 
 <figure class="feature">
   <Video src={ixOverview} controls autoplay={false} />
-  <figcaption>Overview of creating various animations</figcaption>
+  <figcaption>Detailed walkthrough of creating an animation</figcaption>
 </figure>
 
 <figure class="grid grid-cols-2 gap-4">
@@ -181,54 +162,40 @@ to create rich animations and interactions.
   <Video src={ixDemoFollow} />
   <Video src={ixDemoHover} />
   <figcaption class="col-span-full">
-    In the wild: various animations and interactions created using this feature
-    in Webflow
+    Examples of interactions built by Webflow users
   </figcaption>
 </figure>
 
 ---
 
-## Components and instance overrides
+## Components
 
-<a
-  target="_blank"
-  class="m-0 place-self-center text-base"
-  href="https://webflow.com/blog/content-overrides-for-symbols"
->
-  webflow.com/blog/content-overrides-for-symbols
-</a>
-
-In the past, Webflow had a feature called "Symbols" which allowed users to reuse
-an element across multiple pages. For example, a user could create a Symbol for
-a navigation bar, footer, or sign-up form and reuse it on multiple pages.
-However, there was no way to use the same Symbol with different content. This
-limitation greatly reduced the range of situations in which Symbols could be
-used.
-
-To address this limitation, I worked on evolving Symbols into Components by
-adding the ability to override content parameters. This allowed authors to
-define text, images, links, and other properties that could be edited on
-individual Component instances.
-
-This update significantly expanded the range of situations in which Components
-could be used. Authors could turn various recurring layouts into Components and
-reuse them across their project, applying individual content overrides as
-needed. Any structural or stylistic changes made to the Components would be
-reflected in all instances, while the content overrides would be retained.
-
-<div class="feature">
-  <Tabs>
-    <TabItem title="Defining overrides">
-      <img src={symbols1.src} />
-    </TabItem>
-    <TabItem title="Overriding content">
-      <img src={symbols2.src} />
-    </TabItem>
-    <TabItem title="Adjusting all instances">
-      <img src={symbols3.src} />
-    </TabItem>
-  </Tabs>
+<div class="mt-0 flex justify-center gap-4">
+  <a
+    target="_blank"
+    class="text-base"
+    href="https://webflow.com/blog/content-overrides-for-symbols"
+  >
+    webflow.com/blog/content-overrides-for-symbols
+  </a>
 </div>
+
+Webflow's original Symbols feature allowed element reuse across pages but lacked
+content customization. We evolved this into a Components system with content
+overrides, enabling teams to maintain consistent design systems while
+customizing individual instances.
+
+<Tabs>
+  <TabItem title="Defining overrides">
+    <Video src={symbols1} />
+  </TabItem>
+  <TabItem title="Overriding content">
+    <Video src={symbols2} />
+  </TabItem>
+  <TabItem title="Adjusting all instances">
+    <Video src={symbols3} />
+  </TabItem>
+</Tabs>
 
 ---
 
@@ -243,29 +210,23 @@ reflected in all instances, while the content overrides would be retained.
   </a>
 </div>
 
-This was one of my first projects after joining the team. The challenge was to
-translate a powerful CSS layout mechanism into a simple and intuitive visual
-interface that allowed designers to create expressive, responsive layouts on the
-web.
+As one of my first projects at Webflow, I worked on translating CSS Flexbox into
+an intuitive visual interface. Beyond the core implementation, I developed
+supplementary learning tools including an interactive game and educational
+website.
 
-This feature was released in the early days of Webflow, when the design team was
-just two people. In addition to my product design work, I also built a Flexbox
-learning game in Webflow and an educational marketing website for feature
-release.
-
-Flexbox has proven to be a very useful addition to Webflow Designer. Since its
-initial release in 2016, I have worked on several updates that improve and
-streamline the interface.
+Since its 2016 release, Flexbox has become a fundamental layout tool in Webflow,
+receiving continuous refinements to improve its utility for responsive design.
 
 <figure class="feature">
   <Video src={flexboxVideo} />
-  <figcaption>Flexbox in action</figcaption>
+  <figcaption>Visual interface for CSS Flexbox controls</figcaption>
 </figure>
 
 <figure class="feature grid grid-cols-2 gap-x-4">
-  <Image src={flexboxUi} alt="Flexbox UI" />
-  <Image src={flexboxSite} alt="Flexbox marketing site" />
+  <Image src={flexboxUi} alt="Visual Flexbox controls interface" />
+  <Image src={flexboxSite} alt="Educational website for learning Flexbox" />
   <figcaption class="col-span-full">
-    UI mockup for flexbox controls and the marketing site
+    Interface design for Flexbox controls and educational resources
   </figcaption>
 </figure>
