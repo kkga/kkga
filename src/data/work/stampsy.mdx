@@ -4,92 +4,104 @@ description: Platform for sharing visual stories.
 pubDate: 2019-11-18
 ---
 
-Stampsy is a social platform for sharing and discovering visual stories.
+import { Image } from "astro:assets";
+import Video from "@/components/Video.astro";
 
-I worked with the team during 2012&ndash;2014 and it was the first start-up
-company I joined full-time after doing mostly freelance work.
+import dan_and_varya from "./assets/stampsy/dan_and_varya.jpg";
+import roman_and_sergey from "./assets/stampsy/roman_and_sergey.jpg";
+import stampsy_web from "./assets/stampsy/web.mp4";
+import stampsy_site from "./assets/stampsy/site.mp4";
+import web_0 from "./assets/stampsy/web-0.png";
+import web_1 from "./assets/stampsy/web-1.png";
+import web_2 from "./assets/stampsy/web-2.png";
+import web_3 from "./assets/stampsy/web-3.png";
+import ipad_app from "./assets/stampsy/ipad-app.mp4";
 
-<div class="feature grid grid-cols-2 gap-4">
+Stampsy was a social platform for sharing and discovering visual stories. I
+served as a product designer and front-end engineer from 2012 to 2014, my first
+full-time startup role after freelancing.
+
+<div class="feature grid grid-cols-2 gap-8">
   <figure>
-    ![Dan and Varya](../img/stampsy/dan_and_varya.jpg)
-    {/* <img src="../img/stampsy/dan_and_varya.jpg" /> */}
+    <Image src={dan_and_varya} alt="Dan and Varya" />
     <figcaption>Dan and Varya</figcaption>
   </figure>
   <figure>
-    ![Roman and Sergey](../img/stampsy/roman_and_sergey.jpg)
-    {/* <img src="../img/stampsy/roman_and_sergey.jpg" /> */}
+    <Image src={roman_and_sergey} alt="Roman and Sergey" />
     <figcaption>Roman and Sergey</figcaption>
   </figure>
 </div>
 
+---
+
 ## Stampsy Web
 
-My work ranged from full-cycle product and user interface design to front-end
-engineering and CSS styling.
+<div class="mt-0 flex justify-center gap-4">
+  <a target="_blank" class="text-base" href="https://stampsy.com">
+    stampsy.com
+  </a>
+  <a
+    target="_blank"
+    class="text-base"
+    href="https://thenextweb.com/news/stampsy-a-creative-medium-between-a-blog-and-a-website"
+  >
+    Story on TNW
+  </a>
+</div>
 
-Together with the team, I've planned the initial scope of the product and its
-features, designed the web application and prototyped a lot of the Stampsy
-Editor interactions in Framer.js (when it was just a small open-source library).
+As a key team member, I contributed to product strategy, UI/UX design, and
+front-end development. I prototyped core interactions using Framer.js and
+established a responsive CSS architecture, implementing the design system as
+reusable React components.
 
-Later on I moved to building a responsive CSS architecture for the app and
-helped the front-end team by transforming the design system into reusable and
-styled React components.
-
-!!! abstract External links
-
-- [Stampsy](https://stampsy.com)
-- [Story on TNW](https://thenextweb.com/news/stampsy-a-creative-medium-between-a-blog-and-a-website)
-
-!!!
-
-<figure class="full-bleed">
-  <video controls autoplay>
-    <source src="/img/stampsy/stampsy-web.mp4" />
-  </video>
-  <figcaption>Promo video featuring parts of my user interface work</figcaption>
+<figure class="feature">
+  <Video controls src={stampsy_web} />
+  <figcaption>Promo video</figcaption>
 </figure>
 
-<figure class="full-bleed">
-  <video controls>
-    <source src="/img/stampsy/stampsy-site.mp4" />
-  </video>
-  <figcaption>Marketing website I designed in 2014</figcaption>
+<figure class="feature">
+  <Video controls src={stampsy_site} />
+  <figcaption>Marketing website design (2014)</figcaption>
 </figure>
 
-<div class="full-bleed cols-2">
+<div class="feature grid grid-cols-2 gap-8">
   <figure>
-    <img src="/img/stampsy/stampsy-web-0.png" />
-    <figcaption>Feed view</figcaption>
+    <Image src={web_0} alt="Feed view" />
+    <figcaption>Content feed interface</figcaption>
   </figure>
   <figure>
-    <img src="/img/stampsy/stampsy-web-1.png" />
-    <figcaption>Story page</figcaption>
+    <Image src={web_1} alt="Story page" />
+    <figcaption>Individual story view</figcaption>
   </figure>
   <figure>
-    <img src="/img/stampsy/stampsy-web-2.png" />
-    <figcaption>User-curated collection page</figcaption>
+    <Image src={web_2} alt="User-curated collection page" />
+    <figcaption>Curated collection interface</figcaption>
   </figure>
   <figure>
-    <img src="/img/stampsy/stampsy-web-3.png" />
-    <figcaption>Visual editor for creating stories</figcaption>
+    <Image src={web_3} alt="Visual editor for creating stories" />
+    <figcaption>Visual story editor</figcaption>
   </figure>
 </div>
 
+---
+
 ## Stampsy iPad app
 
-In 2012, before becoming a web platform, Stampsy was an experimental iPad app
-for creating stories with a simple design editor. I designed and prototyped a
-lot of its touch-based interactions with different tools and codez.
+<div class="mt-0 flex justify-center gap-4">
+  <a
+    target="_blank"
+    class="text-base"
+    href="https://venturebeat.com/media/stampsy-builds-tools-for-the-next-generation-of-bloggers-and-publishers/"
+  >
+    Venturebeat
+  </a>
+</div>
 
-!!! abstract External links
+The platform originated as an iPad application in 2012, focusing on intuitive
+story creation through touch-based interaction. I led the design and prototyping
+of the core user experience.
 
-- [Venturebeat](https://venturebeat.com/media/stampsy-builds-tools-for-the-next-generation-of-bloggers-and-publishers/)
-
-!!!
-
-<figure class="full-bleed">
-  <video controls autoplay loop="true">
-    <source src="/img/stampsy/stampsy-ipad.mp4" />
-  </video>
-  <figcaption>Creating and sharing a story in Stampsy iPad app</figcaption>
+<figure class="feature">
+  <Video controls src={ipad_app} />
+  <figcaption>Story creation workflow demonstration</figcaption>
 </figure>

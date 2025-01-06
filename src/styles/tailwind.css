@@ -36,7 +36,7 @@
 }
 
 @utility prose {
-  @apply text-lg;
+  @apply text-base;
 
   > * {
     @apply my-4;
@@ -86,12 +86,12 @@
     @apply list-disc;
   }
 
-  figure {
+  > figure {
     @apply my-4;
+  }
 
-    figcaption {
-      @apply mt-4 text-center text-base dark:text-gray-400;
-    }
+  figcaption {
+    @apply mt-2 text-center text-sm text-neutral-500 dark:text-neutral-400;
   }
 
   img {
@@ -103,7 +103,7 @@
   }
 
   a {
-    @apply underline decoration-current/50 underline-offset-2 hover:decoration-current;
+    @apply underline decoration-current/30 underline-offset-2 hover:decoration-current;
   }
 
   /* Tables */
@@ -148,7 +148,7 @@
   }
 
   hr {
-    @apply my-12 w-1/2 place-self-center border-neutral-200 dark:border-neutral-800;
+    @apply my-12 w-1/4 place-self-center border-neutral-300 dark:border-neutral-800;
   }
 
   /* Typography */
@@ -163,15 +163,19 @@
   h4,
   h5,
   h6 {
-    @apply my-4 scroll-m-8 font-medium text-balance empty:hidden;
+    @apply my-4 scroll-m-12 font-medium text-balance empty:hidden;
   }
 
   h1 {
-    @apply text-center text-5xl leading-tight;
+    @apply text-center text-4xl leading-tight tracking-tight;
   }
 
   h2 {
-    @apply text-center text-4xl leading-tight;
+    @apply text-center text-3xl leading-tight tracking-tight;
+  }
+
+  h3 {
+    @apply text-2xl leading-tight tracking-tight;
   }
 
   > p {
