@@ -1,5 +1,5 @@
 {
   "plugins": ["prettier-plugin-tailwindcss"],
-  "tailwindStylesheet": "./src/styles/tailwind.css",
+  "tailwindStylesheet": "./src/styles/index.css",
   "proseWrap": "always"
 }

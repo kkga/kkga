@@ -1,0 +1,35 @@
+---
+title: Ter
+description: Tiny wiki-style site builder built with Deno.
+date: 2022-02-03
+tags:
+  - deno
+  - typescript
+---
+
+import { Image } from "astro:assets";
+import ter1 from "../img/projects/ter-1.png";
+import ter2 from "../img/projects/ter-2.png";
+
+Ter takes a folder of markdown files and replicates its structure into a static
+site with automatically indexed directories, backlinks and breadcrumbs. I worked
+on this project to get familiar with [Deno](https://deno.land), which is fun,
+and to get slightly less terrible at TypeScript.
+
+<ul class="aside">
+  <li>
+    <a rel="external" target="_blank" href="https://ter.kkga.me">
+      ter.kkga.me
+    </a>
+  </li>
+  <li>
+    <a rel="external" target="_blank" href="https://github.com/kkga/ter">
+      Source code on GitHub
+    </a>
+  </li>
+</ul>
+
+<figure class="breakout grid grid-cols-2 gap-8 *:col-auto">
+  <Image src={ter1} alt="Ter" />
+  <Image src={ter2} alt="Ter" />
+</figure>

@@ -1,7 +1,6 @@
 ---
 title: Uses
 date: 2022-05-06
-dateUpdated: 2023-07-11
 tags:
   - setup
   - software

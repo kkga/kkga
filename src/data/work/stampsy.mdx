@@ -1,7 +1,10 @@
 ---
 title: Stampsy
 description: Platform for sharing visual stories.
-pubDate: 2019-11-18
+longDescription:
+  A tiny social app for creating and sharing visual stories on iPad and the web.
+  I worked on the design and contributed to the development of the web app.
+date: 2019-11-18
 ---
 
 import { Image } from "astro:assets";
@@ -21,7 +24,7 @@ Stampsy was a social platform for sharing and discovering visual stories. I
 served as a product designer and front-end engineer from 2012 to 2014, my first
 full-time startup role after freelancing.
 
-<div class="feature grid grid-cols-2 gap-8">
+<div class="breakout grid gap-5 sm:grid-cols-2">
   <figure>
     <Image src={dan_and_varya} alt="Dan and Varya" />
     <figcaption>Dan and Varya</figcaption>
@@ -32,39 +35,44 @@ full-time startup role after freelancing.
   </figure>
 </div>
 
----
-
 ## Stampsy Web
 
-<div class="mt-0 flex justify-center gap-4">
-  <a target="_blank" class="text-base" href="https://stampsy.com">
-    stampsy.com
-  </a>
-  <a
-    target="_blank"
-    class="text-base"
-    href="https://thenextweb.com/news/stampsy-a-creative-medium-between-a-blog-and-a-website"
-  >
-    Story on TNW
-  </a>
-</div>
+<date class="aside">2014</date>
 
 As a key team member, I contributed to product strategy, UI/UX design, and
-front-end development. I prototyped core interactions using Framer.js and
-established a responsive CSS architecture, implementing the design system as
-reusable React components.
+front-end development. I prototyped core interactions using Framer.js (at that
+time it was just an open-source project by Koen Bok) and established a
+responsive CSS architecture, implementing the design system as reusable React
+components.
 
-<figure class="feature">
+<ul class="aside">
+  <li>
+    <a target="_blank" rel="external" href="https://stampsy.com">
+      stampsy.com
+    </a>
+  </li>
+  <li>
+    <a
+      target="_blank"
+      rel="external"
+      href="https://thenextweb.com/news/stampsy-a-creative-medium-between-a-blog-and-a-website"
+    >
+      Story on TNW
+    </a>
+  </li>
+</ul>
+
+<figure class="breakout">
   <Video controls src={stampsy_web} />
   <figcaption>Promo video</figcaption>
 </figure>
 
-<figure class="feature">
+<figure class="breakout">
   <Video controls src={stampsy_site} />
   <figcaption>Marketing website design (2014)</figcaption>
 </figure>
 
-<div class="feature grid grid-cols-2 gap-8">
+<div class="breakout grid gap-5 sm:grid-cols-2">
   <figure>
     <Image src={web_0} alt="Feed view" />
     <figcaption>Content feed interface</figcaption>
@@ -83,25 +91,27 @@ reusable React components.
   </figure>
 </div>
 
----
-
 ## Stampsy iPad app
 
-<div class="mt-0 flex justify-center gap-4">
-  <a
-    target="_blank"
-    class="text-base"
-    href="https://venturebeat.com/media/stampsy-builds-tools-for-the-next-generation-of-bloggers-and-publishers/"
-  >
-    Venturebeat
-  </a>
-</div>
+<date class="aside">2012</date>
 
 The platform originated as an iPad application in 2012, focusing on intuitive
 story creation through touch-based interaction. I led the design and prototyping
 of the core user experience.
 
-<figure class="feature">
+<ul class="aside">
+  <li>
+    <a
+      target="_blank"
+      rel="external"
+      href="https://venturebeat.com/media/stampsy-builds-tools-for-the-next-generation-of-bloggers-and-publishers/"
+    >
+      App overview on VentureBeat
+    </a>
+  </li>
+</ul>
+
+<figure class="breakout">
   <Video controls src={ipad_app} />
-  <figcaption>Story creation workflow demonstration</figcaption>
+  <figcaption>Story creation demo</figcaption>
 </figure>

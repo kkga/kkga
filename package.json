@@ -9,18 +9,17 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.0.3",
-    "@astrojs/tailwind": "^5.1.4",
-    "@fontsource-variable/dm-sans": "^5.1.1",
-    "@lion/ui": "^0.9.1",
-    "@tailwindcss/vite": "4.0.0-beta.8",
-    "astro": "^5.1.2",
-    "tailwindcss": "4.0.0-beta.8"
+    "@astrojs/mdx": "^4.2.1",
+    "@lion/ui": "^0.11.2",
+    "@tailwindcss/vite": "4.0.15",
+    "@vercel/analytics": "^1.5.0",
+    "astro": "^5.5.4",
+    "tailwindcss": "4.0.15"
   },
   "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c",
   "devDependencies": {
-    "prettier": "^3.4.2",
+    "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.6.9"
+    "prettier-plugin-tailwindcss": "^0.6.11"
   }
 }

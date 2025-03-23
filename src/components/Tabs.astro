@@ -1,4 +1,12 @@
-<lion-tabs>
+---
+interface Props {
+  className: string;
+}
+
+const { className } = Astro.props;
+---
+
+<lion-tabs class={className}>
   <slot />
 </lion-tabs>
 

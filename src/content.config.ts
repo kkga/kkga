@@ -7,9 +7,26 @@ const work = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    pubDate: z.coerce.date(),
-    updDate: z.coerce.date().optional(),
+    longDescription: z.string(),
+    date: z.coerce.date(),
   }),
 });
 
-export const collections = { work };
+const projects = defineCollection({
+  loader: glob({ pattern: "**/*.mdx", base: "./src/data/projects" }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    date: z.coerce.date(),
+  }),
+});
+
+const dlog = defineCollection({
+  loader: glob({ pattern: "**/*.mdx", base: "./src/data/dlog" }),
+  schema: z.object({
+    title: z.string(),
+    date: z.coerce.date(),
+  }),
+});
+
+export const collections = { work, projects, dlog };

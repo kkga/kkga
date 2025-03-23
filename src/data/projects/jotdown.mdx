@@ -1,0 +1,35 @@
+---
+title: Jotdown
+description: Tiny web app for jotting things down.
+date: 2021-03-11
+tags:
+  - svelte
+---
+
+import { Image } from "astro:assets";
+import jotdown1 from "../img/projects/jotdown1.png";
+import jotdown2 from "../img/projects/jotdown2.png";
+
+A simple app for jotting things down.
+
+It lives in a browser tab, quick to switch to and quick to navigate with a
+keyboard. The content is stored in your browser, so you can close the tab and
+come back to it later.
+
+<ul class="aside">
+  <li>
+    <a rel="external" target="_blank" href="https://jotdown.page">
+      jotdown.page
+    </a>
+  </li>
+  <li>
+    <a rel="external" target="_blank" href="https://github.com/kkga/jotdown">
+      GitHub
+    </a>
+  </li>
+</ul>
+
+<div class="breakout grid grid-cols-2 gap-8">
+  <Image src={jotdown1} alt="Screenshot of Jotdown" />
+  <Image src={jotdown2} alt="Screenshot of Jotdown" />
+</div>

@@ -1,27 +1,52 @@
 ---
-import "../styles/tailwind.css";
-import "@fontsource-variable/dm-sans";
+import "../styles/index.css";
+import Analytics from "@vercel/analytics/astro";
 
-const { title } = Astro.props;
+interface Props {
+  title: string;
+  dateUpdated?: string;
+}
+
+const { title, dateUpdated } = Astro.props;
+const { pathname } = Astro.url;
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>
+      {title} &middot; kkga
+    </title>
+    <Analytics />
   </head>
-  <body
-    class="bg-white py-8 font-sans text-black antialiased dark:bg-black dark:text-white"
-  >
-    <!-- <header class="mb-8 flex flex-col">
-      <a href="/" class="text-sm font-bold">Gadzhi Kharkharov</a>
-    </header> -->
-    <main class="grid-breakout prose py-8">
-      <slot />
-    </main>
+
+  <body class="flex min-h-screen flex-col py-5 [&>main]:mb-15">
+    <slot />
+
+    {
+      pathname !== "/" && (
+        <footer class="grid-breakout mt-auto pt-4">
+          <a class="place-self-start" href="/">
+            Back to home
+          </a>
+          {dateUpdated && (
+            <p class="aside text-soft">
+              Last updated:{" "}
+              <time datetime={dateUpdated}>
+                {new Date(dateUpdated).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "short",
+                  day: "numeric",
+                })}
+              </time>
+            </p>
+          )}
+        </footer>
+      )
+    }
   </body>
 </html>

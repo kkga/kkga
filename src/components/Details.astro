@@ -1,0 +1,62 @@
+---
+interface Props {
+  open?: boolean;
+  title: string;
+}
+
+const { open = false, title } = Astro.props;
+---
+
+<details open={open}>
+  <summary class="flex items-center gap-1">
+    {title}
+    <span class="ml-auto">
+      <slot name="subtitle" />
+    </span>
+  </summary>
+
+  <div class="grid gap-y-2 py-2 pl-5">
+    <slot />
+  </div>
+</details>
+
+<style>
+  details {
+    interpolate-size: allow-keywords;
+
+    &::details-content {
+      opacity: 0;
+      block-size: 0;
+      overflow-y: clip;
+      transition:
+        content-visibility 0.25s allow-discrete,
+        opacity 0.25s,
+        block-size 0.25s;
+    }
+
+    &[open]::details-content {
+      opacity: 1;
+      block-size: auto;
+    }
+
+    summary {
+      list-style: none;
+      cursor: default;
+      &::before {
+        content: "▷";
+        display: inline-block;
+        width: 1rem;
+      }
+      [open] &::before {
+        content: "▽";
+      }
+
+      time {
+        @apply tabular-nums;
+      }
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+  }
+</style>

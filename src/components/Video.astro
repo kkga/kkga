@@ -5,11 +5,13 @@ interface Props {
   autoplay?: boolean;
   controls?: boolean;
   loop?: boolean;
+  className: string;
 }
 
 const {
   src,
   poster,
+  className,
   autoplay = true,
   controls = false,
   loop = true,
@@ -24,6 +26,7 @@ const {
   loop={loop}
   muted
   poster={poster}
+  class={className}
 >
   <source src={src} />
 </video>

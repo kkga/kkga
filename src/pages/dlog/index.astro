@@ -1,0 +1,41 @@
+---
+import PageLayout from "@/layouts/PageLayout.astro";
+import { getCollection, render } from "astro:content";
+
+const data = await getCollection("dlog");
+const sorted = data.sort((a, b) => {
+  const dateA = new Date(a.data.date);
+  const dateB = new Date(b.data.date);
+  return dateB.getTime() - dateA.getTime();
+});
+
+const rendered = await Promise.all(
+  sorted.map(async (entry) => {
+    const { Content } = await render(entry);
+    return {
+      ...entry,
+      title: entry.data.title,
+      date: new Date(entry.data.date).toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      }),
+      Content,
+    };
+  })
+);
+---
+
+<PageLayout title="Dlog" description="dev- or design-log attempt">
+  {
+    rendered.map(({ Content, date, title }) => (
+      <article class="breakout grid grid-cols-subgrid gap-[inherit] *:col-[content]">
+        <header class="breakout grid grid-cols-subgrid">
+          <h2>{title}</h2>
+          <date class="aside">{date}</date>
+        </header>
+        <Content />
+      </article>
+    ))
+  }
+</PageLayout>

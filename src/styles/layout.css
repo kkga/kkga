@@ -1,0 +1,67 @@
+@utility grid-breakout {
+  @apply grid place-content-start gap-y-6;
+
+  --gap: clamp(calc(var(--spacing) * 4), 4vw, calc(var(--spacing) * 8));
+  --margin-left: minmax(0, 0.25fr);
+  --margin-right: minmax(0, 1fr);
+  --content-min: var(--container-sm);
+  --content-max: var(--container-xl);
+  --content: minmax(
+    min(var(--content-min), 100% - var(--gap) * 2),
+    var(--content-max)
+  );
+  --aside: minmax(var(--container-3xs), var(--container-xs));
+
+  grid-template-columns:
+    var(--gap)
+    [content-start aside-start breakout-start]
+    1fr
+    [breakout-end aside-end content-end]
+    var(--gap);
+
+  @media screen and (min-width: theme("screens.md")) {
+    grid-template-columns:
+      var(--margin-left)
+      var(--gap)
+      [breakout-start content-start] var(--content) [content-end]
+      var(--gap)
+      [aside-start] var(--aside) [aside-end breakout-end]
+      var(--gap)
+      [margin-start]
+      var(--margin-right)
+      [margin-end];
+  }
+
+  > * {
+    grid-column: content;
+  }
+
+  > :is(h2) {
+    @apply mt-12;
+  }
+  > :is(h2 + .aside) {
+    @apply md:mt-12;
+  }
+
+  > :is(figure, .breakout, pre) {
+    @apply my-2;
+  }
+
+  > :is(figure, .breakout, pre) + :is(figure, .breakout, pre) {
+    @apply mt-0;
+  }
+
+  pre,
+  .breakout {
+    grid-column: breakout;
+  }
+
+  .aside {
+    @apply col-[aside] m-0;
+  }
+
+  hr {
+    grid-column-start: 1;
+    grid-column-end: breakout-end;
+  }
+}

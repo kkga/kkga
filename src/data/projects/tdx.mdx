@@ -1,0 +1,34 @@
+---
+title: tdx
+description: CLI todo manager for iCalendar.
+date: 2021-10-05
+tags:
+  - go
+---
+
+import Video from "@/components/Video.astro";
+import tdxVideo from "../img/projects/tdx.mp4";
+
+CLI todo manager for [iCalendar](https://en.wikipedia.org/wiki/ICalendar) files,
+written in Go.
+
+<ul class="aside">
+  <li>
+    <a href="https://github.com/kkga/tdx" rel="external" target="_blank">
+      GitHub
+    </a>
+  </li>
+</ul>
+
+iCalendar-compatibility means it can serve as a simple companion to any
+CalDAV-enabled todo program, such as iOS Reminders.
+
+- add todos, with automatic date and priority parsing
+- list todos, sorted/filtered by various fields and organized by hashtags parsed
+  from text
+- complete todos
+- edit todos in a `$VISUAL`/`$EDITOR` program
+- delete todos
+- purge completed/cancelled todos
+
+<Video src={tdxVideo} />

@@ -1,30 +1,23 @@
 ---
 import { getCollection, render } from "astro:content";
-import BaseLayout from "@/layouts/BaseLayout.astro";
+import PageLayout from "@/layouts/PageLayout.astro";
 import Toc from "@/components/Toc.astro";
 
 export async function getStaticPaths() {
-  const works = await getCollection("work");
+  const data = await getCollection("work");
 
-  return works.map((work) => ({
-    params: { id: work.id },
-    props: {
-      work,
-    },
+  return data.map((entry) => ({
+    params: { id: entry.id },
+    props: { entry },
   }));
 }
 
-const { work } = Astro.props;
-const { Content, headings } = await render(work);
+const { entry } = Astro.props;
+const { Content, headings } = await render(entry);
+const { title, description, date } = entry.data;
 ---
 
-<BaseLayout title={work.data.title}>
+<PageLayout title={title} description={description} dateUpdated={date}>
   <Toc headings={headings} />
-  <header class="mb-12 space-y-4">
-    <h1 class="text-center text-5xl font-medium">
-      {work.data.title}
-    </h1>
-    <p class="text-center text-lg">{work.data.description}</p>
-  </header>
   <Content />
-</BaseLayout>
+</PageLayout>

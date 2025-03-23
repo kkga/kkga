@@ -8,11 +8,11 @@ const { title = "title" } = Astro.props;
 
 <button
   slot="tab"
-  class="mx-1 inline-flex h-9 items-center rounded-full px-4 text-base leading-1 font-medium whitespace-nowrap first-of-type:ml-auto last-of-type:mr-auto hover:bg-gray-100 aria-selected:bg-black aria-selected:text-white dark:hover:bg-gray-800 dark:aria-selected:bg-white dark:aria-selected:text-black"
+  class="mr-4 inline-block h-8 border-b border-transparent whitespace-nowrap not-aria-selected:hover:border-b-current/40 aria-selected:border-b-current"
 >
   {title}
 </button>
 
-<div slot="panel" class="mt-8">
+<div slot="panel" class="mt-6">
   <slot />
 </div>

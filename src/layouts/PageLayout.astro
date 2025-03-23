@@ -1,0 +1,38 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+
+const { title, description, dateUpdated, frontmatter } = Astro.props;
+const { pathname } = Astro.url;
+---
+
+<BaseLayout
+  title={title ?? frontmatter?.title}
+  dateUpdated={dateUpdated ?? frontmatter?.date}
+>
+  <main class="grid-breakout">
+    <header class="col-[breakout] grid grid-cols-subgrid">
+      <span>
+        {
+          pathname !== "/" && (
+            <>
+              <a
+                class="mb-4 inline-block place-self-start hover:underline"
+                href="/"
+              >
+                kkga
+              </a>
+              <span class="mx-1 inline-block text-current">›</span>
+            </>
+          )
+        }
+
+        <h1 class="inline-block">
+          {title ?? frontmatter?.title}
+        </h1>
+      </span>
+      <p class="aside">{description ?? frontmatter?.description}</p>
+    </header>
+
+    <slot />
+  </main>
+</BaseLayout>

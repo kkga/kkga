@@ -10,14 +10,15 @@ const { headings } = Astro.props;
 const filteredHeadings = headings.filter((heading) => heading.depth <= 2);
 ---
 
-<nav
-  class="fixed top-8 left-8 z-10 hidden w-[180px] rounded-lg bg-white/80 p-4 text-sm leading-tight backdrop-blur-lg dark:bg-black/80"
->
-  <ul class="m-0! flex list-none! flex-col gap-2 overflow-auto p-0!">
+<nav class="sticky top-6 z-10 col-[margin] hidden pr-4">
+  <ul class="m-0">
     {
       filteredHeadings.map((heading) => (
-        <li class="m-0! text-neutral-600 dark:text-neutral-400">
-          <a class="no-underline! hover:underline!" href={`#${heading.slug}`}>
+        <li class="text-balance">
+          <a
+            class="text-current no-underline hover:underline"
+            href={`#${heading.slug}`}
+          >
             {heading.text}
           </a>
         </li>
@@ -29,10 +30,10 @@ const filteredHeadings = headings.filter((heading) => heading.depth <= 2);
 <script>
   window.addEventListener("scroll", () => {
     const nav = document.querySelector("nav");
-    if (window.scrollY > 200) {
-      if (nav) nav.classList.remove("hidden");
+    if (window.scrollY > 240) {
+      if (nav) nav.classList.add("xl:block");
     } else {
-      if (nav) nav.classList.add("hidden");
+      if (nav) nav.classList.remove("xl:block");
     }
   });
 </script>

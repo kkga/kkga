@@ -9,8 +9,12 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-
   image: {
     service: sharpImageService({ limitInputPixels: false }),
+  },
+  markdown: {
+    shikiConfig: {
+      theme: "css-variables",
+    },
   },
 });
