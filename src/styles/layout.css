@@ -45,6 +45,14 @@
 
   > :is(figure, .breakout, pre) {
     @apply my-2;
+
+    &:last-child {
+      @apply mb-0;
+    }
+
+    &:first-child {
+      @apply mt-0;
+    }
   }
 
   > :is(figure, .breakout, pre) + :is(figure, .breakout, pre) {

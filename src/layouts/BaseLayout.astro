@@ -24,12 +24,12 @@ const { pathname } = Astro.url;
     <Analytics />
   </head>
 
-  <body class="flex min-h-screen flex-col py-5 [&>main]:mb-15">
+  <body class="flex min-h-screen flex-col py-12 [&>main]:mb-12">
     <slot />
 
     {
       pathname !== "/" && (
-        <footer class="grid-breakout mt-auto pt-4">
+        <footer class="grid-breakout mt-auto">
           <a class="place-self-start" href="/">
             Back to home
           </a>

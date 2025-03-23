@@ -13,12 +13,12 @@
 }
 
 @utility text-soft {
-  @apply text-neutral-500 dark:text-neutral-400;
+  @apply text-neutral-500;
 }
 
 @layer base {
   body {
-    @apply bg-white font-sans text-lg/6 text-neutral-700 antialiased dark:bg-black dark:text-neutral-400;
+    @apply bg-white font-sans text-lg/6 text-neutral-700 antialiased dark:bg-neutral-950 dark:text-neutral-400;
     font-synthesis: none;
   }
 
