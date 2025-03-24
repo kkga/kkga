@@ -20,7 +20,9 @@ const { open = false, title } = Astro.props;
   </div>
 </details>
 
-<style>
+<style scoped>
+  @reference "../styles/index.css";
+
   details {
     interpolate-size: allow-keywords;
 

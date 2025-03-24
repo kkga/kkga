@@ -1,0 +1,237 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Neue Corp Compact Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src:
+    url("/fonts/PPNeueCorp-CompactRegular.woff2") format("woff2"),
+    url("/fonts/PPNeueCorp-CompactRegular.woff") format("woff");
+}
+
+@utility grid-breakout {
+  @apply grid place-content-start gap-y-6;
+
+  --gap: clamp(calc(var(--spacing) * 4), 4vw, calc(var(--spacing) * 8));
+  --margin-left: minmax(0, 0.25fr);
+  --margin-right: minmax(0, 1fr);
+  --content-min: var(--container-sm);
+  --content-max: var(--container-xl);
+  --content: minmax(
+    min(var(--content-min), 100% - var(--gap) * 2),
+    var(--content-max)
+  );
+  --aside: minmax(var(--container-3xs), var(--container-xs));
+
+  grid-template-columns:
+    var(--gap)
+    [content-start aside-start breakout-start]
+    1fr
+    [breakout-end aside-end content-end]
+    var(--gap);
+
+  @media screen and (min-width: theme("screens.md")) {
+    grid-template-columns:
+      var(--margin-left)
+      var(--gap)
+      [breakout-start content-start] var(--content) [content-end]
+      var(--gap)
+      [aside-start] var(--aside) [aside-end breakout-end]
+      var(--gap)
+      [margin-start]
+      var(--margin-right)
+      [margin-end];
+  }
+
+  > * {
+    grid-column: content;
+  }
+
+  > :is(h2) {
+    @apply mt-12;
+  }
+  > :is(h2 + .aside) {
+    @apply md:mt-12;
+  }
+
+  > :is(figure, .breakout, pre) {
+    @apply my-2;
+
+    &:last-child {
+      @apply mb-0;
+    }
+
+    &:first-child {
+      @apply mt-0;
+    }
+  }
+
+  > :is(figure, .breakout, pre) + :is(figure, .breakout, pre) {
+    @apply mt-0;
+  }
+
+  pre,
+  .breakout {
+    grid-column: breakout;
+  }
+
+  .aside {
+    @apply col-[aside] m-0;
+  }
+
+  hr {
+    grid-column-start: 1;
+    grid-column-end: breakout-end;
+  }
+}
+
+@utility text-soft {
+  @apply text-neutral-500;
+}
+
+@theme {
+  --font-sans: "Neue Corp Compact Regular", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-white font-sans text-[17px]/6 text-neutral-600 antialiased dark:bg-neutral-900 dark:text-neutral-400;
+    font-synthesis: none;
+  }
+
+  /* Typography */
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply scroll-m-6 text-balance text-black after:scroll-m-0 after:content-['_—'] empty:hidden dark:text-white;
+  }
+
+  p {
+    @apply empty:hidden;
+  }
+
+  a {
+    @apply decoration-current/40 text-black underline decoration-1 underline-offset-2 hover:decoration-current hover:decoration-[1.5px] dark:text-white;
+
+    p {
+      @apply m-0 inline;
+    }
+  }
+
+  :is(.aside) a {
+    @apply text-current;
+  }
+
+  /* Media */
+
+  figcaption {
+    @apply mt-2;
+
+    p {
+      @apply m-0;
+    }
+  }
+
+  img,
+  video {
+    @apply h-auto w-full;
+  }
+
+  /* Lists */
+
+  ol {
+    @apply list-decimal;
+
+    ol {
+      @apply list-[lower-alpha];
+
+      ol {
+        @apply list-[lower-roman];
+      }
+    }
+  }
+
+  ul {
+    @apply list-outside marker:content-["•_"];
+
+    &:has(li > details) {
+      @apply marker:content-[""];
+    }
+  }
+
+  ol,
+  ul {
+    ol,
+    ul {
+      @apply my-2;
+    }
+
+    li {
+      @apply my-0 ml-0;
+    }
+  }
+
+  /* Code */
+
+  code {
+    @apply text-[95%];
+  }
+
+  pre {
+    @apply border-current/40 overflow-auto border p-2 text-[13px]/5;
+
+    code {
+      @apply font-mono text-[13px];
+    }
+  }
+
+  /* Table */
+
+  table {
+    @apply my-6 w-full table-auto border-collapse text-left;
+
+    caption {
+      @apply mt-2 caption-bottom text-left;
+    }
+
+    thead {
+      @apply border-current/40 border-b;
+    }
+
+    tfoot {
+      @apply border-current/40 border-t;
+    }
+
+    tr {
+      @apply border-current/40 border-y first:border-t-0 last:border-b-0;
+    }
+
+    th {
+      @apply align-bottom font-normal;
+    }
+
+    td,
+    th {
+      @apply p-2 first:pl-0 last:pr-0;
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        @apply my-2 first:mt-0 last:mb-0;
+      }
+    }
+  }
+
+  hr {
+    @apply border-current/40 mt-6 border-t;
+  }
+}
