@@ -87,7 +87,7 @@
 }
 
 @utility text-soft {
-  @apply text-neutral-500;
+  @apply text-teal-700;
 }
 
 @theme {
@@ -96,7 +96,7 @@
 
 @layer base {
   body {
-    @apply bg-white font-sans text-[17px]/6 text-neutral-600 antialiased dark:bg-neutral-900 dark:text-neutral-400;
+    @apply bg-white font-sans text-lg text-teal-700 antialiased;
     font-synthesis: none;
   }
 
@@ -108,7 +108,7 @@
   h4,
   h5,
   h6 {
-    @apply scroll-m-6 text-balance text-black after:scroll-m-0 after:content-['_—'] empty:hidden dark:text-white;
+    @apply scroll-m-6 text-balance uppercase after:scroll-m-0 after:content-['_—'] empty:hidden;
   }
 
   p {
@@ -116,7 +116,7 @@
   }
 
   a {
-    @apply decoration-current/40 text-black underline decoration-1 underline-offset-2 hover:decoration-current hover:decoration-[1.5px] dark:text-white;
+    @apply underline decoration-current/50 decoration-1 underline-offset-2 hover:decoration-current hover:decoration-[1.5px];
 
     p {
       @apply m-0 inline;
@@ -183,7 +183,7 @@
   }
 
   pre {
-    @apply border-current/40 overflow-auto border p-2 text-[13px]/5;
+    @apply overflow-auto border border-current/40 p-2 text-[13px]/5;
 
     code {
       @apply font-mono text-[13px];
@@ -200,15 +200,15 @@
     }
 
     thead {
-      @apply border-current/40 border-b;
+      @apply border-b border-current/40;
     }
 
     tfoot {
-      @apply border-current/40 border-t;
+      @apply border-t border-current/40;
     }
 
     tr {
-      @apply border-current/40 border-y first:border-t-0 last:border-b-0;
+      @apply border-y border-current/40 first:border-t-0 last:border-b-0;
     }
 
     th {
@@ -232,6 +232,6 @@
   }
 
   hr {
-    @apply border-current/40 mt-6 border-t;
+    @apply mt-6 border-t border-current/40;
   }
 }
