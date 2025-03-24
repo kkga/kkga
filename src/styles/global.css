@@ -96,7 +96,7 @@
 
 @layer base {
   body {
-    @apply bg-white font-sans text-lg text-teal-700 antialiased;
+    @apply bg-white font-sans text-lg text-teal-800 antialiased;
     font-synthesis: none;
   }
 
