@@ -10,6 +10,12 @@
     url("/fonts/PPNeueCorp-CompactRegular.woff") format("woff");
 }
 
+@theme {
+  --font-sans: "Neue Corp Compact Regular", system-ui, sans-serif;
+  --color-primary: #0065ea;
+  --color-secondary: #368dff;
+}
+
 @utility grid-breakout {
   @apply grid place-content-start gap-y-6;
 
@@ -86,17 +92,9 @@
   }
 }
 
-@utility text-soft {
-  @apply text-teal-700;
-}
-
-@theme {
-  --font-sans: "Neue Corp Compact Regular", system-ui, sans-serif;
-}
-
 @layer base {
   body {
-    @apply bg-white font-sans text-lg text-teal-800 antialiased;
+    @apply bg-white font-sans text-lg text-primary antialiased;
     font-synthesis: none;
   }
 
@@ -116,11 +114,15 @@
   }
 
   a {
-    @apply underline decoration-current/50 decoration-1 underline-offset-2 hover:decoration-current hover:decoration-[1.5px];
+    @apply underline decoration-secondary decoration-1 underline-offset-2 hover:decoration-current hover:decoration-[1.5px];
 
     p {
       @apply m-0 inline;
     }
+  }
+
+  .aside {
+    @apply text-secondary;
   }
 
   :is(.aside) a {
@@ -130,7 +132,7 @@
   /* Media */
 
   figcaption {
-    @apply mt-2;
+    @apply mt-2 text-secondary;
 
     p {
       @apply m-0;

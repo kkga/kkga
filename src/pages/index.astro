@@ -1,5 +1,4 @@
 ---
-import Details from "@/components/Details.astro";
 import PageLayout from "@/layouts/PageLayout.astro";
 
 import { getCollection } from "astro:content";
@@ -19,48 +18,45 @@ const projects = await getCollection("projects").then((projects) =>
 
 <PageLayout title="Gadzhi Kharkharov" dateUpdated="2025-01-23">
   <p>
-    Software designer. I work on dev/design tools and think about systems.<br
-    />In my free time, I enjoy working on small personal projects, learning new
-    things, cycling, hiking, and playing challenging video games (particularly
-    those by From Software).
+    Software designer focused on creating better tools for developers and
+    designers. I'm passionate about systems thinking and crafting intuitive
+    interfaces. Outside of work, you'll find me building side projects,
+    exploring new technologies, cycling, hiking, and mastering From Software
+    games.
   </p>
 
   <h2>Work</h2>
 
-  <ul class="[&>li+li]:mt-4">
-    <li>
-      <a href="/work/retool">Retool</a>: design engineer.
-      <span class="text-soft">2021–now</span>
-      <p>
-        {work.find((item) => item.id === "retool")?.data?.longDescription}
-      </p>
-    </li>
-
-    <li>
-      <a href="/work/webflow">Webflow</a>: product designer.
-      <span class="text-soft">2014–2021</span>
-      <p>
-        {work.find((item) => item.id === "webflow")?.data?.longDescription}
-      </p>
-    </li>
-
-    <li>
-      <a href="/work/stampsy">Stampsy</a>: designer/engineer.
-      <span class="text-soft">2012–2014</span>
-      <p>
-        {work.find((item) => item.id === "stampsy")?.data?.longDescription}
-      </p>
-    </li>
+  <ul class="marker:content-[''] [&>li+li]:mt-4">
+    {
+      work.map(({ id, data }) => (
+        <li>
+          <div>
+            <a href={`/work/${id}`}>{data.title}</a>
+            <span class="text-secondary">·</span>
+            <span class="text-secondary">{data.role}</span>
+            <span class="text-secondary">·</span>
+            <span class="text-secondary">{data.timeframe}</span>
+          </div>
+          <p>{data.longDescription}</p>
+        </li>
+      ))
+    }
   </ul>
 
-  <h2>Other stuff</h2>
+  <h2>Projects</h2>
 
-  <ul class="[&>li+li]:mt-2">
+  <ul class="marker:content-[''] [&>li+li]:mt-2">
     {
       projects.map(({ id, data }) => (
         <li>
-          <a href={`/projects/${id}`}>{data.title}</a>: {data.description}
-          <span class="text-soft">
+          <a href={`/projects/${id}`}>{data.title}</a>
+          <span class="text-secondary">·</span>
+          <span class="text-secondary">
+            {data.description.replace(/\.$/, "")}
+          </span>
+          <span class="text-secondary">·</span>
+          <span class="text-secondary">
             {new Date(data.date).toLocaleDateString("en-US", {
               month: "numeric",
               year: "2-digit",
@@ -73,8 +69,12 @@ const projects = await getCollection("projects").then((projects) =>
 
   <h2>Contact</h2>
   <p>
-    Available at <a href="mailto:me@kkga.me">me@kkga.me</a>,
-    <a href="https://twitter.com/kkga" target="_blank">X</a> or
-    <a href="https://bsky.app/profile/kkga.me" target="_blank">Bluesky</a>.
+    Available at <a href="mailto:me@kkga.me">me@kkga.me</a>
+    <span class="text-secondary">·</span>
+    <a href="https://twitter.com/kkga" target="_blank" rel="me">X</a>
+    <span class="text-secondary">·</span>
+    <a href="https://bsky.app/profile/kkga.me" target="_blank" rel="me"
+      >Bluesky</a
+    >
   </p>
 </PageLayout>

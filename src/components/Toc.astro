@@ -10,7 +10,7 @@ const { headings } = Astro.props;
 const filteredHeadings = headings.filter((heading) => heading.depth <= 2);
 ---
 
-<nav class="sticky top-6 z-10 col-[margin] hidden pr-4">
+<nav class="sticky top-6 z-10 col-[margin] hidden pr-4 text-secondary">
   <ul class="m-0">
     {
       filteredHeadings.map((heading) => (

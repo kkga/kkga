@@ -29,12 +29,12 @@ const { pathname } = Astro.url;
 
     {
       pathname !== "/" && (
-        <footer class="grid-breakout mt-auto">
+        <footer class="grid-breakout mt-auto text-secondary">
           <a class="place-self-start" href="/">
             Back to home
           </a>
           {dateUpdated && (
-            <p class="aside text-soft">
+            <p class="aside">
               Last updated:{" "}
               <time datetime={dateUpdated}>
                 {new Date(dateUpdated).toLocaleDateString("en-US", {

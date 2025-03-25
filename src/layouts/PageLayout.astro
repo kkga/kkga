@@ -30,7 +30,9 @@ const { pathname } = Astro.url;
           {title ?? frontmatter?.title}
         </h1>
       </span>
-      <p class="aside">{description ?? frontmatter?.description}</p>
+      <p class="aside">
+        {description ?? frontmatter?.description}
+      </p>
     </header>
 
     <slot />

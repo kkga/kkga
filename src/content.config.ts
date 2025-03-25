@@ -8,6 +8,8 @@ const work = defineCollection({
     title: z.string(),
     description: z.string(),
     longDescription: z.string(),
+    role: z.string(),
+    timeframe: z.string(),
     date: z.coerce.date(),
   }),
 });
