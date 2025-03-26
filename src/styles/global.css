@@ -31,19 +31,22 @@
   --aside: minmax(var(--container-3xs), var(--container-xs));
 
   grid-template-columns:
+    [ruler-start]
     var(--gap)
     [content-start aside-start breakout-start]
     1fr
     [breakout-end aside-end content-end]
-    var(--gap);
+    var(--gap)
+    [ruler-end];
 
   @media screen and (min-width: theme("screens.md")) {
     grid-template-columns:
+      [ruler-start]
       var(--margin-left)
       var(--gap)
       [breakout-start content-start] var(--content) [content-end]
       var(--gap)
-      [aside-start] var(--aside) [aside-end breakout-end]
+      [aside-start] var(--aside) [aside-end breakout-end ruler-end]
       var(--gap)
       [margin-start]
       var(--margin-right)
@@ -54,10 +57,10 @@
     grid-column: content;
   }
 
-  > :is(h2) {
+  :is(h2) {
     @apply mt-12;
   }
-  > :is(h2 + .aside) {
+  :is(h2 + .aside) {
     @apply md:mt-12;
   }
 
@@ -87,8 +90,7 @@
   }
 
   hr {
-    grid-column-start: 1;
-    grid-column-end: breakout-end;
+    grid-column: ruler;
   }
 }
 
@@ -106,7 +108,7 @@
   h4,
   h5,
   h6 {
-    @apply scroll-m-6 text-balance uppercase after:scroll-m-0 after:content-['_—'] empty:hidden;
+    @apply scroll-m-6 text-balance uppercase after:scroll-m-0 after:text-secondary after:content-['_—_'] empty:hidden;
   }
 
   p {
@@ -234,6 +236,6 @@
   }
 
   hr {
-    @apply mt-6 border-t border-current/40;
+    @apply mt-6 border-t border-secondary/40;
   }
 }
