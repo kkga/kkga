@@ -1,7 +1,6 @@
 ---
 import "../styles/global.css";
 import Analytics from "@vercel/analytics/astro";
-import { ClientRouter } from "astro:transitions";
 
 interface Props {
   title: string;
@@ -23,7 +22,6 @@ const { pathname } = Astro.url;
       {title} &middot; kkga
     </title>
     <Analytics />
-    <ClientRouter />
   </head>
 
   <body class="flex min-h-screen flex-col py-12 [&>main]:mb-12">
