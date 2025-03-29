@@ -74,7 +74,7 @@
   }
 
   > :is(figure, .breakout, pre) {
-    @apply my-0;
+    @apply my-6;
 
     &:last-child {
       @apply mb-0;
