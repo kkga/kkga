@@ -12,8 +12,17 @@
 
 @theme {
   --font-sans: "Neue Corp Compact Regular", system-ui, sans-serif;
-  --color-primary: #0065ea;
-  --color-secondary: #368dff;
+  --color-background: var(--color-stone-50);
+  --color-primary: var(--color-stone-900);
+  --color-secondary: var(--color-stone-500);
+}
+
+@media (prefers-color-scheme: dark) {
+  @theme {
+    --color-background: var(--color-stone-900);
+    --color-primary: var(--color-stone-50);
+    --color-secondary: var(--color-stone-300);
+  }
 }
 
 @utility grid-breakout {
@@ -65,7 +74,7 @@
   }
 
   > :is(figure, .breakout, pre) {
-    @apply my-2;
+    @apply my-0;
 
     &:last-child {
       @apply mb-0;
@@ -96,7 +105,7 @@
 
 @layer base {
   body {
-    @apply bg-white font-sans text-lg text-primary antialiased;
+    @apply bg-background font-sans text-lg text-primary antialiased;
     font-synthesis: none;
   }
 
