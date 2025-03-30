@@ -1,6 +1,6 @@
 ---
 import PageLayout from "@/layouts/PageLayout.astro";
-
+import siteData from "../data/site.json";
 import { getCollection } from "astro:content";
 
 const work = await getCollection("work").then((work) =>
@@ -16,7 +16,11 @@ const projects = await getCollection("projects").then((projects) =>
 );
 ---
 
-<PageLayout title="Gadzhi Kharkharov" dateUpdated="2025-01-23">
+<PageLayout
+  title={siteData.title}
+  description={siteData.description}
+  dateUpdated="2025-01-23"
+>
   <p>
     Software designer focused on creating better tools for developers and
     designers. I'm passionate about systems thinking and crafting intuitive

@@ -7,6 +7,7 @@ const { pathname } = Astro.url;
 
 <BaseLayout
   title={title ?? frontmatter?.title}
+  description={description ?? frontmatter?.description}
   dateUpdated={dateUpdated ?? frontmatter?.date}
 >
   <main class="grid-breakout">

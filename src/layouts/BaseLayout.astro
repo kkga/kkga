@@ -1,52 +1,49 @@
 ---
-import "../styles/global.css";
-import Analytics from "@vercel/analytics/astro";
+import BaseHead from "@/components/BaseHead.astro";
 
 interface Props {
   title: string;
+  description: string;
   dateUpdated?: string;
 }
 
-const { title, dateUpdated } = Astro.props;
+const { title, dateUpdated, description } = Astro.props;
 const { pathname } = Astro.url;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>
-      {title} &middot; kkga
-    </title>
-    <Analytics />
+    <BaseHead title={title} description={description} />
   </head>
 
   <body class="flex min-h-screen flex-col py-12 [&>main]:mb-12">
     <slot />
 
-    {
-      pathname !== "/" && (
-        <footer class="grid-breakout mt-auto text-secondary">
+    <footer
+      class="grid-breakout mt-auto text-secondary *:not-first:col-[aside]"
+    >
+      {
+        pathname !== "/" && (
           <a class="place-self-start" href="/">
             Back to home
           </a>
-          {dateUpdated && (
-            <p class="aside">
-              Last updated:{" "}
-              <time datetime={dateUpdated}>
-                {new Date(dateUpdated).toLocaleDateString("en-US", {
-                  year: "numeric",
-                  month: "short",
-                  day: "numeric",
-                })}
-              </time>
-            </p>
-          )}
-        </footer>
-      )
-    }
+        )
+      }
+      {
+        dateUpdated && (
+          <span>
+            Last updated:{" "}
+            <time datetime={dateUpdated}>
+              {new Date(dateUpdated).toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "short",
+                day: "numeric",
+              })}
+            </time>
+          </span>
+        )
+      }
+    </footer>
   </body>
 </html>
