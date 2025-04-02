@@ -1,1 +1,9 @@
-<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><mask id="satori_om-id"><rect x="0" y="0" width="256" height="256" fill="#fff"/></mask><defs><clipPath id="satori_bc-id-0"><path x="0" y="0" width="256" height="256" d="M40,0 h176 a40,40 0 0 1 40,40 v176 a40,40 0 0 1 -40,40 h-176 a40,40 0 0 1 -40,-40 v-176 a40,40 0 0 1 40,-40"/></clipPath></defs><mask id="satori_om-id-0"><rect x="24" y="24" width="208" height="208" fill="#fff"/><path width="256" height="256" fill="none" stroke="#000" stroke-width="48" d="M11.716000000000001,11.716000000000001 A40,40 0 0 1 40,0 h176 a40,40 0 0 1 40,40 v176 a40,40 0 0 1 -40,40 h-176 a40,40 0 0 1 -40,-40 v-176 A40,40 0 0 1 11.716000000000001,11.716000000000001"/></mask><path x="0" y="0" width="256" height="256" fill="#fff" d="M40,0 h176 a40,40 0 0 1 40,40 v176 a40,40 0 0 1 -40,40 h-176 a40,40 0 0 1 -40,-40 v-176 a40,40 0 0 1 40,-40"/><path width="256" height="256" clip-path="url(#satori_bc-id-0)" fill="none" stroke="black" stroke-width="48" d="M11.716000000000001,11.716000000000001 A40,40 0 0 1 40,0 h176 a40,40 0 0 1 40,40 v176 a40,40 0 0 1 -40,40 h-176 a40,40 0 0 1 -40,-40 v-176 A40,40 0 0 1 11.716000000000001,11.716000000000001"/><mask id="satori_om-id-0-0"><rect x="59" y="7" width="138" height="242" fill="#fff"/></mask><path fill="black" d="M102.4 200.8L71.6 200.8L71.6 55.3L102.4 55.3L102.4 119.4L104.3 119.4L156.7 55.3L193.5 55.3L139.5 120.4L194.2 200.8L157.4 200.8L117.5 140.9L102.4 159.4L102.4 200.8Z "/></svg>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" rx="16" fill="white"/>
+<path d="M6 8H9V24H6V8Z" fill="black"/>
+<path d="M12 8H15.5L9 18L6 19L12 8Z" fill="black"/>
+<path d="M12 24H15.5L9 14L6 13L12 24Z" fill="black"/>
+<rect x="17" y="8" width="3" height="16" fill="black"/>
+<path d="M23 8H26.5L20 18L17 19L23 8Z" fill="black"/>
+<path d="M23 24H26.5L20 14L17 13L23 24Z" fill="black"/>
+</svg>
