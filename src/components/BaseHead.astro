@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import siteData from "../data/site.json";
 import Analytics from "@vercel/analytics/astro";
+import { Font } from "astro:assets";
 
 interface Props {
   title: string;
@@ -27,15 +28,6 @@ const { title, description, image = "/og-image.png" } = Astro.props;
 />
 <meta name="generator" content={Astro.generator} />
 
-<!-- Font preloads -->
-<link
-  rel="preload"
-  href="/fonts/PPNikkeiPacific-Regular.woff2"
-  as="font"
-  type="font/woff2"
-  crossorigin
-/>
-
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
 
@@ -58,4 +50,5 @@ const { title, description, image = "/og-image.png" } = Astro.props;
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
 
+<Font cssVariable="--font-pp-nikkei-pacific" preload />
 <Analytics />

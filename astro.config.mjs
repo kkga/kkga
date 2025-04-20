@@ -18,4 +18,23 @@ export default defineConfig({
       theme: "css-variables",
     },
   },
+  experimental: {
+    fonts: [
+      {
+        provider: "local",
+        name: "PP Nikkei Pacific",
+        cssVariable: "--font-pp-nikkei-pacific",
+        variants: [
+          {
+            weight: "400",
+            style: "normal",
+            src: [
+              "./src/fonts/PPNikkeiPacific-Regular.woff2",
+              "./src/fonts/PPNikkeiPacific-Regular.woff",
+            ],
+          },
+        ],
+      },
+    ],
+  },
 });

@@ -1,17 +1,7 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: "PP Nikkei Pacific Regular";
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-  src:
-    url("/fonts/PPNikkeiPacific-Regular.woff2") format("woff2"),
-    url("/fonts/PPNikkeiPacific-Regular.woff") format("woff");
-}
-
 @theme {
-  --font-sans: "PP Nikkei Pacific Regular", system-ui, sans-serif;
+  --font-sans: var(--font-pp-nikkei-pacific);
   --color-background: var(--color-stone-50);
   --color-primary: var(--color-stone-900);
   --color-secondary: var(--color-stone-500);
