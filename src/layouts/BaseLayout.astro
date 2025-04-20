@@ -33,7 +33,7 @@ const { pathname } = Astro.url;
       {
         dateUpdated && (
           <span>
-            Last updated:{" "}
+            Updated:{" "}
             <time datetime={dateUpdated}>
               {new Date(dateUpdated).toLocaleDateString("en-US", {
                 year: "numeric",
