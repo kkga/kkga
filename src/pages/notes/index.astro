@@ -1,0 +1,45 @@
+---
+import PageLayout from "@/layouts/PageLayout.astro";
+import { getCollection } from "astro:content";
+
+const notes = await getCollection("notes").then((notes) =>
+  notes
+    .sort(
+      (a, b) =>
+        new Date(a.data?.date || 0).getTime() -
+        new Date(b.data?.date || 0).getTime()
+    )
+    .reverse()
+);
+---
+
+<PageLayout title="Notes" description="Collection of random notes.">
+  <ul class="mt-12 marker:content-[''] [&>li+li]:mt-4">
+    {
+      notes.map(({ id, data }) => (
+        <li>
+          <a href={`/notes/${id}`}>{data.title || id}</a>
+          {data.description && (
+            <>
+              <span class="text-secondary">·</span>
+              <span class="text-secondary">
+                {data.description.replace(/\.$/, "")}
+              </span>
+            </>
+          )}
+          {data.date && (
+            <>
+              <span class="text-secondary">·</span>
+              <span class="text-secondary">
+                {new Date(data.date).toLocaleDateString("en-US", {
+                  month: "numeric",
+                  year: "2-digit",
+                })}
+              </span>
+            </>
+          )}
+        </li>
+      ))
+    }
+  </ul>
+</PageLayout>
