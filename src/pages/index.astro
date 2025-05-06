@@ -23,9 +23,10 @@ const projects = await getCollection("projects").then((projects) =>
 >
   <p>
     Software designer focused on creating better tools for developers and
-    designers. I'm passionate about systems thinking and crafting intuitive
-    interfaces. Outside of work, you'll find me building side projects,
-    exploring new tech, cycling, hiking, and mastering From Software games.
+    designers. I'm passionate about systems thinking and crafting intuitive,
+    efficient interfaces. Outside of work, I'm usually building side projects,
+    diving into emerging tech, cycling up hills, hiking remote trails, or
+    chasing mastery in FromSoftware games.
   </p>
 
   <h2>Work</h2>
@@ -36,9 +37,9 @@ const projects = await getCollection("projects").then((projects) =>
         <li>
           <div>
             <a href={`/work/${id}`}>{data.title}</a>
-            <span class="text-secondary">·</span>
+            <span class="mx-px text-secondary">·</span>
             <span class="text-secondary">{data.role}</span>
-            <span class="text-secondary">·</span>
+            <span class="mx-px text-secondary">·</span>
             <span class="text-secondary">{data.timeframe}</span>
           </div>
           <p>{data.longDescription}</p>
@@ -54,11 +55,11 @@ const projects = await getCollection("projects").then((projects) =>
       projects.map(({ id, data }) => (
         <li>
           <a href={`/projects/${id}`}>{data.title}</a>
-          <span class="text-secondary">·</span>
+          <span class="mx-px text-secondary">·</span>
           <span class="text-secondary">
             {data.description.replace(/\.$/, "")}
           </span>
-          <span class="text-secondary">·</span>
+          <span class="mx-px text-secondary">·</span>
           <span class="text-secondary">
             {new Date(data.date).toLocaleDateString("en-US", {
               month: "numeric",

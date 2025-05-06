@@ -2,16 +2,16 @@
 
 @theme {
   --font-sans: var(--font-pp-nikkei-pacific);
-  --color-background: var(--color-stone-50);
-  --color-primary: var(--color-stone-900);
-  --color-secondary: var(--color-stone-500);
+  --color-background: var(--color-neutral-50);
+  --color-primary: var(--color-neutral-900);
+  --color-secondary: var(--color-neutral-500);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: var(--color-stone-900);
-    --color-primary: var(--color-stone-50);
-    --color-secondary: var(--color-stone-300);
+    --color-background: var(--color-neutral-900);
+    --color-primary: var(--color-neutral-50);
+    --color-secondary: var(--color-neutral-300);
   }
 }
 
