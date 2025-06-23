@@ -12,6 +12,8 @@ export default defineConfig({
   },
   image: {
     service: sharpImageService({ limitInputPixels: false }),
+    responsiveStyles: true,
+    layout: "constrained",
   },
   markdown: {
     shikiConfig: {
