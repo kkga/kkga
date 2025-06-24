@@ -2,7 +2,7 @@
 
 @theme {
   --font-sans: var(--font-pp-nikkei-pacific);
-  --color-background: var(--color-neutral-50);
+  --color-background: var(--color-white);
   --color-primary: var(--color-neutral-900);
   --color-secondary: var(--color-neutral-500);
 }
