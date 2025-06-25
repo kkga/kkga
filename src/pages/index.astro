@@ -39,7 +39,7 @@ const projects = await getCollection("projects").then((projects) =>
         <li class="flex">
           <a
             href={`/work/${id}`}
-            class="flex grow flex-col px-3 py-2 no-underline hover:bg-neutral-100"
+            class="flex grow flex-col px-3 py-2 no-underline hover:bg-secondary/10"
           >
             <div>
               {data.title}
@@ -64,7 +64,7 @@ const projects = await getCollection("projects").then((projects) =>
         <li class="flex">
           <a
             href={`/projects/${id}`}
-            class="flex grow flex-col px-3 py-2 no-underline hover:bg-neutral-100"
+            class="flex grow flex-col px-3 py-2 no-underline hover:bg-secondary/10"
           >
             <span>
               {data.title}

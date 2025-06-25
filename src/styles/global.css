@@ -11,7 +11,7 @@
   :root {
     --color-background: var(--color-neutral-900);
     --color-primary: var(--color-neutral-50);
-    --color-secondary: var(--color-neutral-300);
+    --color-secondary: var(--color-neutral-400);
   }
 }
 
