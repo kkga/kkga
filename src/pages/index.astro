@@ -31,18 +31,24 @@ const projects = await getCollection("projects").then((projects) =>
 
   <h2>Work</h2>
 
-  <ul class="marker:content-[''] [&>li+li]:mt-4">
+  <ul
+    class="col-[breakout] -mx-3 -my-2 gap-x-4 gap-y-2 marker:content-[''] sm:grid sm:grid-cols-2 md:grid-cols-3"
+  >
     {
       work.map(({ id, data }) => (
-        <li>
-          <div>
-            <a href={`/work/${id}`}>{data.title}</a>
-            <span class="mx-px text-secondary">·</span>
-            <span class="text-secondary">{data.role}</span>
-            <span class="mx-px text-secondary">·</span>
-            <span class="text-secondary">{data.timeframe}</span>
-          </div>
-          <p>{data.longDescription}</p>
+        <li class="flex">
+          <a
+            href={`/work/${id}`}
+            class="flex grow flex-col px-3 py-2 no-underline hover:bg-neutral-100"
+          >
+            <div>
+              {data.title}
+              <span class="block text-secondary">
+                {data.role} · {data.timeframe}
+              </span>
+            </div>
+            <p class="text-secondary">{data.longDescription}</p>
+          </a>
         </li>
       ))
     }
@@ -50,22 +56,27 @@ const projects = await getCollection("projects").then((projects) =>
 
   <h2>Projects</h2>
 
-  <ul class="marker:content-[''] [&>li+li]:mt-2">
+  <ul
+    class="col-[breakout] -mx-3 -my-2 gap-x-4 gap-y-2 marker:content-[''] sm:grid sm:grid-cols-2 md:grid-cols-3"
+  >
     {
       projects.map(({ id, data }) => (
-        <li>
-          <a href={`/projects/${id}`}>{data.title}</a>
-          <span class="mx-px text-secondary">·</span>
-          <span class="text-secondary">
-            {data.description.replace(/\.$/, "")}
-          </span>
-          <span class="mx-px text-secondary">·</span>
-          <span class="text-secondary">
-            {new Date(data.date).toLocaleDateString("en-US", {
-              month: "numeric",
-              year: "2-digit",
-            })}
-          </span>
+        <li class="flex">
+          <a
+            href={`/projects/${id}`}
+            class="flex grow flex-col px-3 py-2 no-underline hover:bg-neutral-100"
+          >
+            <span>
+              {data.title}
+              <span class="text-secondary">
+                ·{" "}
+                {new Date(data.date).toLocaleDateString("en-US", {
+                  year: "numeric",
+                })}
+              </span>
+            </span>
+            <p class="text-secondary">{data.description.replace(/\.$/, "")}.</p>
+          </a>
         </li>
       ))
     }
