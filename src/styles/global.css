@@ -123,7 +123,7 @@
   }
 
   .aside {
-    @apply text-secondary;
+    @apply list-none text-secondary;
 
     a {
       @apply text-current;
@@ -160,11 +160,7 @@
   }
 
   ul {
-    @apply list-outside marker:content-["•_"];
-
-    &:has(li > details) {
-      @apply marker:content-[""];
-    }
+    @apply list-disc;
   }
 
   ol,

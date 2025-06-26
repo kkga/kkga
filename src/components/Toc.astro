@@ -13,7 +13,7 @@ const filteredHeadings = headings.filter((heading) => heading.depth <= 2);
 <nav
   class="sticky top-6 z-10 col-[margin] row-span-3 hidden pr-4 text-secondary"
 >
-  <ul class="m-0">
+  <ul class="m-0 list-none">
     {
       filteredHeadings.map((heading) => (
         <li class="text-balance">

@@ -2,6 +2,7 @@
 import PageLayout from "@/layouts/PageLayout.astro";
 import siteData from "../data/site.json";
 import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
 
 const work = await getCollection("work").then((work) =>
   work.sort(
@@ -32,17 +33,22 @@ const projects = await getCollection("projects").then((projects) =>
   <h2>Work</h2>
 
   <ul
-    class="col-[breakout] -mx-3 -my-2 gap-x-4 gap-y-2 marker:content-[''] sm:grid sm:grid-cols-2 md:grid-cols-3"
+    class="col-[breakout] -mx-3 -my-3 sm:grid sm:grid-cols-2 md:grid-cols-3 md:gap-2"
   >
     {
       work.map(({ id, data }) => (
         <li class="flex">
           <a
             href={`/work/${id}`}
-            class="flex grow flex-col px-3 py-2 no-underline hover:bg-secondary/10"
+            class="flex grow flex-col p-3 no-underline hover:bg-secondary/10"
           >
+            <Image
+              src={data.cover}
+              alt={data.title}
+              class="mb-2 w-full object-cover"
+            />
             <div>
-              {data.title}
+              <span class="uppercase">{data.title}</span>
               <span class="block text-secondary">
                 {data.role} · {data.timeframe}
               </span>
@@ -57,17 +63,22 @@ const projects = await getCollection("projects").then((projects) =>
   <h2>Projects</h2>
 
   <ul
-    class="col-[breakout] -mx-3 -my-2 gap-x-4 gap-y-2 marker:content-[''] sm:grid sm:grid-cols-2 md:grid-cols-3"
+    class="col-[breakout] -mx-3 -my-3 grid grid-cols-2 md:grid-cols-3 md:gap-2 lg:grid-cols-4"
   >
     {
       projects.map(({ id, data }) => (
         <li class="flex">
           <a
             href={`/projects/${id}`}
-            class="flex grow flex-col px-3 py-2 no-underline hover:bg-secondary/10"
+            class="flex grow flex-col p-3 no-underline hover:bg-secondary/10"
           >
+            <Image
+              src={data.cover}
+              alt={data.title}
+              class="mb-2 w-full object-cover"
+            />
             <span>
-              {data.title}
+              <span class="uppercase">{data.title}</span>
               <span class="text-secondary">
                 ·{" "}
                 {new Date(data.date).toLocaleDateString("en-US", {

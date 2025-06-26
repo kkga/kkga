@@ -4,23 +4,27 @@ import { glob } from "astro/loaders";
 
 const work = defineCollection({
   loader: glob({ pattern: "**/*.mdx", base: "./src/data/work" }),
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    longDescription: z.string(),
-    role: z.string(),
-    timeframe: z.string(),
-    date: z.coerce.date(),
-  }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string(),
+      longDescription: z.string(),
+      role: z.string(),
+      timeframe: z.string(),
+      date: z.coerce.date(),
+      cover: image(),
+    }),
 });
 
 const projects = defineCollection({
   loader: glob({ pattern: "**/*.mdx", base: "./src/data/projects" }),
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    date: z.coerce.date(),
-  }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string(),
+      date: z.coerce.date(),
+      cover: image(),
+    }),
 });
 
 const dlog = defineCollection({
