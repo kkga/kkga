@@ -2,6 +2,7 @@
 
 @theme {
   --font-sans: var(--font-pp-nikkei-pacific);
+  --font-mono: var(--font-intel-one-mono);
   --color-background: var(--color-white);
   --color-primary: var(--color-neutral-900);
   --color-secondary: var(--color-neutral-500);
@@ -178,14 +179,14 @@
   /* Code */
 
   code {
-    @apply text-[95%];
+    @apply font-mono text-[95%];
   }
 
   pre {
-    @apply overflow-auto border border-secondary/40 p-2 text-[13px]/5;
+    @apply overflow-auto border border-secondary/40 p-2 text-sm;
 
     code {
-      @apply font-mono text-[13px];
+      @apply text-sm;
     }
   }
 

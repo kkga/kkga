@@ -37,6 +37,21 @@ export default defineConfig({
           },
         ],
       },
+      {
+        provider: "local",
+        name: "Intel One Mono",
+        cssVariable: "--font-intel-one-mono",
+        variants: [
+          {
+            weight: "400",
+            style: "normal",
+            src: [
+              "./src/fonts/IntelOneMono-Regular.woff2",
+              "./src/fonts/IntelOneMono-Regular.woff",
+            ],
+          },
+        ],
+      },
     ],
   },
 });
