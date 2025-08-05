@@ -10,12 +10,12 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/mdx": "^4.3.0",
-    "@lion/ui": "^0.11.5",
+    "@astrojs/mdx": "^4.3.1",
+    "@lion/ui": "^0.13.0",
     "@tailwindcss/vite": "4.1.11",
     "@vercel/analytics": "^1.5.0",
-    "astro": "^5.10.1",
-    "sharp": "^0.34.2",
+    "astro": "^5.12.6",
+    "sharp": "^0.34.3",
     "tailwindcss": "4.1.11",
     "typescript": "^5.8.3"
   },
@@ -23,6 +23,6 @@
   "devDependencies": {
     "prettier": "^3.6.2",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.6.13"
+    "prettier-plugin-tailwindcss": "^0.6.14"
   }
 }
