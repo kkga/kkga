@@ -17,33 +17,52 @@ const { pathname } = Astro.url;
     <BaseHead title={title} description={description} />
   </head>
 
-  <body class="flex min-h-screen flex-col py-12 [&>main]:mb-12">
+  <body class="flex min-h-screen flex-col [&>main]:my-12">
     <slot />
 
     <footer
-      class="grid-breakout mt-auto text-secondary *:not-first:col-[aside]"
+      class="grid-breakout mt-auto gap-y-2 bg-neutral-100 py-8 text-secondary dark:bg-neutral-800"
     >
-      {
-        pathname !== "/" && (
-          <a class="place-self-start" href="/">
-            Back to home
-          </a>
-        )
-      }
-      {
-        dateUpdated && (
-          <span>
-            Updated:{" "}
-            <time datetime={dateUpdated}>
-              {new Date(dateUpdated).toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "short",
-                day: "numeric",
-              })}
-            </time>
-          </span>
-        )
-      }
+      <div class="contents *:not-first:col-[aside]">
+        {
+          pathname !== "/" ? (
+            <a class="col-[content] place-self-start" href="/">
+              Back to home
+            </a>
+          ) : (
+            <span class="col-[content] place-self-start">
+              <a href="mailto:me@kkga.me">me@kkga.me</a>
+              <span class="mx-0.5 text-secondary">·</span>
+              <a href="https://twitter.com/kkga_" target="_blank" rel="me">
+                X
+              </a>
+              <span class="mx-0.5 text-secondary">·</span>
+              <a
+                href="https://bsky.app/profile/kkga.me"
+                target="_blank"
+                rel="me"
+              >
+                Bluesky
+              </a>
+            </span>
+          )
+        }
+
+        {
+          dateUpdated && (
+            <span class="col-[aside]">
+              Updated:{" "}
+              <time datetime={dateUpdated}>
+                {new Date(dateUpdated).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "short",
+                  day: "numeric",
+                })}
+              </time>
+            </span>
+          )
+        }
+      </div>
     </footer>
   </body>
 </html>
