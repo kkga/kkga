@@ -15,10 +15,8 @@ import Video from "@/components/Video.astro";
 import prototype_loop from "./assets/retool/prototype-loop-request.mp4";
 import prototype_timer from "./assets/retool/prototype-timer-block.mp4";
 
-<div class="col-[breakout] mt-8 flex h-32 items-center justify-center border-2 border-dashed border-secondary/40">
-  <span class="block text-center text-secondary uppercase">
-    Work in progress
-  </span>
+<div className="breakout flex h-40 items-center justify-center border border-dashed text-secondary uppercase">
+  This page is under construction
 </div>
 
 <div class="col-[breakout] grid grid-cols-subgrid">
@@ -28,6 +26,12 @@ import prototype_timer from "./assets/retool/prototype-timer-block.mp4";
   </time>
 </div>
 
+I joined Retool in 2021 to help build a completely new product — Retool
+Workflows. The team was just 2 people — me and a full-stack engineer. I drove
+product and interaction design, iterated on the core flow primitives (API
+blocks, logic, control flow, etc) and built most of the final Workflows UI in
+React.
+
 <ul class="aside">
   <li>
     <a target="_blank" rel="external" href="https://retool.com/workflows">
@@ -35,6 +39,14 @@ import prototype_timer from "./assets/retool/prototype-timer-block.mp4";
     </a>
   </li>
 </ul>
+
+Since then the team has grown significantly and Workflows has become a key part
+of the Retool platform. The point was always the same: move quickly, get honest
+feedback, and build automations engineers actually want to use.
+
+Early on I prototyped several control-flow and transformer blocks in the
+[Godot game engine](https://godotengine.org/) because its canvas/graph APIs made
+it fast to experiment with runtime behavior.
 
 <figure class="breakout">
   <Video controls src={prototype_timer} className="bg-neutral-900! p-4" />
