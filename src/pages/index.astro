@@ -32,13 +32,13 @@ const projects = await getCollection("projects").then((projects) =>
 
   <h2>Work</h2>
 
-  <ul class="col-[breakout] -mx-3 -my-3 grid sm:grid-cols-2 md:grid-cols-3">
+  <ul class="col-[breakout] grid gap-4 sm:grid-cols-2 md:grid-cols-3">
     {
       work.map(({ id, data }) => (
         <li class="flex">
           <a
             href={`/work/${id}`}
-            class="flex grow flex-col p-3 no-underline hover:bg-secondary/10"
+            class="flex grow flex-col border-b border-line pb-2 no-underline hover:border-primary"
           >
             <Image
               src={data.cover}
@@ -61,14 +61,14 @@ const projects = await getCollection("projects").then((projects) =>
   <h2>Projects</h2>
 
   <ul
-    class="col-[breakout] -mx-3 -my-3 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+    class="col-[breakout] grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4"
   >
     {
       projects.map(({ id, data }) => (
         <li class="flex">
           <a
             href={`/projects/${id}`}
-            class="flex grow flex-col p-3 no-underline hover:bg-secondary/10"
+            class="flex grow flex-col border-b border-line pb-2 no-underline hover:border-primary"
           >
             <Image
               src={data.cover}

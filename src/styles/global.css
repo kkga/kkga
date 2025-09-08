@@ -6,6 +6,7 @@
   --color-background: var(--color-white);
   --color-primary: var(--color-neutral-900);
   --color-secondary: var(--color-neutral-500);
+  --color-line: var(--color-neutral-200);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +14,7 @@
     --color-background: var(--color-neutral-900);
     --color-primary: var(--color-neutral-50);
     --color-secondary: var(--color-neutral-400);
+    --color-line: var(--color-neutral-700);
   }
 }
 
