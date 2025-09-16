@@ -10,11 +10,11 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/mdx": "^4.3.4",
+    "@astrojs/mdx": "^4.3.5",
     "@lion/ui": "^0.14.3",
     "@tailwindcss/vite": "4.1.13",
     "@vercel/analytics": "^1.5.0",
-    "astro": "^5.13.5",
+    "astro": "^5.13.7",
     "sharp": "^0.34.3",
     "tailwindcss": "4.1.13",
     "typescript": "^5.9.2"
