@@ -6,7 +6,7 @@
   --color-background: var(--color-white);
   --color-primary: var(--color-neutral-900);
   --color-secondary: var(--color-neutral-500);
-  --color-line: var(--color-neutral-200);
+  --color-line: var(--color-neutral-300);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -92,7 +92,7 @@
   }
 
   hr {
-    grid-column: ruler;
+    grid-column: breakout;
   }
 }
 
@@ -118,7 +118,7 @@
   }
 
   a {
-    @apply underline decoration-secondary decoration-1 underline-offset-2 hover:decoration-current hover:decoration-[1.5px];
+    @apply underline decoration-current decoration-1 hover:decoration-[1.5px] underline-offset-2 hover:decoration-current;
 
     p {
       @apply m-0 inline;
@@ -234,6 +234,6 @@
   }
 
   hr {
-    @apply mt-6 border-t border-secondary/40;
+    @apply mt-6 border-t border-line;
   }
 }
