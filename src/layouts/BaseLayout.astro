@@ -17,12 +17,10 @@ const { pathname } = Astro.url;
     <BaseHead title={title} description={description} />
   </head>
 
-  <body class="flex min-h-screen flex-col [&>main]:my-12">
+  <body class="flex min-h-screen flex-col [&>main]:my-10">
     <slot />
 
-    <footer
-      class="grid-breakout mt-auto gap-y-2 bg-neutral-100 py-8 text-secondary dark:bg-neutral-800"
-    >
+    <footer class="grid-breakout mt-auto gap-y-[10px] py-10">
       <div class="contents *:not-first:col-[aside]">
         {
           pathname !== "/" ? (
@@ -30,13 +28,11 @@ const { pathname } = Astro.url;
               Back to home
             </a>
           ) : (
-            <span class="col-[content] place-self-start">
+            <span class="col-[content] flex gap-[10px] place-self-start">
               <a href="mailto:me@kkga.me">me@kkga.me</a>
-              <span class="mx-0.5 text-secondary">·</span>
               <a href="https://twitter.com/kkga_" target="_blank" rel="me">
                 X
               </a>
-              <span class="mx-0.5 text-secondary">·</span>
               <a
                 href="https://bsky.app/profile/kkga.me"
                 target="_blank"

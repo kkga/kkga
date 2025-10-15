@@ -1,31 +1,36 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-pp-nikkei-pacific);
-  --font-mono: var(--font-intel-one-mono);
+  --font-mono: var(--font-fragment-mono);
   --color-background: var(--color-white);
+  --color-panel: var(--color-neutral-100);
   --color-primary: var(--color-neutral-900);
   --color-secondary: var(--color-neutral-500);
   --color-line: var(--color-neutral-300);
+  --color-highlight: var(--color-neutral-200);
+  --color-highlight-hover: var(--color-neutral-300);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --color-background: var(--color-neutral-900);
+    --color-panel: var(--color-neutral-800);
     --color-primary: var(--color-neutral-50);
     --color-secondary: var(--color-neutral-400);
     --color-line: var(--color-neutral-700);
+    --color-highlight: var(--color-neutral-700);
+    --color-highlight-hover: var(--color-neutral-500);
   }
 }
 
 @utility grid-breakout {
-  @apply grid place-content-start gap-y-6;
+  @apply grid place-content-start gap-y-5;
 
-  --gap: clamp(calc(var(--spacing) * 4), 4vw, calc(var(--spacing) * 8));
+  --gap: clamp(calc(var(--spacing) * 5), 4vw, calc(var(--spacing) * 10));
   --margin-left: minmax(0, 0.25fr);
   --margin-right: minmax(0, 1fr);
   --content-min: var(--container-sm);
-  --content-max: var(--container-xl);
+  --content-max: var(--container-2xl);
   --content: minmax(
     min(var(--content-min), 100% - var(--gap) * 2),
     var(--content-max)
@@ -60,14 +65,14 @@
   }
 
   :is(h2) {
-    @apply mt-12;
+    @apply mt-15;
   }
   :is(h2 + .aside) {
-    @apply md:mt-12;
+    @apply md:mt-15;
   }
 
   > :is(figure, .breakout, pre) {
-    @apply my-6;
+    @apply my-5;
 
     &:last-child {
       @apply mb-0;
@@ -98,7 +103,7 @@
 
 @layer base {
   body {
-    @apply bg-background font-sans text-base text-primary antialiased;
+    @apply bg-background font-mono text-sm leading-5 text-primary;
     font-synthesis: none;
   }
 
@@ -110,7 +115,7 @@
   h4,
   h5,
   h6 {
-    @apply scroll-m-6 text-balance uppercase after:scroll-m-0 after:text-secondary after:content-['_—_'] empty:hidden;
+    @apply scroll-m-5 text-balance uppercase after:scroll-m-0 after:text-secondary after:content-['_—_'] empty:hidden;
   }
 
   p {
@@ -118,7 +123,7 @@
   }
 
   a {
-    @apply underline decoration-current decoration-1 hover:decoration-[1.5px] underline-offset-2 hover:decoration-current;
+    @apply no-underline bg-highlight hover:bg-highlight-hover hover:text-primary;
 
     p {
       @apply m-0 inline;
@@ -126,7 +131,7 @@
   }
 
   .aside {
-    @apply list-none text-secondary;
+    @apply list-none;
 
     a {
       @apply text-current;
@@ -136,7 +141,7 @@
   /* Media */
 
   figcaption {
-    @apply mt-2 text-secondary;
+    @apply mt-[10px] text-secondary;
 
     p {
       @apply m-0;
@@ -170,7 +175,7 @@
   ul {
     ol,
     ul {
-      @apply my-2;
+      @apply my-[10px];
     }
 
     li {
@@ -181,14 +186,14 @@
   /* Code */
 
   code {
-    @apply font-mono text-[95%];
+    @apply font-mono;
   }
 
   pre {
-    @apply overflow-auto border border-secondary/40 p-2 text-sm;
+    @apply overflow-auto p-[10px] bg-panel!;
 
     code {
-      @apply text-sm;
+      @apply bg-transparent p-0 text-secondary;
     }
   }
 

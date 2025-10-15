@@ -11,15 +11,14 @@ const { pathname } = Astro.url;
   dateUpdated={dateUpdated ?? frontmatter?.date}
 >
   <main class="grid-breakout">
-    <header class="col-[breakout] grid grid-cols-subgrid">
+    <header
+      class={`col-[breakout] grid grid-cols-subgrid ${pathname !== "/" ? "mb-15" : ""}`}
+    >
       <span>
         {
           pathname !== "/" && (
             <>
-              <a
-                class="inline-block place-self-start uppercase no-underline hover:underline"
-                href="/"
-              >
+              <a class="inline-block place-self-start uppercase" href="/">
                 kkga
               </a>
               <span class="inline-block text-secondary"> ⁄ </span>

@@ -11,16 +11,13 @@ const filteredHeadings = headings.filter((heading) => heading.depth <= 2);
 ---
 
 <nav
-  class="sticky top-6 z-10 col-[margin] row-span-3 hidden pr-4 text-secondary"
+  class="sticky top-5 z-10 col-[margin] row-span-3 hidden pr-5 text-secondary"
 >
-  <ul class="m-0 list-none">
+  <ul class="m-0">
     {
       filteredHeadings.map((heading) => (
         <li class="text-balance">
-          <a
-            class="text-current no-underline hover:underline"
-            href={`#${heading.slug}`}
-          >
+          <a class="not-hover:bg-transparent" href={`#${heading.slug}`}>
             {heading.text}
           </a>
         </li>

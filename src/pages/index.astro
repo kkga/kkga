@@ -6,14 +6,14 @@ import { Image } from "astro:assets";
 
 const work = await getCollection("work").then((work) =>
   work.sort(
-    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
-  )
+    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
+  ),
 );
 
 const projects = await getCollection("projects").then((projects) =>
   projects.sort(
-    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
-  )
+    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
+  ),
 );
 ---
 
@@ -22,36 +22,38 @@ const projects = await getCollection("projects").then((projects) =>
   description={siteData.description}
   dateUpdated="2025-01-23"
 >
-  <p>
-    Software designer focused on creating better tools for developers and
-    designers. I'm passionate about systems thinking and crafting intuitive,
-    efficient interfaces. Outside of work, I'm usually building side projects,
-    diving into emerging tech, cycling up hills, hiking remote trails, or
-    chasing mastery in FromSoftware games.
+  <p class="text-balance">
+    Software designer focused on creating better tools for builders. I'm
+    passionate about systems thinking and crafting intuitive, efficient
+    interfaces. Outside of work, I'm usually building side projects, diving into
+    emerging tech, cycling up hills, hiking remote trails, or chasing mastery in
+    FromSoftware games.
   </p>
 
   <h2>Work</h2>
 
-  <ul class="col-[breakout] grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+  <ul class="col-[breakout] grid gap-5 sm:grid-cols-2 md:grid-cols-3">
     {
       work.map(({ id, data }) => (
         <li class="flex">
           <a
             href={`/work/${id}`}
-            class="flex grow flex-col border-b border-line pb-2 no-underline hover:border-primary"
+            class="group flex grow flex-col bg-transparent"
           >
             <Image
               src={data.cover}
               alt={data.title}
-              class="mb-2 w-full object-cover"
+              class="mb-[10px] w-full object-cover"
             />
             <div>
               <span class="uppercase">{data.title}</span>
-              <span class="block text-secondary">
-                {data.role} · {data.timeframe}
+              <span class="block text-secondary group-hover:text-primary">
+                {data.role} ({data.timeframe})
               </span>
             </div>
-            <p class="text-secondary">{data.longDescription}</p>
+            <p class="text-secondary group-hover:text-primary">
+              {data.longDescription}
+            </p>
           </a>
         </li>
       ))
@@ -61,30 +63,29 @@ const projects = await getCollection("projects").then((projects) =>
   <h2>Projects</h2>
 
   <ul
-    class="col-[breakout] grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4"
+    class="col-[breakout] grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4"
   >
     {
       projects.map(({ id, data }) => (
         <li class="flex">
           <a
             href={`/projects/${id}`}
-            class="flex grow flex-col border-b border-line pb-2 no-underline hover:border-primary"
+            class="group flex grow flex-col bg-transparent"
           >
             <Image
               src={data.cover}
               alt={data.title}
-              class="mb-2 w-full object-cover"
+              class="mb-[10px] w-full object-cover"
             />
             <span>
               <span class="uppercase">{data.title}</span>
-              <span class="text-secondary">
-                ·{" "}
-                {new Date(data.date).toLocaleDateString("en-US", {
-                  year: "numeric",
-                })}
+              <span class="text-secondary group-hover:text-primary">
+                {`(${new Date(data.date).toLocaleDateString("en-US", { year: "numeric" })})`}
               </span>
             </span>
-            <p class="text-secondary">{data.description.replace(/\.$/, "")}.</p>
+            <p class="text-secondary group-hover:text-primary">
+              {data.description.replace(/\.$/, "")}.
+            </p>
           </a>
         </li>
       ))
