@@ -25,10 +25,35 @@ const projects = await getCollection("projects").then((projects) =>
   <p class="text-balance">
     Software designer focused on creating better tools for builders. I'm
     passionate about systems thinking and crafting intuitive, efficient
-    interfaces. Outside of work, I'm usually building side projects, diving into
-    emerging tech, cycling up hills, hiking remote trails, or chasing mastery in
-    FromSoftware games.
+    interfaces.<br />
+    Outside of work, I'm usually building side projects, diving into emerging tech,
+    cycling up hills, hiking remote trails, or chasing mastery in FromSoftware games.
   </p>
+
+  <ul class="list-none [&_a]:not-hover:text-secondary [&>li]:inline-block">
+    <li>
+      <a href="/notes">/notes</a>
+    </li>
+    <li>
+      <a href="/books">/books</a>
+    </li>
+    <li>
+      <a href="/dlog">/dlog</a>
+    </li>
+    <li>
+      <a href="mailto:me@kkga.me">me@kkga.me</a>
+    </li>
+    <li>
+      <a href="https://twitter.com/kkga_" target="_blank" rel="me"
+        >X (aka Twitter)</a
+      >
+    </li>
+    <li>
+      <a href="https://bsky.app/profile/kkga.me" target="_blank" rel="me">
+        Bluesky
+      </a>
+    </li>
+  </ul>
 
   <h2>Work</h2>
 
@@ -36,24 +61,19 @@ const projects = await getCollection("projects").then((projects) =>
     {
       work.map(({ id, data }) => (
         <li class="flex">
-          <a
-            href={`/work/${id}`}
-            class="group flex grow flex-col bg-transparent"
-          >
+          <a href={`/work/${id}`} class="group bg-transparent">
             <Image
               src={data.cover}
               alt={data.title}
               class="mb-[10px] w-full object-cover"
             />
-            <div>
+            <span class="group-hover:bg-highlight-hover">
               <span class="uppercase">{data.title}</span>
-              <span class="block text-secondary group-hover:text-primary">
-                {data.role} ({data.timeframe})
+              <span>
+                ({data.role} {data.timeframe})
               </span>
-            </div>
-            <p class="text-secondary group-hover:text-primary">
-              {data.longDescription}
-            </p>
+            </span>
+            <div class="text-secondary">{data.longDescription}</div>
           </a>
         </li>
       ))
@@ -68,24 +88,21 @@ const projects = await getCollection("projects").then((projects) =>
     {
       projects.map(({ id, data }) => (
         <li class="flex">
-          <a
-            href={`/projects/${id}`}
-            class="group flex grow flex-col bg-transparent"
-          >
+          <a href={`/projects/${id}`} class="group bg-transparent">
             <Image
               src={data.cover}
               alt={data.title}
               class="mb-[10px] w-full object-cover"
             />
-            <span>
+            <span class="group-hover:bg-highlight-hover">
               <span class="uppercase">{data.title}</span>
-              <span class="text-secondary group-hover:text-primary">
+              <span>
                 {`(${new Date(data.date).toLocaleDateString("en-US", { year: "numeric" })})`}
               </span>
             </span>
-            <p class="text-secondary group-hover:text-primary">
+            <div class="text-secondary">
               {data.description.replace(/\.$/, "")}.
-            </p>
+            </div>
           </a>
         </li>
       ))

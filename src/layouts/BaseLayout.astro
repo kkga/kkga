@@ -20,29 +20,11 @@ const { pathname } = Astro.url;
   <body class="flex min-h-screen flex-col [&>main]:my-10">
     <slot />
 
-    <footer class="grid-breakout mt-auto gap-y-[10px] py-10">
+    <footer class="grid-breakout mt-auto gap-y-[10px] py-10 text-secondary">
       <div class="contents *:not-first:col-[aside]">
-        {
-          pathname !== "/" ? (
-            <a class="col-[content] place-self-start" href="/">
-              Back to home
-            </a>
-          ) : (
-            <span class="col-[content] flex gap-[10px] place-self-start">
-              <a href="mailto:me@kkga.me">me@kkga.me</a>
-              <a href="https://twitter.com/kkga_" target="_blank" rel="me">
-                X
-              </a>
-              <a
-                href="https://bsky.app/profile/kkga.me"
-                target="_blank"
-                rel="me"
-              >
-                Bluesky
-              </a>
-            </span>
-          )
-        }
+        <div class="col-[content]">
+          {pathname !== "/" && <a href="/">Back to home</a>}
+        </div>
 
         {
           dateUpdated && (

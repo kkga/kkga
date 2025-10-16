@@ -4,8 +4,8 @@
   --font-mono: var(--font-fragment-mono);
   --color-background: var(--color-white);
   --color-panel: var(--color-neutral-100);
-  --color-primary: var(--color-neutral-900);
-  --color-secondary: var(--color-neutral-500);
+  --color-primary: var(--color-neutral-950);
+  --color-secondary: var(--color-neutral-600);
   --color-line: var(--color-neutral-300);
   --color-highlight: var(--color-neutral-200);
   --color-highlight-hover: var(--color-neutral-300);
@@ -16,7 +16,7 @@
     --color-background: var(--color-neutral-900);
     --color-panel: var(--color-neutral-800);
     --color-primary: var(--color-neutral-50);
-    --color-secondary: var(--color-neutral-400);
+    --color-secondary: var(--color-neutral-300);
     --color-line: var(--color-neutral-700);
     --color-highlight: var(--color-neutral-700);
     --color-highlight-hover: var(--color-neutral-500);
@@ -103,7 +103,7 @@
 
 @layer base {
   body {
-    @apply bg-background font-mono text-sm leading-5 text-primary;
+    @apply bg-background font-mono text-[13px] leading-5 text-primary;
     font-synthesis: none;
   }
 
@@ -131,11 +131,7 @@
   }
 
   .aside {
-    @apply list-none;
-
-    a {
-      @apply text-current;
-    }
+    @apply list-none text-secondary;
   }
 
   /* Media */
