@@ -44,9 +44,7 @@ const projects = await getCollection("projects").then((projects) =>
       <a href="mailto:me@kkga.me">me@kkga.me</a>
     </li>
     <li>
-      <a href="https://twitter.com/kkga_" target="_blank" rel="me"
-        >X (aka Twitter)</a
-      >
+      <a href="https://twitter.com/kkga_" target="_blank" rel="me">Twitter</a>
     </li>
     <li>
       <a href="https://bsky.app/profile/kkga.me" target="_blank" rel="me">
@@ -62,11 +60,14 @@ const projects = await getCollection("projects").then((projects) =>
       work.map(({ id, data }) => (
         <li class="flex">
           <a href={`/work/${id}`} class="group bg-transparent">
-            <Image
-              src={data.cover}
-              alt={data.title}
-              class="mb-[10px] w-full object-cover"
-            />
+            <div class="relative mb-[10px] w-full overflow-hidden shadow">
+              <Image
+                src={data.cover}
+                alt={data.title}
+                class="block w-full object-cover"
+              />
+              <span class="pointer-events-none absolute inset-0 z-10 inset-ring inset-ring-current/15" />
+            </div>
             <span class="group-hover:bg-highlight-hover">
               <span class="uppercase">{data.title}</span>
               <span>
@@ -89,11 +90,14 @@ const projects = await getCollection("projects").then((projects) =>
       projects.map(({ id, data }) => (
         <li class="flex">
           <a href={`/projects/${id}`} class="group bg-transparent">
-            <Image
-              src={data.cover}
-              alt={data.title}
-              class="mb-[10px] w-full object-cover"
-            />
+            <div class="relative mb-[10px] w-full overflow-hidden shadow">
+              <Image
+                src={data.cover}
+                alt={data.title}
+                class="block w-full object-cover"
+              />
+              <span class="pointer-events-none absolute inset-0 z-10 inset-ring inset-ring-current/15" />
+            </div>
             <span class="group-hover:bg-highlight-hover">
               <span class="uppercase">{data.title}</span>
               <span>
