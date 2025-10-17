@@ -7,35 +7,32 @@ const notes = await getCollection("notes").then((notes) =>
     .sort(
       (a, b) =>
         new Date(a.data?.date || 0).getTime() -
-        new Date(b.data?.date || 0).getTime(),
+        new Date(b.data?.date || 0).getTime()
     )
-    .reverse(),
+    .reverse()
 );
 ---
 
-<PageLayout title="Notes" description="Collection of random notes.">
-  <ul class="breakout marker:content-['']">
+<PageLayout title="Notes" description="Random notes.">
+  <ul class="breakout list-none space-y-[10px]">
     {
       notes.map(({ id, data }) => (
         <li>
           <a href={`/notes/${id}`}>{data.title || id}</a>
           {data.description && (
             <>
-              <span class="text-secondary">—</span>
               <span class="text-secondary">
                 {data.description.replace(/\.$/, "")}
               </span>
             </>
           )}
           {data.date && (
-            <>
-              <span class="text-secondary">
-                {new Date(data.date).toLocaleDateString("en-US", {
-                  month: "numeric",
-                  year: "2-digit",
-                })}
-              </span>
-            </>
+            <span class="text-secondary">
+              {`(${new Date(data.date).toLocaleDateString("en-US", {
+                month: "numeric",
+                year: "2-digit",
+              })})`}
+            </span>
           )}
         </li>
       ))

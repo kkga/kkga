@@ -16,7 +16,7 @@ const filteredHeadings = headings.filter((heading) => heading.depth <= 2);
   <ul class="m-0">
     {
       filteredHeadings.map((heading) => (
-        <li class="text-balance">
+        <li class="text-balance small-caps">
           <a class="not-hover:bg-transparent" href={`#${heading.slug}`}>
             {heading.text}
           </a>

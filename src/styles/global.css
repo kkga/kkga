@@ -73,6 +73,10 @@
     @apply md:mt-15;
   }
 
+  :is(h3, h4, h5, h6) {
+    @apply mt-5;
+  }
+
   > :is(figure, .breakout, pre) {
     @apply my-5;
 
@@ -103,6 +107,10 @@
   }
 }
 
+@utility small-caps {
+  font-variant: small-caps;
+}
+
 @layer base {
   body {
     @apply bg-background font-mono text-[13px] leading-5 text-primary;
@@ -117,7 +125,19 @@
   h4,
   h5,
   h6 {
-    @apply scroll-m-5 text-balance uppercase after:scroll-m-0 after:text-secondary after:content-['_—_'] empty:hidden;
+    @apply scroll-m-5 text-balance empty:hidden;
+  }
+
+  h1,
+  h2 {
+    @apply uppercase after:scroll-m-0 after:text-secondary after:content-['_—_'];
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply small-caps;
   }
 
   p {
@@ -125,7 +145,7 @@
   }
 
   a {
-    @apply no-underline bg-highlight hover:bg-highlight-hover hover:text-primary;
+    @apply bg-highlight no-underline hover:bg-highlight-hover hover:text-primary;
 
     p {
       @apply m-0 inline;
@@ -188,7 +208,7 @@
   }
 
   pre {
-    @apply overflow-auto p-[10px] bg-panel!;
+    @apply overflow-auto bg-panel! p-[10px];
 
     code {
       @apply bg-transparent p-0 text-secondary;
@@ -205,19 +225,19 @@
     }
 
     thead {
-      @apply border-b border-secondary/40;
+      @apply border-b border-line-hover;
     }
 
     tfoot {
-      @apply border-t border-secondary/40;
+      @apply border-t border-line;
     }
 
     tr {
-      @apply border-y border-secondary/40 first:border-t-0 last:border-b-0;
+      @apply border-y border-line first:border-t-0 last:border-b-0;
     }
 
     th {
-      @apply align-bottom font-normal;
+      @apply align-bottom text-secondary;
     }
 
     td,

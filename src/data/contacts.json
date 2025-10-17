@@ -1,26 +1,7 @@
-[
-  {
-    "name": "Email",
-    "url": "mailto:me@kkga.me"
-  },
-  {
-    "name": "Twitter",
-    "url": "https://www.twitter.com/kkga_"
-  },
-  {
-    "name": "GitHub",
-    "url": "https://www.github.com/kkga"
-  },
-  {
-    "name": "Bluesky",
-    "url": "https://bsky.app/profile/kkga.me"
-  },
-  {
-    "name": "LinkedIn",
-    "url": "https://www.linkedin.com/in/gadzhi"
-  },
-  {
-    "name": "read.cv",
-    "url": "https://read.cv/kkga"
-  }
-]
+{
+  "email": "mailto:me@kkga.me",
+  "twitter": "https://www.twitter.com/kkga_",
+  "github": "https://www.github.com/kkga",
+  "bluesky": "https://bsky.app/profile/kkga.me",
+  "linkedin": "https://www.linkedin.com/in/gadzhi"
+}

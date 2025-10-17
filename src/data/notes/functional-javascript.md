@@ -22,7 +22,7 @@ Do nothing but return output based on nothing but input.
 
 #### Imperative
 
-```javascript
+```js
 let name = "Alonzo";
 let greeting = "Hi";
 
@@ -179,10 +179,7 @@ function filter(predicateFn, array) {
 
 ```javascript
 wholes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-greaterThanFour = filter(
-  (n) => n > 4,
-  wholes,
-);
+greaterThanFour = filter((n) => n > 4, wholes);
 // greaterThanFour is [5,6,7,8,9,10]
 ```
 
