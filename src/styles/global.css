@@ -67,7 +67,7 @@
   }
 
   :is(h2) {
-    @apply mt-15;
+    @apply mt-15 underline underline-offset-4;
   }
   :is(h2 + .aside) {
     @apply md:mt-15;
@@ -130,7 +130,7 @@
 
   h1,
   h2 {
-    @apply uppercase after:scroll-m-0 after:text-secondary after:content-['_—_'];
+    @apply uppercase;
   }
 
   h3,
@@ -159,7 +159,7 @@
   /* Media */
 
   figcaption {
-    @apply mt-[10px] text-secondary;
+    @apply mt-2.5 text-secondary;
 
     p {
       @apply m-0;
@@ -193,7 +193,7 @@
   ul {
     ol,
     ul {
-      @apply my-[10px];
+      @apply my-2.5;
     }
 
     li {
@@ -208,7 +208,7 @@
   }
 
   pre {
-    @apply overflow-auto bg-panel! p-[10px];
+    @apply overflow-auto bg-panel! p-2.5;
 
     code {
       @apply bg-transparent p-0 text-secondary;
@@ -257,6 +257,6 @@
   }
 
   hr {
-    @apply mt-6 border-t border-line;
+    @apply my-6 border-t border-line;
   }
 }
