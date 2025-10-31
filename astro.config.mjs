@@ -35,13 +35,6 @@ export default defineConfig({
         ],
         fallbacks: ["monospace"],
       },
-      // {
-      //   provider: fontProviders.google(),
-      //   name: "Fragment Mono",
-      //   cssVariable: "--font-fragment-mono",
-      //   styles: ["normal"],
-      //   fallbacks: ["monospace"],
-      // },
     ],
   },
 });

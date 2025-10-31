@@ -48,6 +48,7 @@
     var(--gap)
     [ruler-end];
 
+  /* biome-ignore lint/correctness/noUnknownFunction: <explanation> */
   @media screen and (min-width: theme("screens.md")) {
     grid-template-columns:
       [ruler-start]
@@ -67,7 +68,7 @@
   }
 
   :is(h2) {
-    @apply mt-15 underline underline-offset-4;
+    @apply mt-15;
   }
   :is(h2 + .aside) {
     @apply md:mt-15;
@@ -145,7 +146,7 @@
   }
 
   a {
-    @apply bg-highlight no-underline hover:bg-highlight-hover hover:text-primary;
+    @apply underline decoration-line-hover underline-offset-2 hover:text-primary hover:decoration-current hover:decoration-solid;
 
     p {
       @apply m-0 inline;

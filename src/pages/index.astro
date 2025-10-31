@@ -59,8 +59,8 @@ const projects = await getCollection("projects").then((projects) =>
     {
       work.map(({ id, data }) => (
         <li class="flex">
-          <a href={`/work/${id}`} class="group bg-transparent">
-            <div class="relative mb-[10px] w-full overflow-hidden shadow">
+          <a href={`/work/${id}`} class="group bg-transparent no-underline">
+            <div class="relative mb-2.5 w-full overflow-hidden shadow">
               <Image
                 src={data.cover}
                 alt={data.title}
@@ -68,7 +68,7 @@ const projects = await getCollection("projects").then((projects) =>
               />
               <span class="pointer-events-none absolute inset-0 z-10 inset-ring inset-ring-current/15" />
             </div>
-            <span class="group-hover:bg-highlight-hover">
+            <span class="group-hover:underline">
               <span class="uppercase">{data.title}</span>
               <span>
                 ({data.role} {data.timeframe})
@@ -89,8 +89,8 @@ const projects = await getCollection("projects").then((projects) =>
     {
       projects.map(({ id, data }) => (
         <li class="flex">
-          <a href={`/projects/${id}`} class="group bg-transparent">
-            <div class="relative mb-[10px] w-full overflow-hidden shadow">
+          <a href={`/projects/${id}`} class="group bg-transparent no-underline">
+            <div class="relative mb-2.5 w-full overflow-hidden shadow">
               <Image
                 src={data.cover}
                 alt={data.title}
@@ -98,7 +98,7 @@ const projects = await getCollection("projects").then((projects) =>
               />
               <span class="pointer-events-none absolute inset-0 z-10 inset-ring inset-ring-current/15" />
             </div>
-            <span class="group-hover:bg-highlight-hover">
+            <span class="group-hover:underline">
               <span class="uppercase">{data.title}</span>
               <span>
                 {`(${new Date(data.date).toLocaleDateString("en-US", { year: "numeric" })})`}

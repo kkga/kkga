@@ -20,7 +20,7 @@ const { pathname } = Astro.url;
   <body class="flex min-h-screen flex-col [&>main]:my-10">
     <slot />
 
-    <footer class="grid-breakout mt-auto gap-y-[10px] py-10 text-secondary">
+    <footer class="grid-breakout mt-auto gap-y-2.5 py-10 text-secondary">
       <div class="contents *:not-first:col-[aside]">
         <div class="col-[content]">
           {pathname !== "/" && <a href="/">Back to home</a>}
