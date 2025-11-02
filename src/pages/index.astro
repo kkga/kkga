@@ -29,13 +29,13 @@ const projects = await getCollection("projects").then((projects) =>
       work.map(({ id, data }) => (
         <li class="flex">
           <a href={`/work/${id}`} class="group bg-transparent no-underline">
-            <div class="relative mb-2.5 w-full overflow-hidden shadow">
+            <div class="relative mb-2.5 w-full overflow-hidden">
               <Image
                 src={data.cover}
                 alt={data.title}
                 class="block w-full object-cover"
               />
-              <span class="pointer-events-none absolute inset-0 z-10 inset-ring inset-ring-current/15" />
+              <span class="pointer-events-none absolute inset-0 z-10 inset-ring inset-ring-current/20" />
             </div>
             <span class="group-hover:underline">
               <span class="uppercase">{data.title}</span>
@@ -61,13 +61,13 @@ const projects = await getCollection("projects").then((projects) =>
       projects.map(({ id, data }) => (
         <li class="flex">
           <a href={`/projects/${id}`} class="group bg-transparent no-underline">
-            <div class="relative mb-2.5 w-full overflow-hidden shadow">
+            <div class="relative mb-2.5 w-full overflow-hidden">
               <Image
                 src={data.cover}
                 alt={data.title}
                 class="block w-full object-cover"
               />
-              <span class="pointer-events-none absolute inset-0 z-10 inset-ring inset-ring-current/15" />
+              <span class="pointer-events-none absolute inset-0 z-10 inset-ring inset-ring-current/20" />
             </div>
             <span class="group-hover:underline">
               <span class="uppercase">{data.title}</span>

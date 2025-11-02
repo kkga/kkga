@@ -112,19 +112,19 @@
     }
 
     > :is(.aside, aside) {
-      @apply col-[aside];
+      @apply col-[aside] list-none text-secondary;
 
       ul {
         @apply list-none;
       }
     }
 
-    > :is(.breakout, pre) {
-      @apply col-[breakout];
+    > :is(.breakout) {
+      @apply col-[breakout] lg:my-5;
     }
 
     > :is(.bleed) {
-      @apply col-[bleed];
+      @apply col-[bleed] lg:my-5;
     }
   }
 
