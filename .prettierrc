@@ -1,5 +1,13 @@
 {
   "plugins": ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
   "tailwindStylesheet": "./src/styles/global.css",
-  "proseWrap": "always"
+  "proseWrap": "always",
+  "overrides": [
+    {
+      "files": "*.astro",
+      "options": {
+        "parser": "astro"
+      }
+    }
+  ]
 }

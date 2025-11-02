@@ -1,12 +1,14 @@
 // @ts-check
-import { defineConfig, fontProviders, sharpImageService } from "astro/config";
+import { defineConfig, sharpImageService } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import mdx from "@astrojs/mdx";
+
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://kkga.me",
-  integrations: [mdx()],
+  integrations: [mdx(), sitemap()],
   vite: {
     plugins: [tailwindcss()],
   },

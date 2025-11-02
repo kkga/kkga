@@ -11,13 +11,21 @@ const filteredHeadings = headings.filter((heading) => heading.depth <= 2);
 ---
 
 <nav
-  class="sticky top-5 z-10 col-[margin] row-span-3 hidden pr-5 text-secondary"
+  class="fixed top-5 right-5 z-10 hidden border border-line bg-panel text-secondary"
 >
-  <ul class="m-0">
+  <ul class="m-0 flex list-none flex-col divide-y divide-line">
+    <li>
+      <a class="flex h-7.5 items-center px-2.5 no-underline" href="#top">
+        &uarr; Top
+      </a>
+    </li>
     {
       filteredHeadings.map((heading) => (
-        <li class="text-balance">
-          <a class="not-hover:bg-transparent" href={`#${heading.slug}`}>
+        <li>
+          <a
+            class="flex h-7.5 items-center px-2.5 no-underline"
+            href={`#${heading.slug}`}
+          >
             {heading.text}
           </a>
         </li>
@@ -29,7 +37,7 @@ const filteredHeadings = headings.filter((heading) => heading.depth <= 2);
 <script>
   window.addEventListener("scroll", () => {
     const nav = document.querySelector("nav");
-    if (window.scrollY > 240) {
+    if (window.scrollY >= 0) {
       if (nav) nav.classList.add("xl:block");
     } else {
       if (nav) nav.classList.remove("xl:block");

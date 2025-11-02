@@ -136,7 +136,7 @@
   h4,
   h5,
   h6 {
-    @apply scroll-m-8 text-balance empty:hidden;
+    @apply scroll-m-5 text-balance empty:hidden;
   }
 
   h1,
