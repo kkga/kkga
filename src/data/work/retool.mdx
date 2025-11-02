@@ -18,54 +18,54 @@ import prototype_timer from "./assets/retool/prototype-timer-block.mp4";
 import prototype_treeflow from "./assets/retool/treeflow.mp4";
 import a from "./assets/a.gif";
 
-<div className="breakout m-0! flex h-15 items-center justify-center border-2 border-dashed border-current/40 bg-amber-50 text-amber-600 uppercase">
+<div className="flex h-15 items-center justify-center border-2 border-dashed border-current/40 bg-amber-50 text-amber-600 uppercase">
   <Image class="mr-2 size-6" src={a} alt="Under Construction" />
   This page is under construction
 </div>
 
-<div class="col-[breakout] grid grid-cols-subgrid">
-  ## Retool Agents
-  <time datetime="2025" class="aside">
-    2025
-  </time>
-</div>
+---
+
+## Retool Agents
 
 Retool Agents are autonomous AI “workers” you build in Retool that use LLM
 reasoning to take actions — they call your APIs/queries/workflows, make
 decisions (or ask humans), and execute tasks end-to-end.
 
-<ul class="aside">
-  <li>
-    <a target="_blank" rel="external" href="https://retool.com/agents">
-      retool.com/agents
-    </a>
-  </li>
-</ul>
+<aside>
+  <time datetime="2025">2025</time>
+  <ul>
+    <li>
+      <a target="_blank" rel="external" href="https://retool.com/agents">
+        retool.com/agents
+      </a>
+    </li>
+  </ul>
+</aside>
 
 I led the design of the product from early exploration to launch, working
 closely with engineers and product managers to define the user flows,
 interaction models, and visual design.
 
-<div class="col-[breakout] grid grid-cols-subgrid">
-  ## IDE prototypes and explorations
-  <time datetime="2024" class="aside">
-    2024
-  </time>
-</div>
+---
+
+## IDE explorations
 
 I've worked on various prototypes exploring different IDE concepts for building
 and debugging Retool apps. Some of these experiments have influenced the final
 product, while others remain as explorations.
 
+<aside>
+  <time datetime="2024">2024</time>
+</aside>
+
 ### Visualizing logic
 
 Retool apps can get complex quickly with many interconnected components and
-stateful logic spread across multiple layers.
-
-In an effort to help users understand and debug their apps, I worked on a
-prototype for visualizing data and control flow in a Retool app. The tree shows
-a graph of relationships between queries, variables and components on the
-canvas, allowing users to trace how data moves through the app.
+stateful logic spread across multiple layers. In an effort to help users
+understand and debug their apps, I worked on a prototype for visualizing data
+and control flow in a Retool app. The tree shows a graph of relationships
+between queries, variables and components on the canvas, allowing users to trace
+how data moves through the app.
 
 The goal was to have a lightweight layer of visual feedback that is "always
 there" and helps users reason about app behavior as they build.
@@ -75,12 +75,9 @@ there" and helps users reason about app behavior as they build.
   <figcaption>Data and control flow graph in the app tree</figcaption>
 </figure>
 
-<div class="col-[breakout] grid grid-cols-subgrid">
-  ## Retool Workflows
-  <time datetime="2021" class="aside">
-    2021–2024
-  </time>
-</div>
+---
+
+## Retool Workflows
 
 I joined Retool in 2021 to help build a completely new product — Retool
 Workflows. The team was just 2 people — me and a full-stack engineer. I drove
@@ -88,13 +85,16 @@ product and interaction design, iterated on the core flow primitives (API
 blocks, logic, control flow, etc) and built most of the final Workflows UI in
 React.
 
-<ul class="aside">
-  <li>
-    <a target="_blank" rel="external" href="https://retool.com/workflows">
-      retool.com/workflows
-    </a>
-  </li>
-</ul>
+<aside>
+  <time datetime="2021">2021–2024</time>
+  <ul>
+    <li>
+      <a target="_blank" rel="external" href="https://retool.com/workflows">
+        retool.com/workflows
+      </a>
+    </li>
+  </ul>
+</aside>
 
 Since then the team has grown significantly and Workflows has become a key part
 of the Retool platform. The point was always the same: move quickly, get honest
@@ -105,11 +105,11 @@ Early on I prototyped several control-flow and transformer blocks in the
 it fast to experiment with runtime behavior.
 
 <figure class="breakout">
-  <Video controls src={prototype_timer} className="p-[10px] ring ring-line" />
+  <Video controls src={prototype_timer} />
   <figcaption>Prototype for Timer and Iterator blocks</figcaption>
 </figure>
 
 <figure class="breakout">
-  <Video controls src={prototype_loop} className="p-[10px] ring ring-line" />
+  <Video controls src={prototype_loop} />
   <figcaption>Prototype for Loop and API request blocks</figcaption>
 </figure>

@@ -14,7 +14,7 @@ const notes = await getCollection("notes").then((notes) =>
 ---
 
 <PageLayout title="Notes" description="Random notes.">
-  <ul class="breakout list-none space-y-[10px]">
+  <ul class="col-content list-none space-y-2.5">
     {
       notes.map(({ id, data }) => (
         <li>

@@ -2,109 +2,22 @@
 
 @theme {
   --font-mono: var(--font-fragment-mono);
-  --color-background: var(--color-zinc-100);
-  --color-panel: var(--color-zinc-200);
-  --color-primary: var(--color-zinc-950);
-  --color-secondary: var(--color-zinc-600);
-  --color-line: var(--color-zinc-300);
-  --color-line-hover: var(--color-zinc-400);
-  --color-highlight: var(--color-zinc-200);
-  --color-highlight-hover: var(--color-zinc-300);
+  --color-background: var(--color-white);
+  --color-panel: var(--color-neutral-100);
+  --color-primary: var(--color-black);
+  --color-secondary: var(--color-neutral-600);
+  --color-line: var(--color-neutral-200);
+  --color-line-hover: var(--color-neutral-400);
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --color-background: var(--color-neutral-900);
-    --color-panel: var(--color-neutral-800);
+    --color-panel: var(--color-neutral-950);
     --color-primary: var(--color-white);
-    --color-secondary: var(--color-neutral-300);
+    --color-secondary: var(--color-neutral-400);
     --color-line: var(--color-neutral-700);
-    --color-line-hover: var(--color-neutral-600);    
-    --color-highlight: var(--color-neutral-700);
-    --color-highlight-hover: var(--color-neutral-500);
-  }
-} */
-
-@utility grid-breakout {
-  @apply grid place-content-start gap-y-5;
-
-  --gap: clamp(calc(var(--spacing) * 5), 4vw, calc(var(--spacing) * 10));
-  --margin-left: minmax(0, 0.25fr);
-  --margin-right: minmax(0, 1fr);
-  --content-min: var(--container-sm);
-  --content-max: var(--container-2xl);
-  --content: minmax(
-    min(var(--content-min), 100% - var(--gap) * 2),
-    var(--content-max)
-  );
-  --aside: minmax(var(--container-3xs), var(--container-xs));
-
-  grid-template-columns:
-    [ruler-start]
-    var(--gap)
-    [content-start aside-start breakout-start]
-    1fr
-    [breakout-end aside-end content-end]
-    var(--gap)
-    [ruler-end];
-
-  /* biome-ignore lint/correctness/noUnknownFunction: <explanation> */
-  @media screen and (min-width: theme("screens.md")) {
-    grid-template-columns:
-      [ruler-start]
-      var(--margin-left)
-      var(--gap)
-      [breakout-start content-start] var(--content) [content-end]
-      var(--gap)
-      [aside-start] var(--aside) [aside-end breakout-end ruler-end]
-      var(--gap)
-      [margin-start]
-      var(--margin-right)
-      [margin-end];
-  }
-
-  > * {
-    grid-column: content;
-  }
-
-  :is(h2) {
-    @apply mt-15;
-  }
-  :is(h2 + .aside) {
-    @apply md:mt-15;
-  }
-
-  :is(h3, h4, h5, h6) {
-    @apply mt-5;
-  }
-
-  > :is(figure, .breakout, pre) {
-    @apply my-5;
-
-    &:last-child {
-      @apply mb-0;
-    }
-
-    &:first-child {
-      @apply mt-0;
-    }
-  }
-
-  > :is(figure, .breakout, pre) + :is(figure, .breakout, pre) {
-    @apply mt-0;
-  }
-
-  pre,
-  .breakout {
-    grid-column: breakout;
-  }
-
-  .aside {
-    @apply col-[aside] m-0;
-  }
-
-  hr {
-    grid-column: breakout;
+    --color-line-hover: var(--color-neutral-500);
   }
 }
 
@@ -112,10 +25,102 @@
   font-variant: small-caps;
 }
 
+@utility grid-cols-main {
+  grid-template-columns:
+    [margin-start head-start content-start breakout-start bleed-start aside-start]
+    minmax(0, 1fr)
+    minmax(0, 1fr)
+    [aside-end bleed-end breakout-end content-end head-end margin-end];
+
+  /* biome-ignore lint/correctness/noUnknownFunction: <explanation> */
+  @media screen and (min-width: theme("screens.md")) {
+    grid-template-columns:
+      [margin-start head-start content-start breakout-start bleed-start]
+      minmax(0, 1fr)
+      minmax(0, 1fr)
+      minmax(0, 1fr)
+      minmax(0, 1fr)
+      [content-end aside-start]
+      minmax(0, 1fr)
+      minmax(0, 1fr)
+      [aside-end bleed-end breakout-end head-end margin-end];
+  }
+
+  /* biome-ignore lint/correctness/noUnknownFunction: <explanation> */
+  @media screen and (min-width: theme("screens.lg")) {
+    grid-template-columns:
+      [margin-start head-start]
+      minmax(0, 1fr)
+      [head-end content-start breakout-start bleed-start]
+      minmax(0, 1fr)
+      minmax(0, 1fr)
+      minmax(0, 1fr)
+      minmax(0, 1fr)
+      [content-end aside-start]
+      minmax(0, 1fr)
+      minmax(0, 1fr)
+      [aside-end breakout-end margin-end bleed-end];
+  }
+
+  /* biome-ignore lint/correctness/noUnknownFunction: <explanation> */
+  @media screen and (min-width: theme("screens.xl")) {
+    grid-template-columns:
+      [margin-start head-start]
+      minmax(0, 1fr)
+      [head-end content-start breakout-start bleed-start]
+      minmax(0, 1fr)
+      minmax(0, 1fr)
+      minmax(0, 1fr)
+      [content-end aside-start]
+      minmax(0, 1fr)
+      minmax(0, 1fr)
+      [aside-end breakout-end]
+      minmax(0, 1fr)
+      [margin-end bleed-end];
+  }
+}
+
 @layer base {
+  html {
+    @apply bg-panel;
+  }
   body {
-    @apply bg-background font-mono text-[13px] leading-5 text-primary;
+    @apply flex min-h-svh flex-col bg-background font-mono text-[13px] leading-5 text-primary;
     font-synthesis: none;
+  }
+  main {
+    @apply bg-background;
+  }
+
+  main,
+  footer {
+    @apply grid grid-cols-main gap-5 p-5;
+  }
+
+  main {
+    > * {
+      @apply col-[content];
+    }
+
+    > :is(h1, h2) {
+      @apply col-[head] place-self-start;
+    }
+
+    > :is(.aside, aside) {
+      @apply col-[aside];
+
+      ul {
+        @apply list-none;
+      }
+    }
+
+    > :is(.breakout, pre) {
+      @apply col-[breakout];
+    }
+
+    > :is(.bleed) {
+      @apply col-[bleed];
+    }
   }
 
   /* Typography */
@@ -126,7 +131,7 @@
   h4,
   h5,
   h6 {
-    @apply scroll-m-5 text-balance empty:hidden;
+    @apply scroll-m-8 text-balance empty:hidden;
   }
 
   h1,
@@ -153,7 +158,7 @@
     }
   }
 
-  .aside {
+  aside {
     @apply list-none text-secondary;
   }
 
@@ -258,6 +263,6 @@
   }
 
   hr {
-    @apply my-6 border-t border-line;
+    @apply col-span-full -mx-5 border-t border-line;
   }
 }

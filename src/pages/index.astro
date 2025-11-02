@@ -3,7 +3,6 @@ import PageLayout from "@/layouts/PageLayout.astro";
 import siteData from "../data/site.json";
 import { getCollection } from "astro:content";
 import { Image } from "astro:assets";
-import contacts from "../data/contacts.json";
 
 const work = await getCollection("work").then((work) =>
   work.sort(
@@ -23,39 +22,9 @@ const projects = await getCollection("projects").then((projects) =>
   description={siteData.description}
   dateUpdated="2025-01-23"
 >
-  <p class="text-balance">
-    Software designer focused on creating better tools for builders. I'm
-    passionate about systems thinking and crafting intuitive, efficient
-    interfaces.<br />
-    Outside of work, I'm usually building side projects, diving into emerging tech,
-    cycling up hills, hiking remote trails, or chasing mastery in FromSoftware games.
-  </p>
-
-  <ul class="list-none [&_a]:not-hover:text-secondary [&>li]:inline-block">
-    <li>
-      <a href="/notes">/notes</a>
-    </li>
-    <li>
-      <a href="/books">/books</a>
-    </li>
-    <li>
-      <a href="/dlog">/dlog</a>
-    </li>
-    <li>&middot;</li>
-    <li>
-      <a href={contacts["email"]}>me@kkga.me</a>
-    </li>
-    <li>
-      <a href={contacts["twitter"]} target="_blank" rel="me">Twitter</a>
-    </li>
-    <li>
-      <a href={contacts["bluesky"]} target="_blank" rel="me">Bluesky</a>
-    </li>
-  </ul>
-
   <h2>Work</h2>
 
-  <ul class="col-[breakout] grid gap-5 sm:grid-cols-2 md:grid-cols-3">
+  <ul class="col-[bleed] grid grid-cols-subgrid gap-5 *:md:col-span-2">
     {
       work.map(({ id, data }) => (
         <li class="flex">
@@ -81,10 +50,12 @@ const projects = await getCollection("projects").then((projects) =>
     }
   </ul>
 
+  <hr />
+
   <h2>Projects</h2>
 
   <ul
-    class="col-[breakout] grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4"
+    class="col-[bleed] grid grid-cols-subgrid gap-5 *:md:col-span-2 *:xl:col-span-1"
   >
     {
       projects.map(({ id, data }) => (

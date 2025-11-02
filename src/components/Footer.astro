@@ -1,0 +1,32 @@
+---
+const { dateUpdated } = Astro.props;
+const { pathname } = Astro.url;
+const isHome = pathname === "/";
+---
+
+<footer class="mt-auto border-t border-line bg-panel text-secondary">
+  <div class="contents">
+    {
+      !isHome && (
+        <div class="col-start-1">
+          <a href="/">Back to home</a>
+        </div>
+      )
+    }
+
+    {
+      dateUpdated && (
+        <span class="col-[aside]">
+          Updated:{" "}
+          <time datetime={dateUpdated}>
+            {new Date(dateUpdated).toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "short",
+              day: "numeric",
+            })}
+          </time>
+        </span>
+      )
+    }
+  </div>
+</footer>

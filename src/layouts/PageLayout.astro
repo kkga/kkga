@@ -1,42 +1,24 @@
 ---
-import BaseLayout from "./BaseLayout.astro";
+import BaseHead from "@/components/BaseHead.astro";
+import Footer from "@/components/Footer.astro";
+import Header from "@/components/Header.astro";
 
 const { title, description, dateUpdated, frontmatter } = Astro.props;
-const { pathname } = Astro.url;
+const metaTitle = frontmatter?.title || title;
+const metaDescription = frontmatter?.description || description;
 ---
 
-<BaseLayout
-  title={title ?? frontmatter?.title}
-  description={description ?? frontmatter?.description}
-  dateUpdated={dateUpdated ?? frontmatter?.date}
->
-  <main class="grid-breakout">
-    <header
-      class={`col-[breakout] grid grid-cols-subgrid ${pathname !== "/" ? "mb-15" : ""}`}
-    >
-      <div>
-        {
-          pathname !== "/" && (
-            <>
-              {/* prettier-ignore */}
-              <a class="uppercase not-hover:no-underline" href="/">kkga</a>
-              <span class="text-secondary">⁄</span>
-            </>
-          )
-        }
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={metaTitle} description={metaDescription} />
+  </head>
 
-        <h1 class="inline">
-          {title ?? frontmatter?.title}
-        </h1>
-      </div>
-
-      {
-        pathname !== "/" && (
-          <p class="aside">{description ?? frontmatter?.description}</p>
-        )
-      }
-    </header>
-
-    <slot />
-  </main>
-</BaseLayout>
+  <body class="min-h-screen">
+    <Header title={metaTitle} description={metaDescription} />
+    <main>
+      <slot />
+    </main>
+    <Footer dateUpdated={dateUpdated} />
+  </body>
+</html>

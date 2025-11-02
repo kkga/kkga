@@ -28,14 +28,19 @@ const rendered = await Promise.all(
 
 <PageLayout title="Dlog" description="dev- or design-log attempt">
   {
-    rendered.map(({ Content, date, title }) => (
-      <article class="breakout grid grid-cols-subgrid gap-[inherit] *:col-[content]">
-        <header class="breakout grid grid-cols-subgrid">
-          <h2>{title}</h2>
-          <date class="aside">{date}</date>
-        </header>
-        <Content />
-      </article>
+    rendered.map(({ Content, date, title }, index) => (
+      <>
+        <article class="col-span-full grid grid-cols-subgrid gap-5">
+          <h2 class="col-[head] place-self-start">{title}</h2>
+          <aside class="col-[aside] place-self-start text-secondary">
+            <time datetime={date}>{date}</time>
+          </aside>
+          <div class="col-[content] grid grid-cols-subgrid gap-5 *:col-[content] md:row-start-2 lg:row-start-1">
+            <Content />
+          </div>
+        </article>
+        {index < rendered.length - 1 && <hr />}
+      </>
     ))
   }
 </PageLayout>
