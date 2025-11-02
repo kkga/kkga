@@ -19,6 +19,11 @@
     --color-line: var(--color-neutral-700);
     --color-line-hover: var(--color-neutral-500);
   }
+
+  .astro-code,
+  .astro-code span {
+    color: var(--shiki-dark) !important;
+  }
 }
 
 @utility small-caps {
