@@ -21,15 +21,15 @@ const { href, cover, title, subtitle, description } = Astro.props;
     <div class="relative w-full overflow-hidden">
       <Image src={cover} alt={title} class="block w-full object-cover" />
       <span
-        class="pointer-events-none absolute inset-0 z-10 inset-ring inset-ring-current/20"
+        class="pointer-events-none absolute inset-0 z-10 inset-ring inset-ring-current/20 group-hover:inset-ring-current/40"
       ></span>
     </div>
     <div>
-      <div class="group-hover:underline">
+      <div>
         <span class="uppercase">{title}</span>
         <span>({subtitle})</span>
       </div>
-      <div class="text-secondary">{description}</div>
+      <div class="text-secondary group-hover:text-current">{description}</div>
     </div>
   </a>
 </li>

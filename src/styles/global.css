@@ -126,6 +126,10 @@
     > :is(.bleed) {
       @apply col-[bleed] lg:my-5;
     }
+
+    > :is(.breakout, .bleed) + :is(.breakout, .bleed) {
+      @apply mt-0;
+    }
   }
 
   /* Typography */

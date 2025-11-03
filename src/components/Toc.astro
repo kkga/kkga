@@ -6,25 +6,26 @@ interface Props {
 }
 
 const { headings } = Astro.props;
-
 const filteredHeadings = headings.filter((heading) => heading.depth <= 2);
 ---
 
 <nav
-  class="fixed top-5 right-5 z-10 hidden border border-line bg-panel text-secondary"
+  class="sticky top-5 z-20 col-[aside-end/margin-end] row-start-1 hidden justify-self-end bg-background text-secondary ring ring-line backdrop-blur xl:block"
 >
-  <ul class="m-0 flex list-none flex-col divide-y divide-line">
+  <ul class="m-0 flex list-none flex-col **:no-underline">
     <li>
-      <a class="flex h-7.5 items-center px-2.5 no-underline" href="#top">
-        &uarr; Top
+      <a class="flex h-[25px] items-center px-2.5" href="#top" data-toc-link>
+        (Top)
       </a>
     </li>
     {
       filteredHeadings.map((heading) => (
         <li>
           <a
-            class="flex h-7.5 items-center px-2.5 no-underline"
+            class="flex h-[25px] items-center px-2.5"
             href={`#${heading.slug}`}
+            data-toc-link
+            data-heading-id={heading.slug}
           >
             {heading.text}
           </a>
@@ -35,12 +36,89 @@ const filteredHeadings = headings.filter((heading) => heading.depth <= 2);
 </nav>
 
 <script>
-  window.addEventListener("scroll", () => {
+  function initToc() {
     const nav = document.querySelector("nav");
-    if (window.scrollY >= 0) {
-      if (nav) nav.classList.add("xl:block");
-    } else {
-      if (nav) nav.classList.remove("xl:block");
-    }
-  });
+    if (!nav) return;
+
+    // Highlight active heading
+    const headings = Array.from(document.querySelectorAll("h1, h2")).filter(
+      (h) => h.id
+    ); // Only headings with IDs
+    const tocLinks = document.querySelectorAll("[data-toc-link]");
+
+    const setActiveLink = (id: string | null) => {
+      // Remove active class from all links
+      tocLinks.forEach((link) => {
+        link.classList.remove("ring", "ring-line-hover", "text-primary");
+      });
+
+      // Add active class to specified link
+      if (id) {
+        const activeLink = document.querySelector(
+          `[data-heading-id="${id}"], [href="#${id}"]`
+        );
+        if (activeLink) {
+          activeLink.classList.add("ring", "ring-line-hover", "text-primary");
+        }
+      }
+    };
+
+    // Handle clicks on TOC links
+    tocLinks.forEach((link) => {
+      link.addEventListener("click", (e) => {
+        const href = (e.currentTarget as HTMLAnchorElement).getAttribute(
+          "href"
+        );
+        if (href) {
+          const id = href.replace("#", "");
+          setActiveLink(id);
+        }
+      });
+    });
+
+    // Find which heading we're currently under
+    const updateActiveHeading = () => {
+      if (window.scrollY < 100) {
+        setActiveLink("top");
+        return;
+      }
+
+      const scrollPosition = window.scrollY + 100; // Offset for better UX
+
+      // Find the last heading that's above the scroll position
+      let currentHeading: Element | null = null;
+      for (const heading of headings) {
+        const rect = heading.getBoundingClientRect();
+        const headingTop = window.scrollY + rect.top;
+
+        if (headingTop <= scrollPosition) {
+          currentHeading = heading;
+        } else {
+          break;
+        }
+      }
+
+      if (currentHeading) {
+        setActiveLink(currentHeading.id);
+      }
+    };
+
+    // Update on scroll
+    let ticking = false;
+    window.addEventListener("scroll", () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          updateActiveHeading();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+
+    // Initial update
+    updateActiveHeading();
+  }
+
+  // Run on initial load
+  initToc();
 </script>
