@@ -2,7 +2,7 @@
 import PageLayout from "@/layouts/PageLayout.astro";
 import siteData from "../data/site.json";
 import { getCollection } from "astro:content";
-import { Image } from "astro:assets";
+import Card from "@/components/Card.astro";
 
 const work = await getCollection("work").then((work) =>
   work.sort(
@@ -24,28 +24,18 @@ const projects = await getCollection("projects").then((projects) =>
 >
   <h2>Work</h2>
 
-  <ul class="col-[bleed] grid grid-cols-subgrid gap-5 *:md:col-span-2">
+  <ul
+    class="col-[bleed] grid list-none grid-cols-subgrid gap-5 *:md:col-span-2"
+  >
     {
       work.map(({ id, data }) => (
-        <li class="flex">
-          <a href={`/work/${id}`} class="group bg-transparent no-underline">
-            <div class="relative mb-2.5 w-full overflow-hidden">
-              <Image
-                src={data.cover}
-                alt={data.title}
-                class="block w-full object-cover"
-              />
-              <span class="pointer-events-none absolute inset-0 z-10 inset-ring inset-ring-current/20" />
-            </div>
-            <span class="group-hover:underline">
-              <span class="uppercase">{data.title}</span>
-              <span>
-                ({data.role} {data.timeframe})
-              </span>
-            </span>
-            <div class="text-secondary">{data.longDescription}</div>
-          </a>
-        </li>
+        <Card
+          href={`/work/${id}`}
+          cover={data.cover}
+          title={data.title}
+          subtitle={`${data.role} ${data.timeframe}`}
+          description={data.longDescription.replace(/\.$/, "") + "."}
+        />
       ))
     }
   </ul>
@@ -55,31 +45,19 @@ const projects = await getCollection("projects").then((projects) =>
   <h2>Projects</h2>
 
   <ul
-    class="col-[bleed] grid grid-cols-subgrid gap-5 *:md:col-span-2 *:xl:col-span-1"
+    class="col-[bleed] grid list-none grid-cols-subgrid gap-5 *:md:col-span-2 *:xl:col-span-1"
   >
     {
       projects.map(({ id, data }) => (
-        <li class="flex">
-          <a href={`/projects/${id}`} class="group bg-transparent no-underline">
-            <div class="relative mb-2.5 w-full overflow-hidden">
-              <Image
-                src={data.cover}
-                alt={data.title}
-                class="block w-full object-cover"
-              />
-              <span class="pointer-events-none absolute inset-0 z-10 inset-ring inset-ring-current/20" />
-            </div>
-            <span class="group-hover:underline">
-              <span class="uppercase">{data.title}</span>
-              <span>
-                {`(${new Date(data.date).toLocaleDateString("en-US", { year: "numeric" })})`}
-              </span>
-            </span>
-            <div class="text-secondary">
-              {data.description.replace(/\.$/, "")}.
-            </div>
-          </a>
-        </li>
+        <Card
+          href={`/projects/${id}`}
+          cover={data.cover}
+          title={data.title}
+          subtitle={new Date(data.date).toLocaleDateString("en-US", {
+            year: "numeric",
+          })}
+          description={data.description.replace(/\.$/, "") + "."}
+        />
       ))
     }
   </ul>

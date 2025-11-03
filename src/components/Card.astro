@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+interface Props {
+  href: string;
+  cover: ImageMetadata;
+  title: string;
+  subtitle: string;
+  description: string;
+}
+
+const { href, cover, title, subtitle, description } = Astro.props;
+---
+
+<li>
+  <a
+    href={href}
+    class="group flex flex-col gap-2.5 bg-transparent no-underline"
+  >
+    <div class="relative w-full overflow-hidden">
+      <Image src={cover} alt={title} class="block w-full object-cover" />
+      <span
+        class="pointer-events-none absolute inset-0 z-10 inset-ring inset-ring-current/20"
+      ></span>
+    </div>
+    <div>
+      <div class="group-hover:underline">
+        <span class="uppercase">{title}</span>
+        <span>({subtitle})</span>
+      </div>
+      <div class="text-secondary">{description}</div>
+    </div>
+  </a>
+</li>
