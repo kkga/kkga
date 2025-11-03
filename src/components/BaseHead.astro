@@ -3,7 +3,6 @@ import "../styles/global.css";
 import siteData from "../data/site.json";
 import Analytics from "@vercel/analytics/astro";
 import { Font } from "astro:assets";
-import { ClientRouter } from "astro:transitions";
 
 interface Props {
   title: string;
@@ -49,4 +48,3 @@ const { title, description, image = "/og-image.png" } = Astro.props;
 
 <Font cssVariable="--font-fragment-mono" preload />
 <Analytics />
-<ClientRouter />
