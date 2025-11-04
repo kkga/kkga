@@ -12,17 +12,23 @@ const filteredHeadings = headings.filter((heading) => heading.depth <= 2);
 <nav
   class="sticky top-5 z-20 col-[aside-end/margin-end] row-start-1 hidden justify-self-end bg-background text-secondary ring ring-line backdrop-blur xl:block"
 >
-  <ul class="m-0 flex list-none flex-col **:no-underline">
+  <ul
+    class="m-0 flex list-none flex-col divide-y divide-line [&>li>a]:no-underline [&>li>a]:hover:text-primary"
+  >
     <li>
-      <a class="flex h-[25px] items-center px-2.5" href="#top" data-toc-link>
-        (Top)
+      <a
+        class="flex h-[25px] items-center px-[0.5ch]"
+        href="#top"
+        data-toc-link
+      >
+        [top]
       </a>
     </li>
     {
       filteredHeadings.map((heading) => (
         <li>
           <a
-            class="flex h-[25px] items-center px-2.5"
+            class="flex h-[25px] items-center px-[0.5ch]"
             href={`#${heading.slug}`}
             data-toc-link
             data-heading-id={heading.slug}
