@@ -16,6 +16,8 @@ import { Image } from "astro:assets";
 import prototype_loop from "./assets/retool/prototype-loop-request.mp4";
 import prototype_timer from "./assets/retool/prototype-timer-block.mp4";
 import prototype_treeflow from "./assets/retool/treeflow.mp4";
+import prototype_ide_webm from "./assets/retool/retool-ide.webm";
+import prototype_ide_mp4 from "./assets/retool/retool-ide.mp4";
 import a from "./assets/a.gif";
 
 <div className="flex h-15 items-center justify-center border border-dashed border-current/40 bg-amber-50 text-amber-600 uppercase dark:bg-amber-950 dark:text-amber-400">
@@ -60,30 +62,44 @@ product, while others remain as explorations.
 
 ### Visualizing logic
 
-Retool apps can get complex quickly with many interconnected components and
-stateful logic spread across multiple layers. In an effort to help users
-understand and debug their apps, I worked on a prototype for visualizing data
-and control flow in a Retool app. The tree shows a graph of relationships
-between queries, variables and components on the canvas, allowing users to trace
-how data moves through the app.
-
-The goal was to have a lightweight layer of visual feedback that is "always
-there" and helps users reason about app behavior as they build.
+Retool apps get complex fast—interconnected components and stateful logic across
+layers. I prototyped a lightweight, always-on view that visualizes data and
+control flow as a tree linking queries, variables, and components, so you can
+trace how data moves and debug as you build.
 
 <figure class="breakout">
   <Video controls src={prototype_treeflow} className="border border-line" />
-  <figcaption>Traversing data and control flow in the app tree</figcaption>
+  <figcaption>Data and control flow, visualized as a tree</figcaption>
+</figure>
+
+### Flexible workspace
+
+As Retool evolved into a multi-product platform, we needed a workspace that
+spans apps, workflows, and databases. I prototyped an IDE-style environment that
+brings these surfaces together in one place, making it faster to navigate,
+debug, and build complex internal tools.
+
+<figure class="breakout">
+  <Video
+    controls
+    sources={[
+      { src: prototype_ide_webm, type: "video/webm" },
+      { src: prototype_ide_mp4, type: "video/mp4" },
+    ]}
+    className="border border-line"
+  />
+  <figcaption>
+    Unified IDE workspace across apps, workflows, and databases
+  </figcaption>
 </figure>
 
 ---
 
 ## Retool Workflows
 
-I joined Retool in 2021 to help build a completely new product — Retool
-Workflows. The team was just 2 people — me and a full-stack engineer. I drove
-product and interaction design, iterated on the core flow primitives (API
-blocks, logic, control flow, etc) and built most of the final Workflows UI in
-React.
+Joined Retool in 2021 to co-build Workflows from scratch with one full-stack
+engineer. Led product and interaction design, shaped the core flow primitives
+(API, logic, control flow), and built most of the presentational UI in React.
 
 <aside>
   <time datetime="2021">2021–2024</time>
@@ -96,20 +112,20 @@ React.
   </ul>
 </aside>
 
-Since then the team has grown significantly and Workflows has become a key part
-of the Retool platform. The point was always the same: move quickly, get honest
-feedback, and build automations engineers actually want to use.
+The team grew and Workflows became a core part of the platform. We kept the same
+approach: ship fast, get blunt feedback, and build automations engineers
+actually use.
 
-Early on I prototyped several control-flow and transformer blocks in the
+Early on I prototyped some of the control-flow and transformer blocks in the
 [Godot game engine](https://godotengine.org/) because its canvas/graph APIs made
 it fast to experiment with runtime behavior.
 
 <figure class="breakout">
   <Video controls src={prototype_timer} />
-  <figcaption>Prototype for Timer and Iterator blocks</figcaption>
+  <figcaption>Prototype: Timer and Iterator blocks</figcaption>
 </figure>
 
 <figure class="breakout">
   <Video controls src={prototype_loop} />
-  <figcaption>Prototype for Loop and API request blocks</figcaption>
+  <figcaption>Prototype: Loop and API request blocks</figcaption>
 </figure>

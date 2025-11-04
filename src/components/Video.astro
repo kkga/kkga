@@ -1,20 +1,31 @@
 ---
 interface Props {
-  src: string;
+  // Back-compat single source
+  src?: string;
+  // Preferred: multiple sources in priority order
+  sources?: Array<{
+    src: string;
+    type?: string; // e.g., "video/webm", "video/mp4"
+  }>;
   poster?: string;
   autoplay?: boolean;
   controls?: boolean;
   loop?: boolean;
+  muted?: boolean;
+  preload?: "none" | "metadata" | "auto";
   className: string;
 }
 
 const {
   src,
+  sources = [],
   poster,
   className,
   autoplay = true,
   controls = false,
   loop = true,
+  muted = true,
+  preload = "metadata",
 } = Astro.props;
 ---
 
@@ -23,9 +34,15 @@ const {
   autoplay={autoplay}
   controls={controls}
   loop={loop}
-  muted
+  muted={muted}
+  preload={preload}
   poster={poster}
   class={`w-full bg-panel ${className || ""}`}
 >
-  <source src={src} />
+  {
+    sources && sources.length > 0
+      ? sources.map((s) => <source src={s.src} type={s.type} />)
+      : // Fallback to single src prop
+        src && <source src={src} />
+  }
 </video>
