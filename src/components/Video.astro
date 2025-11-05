@@ -1,8 +1,6 @@
 ---
 interface Props {
-  // Back-compat single source
   src?: string;
-  // Preferred: multiple sources in priority order
   sources?: Array<{
     src: string;
     type?: string; // e.g., "video/webm", "video/mp4"
@@ -42,7 +40,6 @@ const {
   {
     sources && sources.length > 0
       ? sources.map((s) => <source src={s.src} type={s.type} />)
-      : // Fallback to single src prop
-        src && <source src={src} />
+      : src && <source src={src} />
   }
 </video>

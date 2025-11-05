@@ -92,7 +92,7 @@
     @apply bg-panel;
   }
   body {
-    @apply flex min-h-svh flex-col bg-background font-mono text-[13px] leading-5 text-primary;
+    @apply flex min-h-svh flex-col font-mono text-[13px] leading-5 text-primary;
     font-synthesis: none;
   }
   main {
@@ -150,11 +150,8 @@
     @apply uppercase;
   }
 
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply small-caps;
+  h3 {
+    @apply flex items-baseline gap-[1ch] small-caps after:grow after:border-b after:border-line after:content-[''];
   }
 
   p {
