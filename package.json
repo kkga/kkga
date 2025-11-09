@@ -9,14 +9,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.9",
+    "@astrojs/mdx": "^4.3.10",
     "@astrojs/sitemap": "^3.6.0",
     "@lion/ui": "^0.15.2",
-    "@tailwindcss/vite": "4.1.16",
+    "@tailwindcss/vite": "4.1.17",
     "@vercel/analytics": "^1.5.0",
-    "astro": "^5.15.3",
-    "sharp": "^0.34.4",
-    "tailwindcss": "4.1.16"
+    "astro": "^5.15.4",
+    "sharp": "^0.34.5",
+    "tailwindcss": "4.1.17"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.5",
@@ -28,5 +28,5 @@
     "prettier-plugin-tailwindcss": "^0.7.1",
     "typescript": "^5.9.3"
   },
-  "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c"
+  "packageManager": "pnpm@10.20.0+sha512.cf9998222162dd85864d0a8102e7892e7ba4ceadebbf5a31f9c2fce48dfce317a9c53b9f6464d1ef9042cba2e02ae02a9f7c143a2b438cd93c91840f0192b9dd"
 }
