@@ -96,7 +96,7 @@
     font-synthesis: none;
   }
   main {
-    @apply bg-background;
+    @apply grow bg-background;
   }
 
   main,

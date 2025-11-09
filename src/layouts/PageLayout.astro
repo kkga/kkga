@@ -14,7 +14,7 @@ const metaDescription = frontmatter?.description || description;
     <BaseHead title={metaTitle} description={metaDescription} />
   </head>
 
-  <body class="min-h-screen">
+  <body>
     <Header title={metaTitle} description={metaDescription} />
     <main>
       <slot />
