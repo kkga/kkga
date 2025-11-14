@@ -39,7 +39,6 @@
     minmax(0, 1fr)
     [aside-end bleed-end breakout-end content-end head-end margin-end];
 
-  /* biome-ignore lint/correctness/noUnknownFunction: <explanation> */
   @media screen and (min-width: theme("screens.md")) {
     grid-template-columns:
       [margin-start head-start content-start breakout-start bleed-start]
@@ -53,7 +52,6 @@
       [aside-end bleed-end breakout-end head-end margin-end];
   }
 
-  /* biome-ignore lint/correctness/noUnknownFunction: <explanation> */
   @media screen and (min-width: theme("screens.lg")) {
     grid-template-columns:
       [margin-start head-start]
@@ -69,7 +67,6 @@
       [aside-end breakout-end margin-end bleed-end];
   }
 
-  /* biome-ignore lint/correctness/noUnknownFunction: <explanation> */
   @media screen and (min-width: theme("screens.xl")) {
     grid-template-columns:
       [margin-start head-start]
@@ -101,7 +98,7 @@
 
   main,
   footer {
-    @apply grid grid-cols-main gap-5 p-5;
+    @apply grid grid-cols-main content-start gap-5 p-5;
   }
 
   main {
