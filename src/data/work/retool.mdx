@@ -13,6 +13,13 @@ cover: "./assets/retool/cover.png"
 import Video from "@/components/Video.astro";
 import { Image } from "astro:assets";
 
+import agents_chat from "./assets/retool/agents-chat.png";
+import agents_index from "./assets/retool/agents-index.png";
+import agents_monitor from "./assets/retool/agents-monitor.png";
+import agents_logs from "./assets/retool/agents-logs.png";
+import agents_compare from "./assets/retool/agents-compare.png";
+import agents_compare2 from "./assets/retool/agents-compare-2.png";
+
 import prototype_loop from "./assets/retool/prototype-loop-request.mp4";
 import prototype_timer from "./assets/retool/prototype-timer-block.mp4";
 import prototype_treeflow from "./assets/retool/treeflow.mp4";
@@ -29,9 +36,9 @@ import a from "./assets/a.gif";
 
 ## Retool Agents
 
-Retool Agents are autonomous AI “workers” you build in Retool that use LLM
-reasoning to take actions — they call your APIs/queries/workflows, make
-decisions (or ask humans), and execute tasks end-to-end.
+Retool Agents are autonomous AI workers that use LLM reasoning to call your
+APIs, run queries/workflows, make decisions (or escalate to humans), and execute
+end-to-end tasks.
 
 <aside>
   <time datetime="2025">2025</time>
@@ -44,9 +51,39 @@ decisions (or ask humans), and execute tasks end-to-end.
   </ul>
 </aside>
 
-I led the design of the product from early exploration to launch, working
-closely with engineers and product managers to define the user flows,
-interaction models, and visual design.
+Led design from early exploration through launch—defining flows, interaction
+models, and system concepts with eng + PM partners. Launched summer 2025 to
+positive customer feedback. Sample product screenshots follow.
+
+<figure class="bleed">
+  <Image src={agents_index} alt="Agent index interface" />
+  <figcaption>Index view</figcaption>
+</figure>
+
+<figure class="bleed">
+  <Image src={agents_compare2} alt="Eval comparison interface" />
+  <figcaption>Comparing agent evaluation runs</figcaption>
+</figure>
+
+<figure class="bleed">
+  <Image src={agents_compare} alt="Eval comparison interface" />
+  <figcaption>Comparing agent evaluation runs</figcaption>
+</figure>
+
+<figure class="bleed">
+  <Image src={agents_logs} alt="Agent logs interface" />
+  <figcaption>Inspecting agent logs</figcaption>
+</figure>
+
+<figure class="bleed">
+  <Image src={agents_chat} alt="Agent chat interface" />
+  <figcaption>Inspecting a tool run in chat</figcaption>
+</figure>
+
+<figure class="bleed">
+  <Image src={agents_monitor} alt="Agent monitor interface" />
+  <figcaption>Agents monitoring view</figcaption>
+</figure>
 
 ---
 
