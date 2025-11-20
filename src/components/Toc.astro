@@ -10,10 +10,10 @@ const filteredHeadings = headings.filter((heading) => heading.depth <= 2);
 ---
 
 <nav
-  class="sticky top-5 z-20 col-[aside-end/margin-end] row-start-1 hidden justify-self-end bg-background text-secondary ring ring-line backdrop-blur xl:block"
+  class="sticky top-5 z-20 col-[aside-end/margin-end] row-start-1 hidden h-0 justify-self-end overflow-visible xl:block"
 >
   <ul
-    class="m-0 flex list-none flex-col divide-y divide-line [&>li>a]:no-underline [&>li>a]:hover:text-primary"
+    class="m-0 flex list-none flex-col bg-background text-secondary ring ring-line backdrop-blur [&>li>a]:no-underline [&>li>a]:hover:text-primary"
   >
     <li>
       <a
