@@ -11,22 +11,22 @@
   "dependencies": {
     "@astrojs/mdx": "^4.3.12",
     "@astrojs/sitemap": "^3.6.0",
-    "@lion/ui": "^0.15.2",
+    "@lion/ui": "^0.15.3",
     "@tailwindcss/vite": "4.1.17",
-    "@vercel/analytics": "^1.5.0",
-    "astro": "^5.16.1",
+    "@vercel/analytics": "^1.6.1",
+    "astro": "^5.16.4",
     "sharp": "^0.34.5",
     "tailwindcss": "4.1.17"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.6",
-    "@typescript-eslint/parser": "^8.48.0",
+    "@typescript-eslint/parser": "^8.48.1",
     "eslint": "^9.39.1",
     "eslint-plugin-astro": "^1.5.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
-    "prettier": "^3.6.2",
+    "prettier": "^3.7.4",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.7.1",
+    "prettier-plugin-tailwindcss": "^0.7.2",
     "typescript": "^5.9.3"
   },
   "packageManager": "pnpm@10.20.0+sha512.cf9998222162dd85864d0a8102e7892e7ba4ceadebbf5a31f9c2fce48dfce317a9c53b9f6464d1ef9042cba2e02ae02a9f7c143a2b438cd93c91840f0192b9dd"
