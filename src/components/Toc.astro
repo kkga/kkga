@@ -10,7 +10,7 @@ const filteredHeadings = headings.filter((heading) => heading.depth <= 2);
 ---
 
 <nav
-  class="sticky top-5 z-20 col-[aside-end/margin-end] row-start-1 hidden h-0 justify-self-end overflow-visible xl:block"
+  class="sticky top-5 z-20 col-[margin-end] row-start-1 hidden h-0 w-max justify-self-end overflow-visible xl:block"
 >
   <ul
     class="m-0 flex list-none flex-col bg-background text-secondary ring ring-line backdrop-blur [&>li>a]:no-underline [&>li>a]:hover:text-primary"
@@ -48,7 +48,7 @@ const filteredHeadings = headings.filter((heading) => heading.depth <= 2);
 
     // Highlight active heading
     const headings = Array.from(document.querySelectorAll("h1, h2")).filter(
-      (h) => h.id
+      (h) => h.id,
     ); // Only headings with IDs
     const tocLinks = document.querySelectorAll("[data-toc-link]");
 
@@ -61,7 +61,7 @@ const filteredHeadings = headings.filter((heading) => heading.depth <= 2);
       // Add active class to specified link
       if (id) {
         const activeLink = document.querySelector(
-          `[data-heading-id="${id}"], [href="#${id}"]`
+          `[data-heading-id="${id}"], [href="#${id}"]`,
         );
         if (activeLink) {
           activeLink.classList.add("ring", "ring-line-hover", "text-primary");
@@ -73,7 +73,7 @@ const filteredHeadings = headings.filter((heading) => heading.depth <= 2);
     tocLinks.forEach((link) => {
       link.addEventListener("click", (e) => {
         const href = (e.currentTarget as HTMLAnchorElement).getAttribute(
-          "href"
+          "href",
         );
         if (href) {
           const id = href.replace("#", "");

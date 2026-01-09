@@ -55,7 +55,7 @@
   @media screen and (min-width: theme("screens.lg")) {
     grid-template-columns:
       [margin-start head-start]
-      minmax(0, 1fr)
+      minmax(0, 24ch)
       [head-end content-start breakout-start bleed-start]
       minmax(0, 1fr)
       minmax(0, 1fr)
@@ -70,17 +70,18 @@
   @media screen and (min-width: theme("screens.xl")) {
     grid-template-columns:
       [margin-start head-start]
-      minmax(0, 1fr)
+      minmax(0, 28ch)
       [head-end content-start breakout-start bleed-start]
-      minmax(0, 1fr)
-      minmax(0, 1fr)
-      minmax(0, 1fr)
+      minmax(0, 20ch)
+      minmax(0, 20ch)
+      minmax(0, 20ch)
       [content-end aside-start]
-      minmax(0, 1fr)
-      minmax(0, 1fr)
+      minmax(0, 20ch)
+      minmax(0, 20ch)
       [aside-end breakout-end]
-      minmax(0, 1fr)
-      [margin-end bleed-end];
+      minmax(0, 20ch)
+      [margin-end bleed-end]
+      minmax(0, 1fr);
   }
 }
 
