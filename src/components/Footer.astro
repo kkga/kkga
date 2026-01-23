@@ -4,11 +4,14 @@ const { pathname } = Astro.url;
 const isHome = pathname === "/";
 ---
 
-<footer class="mt-auto border-t border-line text-secondary">
+<footer
+  class="mt-auto grid grid-cols-main content-start gap-5 bg-background pb-5 text-secondary"
+>
+  <hr />
   <div class="contents">
     {
       !isHome && (
-        <div class="col-start-1">
+        <div class="col-[head]">
           <a class="no-underline" href="/">
             &larr;Home
           </a>

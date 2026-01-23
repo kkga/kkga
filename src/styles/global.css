@@ -2,19 +2,19 @@
 
 @theme {
   --font-mono: var(--font-fragment-mono);
-  --color-background: var(--color-white);
-  --color-panel: var(--color-neutral-50);
+  --color-background: var(--color-neutral-100);
+  --color-panel: var(--color-white);
   --color-highlight: var(--color-neutral-200);
   --color-primary: var(--color-black);
   --color-secondary: var(--color-neutral-600);
-  --color-line: var(--color-neutral-200);
+  --color-line: var(--color-neutral-300);
   --color-line-hover: var(--color-neutral-400);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --color-background: var(--color-neutral-900);
-    --color-panel: var(--color-neutral-950);
+    --color-panel: var(--color-neutral-800);
     --color-highlight: var(--color-neutral-800);
     --color-primary: var(--color-white);
     --color-secondary: var(--color-neutral-400);
@@ -34,13 +34,16 @@
 
 @utility grid-cols-main {
   grid-template-columns:
+    0
     [margin-start head-start content-start breakout-start bleed-start aside-start]
     minmax(0, 1fr)
     minmax(0, 1fr)
-    [aside-end bleed-end breakout-end content-end head-end margin-end];
+    [aside-end bleed-end breakout-end content-end head-end margin-end]
+    0;
 
   @media screen and (min-width: theme("screens.md")) {
     grid-template-columns:
+      0
       [margin-start head-start content-start breakout-start bleed-start]
       minmax(0, 1fr)
       minmax(0, 1fr)
@@ -49,22 +52,25 @@
       [content-end aside-start]
       minmax(0, 1fr)
       minmax(0, 1fr)
-      [aside-end bleed-end breakout-end head-end margin-end];
+      [aside-end bleed-end breakout-end head-end margin-end]
+      0;
   }
 
   @media screen and (min-width: theme("screens.lg")) {
     grid-template-columns:
+      minmax(0, 1fr)
       [margin-start head-start]
-      minmax(0, 24ch)
+      minmax(0, 28ch)
       [head-end content-start breakout-start bleed-start]
-      minmax(0, 1fr)
-      minmax(0, 1fr)
-      minmax(0, 1fr)
-      minmax(0, 1fr)
+      minmax(0, 20ch)
+      minmax(0, 20ch)
+      minmax(0, 20ch)
+      minmax(0, 20ch)
       [content-end aside-start]
-      minmax(0, 1fr)
-      minmax(0, 1fr)
-      [aside-end breakout-end margin-end bleed-end];
+      minmax(0, 20ch)
+      minmax(0, 20ch)
+      [aside-end breakout-end margin-end bleed-end]
+      minmax(0, 1fr);
   }
 }
 
@@ -74,7 +80,6 @@
   }
   body {
     @apply flex min-h-svh flex-col font-mono text-[13px] leading-5 text-primary;
-    @apply mx-auto max-w-350 outline outline-line;
     font-synthesis: none;
   }
   main {
@@ -83,11 +88,6 @@
   header,
   footer {
     @apply bg-panel;
-  }
-
-  main,
-  footer {
-    @apply grid grid-cols-main content-start gap-5 p-5;
   }
 
   main {
@@ -225,7 +225,7 @@
     }
 
     thead {
-      @apply border-b border-line-hover;
+      @apply border-b border-line;
     }
 
     tfoot {
@@ -257,6 +257,6 @@
   }
 
   hr {
-    @apply col-span-full -mx-5 border-t border-line;
+    @apply col-span-full mx-5 border-t border-line;
   }
 }

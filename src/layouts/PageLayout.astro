@@ -16,7 +16,7 @@ const metaDescription = frontmatter?.description || description;
 
   <body>
     <Header title={metaTitle} description={metaDescription} />
-    <main>
+    <main class="grid grid-cols-main content-start gap-5 py-5">
       <slot />
     </main>
     <Footer dateUpdated={dateUpdated} />

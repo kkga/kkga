@@ -7,7 +7,7 @@ const { pathname } = Astro.url;
 const isHome = pathname === "/";
 ---
 
-<header class="grid grid-cols-main gap-5 border-b border-line p-5">
+<header class="grid grid-cols-main gap-5 bg-panel py-5">
   {
     !isHome ? (
       <>
@@ -24,19 +24,21 @@ const isHome = pathname === "/";
       <>
         <h1 class="col-[head] place-self-start">{title}</h1>
 
-        <p class="col-span-2">
-          Software designer focused on creating better tools for builders.
-          <br /> Passionate about systems thinking and crafting intuitive,
-          efficient interfaces.
-        </p>
+        <div class="col-[content] grid grid-cols-subgrid gap-5">
+          <p class="col-span-2">
+            Software designer focused on creating better tools for builders.
+            <br /> Passionate about systems thinking and crafting intuitive,
+            efficient interfaces.
+          </p>
 
-        <p class="col-span-2">
-          Apart from work, I'm usually building side projects, diving into
-          emerging tech, cycling up hills, hiking trails, or chasing mastery in
-          FromSoftware games.
-        </p>
+          <p class="col-span-2">
+            Apart from work, I'm usually building side projects, diving into
+            emerging tech, cycling up hills, hiking trails, or chasing mastery
+            in FromSoftware games.
+          </p>
+        </div>
 
-        <div class="col-span-2 col-start-[content-start] grid grid-cols-subgrid gap-5 md:col-start-[aside-start] lg:col-start-6">
+        <div class="col-span-2 col-start-[content-start] grid grid-cols-subgrid gap-5 md:col-start-[aside-start]">
           <ul class="list-none [&_a]:not-hover:text-secondary">
             <li>
               <a href="/notes">/notes</a>
@@ -48,7 +50,7 @@ const isHome = pathname === "/";
               <a href="/dlog">/dlog</a>
             </li>
           </ul>
-          <ul class="col-auto list-none md:col-start-3 lg:col-auto [&_a]:not-hover:text-secondary">
+          <ul class="list-none [&_a]:not-hover:text-secondary">
             <li>
               <a href={contacts["email"]}>me@kkga.me</a>
             </li>
