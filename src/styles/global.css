@@ -3,7 +3,7 @@
 @theme {
   --font-mono: var(--font-fragment-mono);
   --color-background: var(--color-white);
-  --color-panel: var(--color-neutral-100);
+  --color-panel: var(--color-neutral-50);
   --color-highlight: var(--color-neutral-200);
   --color-primary: var(--color-black);
   --color-secondary: var(--color-neutral-600);
@@ -66,35 +66,23 @@
       minmax(0, 1fr)
       [aside-end breakout-end margin-end bleed-end];
   }
-
-  @media screen and (min-width: theme("screens.xl")) {
-    grid-template-columns:
-      [margin-start head-start]
-      minmax(0, 28ch)
-      [head-end content-start breakout-start bleed-start]
-      minmax(0, 20ch)
-      minmax(0, 20ch)
-      minmax(0, 20ch)
-      [content-end aside-start]
-      minmax(0, 20ch)
-      minmax(0, 20ch)
-      [aside-end breakout-end]
-      minmax(0, 20ch)
-      [margin-end bleed-end]
-      minmax(0, 1fr);
-  }
 }
 
 @layer base {
   html {
-    @apply bg-panel;
+    @apply bg-neutral-100 dark:bg-black;
   }
   body {
     @apply flex min-h-svh flex-col font-mono text-[13px] leading-5 text-primary;
+    @apply mx-auto max-w-350 outline outline-line;
     font-synthesis: none;
   }
   main {
     @apply grow bg-background;
+  }
+  header,
+  footer {
+    @apply bg-panel;
   }
 
   main,
