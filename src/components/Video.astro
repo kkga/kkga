@@ -23,18 +23,18 @@ const {
   controls = false,
   loop = true,
   muted = true,
-  preload = "metadata",
+  preload = "none",
 } = Astro.props;
 ---
 
 <video
   playsinline
-  autoplay={autoplay}
   controls={controls}
   loop={loop}
   muted={muted}
   preload={preload}
   poster={poster}
+  data-autoplay={autoplay}
   class={`w-full bg-panel ${className || ""}`}
 >
   {
@@ -43,3 +43,24 @@ const {
       : src && <source src={src} />
   }
 </video>
+
+<script>
+  const videos = document.querySelectorAll("video[data-autoplay]");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const video = entry.target as HTMLVideoElement;
+        if (entry.isIntersecting) {
+          video.play().catch(() => {
+            // Autoplay was prevented
+          });
+        } else {
+          video.pause();
+        }
+      });
+    },
+    { threshold: 0.25 },
+  );
+
+  videos.forEach((video) => observer.observe(video));
+</script>

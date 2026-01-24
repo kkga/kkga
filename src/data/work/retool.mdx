@@ -23,7 +23,6 @@ import agents_compare2 from "./assets/retool/agents-compare-2.png";
 import prototype_loop from "./assets/retool/prototype-loop-request.mp4";
 import prototype_timer from "./assets/retool/prototype-timer-block.mp4";
 import prototype_treeflow from "./assets/retool/treeflow.mp4";
-import prototype_ide_webm from "./assets/retool/retool-ide.webm";
 import prototype_ide_mp4 from "./assets/retool/retool-ide.mp4";
 import a from "./assets/a.gif";
 
@@ -123,10 +122,8 @@ debug, and build complex internal tools.
 <figure class="bleed">
   <Video
     controls
-    sources={[
-      { src: prototype_ide_webm, type: "video/webm" },
-      { src: prototype_ide_mp4, type: "video/mp4" },
-    ]}
+    autoplay={false}
+    src={prototype_ide_mp4}
     className="border border-line"
   />
   <figcaption>
