@@ -1,6 +1,6 @@
 ---
 interface Props {
-  src?: string;
+  src?: string | { src: string; width: number; height: number };
   sources?: Array<{
     src: string;
     type?: string; // e.g., "video/webm", "video/mp4"
@@ -12,10 +12,13 @@ interface Props {
   muted?: boolean;
   preload?: "none" | "metadata" | "auto";
   className: string;
+  width?: number | string;
+  height?: number | string;
+  alt?: string;
 }
 
 const {
-  src,
+  src: rawSrc,
   sources = [],
   poster,
   className,
@@ -24,7 +27,22 @@ const {
   loop = true,
   muted = true,
   preload = "none",
+  width: widthProp,
+  height: heightProp,
+  alt,
 } = Astro.props;
+
+let src: string | undefined;
+let width = widthProp;
+let height = heightProp;
+
+if (typeof rawSrc === "object" && rawSrc !== null) {
+  src = rawSrc.src;
+  width = rawSrc.width;
+  height = rawSrc.height;
+} else {
+  src = rawSrc;
+}
 ---
 
 <video
@@ -34,8 +52,12 @@ const {
   muted={muted}
   preload={preload}
   poster={poster}
+  width={width}
+  height={height}
+  aria-label={alt}
   data-autoplay={autoplay}
   class={`w-full bg-panel ${className || ""}`}
+  style={{ aspectRatio: width && height ? `${width} / ${height}` : undefined }}
 >
   {
     sources && sources.length > 0

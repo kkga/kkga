@@ -1,0 +1,126 @@
+{
+  "src/data/img/projects/tdx.mp4": {
+    "width": 1040,
+    "height": 634
+  },
+  "src/data/img/projects/shim-demo.mp4": {
+    "width": 1744,
+    "height": 1336
+  },
+  "src/data/img/projects/kks.mp4": {
+    "width": 1914,
+    "height": 1266
+  },
+  "src/data/img/dlog/td-demo.mp4": {
+    "width": 1920,
+    "height": 1080
+  },
+  "src/data/img/dlog/jotdown.mp4": {
+    "width": 2560,
+    "height": 1600
+  },
+  "src/data/img/dlog/comp.mp4": {
+    "width": 2560,
+    "height": 1600
+  },
+  "src/data/work/assets/webflow/symbols-3.mp4": {
+    "width": 1200,
+    "height": 750
+  },
+  "src/data/work/assets/webflow/symbols-2.mp4": {
+    "width": 1200,
+    "height": 750
+  },
+  "src/data/work/assets/webflow/symbols-1.mp4": {
+    "width": 1200,
+    "height": 750
+  },
+  "src/data/work/assets/webflow/ix-reel.mp4": {
+    "width": 2048,
+    "height": 2048
+  },
+  "src/data/work/assets/webflow/ix-overview.mp4": {
+    "width": 1152,
+    "height": 720
+  },
+  "src/data/work/assets/webflow/ix-easing.mp4": {
+    "width": 1600,
+    "height": 1200
+  },
+  "src/data/work/assets/webflow/ix-demo-parallax.mp4": {
+    "width": 400,
+    "height": 300
+  },
+  "src/data/work/assets/webflow/ix-demo-hover.mp4": {
+    "width": 400,
+    "height": 300
+  },
+  "src/data/work/assets/webflow/ix-demo-follow.mp4": {
+    "width": 800,
+    "height": 600
+  },
+  "src/data/work/assets/webflow/ix-demo-cubes.mp4": {
+    "width": 800,
+    "height": 600
+  },
+  "src/data/work/assets/webflow/grid-vid1.mp4": {
+    "width": 2880,
+    "height": 1800
+  },
+  "src/data/work/assets/webflow/grid-reel.mp4": {
+    "width": 2048,
+    "height": 2048
+  },
+  "src/data/work/assets/webflow/grid-overview.mp4": {
+    "width": 1728,
+    "height": 1080
+  },
+  "src/data/work/assets/webflow/grid-areas-3.mp4": {
+    "width": 1200,
+    "height": 750
+  },
+  "src/data/work/assets/webflow/grid-areas-2.mp4": {
+    "width": 1440,
+    "height": 900
+  },
+  "src/data/work/assets/webflow/grid-areas-1.mp4": {
+    "width": 1440,
+    "height": 900
+  },
+  "src/data/work/assets/webflow/flexbox.mp4": {
+    "width": 1392,
+    "height": 690
+  },
+  "src/data/work/assets/webflow/designer-reel.mp4": {
+    "width": 1000,
+    "height": 1000
+  },
+  "src/data/work/assets/retool/treeflow.mp4": {
+    "width": 3024,
+    "height": 1680
+  },
+  "src/data/work/assets/retool/retool-ide.mp4": {
+    "width": 1832,
+    "height": 1080
+  },
+  "src/data/work/assets/retool/prototype-timer-block.mp4": {
+    "width": 2038,
+    "height": 1254
+  },
+  "src/data/work/assets/retool/prototype-loop-request.mp4": {
+    "width": 2982,
+    "height": 1930
+  },
+  "src/data/work/assets/stampsy/web.mp4": {
+    "width": 1280,
+    "height": 720
+  },
+  "src/data/work/assets/stampsy/site.mp4": {
+    "width": 1920,
+    "height": 1104
+  },
+  "src/data/work/assets/stampsy/ipad-app.mp4": {
+    "width": 1280,
+    "height": 720
+  }
+}
