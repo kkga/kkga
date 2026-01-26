@@ -1,4 +1,16 @@
 {
+  "src/data/img/dlog/td-demo.mp4": {
+    "width": 1920,
+    "height": 1080
+  },
+  "src/data/img/dlog/jotdown.mp4": {
+    "width": 2560,
+    "height": 1600
+  },
+  "src/data/img/dlog/comp.mp4": {
+    "width": 2560,
+    "height": 1600
+  },
   "src/data/img/projects/tdx.mp4": {
     "width": 1040,
     "height": 634
@@ -11,17 +23,17 @@
     "width": 1914,
     "height": 1266
   },
-  "src/data/img/dlog/td-demo.mp4": {
+  "src/data/work/assets/stampsy/web.mp4": {
+    "width": 1280,
+    "height": 720
+  },
+  "src/data/work/assets/stampsy/site.mp4": {
     "width": 1920,
-    "height": 1080
+    "height": 1104
   },
-  "src/data/img/dlog/jotdown.mp4": {
-    "width": 2560,
-    "height": 1600
-  },
-  "src/data/img/dlog/comp.mp4": {
-    "width": 2560,
-    "height": 1600
+  "src/data/work/assets/stampsy/ipad-app.mp4": {
+    "width": 1280,
+    "height": 720
   },
   "src/data/work/assets/webflow/symbols-3.mp4": {
     "width": 1200,
@@ -110,17 +122,5 @@
   "src/data/work/assets/retool/prototype-loop-request.mp4": {
     "width": 2982,
     "height": 1930
-  },
-  "src/data/work/assets/stampsy/web.mp4": {
-    "width": 1280,
-    "height": 720
-  },
-  "src/data/work/assets/stampsy/site.mp4": {
-    "width": 1920,
-    "height": 1104
-  },
-  "src/data/work/assets/stampsy/ipad-app.mp4": {
-    "width": 1280,
-    "height": 720
   }
 }
