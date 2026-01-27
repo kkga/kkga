@@ -5,15 +5,11 @@ import { getCollection } from "astro:content";
 import Card from "@/components/Card.astro";
 
 const work = await getCollection("work").then((work) =>
-  work.sort(
-    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
-  ),
+  work.sort((a, b) => b.data.date.getTime() - a.data.date.getTime()),
 );
 
 const projects = await getCollection("projects").then((projects) =>
-  projects.sort(
-    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
-  ),
+  projects.sort((a, b) => b.data.date.getTime() - a.data.date.getTime()),
 );
 ---
 
