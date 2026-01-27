@@ -2,6 +2,8 @@
 import PageLayout from "@/layouts/PageLayout.astro";
 import { getCollection } from "astro:content";
 
+const TRAILING_DOT_REGEX = /\.$/;
+
 const notes = await getCollection("notes").then((notes) =>
   notes
     .sort(
@@ -21,7 +23,7 @@ const notes = await getCollection("notes").then((notes) =>
           {data.description && (
             <>
               <span class="text-secondary">
-                {data.description.replace(/\.$/, "")}
+                {data.description.replace(TRAILING_DOT_REGEX, "")}
               </span>
             </>
           )}
