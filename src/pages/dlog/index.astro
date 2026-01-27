@@ -13,7 +13,7 @@ const rendered = await Promise.all(
     return {
       ...entry,
       title: entry.data.title,
-      date: new Date(entry.data.date).toLocaleDateString("en-US", {
+      date: entry.data.date.toLocaleDateString("en-US", {
         year: "numeric",
         month: "long",
         day: "numeric",
