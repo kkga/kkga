@@ -4,6 +4,8 @@ import siteData from "../data/site.json";
 import { getCollection } from "astro:content";
 import Card from "@/components/Card.astro";
 
+const TRAILING_DOT_REGEX = /\.$/;
+
 const work = await getCollection("work").then((work) =>
   work.sort(
     (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
@@ -34,7 +36,7 @@ const projects = await getCollection("projects").then((projects) =>
           cover={data.cover}
           title={data.title}
           subtitle={`${data.role} ${data.timeframe}`}
-          description={data.longDescription.replace(/\.$/, "") + "."}
+          description={data.longDescription.replace(TRAILING_DOT_REGEX, "") + "."}
         />
       ))
     }
@@ -56,7 +58,7 @@ const projects = await getCollection("projects").then((projects) =>
           subtitle={new Date(data.date).toLocaleDateString("en-US", {
             year: "numeric",
           })}
-          description={data.description.replace(/\.$/, "") + "."}
+          description={data.description.replace(TRAILING_DOT_REGEX, "") + "."}
         />
       ))
     }
