@@ -2,6 +2,12 @@
 const { dateUpdated } = Astro.props;
 const { pathname } = Astro.url;
 const isHome = pathname === "/";
+
+const updatedDate = dateUpdated ? new Date(dateUpdated) : null;
+const updatedDateTime =
+  updatedDate && !Number.isNaN(updatedDate.getTime())
+    ? updatedDate.toISOString()
+    : undefined;
 ---
 
 <footer
@@ -23,13 +29,15 @@ const isHome = pathname === "/";
       dateUpdated && (
         <span class="col-[aside]">
           Updated:{" "}
-          <time datetime={dateUpdated}>
-            {new Date(dateUpdated).toLocaleDateString("en-US", {
-              year: "numeric",
-              month: "short",
-              day: "numeric",
-            })}
-          </time>
+          {updatedDate && (
+            <time datetime={updatedDateTime}>
+              {updatedDate.toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "short",
+                day: "numeric",
+              })}
+            </time>
+          )}
         </span>
       )
     }

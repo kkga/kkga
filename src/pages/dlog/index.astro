@@ -13,11 +13,12 @@ const rendered = await Promise.all(
     return {
       ...entry,
       title: entry.data.title,
-      date: entry.data.date.toLocaleDateString("en-US", {
+      dateLabel: entry.data.date.toLocaleDateString("en-US", {
         year: "numeric",
         month: "long",
         day: "numeric",
       }),
+      dateTime: entry.data.date.toISOString(),
       Content,
     };
   })
@@ -26,12 +27,12 @@ const rendered = await Promise.all(
 
 <PageLayout title="Dlog" description="dev- or design-log attempt">
   {
-    rendered.map(({ Content, date, title }, index) => (
+    rendered.map(({ Content, dateLabel, dateTime, title }, index) => (
       <>
         <article class="col-span-full grid grid-cols-subgrid gap-5">
           <h2 class="col-[head] place-self-start">{title}</h2>
           <aside class="col-[aside] place-self-start text-secondary">
-            <time datetime={date}>{date}</time>
+            <time datetime={dateTime}>{dateLabel}</time>
           </aside>
           <div class="col-[content] grid grid-cols-subgrid gap-5 *:col-[content] md:row-start-2 lg:row-start-1">
             <Content />

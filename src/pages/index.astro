@@ -24,7 +24,7 @@ const projects = await getCollection("projects").then((projects) =>
   <h2>Work</h2>
 
   <ul
-    class="max-auto col-[bleed] container grid list-none grid-cols-subgrid gap-5 *:md:col-span-2"
+    class="col-[bleed] container grid list-none grid-cols-subgrid gap-5 *:md:col-span-2"
   >
     {
       work.map(({ id, data }) => (
