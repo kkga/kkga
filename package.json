@@ -13,7 +13,7 @@
   "dependencies": {
     "@astrojs/mdx": "5.0.0-beta.1",
     "@astrojs/sitemap": "3.7.0",
-    "@lion/ui": "^0.15.4",
+    "@lion/ui": "^0.15.5",
     "@tailwindcss/vite": "4.1.18",
     "@vercel/analytics": "^1.6.1",
     "astro": "6.0.0-beta.2",
@@ -23,11 +23,11 @@
   "devDependencies": {
     "@astrojs/check": "0.9.7-beta.1",
     "@typescript-eslint/parser": "^8.54.0",
-    "eslint": "^9.39.2",
+    "eslint": "^10.0.0",
     "eslint-plugin-astro": "^1.5.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "ffmpeg-static": "^5.3.0",
-    "glob": "^13.0.0",
+    "glob": "^13.0.1",
     "prettier": "^3.8.1",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
@@ -36,6 +36,7 @@
   "packageManager": "pnpm@10.20.0+sha512.cf9998222162dd85864d0a8102e7892e7ba4ceadebbf5a31f9c2fce48dfce317a9c53b9f6464d1ef9042cba2e02ae02a9f7c143a2b438cd93c91840f0192b9dd",
   "pnpm": {
     "onlyBuiltDependencies": [
+      "esbuild",
       "ffmpeg-static"
     ]
   }
