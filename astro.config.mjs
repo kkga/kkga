@@ -2,27 +2,21 @@
 import { defineConfig, sharpImageService } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import mdx from "@astrojs/mdx";
-import fs from "node:fs";
-import path from "node:path";
+import { spawnSync } from "node:child_process";
+import ffmpegPath from "ffmpeg-static";
 
 import sitemap from "@astrojs/sitemap";
 
 /**
- * @returns {any}
+ * @returns {import('astro').ViteUserConfig['plugins'] extends Array<infer P> ? P : any}
  */
 function videoMetadata() {
-  let metadata = {};
-
-  try {
-    const metadataPath = path.resolve("src/data/video-metadata.json");
-    metadata = JSON.parse(fs.readFileSync(metadataPath, "utf-8"));
-  } catch (e) {
-    console.warn("[video-metadata] Could not load video-metadata.json");
-  }
+  /** @type {Record<string, { width: number, height: number }>} */
+  const cache = {};
 
   return {
     name: "video-metadata",
-    enforce: "post", // Run after Vite's default asset handling
+    enforce: "post",
     /**
      * @param {string} code
      * @param {string} id
@@ -35,11 +29,32 @@ function videoMetadata() {
 
       const src = match[1];
 
-      // Find metadata by checking if any key ends with the same relative path
-      const metaEntry = Object.entries(metadata).find(([key]) => id.endsWith(key));
+      if (!cache[id]) {
+        try {
+          if (!ffmpegPath) {
+            throw new Error("ffmpeg-static path not found");
+          }
+          const result = spawnSync(ffmpegPath, ["-i", id], {
+            encoding: "utf-8",
+          });
+          const output = result.stderr || result.stdout;
+          const dimensions = output?.match(/Video:.*,\s*(\d+)x(\d+)/);
 
-      if (metaEntry) {
-        const [, dims] = metaEntry;
+          if (dimensions) {
+            const [, width, height] = dimensions;
+            cache[id] = {
+              width: parseInt(width),
+              height: parseInt(height),
+            };
+          }
+        } catch (err) {
+          const message = err instanceof Error ? err.message : String(err);
+          console.warn(`[video-metadata] Failed to process ${id}:`, message);
+        }
+      }
+
+      if (cache[id]) {
+        const dims = cache[id];
         return {
           code: `export default { src: "${src}", width: ${dims.width}, height: ${dims.height} };`,
           map: null,
