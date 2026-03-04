@@ -46,4 +46,12 @@ const notes = defineCollection({
   }),
 });
 
-export const collections = { work, projects, dlog, notes };
+const site = defineCollection({
+  loader: glob({ pattern: "site.json", base: "./src/data" }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+  }),
+});
+
+export const collections = { work, projects, dlog, notes, site };
