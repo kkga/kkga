@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig, sharpImageService } from "astro/config";
+import { defineConfig, sharpImageService, fontProviders } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import mdx from "@astrojs/mdx";
 import fs from "node:fs";
@@ -69,12 +69,12 @@ export default defineConfig({
       },
     },
   },
-  experimental: {
-    fonts: [
-      {
-        provider: "local",
-        name: "Fragment Mono Regular",
-        cssVariable: "--font-fragment-mono",
+  fonts: [
+    {
+      provider: fontProviders.local(),
+      name: "Fragment Mono Regular",
+      cssVariable: "--font-fragment-mono",
+      options: {
         variants: [
           {
             weight: 400,
@@ -82,8 +82,8 @@ export default defineConfig({
             src: ["./src/fonts/FragmentMono-Regular.woff2"],
           },
         ],
-        fallbacks: ["monospace"],
       },
-    ],
-  },
+      fallbacks: ["monospace"],
+    },
+  ],
 });
